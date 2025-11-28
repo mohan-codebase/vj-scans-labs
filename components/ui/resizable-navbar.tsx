@@ -86,7 +86,7 @@ export const NavBody = ({ children, className }: { children: React.ReactNode; cl
   return (
     <motion.div
       className={cn(
-        "relative z-[60] mx-auto hidden w-full max-w-7xl flex-row items-center justify-between self-start bg-transparent px-4 py-4 lg:flex dark:bg-transparent",
+        "relative z-[60] mx-auto hidden w-full max-w-7xl flex-row items-center justify-between self-start bg-white/90 rounded-[8px] px-4 py-4 lg:flex ",
         className,
       )}
     >
@@ -98,6 +98,7 @@ export const NavBody = ({ children, className }: { children: React.ReactNode; cl
 export const NavItems = ({ items, className }: { items: { name: string; link: string; subItems?: any[] }[]; className?: string }) => {
   const [hovered, setHovered] = useState<number | null>(null)
   const [activeDropdown, setActiveDropdown] = useState<number | null>(null)
+  const [hoveredSubItem, setHoveredSubItem] = useState<number | null>(null)
 
   return (
     <motion.div
@@ -136,7 +137,12 @@ export const NavItems = ({ items, className }: { items: { name: string; link: st
             {hovered === idx && (
               <motion.div
                 layoutId="hovered"
-                className="absolute inset-0 h-full w-full rounded-full border border-gray/60 bg-white/70" // Subtle hover bg
+                className="absolute inset-0 h-full w-full rounded-full bg-white/40 backdrop-blur-md border border-white/20 shadow-sm"
+                transition={{
+                  type: "spring",
+                  bounce: 0.2,
+                  duration: 0.6,
+                }}
               />
             )}
             <span className="relative z-20">{item.name}</span>
@@ -152,14 +158,27 @@ export const NavItems = ({ items, className }: { items: { name: string; link: st
                 exit={{ opacity: 0, y: 10 }}
                 transition={{ duration: 0.2 }}
                 className="absolute left-0 top-full mt-2 w-48 rounded-xl bg-[linear-gradient(90deg,#ffebd6,#d1ebff)] p-2 shadow-xl border border-gray-100 z-50"
+                onMouseLeave={() => setHoveredSubItem(null)}
               >
                 {item.subItems.map((subItem: { name: string; link: string }, subIdx: number) => (
                   <Link
                     key={`sub-${subIdx}`}
                     href={subItem.link}
-                    className="block rounded-lg px-4 py-2 text-sm text-gray-700 hover:bg-orange-50 hover:text-orange-600 transition-colors"
+                    className="relative block rounded-lg px-4 py-2 text-sm text-gray-700 transition-colors"
+                    onMouseEnter={() => setHoveredSubItem(subIdx)}
                   >
-                    {subItem.name}
+                    {hoveredSubItem === subIdx && (
+                      <motion.div
+                        layoutId="dropdown-hovered"
+                        className="absolute inset-0 h-full w-full rounded-lg bg-white/40 backdrop-blur-md border border-white/20 shadow-sm"
+                        transition={{
+                          type: "spring",
+                          bounce: 0.2,
+                          duration: 0.6,
+                        }}
+                      />
+                    )}
+                    <span className="relative z-10">{subItem.name}</span>
                   </Link>
                 ))}
               </motion.div>

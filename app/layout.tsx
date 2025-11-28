@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Urbanist, DM_Sans } from "next/font/google";
+import { Urbanist, DM_Sans, Dancing_Script } from "next/font/google";
 import "./globals.css";
 import { Header } from "./components/Header";
 import Footer from "./components/Footer";
@@ -11,6 +11,11 @@ const urbanist = Urbanist({
 
 const dmSans = DM_Sans({
   variable: "--font-dm-sans",
+  subsets: ["latin"],
+});
+
+const dancingScript = Dancing_Script({
+  variable: "--font-dancing-script",
   subsets: ["latin"],
 });
 
@@ -27,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${urbanist.variable} ${dmSans.variable} antialiased`}
+        className={`${urbanist.variable} ${dmSans.variable} ${dancingScript.variable} antialiased`}
       >
         <Header />
         {children}
