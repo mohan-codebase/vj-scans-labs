@@ -10,7 +10,7 @@ const specialisations = [
     { label: 'Pathology', image: '/images/section-6/Pathology.svg' },
     { label: 'Laboratory', image: '/images/section-6/laboratory.svg' },
     { label: 'Health Check', image: '/images/section-6/health_check.svg' },
-    { label: 'Pathology', image: '/images/section-6/pathology2.svg' },
+    { label: 'Pathology', image: '/images/section-6/Pathology2.svg' },
 ]
 
 const Section6 = () => {
