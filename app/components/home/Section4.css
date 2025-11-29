@@ -20,7 +20,7 @@
 .section4-title-main {
     text-align: center;
     font-size: 1.5rem;
-    font-weight: 700;
+    font-weight: 800;
     color: #0B62A1;
     margin-bottom: 1.5rem;
     font-family: 'Urbanist', sans-serif;
@@ -36,7 +36,7 @@
 
 @media (min-width: 768px) {
     .section4-title-main {
-        font-size: 2.5rem;
+        font-size: 40px;
         margin-bottom: 3rem;
         padding: 0;
     }

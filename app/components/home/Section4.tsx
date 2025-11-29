@@ -73,7 +73,7 @@ const Section4 = () => {
     }, [emblaApi]);
 
     return (
-        <div className="section4-wrapper mt-5 my-0 md:my-20">
+        <div className="section4-wrapper mt-4 my-0 md:my-0">
             <h2 className="section4-title-main">Popular Health Packages</h2>
             <div className="section4-container">
                 <div className="embla" ref={emblaRef}>

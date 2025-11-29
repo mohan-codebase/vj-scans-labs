@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
-import { Home, Headset, Facebook, Instagram, Linkedin } from 'lucide-react';
+import { Home, Headset } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -12,14 +12,14 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-8">
 
           {/* Left Side - Contact Info */}
-          <div className="flex flex-col md:flex-row gap-8 md:gap-16">
+          <div className="flex flex-col md:flex-row gap-8 md:gap-10">
             <div className="flex items-center gap-4">
               <div className="bg-white/20 p-3 rounded-full">
                 <Home className="w-8 h-8 text-white" />
               </div>
               <div>
                 <p className="text-sm opacity-90">Book a Home Visit</p>
-                <p className="text-2xl font-bold">044-40000000</p>
+                <p className="text-[20px] font-[800]">044-40000000</p>
               </div>
             </div>
 
@@ -44,13 +44,13 @@ const Footer = () => {
                 type="text"
                 placeholder="Your Name"
                 aria-label="Your Name"
-                className="px-4 py-3 rounded-md text-gray-800 outline-none w-full md:w-48"
+                className="px-4 py-3 rounded-md text-gray-800 outline-none w-full md:w-48 bg-white"
               />
               <input
                 type="text"
                 placeholder="Phone Number"
                 aria-label="Phone Number"
-                className="px-4 py-3 rounded-md text-gray-800 outline-none w-full md:w-48"
+                className="px-4 py-3 rounded-md text-gray-800 outline-none w-full md:w-48 bg-white"
               />
               <button type="submit" className="bg-[#ff9f43] hover:bg-[#f39c12] text-white font-medium px-6 py-3 rounded-md transition-colors whitespace-nowrap cursor-pointer">
                 Get a Quick Call
@@ -99,7 +99,7 @@ const Footer = () => {
           <div>
             <h3 className="text-[#1e73be] font-bold text-lg mb-6">Contact us</h3>
             <ul className="space-y-3">
-              <li><span className="font-medium">GSTIN</span></li>
+              <li><span className="font-extrabold">GSTIN</span></li>
               <li><a href="#" className="hover:text-[#1e73be] transition-colors">Linkedin</a></li>
               <li><a href="#" className="hover:text-[#1e73be] transition-colors">Instagram</a></li>
               <li><a href="#" className="hover:text-[#1e73be] transition-colors">Telegram</a></li>
@@ -128,19 +128,23 @@ const Footer = () => {
             </p>
 
             <h3 className="text-[#1e73be] font-bold text-lg mb-4">Follow Us:</h3>
-            <div className="flex gap-4">
-              <a href="#" className="bg-[#1e73be] text-white p-2 rounded-full hover:bg-[#155a96] transition-colors">
-                <Facebook size={20} />
-              </a>
-              <a href="#" className="bg-black text-white p-2 rounded-full hover:bg-gray-800 transition-colors">
-                <span className="font-bold text-sm">X</span>
-              </a>
-              <a href="#" className="bg-linear-to-tr from-yellow-400 via-red-500 to-purple-500 text-white p-2 rounded-full hover:opacity-90 transition-opacity">
-                <Instagram size={20} />
-              </a>
-              <a href="#" className="bg-[#0077b5] text-white p-2 rounded-full hover:bg-[#005e93] transition-colors">
-                <Linkedin size={20} />
-              </a>
+            <div className="flex items-center gap-2">
+              <div className=" rounded-full p-1 cursor-pointer flex items-center justify-center w-9 h-9">
+                <a href="https://www.facebook.com/vjscans" target="_blank"
+                  rel="noopener noreferrer"><Image src="/images/topbar/facebook.svg" alt="facebook" width={22} height={22} /></a>
+              </div>
+              <div className="bg-black rounded-full p-1 cursor-pointer flex items-center justify-center w-6 h-6">
+                <a href="https://x.com/vjscans" target="_blank"
+                  rel="noopener noreferrer"><Image src="/images/topbar/x.svg" alt="x" width={22} height={22} /></a>
+              </div>
+              <div className=" rounded-full p-1 cursor-pointer flex items-center justify-center w-8 h-5">
+                <a href="https://www.instagram.com/vjscans/" target="_blank"
+                  rel="noopener noreferrer"><Image src="/images/topbar/instagram.svg" alt="instagram" width={50} height={50} /></a>
+              </div>
+              <div className="bg-[#0077B5] rounded-full p-1 cursor-pointer flex items-center justify-center w-6 h-6">
+                <a href="https://www.linkedin.com/company/vjscans/" target="_blank"
+                  rel="noopener noreferrer"><Image src="/images/topbar/linkedin.svg" alt="linkedin" width={20} height={20} /></a>
+              </div>
             </div>
           </div>
 

@@ -86,7 +86,7 @@ export const NavBody = ({ children, className }: { children: React.ReactNode; cl
   return (
     <motion.div
       className={cn(
-        "relative z-[60] mx-auto hidden w-full max-w-7xl flex-row items-center justify-between self-start bg-white/90 rounded-[8px] px-4 py-4 lg:flex ",
+        "relative z-[60] mx-auto hidden w-full max-w-7xl flex-row items-center justify-between self-start bg-[linear-gradient(90deg,#ffebd6,#d1ebff)] rounded-[14px] px-4 py-4 lg:flex ",
         className,
       )}
     >
@@ -107,7 +107,7 @@ export const NavItems = ({ items, className }: { items: { name: string; link: st
         setActiveDropdown(null)
       }}
       className={cn(
-        "flex flex-row items-center justify-center space-x-1 rounded-full bg-[linear-gradient(90deg,#ffebd6,#d1ebff)] px-6 py-2", // Pill shape container
+        "flex flex-row items-center justify-center space-x-1 rounded-full  px-6 py-0", // Pill shape container
         className,
       )}
     >
@@ -201,7 +201,7 @@ export const MobileNav = ({ children, className, visible }: { children: React.Re
         width: visible ? "90%" : "100%",
         paddingRight: visible ? "12px" : "0px",
         paddingLeft: visible ? "12px" : "0px",
-        borderRadius: visible ? "12px" : "2rem",
+        borderRadius: visible ? "12px" : "0.5rem",
         y: visible ? 20 : 0,
       }}
       transition={{
@@ -210,7 +210,7 @@ export const MobileNav = ({ children, className, visible }: { children: React.Re
         damping: 50,
       }}
       className={cn(
-        "relative z-50 mx-auto flex w-full max-w-[calc(100vw-1rem)] flex-col items-center justify-between bg-transparent px-0 py-2 lg:hidden",
+        "relative z-50 mx-auto flex w-full max-w-[calc(100vw-1rem)] flex-col items-center justify-between bg-[linear-gradient(90deg,#ffebd6,#d1ebff)] px-2 py-2 lg:hidden",
         visible && "bg-white/80 dark:bg-neutral-950/80",
         className,
       )}
@@ -242,7 +242,7 @@ export const MobileNavMenu = ({ children, className, isOpen, onClose }: { childr
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           className={cn(
-            "absolute inset-x-0 top-16 z-50 flex w-full flex-col items-start justify-start gap-4 rounded-xl bg-white/90 px-4 py-8 shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] dark:bg-neutral-950",
+            "absolute inset-x-0 top-16 z-50 flex w-full flex-col items-start justify-start gap-4 rounded-xl bg-[linear-gradient(90deg,#ffebd6,#d1ebff)] px-4 py-8 shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] dark:bg-neutral-950",
             className,
           )}
         >
@@ -290,7 +290,7 @@ export const NavbarButton = ({
   [key: string]: any;
 }) => {
   const baseStyles =
-    "px-4 py-2 rounded-xl bg-white button bg-[linear-gradient(84.92deg,#F98D1B_34.11%,#FFC180_105.58%)] text-white text-sm font-bold relative cursor-pointer hover:-translate-y-0.5 transition duration-200 inline-block text-center shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+    "px-4 py-2 rounded-[8px] bg-white button bg-[linear-gradient(84.92deg,#F98D1B_34.11%,#FFC180_105.58%)] text-white text-sm font-bold relative cursor-pointer hover:-translate-y-0.5 transition duration-200 inline-block text-center shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
 
   return (
     <Link

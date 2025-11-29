@@ -23,10 +23,10 @@ const Section3 = () => {
 
                 {/* Right Side - Content */}
                 <div className="w-full lg:w-1/2 flex flex-col items-start text-left">
-                    <h2 className="text-3xl md:text-4xl lg:text-[42px] font-bold text-[#0961A1] leading-tight font-urbanist">
+                    <h2 className="text-3xl md:text-4xl lg:text-[42px] font-bold text-[#0961A1] leading-tight">
                         Stay Stress-Free
                     </h2>
-                    <h2 className="text-3xl md:text-4xl lg:text-[42px] font-bold text-[#0961A1] leading-tight mb-4 font-urbanist">
+                    <h2 className="text-3xl md:text-4xl lg:text-[42px] font-bold text-[#0961A1] leading-tight mb-4">
                         Get Yourself Tested at Home
                     </h2>
 
@@ -34,11 +34,11 @@ const Section3 = () => {
                         At-Home Tests
                     </h3>
 
-                    <p className="text-gray-600 text-base md:text-lg leading-relaxed mb-8 font-dm-sans max-w-xl">
+                    <p className="text-gray-600 text-base md:text-lg font-dm-sans font-medium leading-relaxed mb-8 max-w-xl">
                         We know it&apos;s not always easy to visit a diagnostic centre — especially if you&apos;re unwell, elderly, or have mobility issues. That&apos;s why Anderson Diagnostics & Labs brings our testing services to you! Our friendly, trained professionals will collect your samples right from your doorstep, so you can stay comfortable at home and still get accurate, on-time results you can trust.
                     </p>
 
-                    <button className="bg-[linear-gradient(84.92deg,#F98D1B_34.11%,#FFC180_105.58%)]  text-white px-8 py-3 rounded-full font-semibold flex items-center gap-2 transition-all shadow-lg hover:shadow-xl font-dm-sans group">
+                    <button className="bg-[linear-gradient(84.92deg,#F98D1B_34.11%,#FFC180_105.58%)]  text-white px-8 py-3 rounded-full font-semibold flex items-center gap-2 transition-all shadow-lg hover:shadow-xl group">
                         Read More
                         <span className="bg-white rounded-full p-1 ">
                             <ArrowUpRight size={16} className="text-[#F98D1B]" />

@@ -3,14 +3,17 @@ import { Urbanist, DM_Sans, Dancing_Script } from "next/font/google";
 import "./globals.css";
 import { Header } from "./components/Header";
 import Footer from "./components/Footer";
+import { ScrollToTop } from "./components/ScrollToTop";
 
 const urbanist = Urbanist({
   variable: "--font-urbanist",
+  weight: ["800"],
   subsets: ["latin"],
 });
 
 const dmSans = DM_Sans({
   variable: "--font-dm-sans",
+  weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
 });
 
@@ -36,6 +39,7 @@ export default function RootLayout({
       >
         <Header />
         {children}
+        <ScrollToTop />
         <Footer />
       </body>
     </html>
