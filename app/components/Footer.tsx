@@ -2,64 +2,11 @@
 
 import React from 'react';
 import Image from 'next/image';
-import { Home, Headset } from 'lucide-react';
 
 const Footer = () => {
   return (
     <footer className="w-full font-sans">
-      {/* Top Section - Blue */}
-      <div className="bg-[#1e73be] text-white py-8 px-4 md:px-12">
-        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-8">
 
-          {/* Left Side - Contact Info */}
-          <div className="flex flex-col md:flex-row gap-8 md:gap-10">
-            <div className="flex items-center gap-4">
-              <div className="bg-white/20 p-3 rounded-full">
-                <Home className="w-8 h-8 text-white" />
-              </div>
-              <div>
-                <p className="text-sm opacity-90">Book a Home Visit</p>
-                <p className="text-[20px] font-[800]">044-40000000</p>
-              </div>
-            </div>
-
-            <div className="flex items-center gap-4">
-              <div className="bg-white/20 p-3 rounded-full">
-                <Headset className="w-8 h-8 text-white" />
-              </div>
-              <div>
-                <p className="text-sm opacity-90">Customer Care</p>
-                <p className="text-2xl font-bold">044-40000000</p>
-              </div>
-            </div>
-          </div>
-
-          {/* Right Side - Quick Call Back Form */}
-          <div className="flex flex-col md:flex-row items-center gap-4 w-full lg:w-auto">
-            <div className="text-center md:text-left mb-2 md:mb-0">
-              <p className="font-semibold text-lg">Get a Quick Call Back</p>
-            </div>
-            <form className="flex flex-col md:flex-row gap-3 w-full md:w-auto" onSubmit={(e) => e.preventDefault()}>
-              <input
-                type="text"
-                placeholder="Your Name"
-                aria-label="Your Name"
-                className="px-4 py-3 rounded-md text-gray-800 outline-none w-full md:w-48 bg-white"
-              />
-              <input
-                type="text"
-                placeholder="Phone Number"
-                aria-label="Phone Number"
-                className="px-4 py-3 rounded-md text-gray-800 outline-none w-full md:w-48 bg-white"
-              />
-              <button type="submit" className="bg-[#ff9f43] hover:bg-[#f39c12] text-white font-medium px-6 py-3 rounded-md transition-colors whitespace-nowrap cursor-pointer">
-                Get a Quick Call
-              </button>
-            </form>
-          </div>
-
-        </div>
-      </div>
 
       {/* Bottom Section - White */}
       <div className="bg-white text-gray-600 py-12 px-4 md:px-12 border-t border-gray-100">

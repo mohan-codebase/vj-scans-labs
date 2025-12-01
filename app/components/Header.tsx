@@ -26,10 +26,10 @@ export function Header() {
     },
     {
       name: "Scans",
-      link: "/scans",
+      link: "#",
       subItems: [
         { name: "MRI Scan", link: "/scans/mri" },
-        { name: "CT Scan", link: "/scans/ct" },
+        { name: "CT Scan", link: "/ctscan" },
         { name: "X-Ray", link: "/scans/xray" },
       ]
     },
@@ -48,6 +48,7 @@ export function Header() {
   ];
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [openMobileDropdown, setOpenMobileDropdown] = useState<number | null>(null);
 
   return (
     <>
@@ -74,18 +75,67 @@ export function Header() {
 
           <MobileNavMenu isOpen={isMobileMenuOpen} onClose={() => setIsMobileMenuOpen(false)}>
             {navItems.map((item, idx) => (
-              <a
-                key={`mobile-link-${idx}`}
-                href={item.link}
-                onClick={() => setIsMobileMenuOpen(false)}
-                className="relative"
-                style={{
-                  fontFamily: "'DM Sans', sans-serif",
-                  color: '#0961A1',
-                  fontWeight: 500
-                }}>
-                <span className="block">{item.name}</span>
-              </a>
+              <div key={`mobile-item-${idx}`} className="w-full">
+                {item.subItems ? (
+                  // Item with dropdown
+                  <div className="w-full">
+                    <button
+                      onClick={() => setOpenMobileDropdown(openMobileDropdown === idx ? null : idx)}
+                      className="w-full text-left relative flex items-center justify-between"
+                      style={{
+                        fontFamily: "'DM Sans', sans-serif",
+                        color: '#0961A1',
+                        fontWeight: 500
+                      }}
+                    >
+                      <span className="block">{item.name}</span>
+                      <svg
+                        className={`w-4 h-4 transition-transform ${openMobileDropdown === idx ? 'rotate-180' : ''}`}
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </button>
+                    {/* Dropdown subItems */}
+                    {openMobileDropdown === idx && (
+                      <div className="pl-4 mt-2 space-y-2">
+                        {item.subItems.map((subItem, subIdx) => (
+                          <a
+                            key={`mobile-sublink-${idx}-${subIdx}`}
+                            href={subItem.link}
+                            onClick={() => setIsMobileMenuOpen(false)}
+                            className="block py-1"
+                            style={{
+                              fontFamily: "'DM Sans', sans-serif",
+                              color: '#0961A1',
+                              fontWeight: 400,
+                              fontSize: '0.95rem'
+                            }}
+                          >
+                            {subItem.name}
+                          </a>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                ) : (
+                  // Regular item without dropdown
+                  <a
+                    href={item.link}
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className="relative"
+                    style={{
+                      fontFamily: "'DM Sans', sans-serif",
+                      color: '#0961A1',
+                      fontWeight: 500
+                    }}
+                  >
+                    <span className="block">{item.name}</span>
+                  </a>
+                )}
+              </div>
             ))}
             <div className="flex w-full flex-col gap-4">
               <NavbarButton

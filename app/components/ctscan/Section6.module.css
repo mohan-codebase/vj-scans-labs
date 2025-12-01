@@ -1,0 +1,21 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.faqSection{
+    background-color: #FFFFFF;
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.faqTitle{
+font-family: Inter;
+font-weight: 600;
+font-style: Bold;
+font-size: 48.2px;
+color:#0961A1 ;
+line-height: 56px;
+letter-spacing: -1.07px;
+vertical-align: middle;
+}

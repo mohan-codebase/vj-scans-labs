@@ -4,10 +4,11 @@ import "./globals.css";
 import { Header } from "./components/Header";
 import Footer from "./components/Footer";
 import { ScrollToTop } from "./components/ScrollToTop";
+import FooterTop from "./components/FooterTop";
 
 const urbanist = Urbanist({
   variable: "--font-urbanist",
-  weight: ["800"],
+  weight: ["400", "500", "600", "700", "800"],
   subsets: ["latin"],
 });
 
@@ -40,6 +41,7 @@ export default function RootLayout({
         <Header />
         {children}
         <ScrollToTop />
+        <FooterTop />
         <Footer />
       </body>
     </html>
