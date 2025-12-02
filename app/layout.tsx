@@ -24,18 +24,19 @@ const dancingScript = Dancing_Script({
 });
 
 export const metadata: Metadata = {
+    metadataBase: new URL("https://vj-scans-labs.vercel.app"),
     title: "VJ Scans & Labs",
     description: "Affordable & accurate scanning, blood tests, & lab services with fast reports. Book appointments instantly at VJ Scans & Labs, in Chennai.",
     openGraph: {
         title: "VJ Scans & Labs",
         description: 'Affordable & accurate scanning, blood tests, & lab services with fast reports. Book appointments instantly at VJ Scans & Labs, in Chennai.',
-        url:'https://vj-scans-labs.vercel.app/',
-        siteName:'VJ Scans & Labs',
-        images:[{
-            url:'/ogGraph.png',
-            width:'1200',
-            height:'630',
-            alt:'vj-scans-logo image'
+        url: 'https://vj-scans-labs.vercel.app/',
+        siteName: 'VJ Scans & Labs',
+        images: [{
+            url: '/ogGraph.jpg',
+            width: '1200',
+            height: '800',
+            alt: 'vj-scans-logo image'
         }]
     }
 };
