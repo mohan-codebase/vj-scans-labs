@@ -86,7 +86,7 @@ export const NavBody = ({ children, className }: { children: React.ReactNode; cl
   return (
     <motion.div
       className={cn(
-        "relative z-[60] mx-auto hidden w-full max-w-7xl flex-row items-center justify-between self-start bg-[linear-gradient(90deg,#ffebd6,#d1ebff)] rounded-[14px] px-4 py-4 lg:flex ",
+        "relative z-[60] mx-auto hidden w-full max-w-7xl bg-[#fff] flex-row items-center justify-between self-start rounded-[14px] px-4 py-4 lg:flex  ",
         className,
       )}
     >
@@ -170,7 +170,7 @@ export const NavItems = ({ items, className }: { items: { name: string; link: st
                     {hoveredSubItem === subIdx && (
                       <motion.div
                         layoutId="dropdown-hovered"
-                        className="absolute inset-0 h-full w-full rounded-lg bg-white/40 backdrop-blur-md border border-white/20 shadow-sm"
+                        className="absolute inset-0 h-full w-full rounded-[20px] bg-white/40 backdrop-blur-md border border-white/20 shadow-sm"
                         transition={{
                           type: "spring",
                           bounce: 0.2,
@@ -210,7 +210,7 @@ export const MobileNav = ({ children, className, visible }: { children: React.Re
         damping: 50,
       }}
       className={cn(
-        "relative z-50 mx-auto flex w-full max-w-[calc(100vw-1rem)] flex-col items-center justify-between bg-[linear-gradient(90deg,#ffebd6,#d1ebff)] px-2 py-2 lg:hidden",
+        "relative z-50 mx-auto flex w-full max-w-[calc(100vw-1rem)] flex-col items-center justify-between  px-2 py-2 lg:hidden",
         visible && "bg-white/80 dark:bg-neutral-950/80",
         className,
       )}

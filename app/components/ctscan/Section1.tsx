@@ -8,8 +8,8 @@ const slides = [
     {
         id: 1,
 
-        title: <>Advanced <span className="text-[#F98D1B]"> CT Scan</span> <br /> Services for Accurate <br /> & Fast Diagnosis</>,
-        subtitle: <><span className="text-[#1E1E1E] font-dm-sans font-medium">Reliable results, individualized care, and prompt <br /> insights for better health.</span></>,
+        title: <div className='font-sans font-[650]'>Advanced <span className="text-[#F98D1B]"> CT Scan</span> <br /> Services for Accurate <br /> & Fast Diagnosis</div>,
+        subtitle: <div className="text-[#1E1E1E] font-dm-sans font-medium">Reliable results, individualized care, and prompt <br /> insights for better health.</div>,
         image: "/images/ctscan/section1/ctscan-banner.avif",
         mobileImage: "/images/Section1/mobileBanner-img-1-by-vj.avif",
         bgColor: "bg-gradient-to-br from-[#E2F2FF] via-[#EBF7FF] to-[#FFF0D9]"

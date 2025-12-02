@@ -7,21 +7,17 @@ const Section4 = () => {
             {/* Left Column: Title and Description only */}
             <div className="w-full md:w-1/2 flex flex-col gap-4 md:gap-2 mb-8 md:mb-0">
                 <h2 className="text-4xl font-[700] md:text-5xl text-[#005999] leading-tight">
-                    How to Prepare for Your <span className="text-[#FF9E0D]">CT Scan</span>
+                    How to Prepare for Your <span className="text-[#FF9E0D]"><br />X-Ray</span>
                 </h2>
                 <p className="text-gray-700 text-base md:text-lg leading-relaxed  ">
-                    Get clear, step-by-step guidance to help you understand what to expect
-                    before, during, and after your CT scan. From fasting instructions and
-                    medication guidance to what to bring and how to dress, this overview
-                    ensures you feel confident, prepared, and fully informed for a smooth and
-                    comfortable imaging experience.
+                    Get clear, step-by-step guidance to help you understand what to expect before, during, and after your X-ray. This overview ensures you feel confident, prepared, and fully informed for a smooth imaging experience.
                 </p>
             </div>
             {/* Right Column: Image and Timeline Cards */}
             <div className="w-full md:w-1/2 flex flex-col md:flex-row gap-8 md:gap-6 items-start">
                 {/* Timeline image (only on md+, shown left; cards shown right) */}
                 <div className="hidden md:flex flex-col justify-center items-center me-4">
-                    <div className="relative h-[700px] mt-12 w-8 flex-shrink-0">
+                    <div className="relative h-[700px] mt-12  w-8 flex-shrink-0">
                         <Image
                             src="/images/ctscan/section4/line.png"
                             alt="Timeline Line"
@@ -37,53 +33,45 @@ const Section4 = () => {
                         {/* Card 1: Before the Scan */}
                         <div className="bg-[linear-gradient(160.93deg,rgba(255,220,183,0.4)_12.84%,rgba(193,229,255,0.4)_56.03%)] p-6 md:p-8 rounded-2xl border border-blue-100 shadow-sm flex flex-col h-full min-h-[232px]">
                             <h3 className="text-xl md:text-2xl font-bold text-[#005999] mb-4">
-                                Before the Scan
+                                Before the X-Ray
                             </h3>
                             <ul className="list-disc list-outside pl-5 space-y-2 text-gray-700 flex-1">
                                 <li>
-                                    Wear comfortable clothing and avoid metal accessories.
-                                </li>
+                                    You don’t need special preparation for most X-rays.                                </li>
                                 <li>
-                                    You may be asked to fast for 3–4 hours (for contrast scans).
-                                </li>
+                                    Remove jewelry or metal objects from the area being scanned.                                </li>
                                 <li>
-                                    Inform our team if you’re pregnant or allergic to contrast dye.
-                                </li>
+                                    Inform the technician if you are pregnant or might be pregnant.                                </li>
                             </ul>
                         </div>
 
                         {/* Card 2: During the Scan */}
                         <div className="bg-[linear-gradient(160.93deg,rgba(255,220,183,0.4)_12.84%,rgba(193,229,255,0.4)_56.03%)] p-6 md:p-8 rounded-2xl border border-blue-100 shadow-sm flex flex-col h-full min-h-[232px]">
                             <h3 className="text-xl md:text-2xl font-bold text-[#005999] mb-4">
-                                During the Scan
+                                During the X-Ray
                             </h3>
                             <ul className="list-disc list-outside pl-5 space-y-2 text-gray-700 flex-1">
                                 <li>
-                                    You’ll lie on a comfortable bed that moves through the CT scanner.
-                                </li>
+                                    You’ll be positioned carefully to capture the required angle.                                </li>
                                 <li>
-                                    The process is painless and usually takes 10–20 minutes.
-                                </li>
+                                    The process is quick — usually less than 10 minutes.                                </li>
                                 <li>
-                                    Our technicians stay with you throughout, ensuring your comfort.
-                                </li>
+                                    Our trained technicians ensure comfort and minimal exposure.                                </li>
                             </ul>
                         </div>
 
                         {/* Card 3: After the Scan */}
                         <div className="bg-[linear-gradient(160.93deg,rgba(255,220,183,0.4)_12.84%,rgba(193,229,255,0.4)_56.03%)] p-6 md:p-8 rounded-2xl border border-blue-100 shadow-sm flex flex-col h-full min-h-[232px]">
                             <h3 className="text-xl md:text-2xl font-bold text-[#005999] mb-4">
-                                After the Scan
-                            </h3>
+                                After the X-ray                            </h3>
                             <ul className="list-disc list-outside pl-5 space-y-2 text-gray-700 flex-1">
                                 <li>
                                     You can resume normal activities immediately.
                                 </li>
                                 <li>
-                                    Reports are available online or at the front desk within hours.
-                                </li>
+                                    Reports are usually ready within 1–3 hours.                                </li>
                                 <li>
-                                    Your doctor can review and discuss results promptly.
+                                  You can view and download your digital report online.
                                 </li>
                             </ul>
                         </div>

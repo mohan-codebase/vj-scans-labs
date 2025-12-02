@@ -28,9 +28,9 @@ export function Header() {
       name: "Scans",
       link: "#",
       subItems: [
-        { name: "MRI Scan", link: "/scans/mri" },
+        { name: "MRI Scan", link: "/mriscan" },
         { name: "CT Scan", link: "/ctscan" },
-        { name: "X-Ray", link: "/scans/xray" },
+        { name: "X-Ray", link: "/x-ray" },
       ]
     },
     {
@@ -53,11 +53,11 @@ export function Header() {
   return (
     <>
       <TopBar />
-      <Navbar className="liquid-glass max-w-7xl mx-auto rounded-2xl mt-3">
+      <Navbar className="max-w-7xl mx-auto rounded-2xl mt-3 ">
         {/* Desktop Navigation */}
         <NavBody className="">
           <NavbarLogo />
-          <NavItems items={navItems} className="" />
+          <NavItems items={navItems} className="bg-[linear-gradient(90deg,#ffebd6,#d1ebff)] p-1" />
           <div className="flex items-center gap-4">
             <NavbarSearch />
             <NavbarButton href="#" className="">Book Appointment</NavbarButton>
@@ -81,7 +81,7 @@ export function Header() {
                   <div className="w-full">
                     <button
                       onClick={() => setOpenMobileDropdown(openMobileDropdown === idx ? null : idx)}
-                      className="w-full text-left relative flex items-center justify-between"
+                      className="w-full text-left relative flex items-center justify-between "
                       style={{
                         fontFamily: "'DM Sans', sans-serif",
                         color: '#0961A1',
@@ -100,7 +100,7 @@ export function Header() {
                     </button>
                     {/* Dropdown subItems */}
                     {openMobileDropdown === idx && (
-                      <div className="pl-4 mt-2 space-y-2">
+                      <div className="pl-4 mt-2 space-y-2 ">
                         {item.subItems.map((subItem, subIdx) => (
                           <a
                             key={`mobile-sublink-${idx}-${subIdx}`}
