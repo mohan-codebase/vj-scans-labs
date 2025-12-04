@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 
 const TransoesophagealECHOIcon = '/images/echo/section3/TransoesophagealECHO.svg';
-const StressEchoIcon = '/images/echo/section3/StressEcho.svg';
+const StressEchoIcon = '/images/echo/section3/StressECHO.svg';
 const DobtamineStressECHOIcon = '/images/echo/section3/DobutamineStressECHO.svg';
 
 const Section3 = () => {
