@@ -1,12 +1,12 @@
 import React from 'react';
 import Image from 'next/image';
 
-const TwoDUltrasoundIcon = '/images/2d&3d_ultrasound/section3/2DUltrasound.svg';
-const ThreeDUltrasoundIcon = '/images/2d&3d_ultrasound/section3/3DUltrasound.svg';
-const PregnancyUltrasoundIcon = '/images/2d&3d_ultrasound/section3/PregnancyUltrasound.svg';
-const PelvicUltrasoundIcon = '/images/2d&3d_ultrasound/section3/PelvicUltrasound.svg';
-const ThyroidUltrasoundIcon = '/images/2d&3d_ultrasound/section3/ThyroidUltrasound.svg';
-const SepectroscopyUltrasoundIcon = '/images/2d&3d_ultrasound/section3/Spectroscopy.svg';
+const TwoDUltrasoundIcon = '/images/2d-3d-ultrasound/section3/2DUltrasound.svg';
+const ThreeDUltrasoundIcon = '/images/2d-3d-ultrasound/section3/3DUltrasound.svg';
+const PregnancyUltrasoundIcon = '/images/2d-3d-ultrasound/section3/PregnancyUltrasound.svg';
+const PelvicUltrasoundIcon = '/images/2d-3d-ultrasound/section3/PelvicUltrasound.svg';
+const ThyroidUltrasoundIcon = '/images/2d-3d-ultrasound/section3/ThyroidUltrasound.svg';
+const SepectroscopyUltrasoundIcon = '/images/2d-3d-ultrasound/section3/Spectroscopy.svg';
 
 const Section3 = () => {
     return (

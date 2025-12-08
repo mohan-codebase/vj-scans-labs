@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import { motion } from "motion/react";
 import Image from 'next/image';
-import section2banner from '../../../../public/images/2d&3d_ultrasound/section2/section2.avif';
+import section2banner from '../../../../public/images/2d-3d-ultrasound/section2/section2.avif';
 
 const Section2 = () => {
     const [activeTab, setActiveTab] = useState(0);

@@ -31,7 +31,7 @@ export function Header() {
         { name: "MRI Scan", link: "/mriscan" },
         { name: "CT Scan", link: "/ctscan" },
         { name: "X-Ray", link: "/x-ray" },
-        { name: "2D & 3D Ultrasound", link: "/2d&3d_ultrasound" },
+        { name: "2D & 3D Ultrasound", link: "/2d-3d-ultrasound" },
         { name: "ECHO", link: "/echo" },
         { name: "ECG", link: "/ecg" },
         // { name:"TMT" , link:"/tmt"}
