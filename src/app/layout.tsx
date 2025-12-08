@@ -33,9 +33,9 @@ export const metadata: Metadata = {
         url: 'https://vj-scans-labs.vercel.app/',
         siteName: 'VJ Scans & Labs',
         images: [{
-            url: '/vj-og-logo.png',
-            width: '1200',
-            height: '630',
+            url: '/ogGraph.png',
+            width: '1024',
+            height: '1024',
             alt: 'vj-scans-logo image'
         }]
     }

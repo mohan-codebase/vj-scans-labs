@@ -7,7 +7,7 @@ const Section4 = () => {
             {/* Left Column: Title and Description only */}
             <div className="w-full md:w-1/2 flex flex-col gap-4 md:gap-2 mb-8 md:mb-0">
                 <h2 className="text-4xl font-[700] md:text-5xl text-[#005999] leading-tight">
-                    What to Know Before Your <span className="text-[#FF9E0D]">ECG (Electrocardiogram)</span>
+                    What to Know Before Your<span className="text-[#FF9E0D]">TMT (Treadmill Test)</span>
                 </h2>
                 <p className="text-gray-700 text-base md:text-lg leading-relaxed  ">
                     Get clear, step-by-step guidance to help you understand what to expect before, during, and after your ECG test. This quick, simple heart test records your heart’s electrical activity to help your doctor assess your cardiac health.                </p>
