@@ -29,7 +29,7 @@ const Section2 = () => {
             <div key={index} className="flex items-center justify-center w-full md:w-1/4 relative">
               <div className="flex items-center gap-4">
                 <Image src={feature.icon} alt="icon" width={50} height={50} className="w-auto h-auto" />
-                <span className="text-lg md:text-[17px] font-medium whitespace-nowrap font-dm-sans">
+                <span className="text-lg md:text-[17px] font-medium whitespace-nowrap font-secondary">
                   {feature.text}
                 </span>
               </div>

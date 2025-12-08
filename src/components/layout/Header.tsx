@@ -34,7 +34,7 @@ export function Header() {
         { name: "2D & 3D Ultrasound", link: "/2d-3d-ultrasound" },
         { name: "ECHO", link: "/echo" },
         { name: "ECG", link: "/ecg" },
-        // { name:"TMT" , link:"/tmt"}
+        { name:"TMT" , link:"/tmt"}
       ]
     },
     {

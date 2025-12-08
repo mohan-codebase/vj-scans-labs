@@ -7,11 +7,11 @@ const Section4 = () => {
             {/* Left Column: Title and Description only */}
             <div className="w-full md:w-1/2 flex flex-col gap-4 md:gap-2 mb-8 md:mb-0">
                 <h2 className="text-4xl font-[700] md:text-5xl text-[#005999] leading-tight">
-                    What to Know Before Your  <span className="text-[#FF9E0D]">ECHO (Echocardiogram Tests)</span>
+                    What to Know Before
+                    <span className="text-[#FF9E0D]">TMT (Treadmill Test)</span>
                 </h2>
                 <p className="text-gray-700 text-base md:text-lg leading-relaxed  ">
-                    Get clear, step-by-step guidance to help you understand what to expect before, during, and after your echocardiogram. This overview ensures you feel confident, prepared, and fully informed for a smooth and comfortable heart imaging experience.
-                </p>
+                    Get clear, step-by-step guidance to help you understand what to expect before, during, and after your Treadmill Test (TMT). This exercise-based test measures how your heart responds to physical activity, helping your doctor assess blood flow, heart rhythm, and overall cardiac health.                </p>
             </div>
             {/* Right Column: Image and Timeline Cards */}
             <div className="w-full md:w-1/2 flex flex-col md:flex-row gap-8 md:gap-6 items-start">
@@ -36,13 +36,16 @@ const Section4 = () => {
                                 Before the Scan                            </h3>
                             <ul className="list-disc list-outside pl-5 space-y-2 text-gray-700 flex-1">
                                 <li>
-                                    No special preparation for most echo tests.
+                                    Wear comfortable walking or running shoes.
                                 </li>
                                 <li>
-                                    Wear comfortable clothing and avoid chest lotions.
+                                    Avoid heavy meals for at least 2–3 hours beforehand.
                                 </li>
                                 <li>
-                                    Bring your prescription or previous reports.
+                                    Continue or stop specific medications only if your doctor advises it.
+                                </li>
+                                <li>
+                                    Bring previous test reports or prescriptions.
                                 </li>
                             </ul>
                         </div>
@@ -53,12 +56,17 @@ const Section4 = () => {
                                 During the X-Ray                            </h3>
                             <ul className="list-disc list-outside pl-5 space-y-2 text-gray-700 flex-1">
                                 <li>
-                                    Gel is applied to your chest and a transducer captures heart images.
+                                    Electrodes will be placed on your chest to monitor heart activity.
                                 </li>
                                 <li>
-                                    The test is painless and takes 30–45 minutes.                                </li>
+                                    You’ll walk on a treadmill that gradually increases in speed and incline.
+                                </li>
                                 <li>
-                                    You may be asked to change positions or briefly hold your breath.                                </li>
+                                    The test usually lasts 10–15 minutes, depending on your tolerance.
+                                </li>
+                                <li>
+                                    Your heart rate, blood pressure, and symptoms will be monitored throughout.
+                                </li>
 
                             </ul>
                         </div>
@@ -70,14 +78,16 @@ const Section4 = () => {
                             </h3>
                             <ul className="list-disc list-outside pl-5 space-y-2 text-gray-700 flex-1">
                                 <li>
-                                    Resume normal activities right away.
+                                    You can rest for a few minutes while your vitals return to normal.
                                 </li>
                                 <li>
-                                    Results are usually ready within hours or by the next day.
+                                    You may resume regular activities unless your doctor suggests otherwise.
                                 </li>
                                 <li>
-                                    Your doctor will review and discuss the findings with you.
+                                    Results are often available the same day.
                                 </li>
+                                <li>
+                                    Your doctor will review and explain whether your heart showed any signs of stress or reduced blood flow.                                </li>
                             </ul>
                         </div>
                     </div>

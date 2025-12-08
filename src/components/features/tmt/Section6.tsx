@@ -10,36 +10,20 @@ const Section6 = () => {
     };
 const faqs = [
   {
-    question: "What is an echocardiogram (ECHO)?",
-    answer: "An echocardiogram is a heart scan that uses sound waves to create images of your heart. It helps doctors see how the heart chambers and valves are working."
+    question: "How long does the TMT Test take?",
+    answer: "The TMT test typically lasts between 10 to 15 minutes of exercise on the treadmill, although the entire tmt test procedure, including preparation and recovery, may take around 30 to 45 minutes."
   },
   {
-    question: "Is an ECHO test safe?",
-    answer: "Yes, an ECHO is completely safe. It uses harmless sound waves — not radiation — and has no side effects."
+    question: "Can we eat before the TMT Test?",
+    answer: "Yes, you can eat before the TMT Test."
   },
   {
-    question: "Why is an ECHO done?",
-    answer: "Doctors recommend an ECHO to check heart function, detect valve problems, find heart defects, measure pumping strength, or investigate symptoms like chest pain or breathlessness."
+    question: "What happens if I fail a Stress Test?",
+    answer: "If you fail a stress test, it doesn't mean you have heart disease. It just means your heart muscle isn't getting enough blood when you exercise."
   },
   {
-    question: "How long does an ECHO test take?",
-    answer: "A standard echocardiogram usually takes 20–30 minutes. In some cases, it may take slightly longer depending on the patient’s condition."
-  },
-  {
-    question: "Do I need to prepare for an ECHO?",
-    answer: "No special preparation is needed for a routine ECHO. You can eat, drink, and take your regular medicines unless your doctor tells you otherwise."
-  },
-  {
-    question: "Does the ECHO test hurt?",
-    answer: "Not at all. The test is painless. A small probe is moved over your chest to capture heart images."
-  },
-  {
-    question: "When will I get my ECHO report?",
-    answer: "Most clinics provide the ECHO report on the same day. In some cases, the doctor may take extra time to review details before finalizing the report."
-  },
-  {
-    question: "Is ECHO the same as ECG?",
-    answer: "No. ECG measures the electrical activity of your heart, while ECHO shows actual moving images of your heart structure and function."
+    question: "Who should not go for a TMT test?",
+    answer: "People with heart disease, heart failure, or certain heart conditions should not go for a TMT test."
   }
 ];
 

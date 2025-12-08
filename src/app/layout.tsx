@@ -7,13 +7,13 @@ import { ScrollToTop } from "@/components/layout/ScrollToTop";
 import FooterTop from "@/components/layout/FooterTop";
 
 const urbanist = Urbanist({
-    variable: "--font-urbanist",
+    variable: "--font-sans",
     weight: ["400", "500", "600", "700", "800"],
     subsets: ["latin"],
 });
 
 const dmSans = DM_Sans({
-    variable: "--font-dm-sans",
+    variable: "--font-secondary",
     weight: ["400", "500", "600", "700"],
     subsets: ["latin"],
 });

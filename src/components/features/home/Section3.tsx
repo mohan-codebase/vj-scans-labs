@@ -34,7 +34,7 @@ const Section3 = () => {
                         At-Home Tests
                     </h3>
 
-                    <p className="text-gray-600 text-base md:text-lg font-dm-sans font-medium leading-relaxed mb-8 max-w-xl">
+                    <p className="text-gray-600 text-base md:text-lg font-secondary font-medium leading-relaxed mb-8 max-w-xl">
                         We know it&apos;s not always easy to visit a diagnostic centre — especially if you&apos;re unwell, elderly, or have mobility issues. That&apos;s why Anderson Diagnostics & Labs brings our testing services to you! Our friendly, trained professionals will collect your samples right from your doorstep, so you can stay comfortable at home and still get accurate, on-time results you can trust.
                     </p>
 

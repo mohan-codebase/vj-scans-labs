@@ -3,7 +3,7 @@
 
 .section5Container {
     width: 100%;
-    font-family: "Urbanist", sans-serif !important;
+    font-family: var(--font-sans);
 }
 
 .bookingSection {
@@ -23,7 +23,7 @@
 }
 
 .bookingTitle {
-    font-family: "Urbanist", sans-serif;
+    font-family: var(--font-sans);
     font-size: 57px;
     font-weight: 700;
     color: white;
@@ -51,7 +51,7 @@
     border-radius: 12px;
     background: white;
     font-size: 15px;
-    font-family: "Urbanist", sans-serif;
+    font-family: var(--font-sans);
     color: #1E1E1E;
     box-sizing: border-box;
     transition: all 0.3s ease;
@@ -85,7 +85,7 @@
     border-radius: 12px;
     font-size: 16px;
     font-weight: 600;
-    font-family: "Urbanist", sans-serif;
+    font-family: var(--font-sans);
     cursor: pointer;
     transition: all 0.3s ease;
     margin-top: 10px;
@@ -94,7 +94,7 @@
 
 .bookingRight {
     flex: 1;
-    background-image: url('/images/echo/section5/section5.avif');
+    background-image: url('/images/tmt/section5/section5.avif');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
