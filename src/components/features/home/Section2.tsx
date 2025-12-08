@@ -1,5 +1,5 @@
 import React from 'react';
-import { Users, Cpu, FileText, Clock } from 'lucide-react';
+import Image from 'next/image';
 
 const Section2 = () => {
   const features = [
@@ -28,7 +28,7 @@ const Section2 = () => {
           {features.map((feature, index) => (
             <div key={index} className="flex items-center justify-center w-full md:w-1/4 relative">
               <div className="flex items-center gap-4">
-                <img src={feature.icon} alt="icon" />
+                <Image src={feature.icon} alt="icon" width={50} height={50} className="w-auto h-auto" />
                 <span className="text-lg md:text-[17px] font-medium whitespace-nowrap font-dm-sans">
                   {feature.text}
                 </span>

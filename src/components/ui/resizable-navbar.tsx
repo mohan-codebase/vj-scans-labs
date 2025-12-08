@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils"
 
-import { IconMenu2, IconX, IconBrandFacebook, IconBrandInstagram, IconBrandLinkedin, IconMail, IconPhone, IconSearch, IconChevronDown } from "@tabler/icons-react"
+import { IconMenu2, IconX, IconSearch, IconChevronDown } from "@tabler/icons-react"
 import { motion, AnimatePresence, useScroll, useMotionValueEvent } from "motion/react"
 import React, { useRef, useState } from "react"
 const logo = '/images/vj-scans-logo.avif'
@@ -238,7 +238,7 @@ export const MobileNavHeader = ({ children, className }: { children: React.React
   )
 }
 
-export const MobileNavMenu = ({ children, className, isOpen, onClose }: { children: React.ReactNode; className?: string; isOpen: boolean; onClose?: () => void }) => {
+export const MobileNavMenu = ({ children, className, isOpen }: { children: React.ReactNode; className?: string; isOpen: boolean; onClose?: () => void }) => {
   return (
     <AnimatePresence>
       {isOpen && (
