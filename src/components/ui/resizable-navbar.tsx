@@ -44,29 +44,30 @@ export const Navbar = ({ children, className }: { children: React.ReactNode; cla
 
 export const TopBar = () => {
   return (
-    <div className="flex flex-col lg:flex-row max-w-7xl rounded-[8px] mx-auto bg-[#E2F2FF] py-2 px-4 justify-between items-center text-xs text-gray-600 border-b border-gray-100 mt-5 gap-2 lg:gap-0">
-      <div className="flex items-center gap-4 lg:gap-6 lg:pl-10">
+    <div className="flex flex-col lg:flex-row max-w-7xl rounded-[8px] mx-auto bg-[#E2F2FF] py-2 px-4 justify-between items-center text-xs text-gray-600 border-b border-gray-100 mt-2 gap-3 lg:gap-0 lg:mt-5">
+      <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 lg:gap-6 lg:pl-10">
         <span className="flex items-center gap-2"><Image src="/images/topbar/mail.svg" alt="mail" width={16} height={16} /> vjscans@gmail.com</span>
+        <span className="hidden sm:inline text-gray-400">|</span>
         <span className="flex items-center gap-2"><Image src="/images/topbar/phone.svg" alt="phone" width={16} height={18} /> 044-40000000</span>
       </div>
       <div className="flex items-center gap-3 lg:pr-10">
-        <span className="font-medium">Follow us</span>
-        <div className="flex items-center gap-0">
-          <div className=" rounded-full p-1 cursor-pointer flex items-center justify-center w-9 h-9">
+        <span className="font-medium hidden sm:inline">Follow us</span>
+        <div className="flex items-center gap-2">
+          <div className=" rounded-full p-1 cursor-pointer flex items-center justify-center w-8 h-8 hover:bg-white/50 transition-colors">
             <a href="https://www.facebook.com/vjscans" target="_blank"
-              rel="noopener noreferrer"><Image src="/images/topbar/facebook.svg" alt="facebook" width={22} height={22} /></a>
+              rel="noopener noreferrer"><Image src="/images/topbar/facebook.svg" alt="facebook" width={20} height={20} /></a>
           </div>
-          <div className="bg-black rounded-full p-1 cursor-pointer flex items-center justify-center w-6 h-6">
+          <div className="bg-black rounded-full p-1 cursor-pointer flex items-center justify-center w-6 h-6 hover:scale-105 transition-transform">
             <a href="https://x.com/vjscans" target="_blank"
-              rel="noopener noreferrer"><Image src="/images/topbar/x.svg" alt="x" width={22} height={22} /></a>
+              rel="noopener noreferrer"><Image src="/images/topbar/x.svg" alt="x" width={14} height={14} /></a>
           </div>
-          <div className=" rounded-full p-1 cursor-pointer flex items-center justify-center w-8 h-5">
+          <div className=" rounded-full p-1 cursor-pointer flex items-center justify-center w-8 h-8 hover:bg-white/50 transition-colors">
             <a href="https://www.instagram.com/vjscans/" target="_blank"
-              rel="noopener noreferrer"><Image src="/images/topbar/instagram.svg" alt="instagram" width={50} height={50} /></a>
+              rel="noopener noreferrer"><Image src="/images/topbar/instagram.svg" alt="instagram" width={22} height={22} /></a>
           </div>
-          <div className="bg-[#0077B5] rounded-full p-1 cursor-pointer flex items-center justify-center w-6 h-6">
+          <div className="bg-[#0077B5] rounded-full p-1 cursor-pointer flex items-center justify-center w-6 h-6 hover:scale-105 transition-transform">
             <a href="https://www.linkedin.com/company/vjscans/" target="_blank"
-              rel="noopener noreferrer"><Image src="/images/topbar/linkedin.svg" alt="linkedin" width={20} height={20} /></a>
+              rel="noopener noreferrer"><Image src="/images/topbar/linkedin.svg" alt="linkedin" width={12} height={12} /></a>
           </div>
         </div>
       </div>
