@@ -8,6 +8,7 @@ const Section4 = () => {
             id: 1,
             iconSrc: "/images/mriscan/section4/first.svg",
             alt: "First",
+            heading: "Schedule Your Visit",
             text: "The patient lies down on a table that slides into a large and comfortable tube, open at both ends. Next, radio waves are used to scan the patient's body.",
             position: 'left'
         },
@@ -15,6 +16,7 @@ const Section4 = () => {
             id: 2,
             iconSrc: "/images/mriscan/section4/second.svg",
             alt: "Second",
+            heading: "Prepare for the Screening",
             text: "During this time, the machine makes tapping, buzzing and banging sounds. This is normal. We offer patients earplugs to dampen the noise.",
             position: 'right'
         },
@@ -22,6 +24,7 @@ const Section4 = () => {
             id: 3,
             iconSrc: "/images/mriscan/section4/third.svg",
             alt: "Third",
+            heading: "Attend Your Mammogram Session",
             text: "An examination can take 30 to 60 minutes, based on what part is scanned. The patient may have to lie entirely still in batches of 10 minutes to produce accurate scans.",
             position: 'left'
         },
@@ -29,6 +32,7 @@ const Section4 = () => {
             id: 4,
             iconSrc: "/images/mriscan/section4/fourth.svg",
             alt: "Fourth",
+            heading: "Review Your Results",
             text: "In some exams, you may be asked to hold your breath for a brief period. This becomes necessary when breathing or patient motion blurs the images.",
             position: 'right'
         },
@@ -36,6 +40,7 @@ const Section4 = () => {
             id: 5,
             iconSrc: "/images/mriscan/section4/fifth.svg",
             alt: "Fifth",
+            heading: "Take Charge with Early Detection",
             text: "An MRI scan is completely painless and thoroughly safe. There is a microphone in the MRI machine. A patient can use it to speak to the technician at any point during the scan.",
             position: 'left'
         }
@@ -56,7 +61,7 @@ const Section4 = () => {
 
             {/* Header */}
             <h2 className="text-3xl md:text-5xl font-[700] text-center text-[#005999] mb-16 md:mb-24">
-                Steps Involved During the <span className="text-[#F97316]">MRI Scan</span>
+                Your Step-by-Step Guide to <span className="text-[#F97316]">Mammograms</span>
             </h2>
 
             {/* Timeline Section */}
@@ -118,6 +123,9 @@ const Section4 = () => {
                                 {/* Text Content */}
                                 <div className={`mt-4 text-left ${step.position === 'right' ? 'md:text-left' : 'md:text-right'}`}>
                                     <p className="text-gray-700 font-bold md:text-[16px] mt-4 leading-relaxed px-0 md:px-8">
+                                        {step.heading}
+                                    </p>
+                                    <p className="text-gray-700 font-bold md:text-[16px] mt-4 leading-relaxed px-0 md:px-8">
                                         {step.text}
                                     </p>
                                 </div>
@@ -126,35 +134,6 @@ const Section4 = () => {
                     ))}
                 </div>
             </div>
-
-            {/* What not to wear Section */}
-            <div className="flex flex-col md:flex-row gap-12 items-start mt-16">
-                {/* Left Side: Title and Description */}
-                <div className="w-full md:w-1/3">
-                    <h3 className="text-3xl md:text-4xl font-extrabold text-[#005999] mb-4">
-                        What not to wear <br />
-                        during an <span className="text-[#F97316]">MRI scan?</span>
-                    </h3>
-                    <p className="text-gray-700 text-base md:text-lg leading-relaxed mt-6">
-                        After completing the check-in paperwork, patients may need to change into a gown. For safety, all metal objects must be removed before entering the MRI room. These items include:
-                    </p>
-                </div>
-
-                {/* Right Side: Grid of Items */}
-                <div className="w-full md:w-2/3">
-                    <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
-                        {restrictedItems.map((item, index) => (
-                            <div key={index} className="flex items-center bg-[linear-gradient(135deg,#F5F5F5_12.57%,#E5E5E5_86.98%)] rounded-[30px] p-2 pr-0 shadow-sm">
-                                <div className="flex-shrink-0 w-10 h-10  rounded-full flex items-center justify-center mr-3">
-                                    <Image src={item.icon} alt={item.name} width={20} height={20} className="w-10 h-10" />
-                                </div>
-                                <span className="text-[#005999] font-medium text-sm md:text-base">{item.name}</span>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </div>
-
         </section>
     );
 };
