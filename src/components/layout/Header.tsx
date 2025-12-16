@@ -47,6 +47,10 @@ export function Header() {
       link: "/ourbranches",
     },
     {
+        name:"Our Facility",
+        link:"/our-facility"
+    },
+    {
       name: "About us",
       link: "/aboutus",
     }
