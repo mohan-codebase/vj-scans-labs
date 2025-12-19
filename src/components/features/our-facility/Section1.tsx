@@ -7,28 +7,258 @@ import { motion, AnimatePresence } from 'framer-motion' // Corrected import for 
 const landscapeSlides = [
     {
         id: 1,
-        image: "/images/our-fecility/vj-scans-img-1.avif",
-        mobileImage: "/images/our-fecility/vj-scans-img-1.avif",
+        image: "/images/our-fecility/facility-landscape-01.avif",
+        mobileImage: "/images/our-fecility/facility-landscape-01.avif",
         bgColor: "bg-gradient-to-br from-[#E2F2FF] via-[#EBF7FF] to-[#FFF0D9]"
     },
     {
         id: 2,
-        image: "/images/our-fecility/vj-scans-img-2.avif",
-        mobileImage: "/images/our-fecility/vj-scans-img-2.avif",
+        image: "/images/our-fecility/facility-landscape-02.avif",
+        mobileImage: "/images/our-fecility/facility-landscape-02.avif",
+        bgColor: "bg-gradient-to-br from-[#E2F2FF] via-[#EBF7FF] to-[#FFF0D9]"
+    },
+    {
+        id: 3,
+        image: "/images/our-fecility/facility-landscape-03.avif",
+        mobileImage: "/images/our-fecility/facility-landscape-03.avif",
+        bgColor: "bg-gradient-to-br from-[#E2F2FF] via-[#EBF7FF] to-[#FFF0D9]"
+    },
+    {
+        id: 4,
+        image: "/images/our-fecility/facility-landscape-04.avif",
+        mobileImage: "/images/our-fecility/facility-landscape-04.avif",
+        bgColor: "bg-gradient-to-br from-[#E2F2FF] via-[#EBF7FF] to-[#FFF0D9]"
+    },
+    {
+        id: 5,
+        image: "/images/our-fecility/facility-landscape-05.avif",
+        mobileImage: "/images/our-fecility/facility-landscape-05.avif",
+        bgColor: "bg-gradient-to-br from-[#E2F2FF] via-[#EBF7FF] to-[#FFF0D9]"
+    },
+    {
+        id: 6,
+        image: "/images/our-fecility/facility-landscape-06.avif",
+        mobileImage: "/images/our-fecility/facility-landscape-06.avif",
+        bgColor: "bg-gradient-to-br from-[#E2F2FF] via-[#EBF7FF] to-[#FFF0D9]"
+    },
+    {
+        id: 7,
+        image: "/images/our-fecility/facility-landscape-07.avif",
+        mobileImage: "/images/our-fecility/facility-landscape-07.avif",
+        bgColor: "bg-gradient-to-br from-[#E2F2FF] via-[#EBF7FF] to-[#FFF0D9]"
+    },
+    {
+        id: 8,
+        image: "/images/our-fecility/facility-landscape-08.avif",
+        mobileImage: "/images/our-fecility/facility-landscape-08.avif",
+        bgColor: "bg-gradient-to-br from-[#E2F2FF] via-[#EBF7FF] to-[#FFF0D9]"
+    },
+    {
+        id: 9,
+        image: "/images/our-fecility/facility-landscape-09.avif",
+        mobileImage: "/images/our-fecility/facility-landscape-09.avif",
+        bgColor: "bg-gradient-to-br from-[#E2F2FF] via-[#EBF7FF] to-[#FFF0D9]"
+    },
+    {
+        id: 10,
+        image: "/images/our-fecility/facility-landscape-10.avif",
+        mobileImage: "/images/our-fecility/facility-landscape-10.avif",
+        bgColor: "bg-gradient-to-br from-[#E2F2FF] via-[#EBF7FF] to-[#FFF0D9]"
+    },
+    {
+        id: 11,
+        image: "/images/our-fecility/facility-landscape-11.avif",
+        mobileImage: "/images/our-fecility/facility-landscape-11.avif",
+        bgColor: "bg-gradient-to-br from-[#E2F2FF] via-[#EBF7FF] to-[#FFF0D9]"
+    },
+    {
+        id: 12,
+        image: "/images/our-fecility/facility-landscape-12.avif",
+        mobileImage: "/images/our-fecility/facility-landscape-12.avif",
+        bgColor: "bg-gradient-to-br from-[#E2F2FF] via-[#EBF7FF] to-[#FFF0D9]"
+    },
+    {
+        id: 13,
+        image: "/images/our-fecility/facility-landscape-13.avif",
+        mobileImage: "/images/our-fecility/facility-landscape-13.avif",
+        bgColor: "bg-gradient-to-br from-[#E2F2FF] via-[#EBF7FF] to-[#FFF0D9]"
+    },
+    {
+        id: 14,
+        image: "/images/our-fecility/facility-landscape-14.avif",
+        mobileImage: "/images/our-fecility/facility-landscape-14.avif",
+        bgColor: "bg-gradient-to-br from-[#E2F2FF] via-[#EBF7FF] to-[#FFF0D9]"
+    },
+    {
+        id: 15,
+        image: "/images/our-fecility/facility-landscape-15.avif",
+        mobileImage: "/images/our-fecility/facility-landscape-15.avif",
+        bgColor: "bg-gradient-to-br from-[#E2F2FF] via-[#EBF7FF] to-[#FFF0D9]"
+    },
+    {
+        id: 16,
+        image: "/images/our-fecility/facility-landscape-16.avif",
+        mobileImage: "/images/our-fecility/facility-landscape-16.avif",
+        bgColor: "bg-gradient-to-br from-[#E2F2FF] via-[#EBF7FF] to-[#FFF0D9]"
+    },
+    {
+        id: 17,
+        image: "/images/our-fecility/facility-landscape-17.avif",
+        mobileImage: "/images/our-fecility/facility-landscape-17.avif",
+        bgColor: "bg-gradient-to-br from-[#E2F2FF] via-[#EBF7FF] to-[#FFF0D9]"
+    },
+    {
+        id: 18,
+        image: "/images/our-fecility/facility-landscape-18.avif",
+        mobileImage: "/images/our-fecility/facility-landscape-18.avif",
+        bgColor: "bg-gradient-to-br from-[#E2F2FF] via-[#EBF7FF] to-[#FFF0D9]"
+    },
+    {
+        id: 19,
+        image: "/images/our-fecility/facility-landscape-19.avif",
+        mobileImage: "/images/our-fecility/facility-landscape-19.avif",
+        bgColor: "bg-gradient-to-br from-[#E2F2FF] via-[#EBF7FF] to-[#FFF0D9]"
+    },
+    {
+        id: 20,
+        image: "/images/our-fecility/facility-landscape-20.avif",
+        mobileImage: "/images/our-fecility/facility-landscape-20.avif",
+        bgColor: "bg-gradient-to-br from-[#E2F2FF] via-[#EBF7FF] to-[#FFF0D9]"
+    },
+    {
+        id: 21,
+        image: "/images/our-fecility/facility-landscape-21.avif",
+        mobileImage: "/images/our-fecility/facility-landscape-21.avif",
+        bgColor: "bg-gradient-to-br from-[#E2F2FF] via-[#EBF7FF] to-[#FFF0D9]"
+    },
+    {
+        id: 22,
+        image: "/images/our-fecility/facility-landscape-22.avif",
+        mobileImage: "/images/our-fecility/facility-landscape-22.avif",
+        bgColor: "bg-gradient-to-br from-[#E2F2FF] via-[#EBF7FF] to-[#FFF0D9]"
+    },
+    {
+        id: 23,
+        image: "/images/our-fecility/facility-landscape-23.avif",
+        mobileImage: "/images/our-fecility/facility-landscape-23.avif",
+        bgColor: "bg-gradient-to-br from-[#E2F2FF] via-[#EBF7FF] to-[#FFF0D9]"
+    },
+    {
+        id: 24,
+        image: "/images/our-fecility/facility-landscape-24.avif",
+        mobileImage: "/images/our-fecility/facility-landscape-24.avif",
+        bgColor: "bg-gradient-to-br from-[#E2F2FF] via-[#EBF7FF] to-[#FFF0D9]"
+    },
+    {
+        id: 25,
+        image: "/images/our-fecility/facility-landscape-25.avif",
+        mobileImage: "/images/our-fecility/facility-landscape-25.avif",
+        bgColor: "bg-gradient-to-br from-[#E2F2FF] via-[#EBF7FF] to-[#FFF0D9]"
+    },
+    {
+        id: 26,
+        image: "/images/our-fecility/facility-landscape-26.avif",
+        mobileImage: "/images/our-fecility/facility-landscape-26.avif",
+        bgColor: "bg-gradient-to-br from-[#E2F2FF] via-[#EBF7FF] to-[#FFF0D9]"
     }
 ]
 
 const portraitSlides = [
     {
         id: 1,
-        image: "/images/our-fecility/vj-scans-img-3.avif",
-        mobileImage: "/images/our-fecility/vj-scans-img-3.avif",
+        image: "/images/our-fecility/facility-portrait-01.avif",
+        mobileImage: "/images/our-fecility/facility-portrait-01.avif",
         bgColor: "bg-gradient-to-br from-[#E2F2FF] via-[#EBF7FF] to-[#FFF0D9]"
     },
     {
         id: 2,
-        image: "/images/our-fecility/vj-scans-img-4.avif",
-        mobileImage: "/images/our-fecility/vj-scans-img-4.avif",
+        image: "/images/our-fecility/facility-portrait-02.avif",
+        mobileImage: "/images/our-fecility/facility-portrait-02.avif",
+        bgColor: "bg-gradient-to-br from-[#E2F2FF] via-[#EBF7FF] to-[#FFF0D9]"
+    },
+    {
+        id: 3,
+        image: "/images/our-fecility/facility-portrait-03.avif",
+        mobileImage: "/images/our-fecility/facility-portrait-03.avif",
+        bgColor: "bg-gradient-to-br from-[#E2F2FF] via-[#EBF7FF] to-[#FFF0D9]"
+    },
+    {
+        id: 4,
+        image: "/images/our-fecility/facility-portrait-04.avif",
+        mobileImage: "/images/our-fecility/facility-portrait-04.avif",
+        bgColor: "bg-gradient-to-br from-[#E2F2FF] via-[#EBF7FF] to-[#FFF0D9]"
+    },
+    {
+        id: 5,
+        image: "/images/our-fecility/facility-portrait-05.avif",
+        mobileImage: "/images/our-fecility/facility-portrait-05.avif",
+        bgColor: "bg-gradient-to-br from-[#E2F2FF] via-[#EBF7FF] to-[#FFF0D9]"
+    },
+    {
+        id: 6,
+        image: "/images/our-fecility/facility-portrait-06.avif",
+        mobileImage: "/images/our-fecility/facility-portrait-06.avif",
+        bgColor: "bg-gradient-to-br from-[#E2F2FF] via-[#EBF7FF] to-[#FFF0D9]"
+    },
+    {
+        id: 7,
+        image: "/images/our-fecility/facility-portrait-07.avif",
+        mobileImage: "/images/our-fecility/facility-portrait-07.avif",
+        bgColor: "bg-gradient-to-br from-[#E2F2FF] via-[#EBF7FF] to-[#FFF0D9]"
+    },
+    {
+        id: 8,
+        image: "/images/our-fecility/facility-portrait-08.avif",
+        mobileImage: "/images/our-fecility/facility-portrait-08.avif",
+        bgColor: "bg-gradient-to-br from-[#E2F2FF] via-[#EBF7FF] to-[#FFF0D9]"
+    },
+    {
+        id: 9,
+        image: "/images/our-fecility/facility-portrait-09.avif",
+        mobileImage: "/images/our-fecility/facility-portrait-09.avif",
+        bgColor: "bg-gradient-to-br from-[#E2F2FF] via-[#EBF7FF] to-[#FFF0D9]"
+    },
+    {
+        id: 10,
+        image: "/images/our-fecility/facility-portrait-10.avif",
+        mobileImage: "/images/our-fecility/facility-portrait-10.avif",
+        bgColor: "bg-gradient-to-br from-[#E2F2FF] via-[#EBF7FF] to-[#FFF0D9]"
+    },
+    {
+        id: 11,
+        image: "/images/our-fecility/facility-portrait-11.avif",
+        mobileImage: "/images/our-fecility/facility-portrait-11.avif",
+        bgColor: "bg-gradient-to-br from-[#E2F2FF] via-[#EBF7FF] to-[#FFF0D9]"
+    },
+    {
+        id: 12,
+        image: "/images/our-fecility/facility-portrait-12.avif",
+        mobileImage: "/images/our-fecility/facility-portrait-12.avif",
+        bgColor: "bg-gradient-to-br from-[#E2F2FF] via-[#EBF7FF] to-[#FFF0D9]"
+    },
+    {
+        id: 13,
+        image: "/images/our-fecility/facility-portrait-13.avif",
+        mobileImage: "/images/our-fecility/facility-portrait-13.avif",
+        bgColor: "bg-gradient-to-br from-[#E2F2FF] via-[#EBF7FF] to-[#FFF0D9]"
+    },
+    {
+        id: 14,
+        image: "/images/our-fecility/facility-portrait-14.avif",
+        mobileImage: "/images/our-fecility/facility-portrait-14.avif",
+        bgColor: "bg-gradient-to-br from-[#E2F2FF] via-[#EBF7FF] to-[#FFF0D9]"
+    },
+    {
+        id: 15,
+        image: "/images/our-fecility/facility-portrait-15.avif",
+        mobileImage: "/images/our-fecility/facility-portrait-15.avif",
+        bgColor: "bg-gradient-to-br from-[#E2F2FF] via-[#EBF7FF] to-[#FFF0D9]"
+    },
+    {
+        id: 16,
+        image: "/images/our-fecility/facility-portrait-16.avif",
+        mobileImage: "/images/our-fecility/facility-portrait-16.avif",
+        bgColor: "bg-gradient-to-br from-[#E2F2FF] via-[#EBF7FF] to-[#FFF0D9]"
     }
 ]
 

@@ -1,0 +1,216 @@
+{
+  "landscape": [
+    {
+      "id": 1,
+      "image": "/images/our-fecility/facility-landscape-01.avif",
+      "mobileImage": "/images/our-fecility/facility-landscape-01.avif"
+    },
+    {
+      "id": 2,
+      "image": "/images/our-fecility/facility-landscape-02.avif",
+      "mobileImage": "/images/our-fecility/facility-landscape-02.avif"
+    },
+    {
+      "id": 3,
+      "image": "/images/our-fecility/facility-landscape-03.avif",
+      "mobileImage": "/images/our-fecility/facility-landscape-03.avif"
+    },
+    {
+      "id": 4,
+      "image": "/images/our-fecility/facility-landscape-04.avif",
+      "mobileImage": "/images/our-fecility/facility-landscape-04.avif"
+    },
+    {
+      "id": 5,
+      "image": "/images/our-fecility/facility-landscape-05.avif",
+      "mobileImage": "/images/our-fecility/facility-landscape-05.avif"
+    },
+    {
+      "id": 6,
+      "image": "/images/our-fecility/facility-landscape-06.avif",
+      "mobileImage": "/images/our-fecility/facility-landscape-06.avif"
+    },
+    {
+      "id": 7,
+      "image": "/images/our-fecility/facility-landscape-07.avif",
+      "mobileImage": "/images/our-fecility/facility-landscape-07.avif"
+    },
+    {
+      "id": 8,
+      "image": "/images/our-fecility/facility-landscape-08.avif",
+      "mobileImage": "/images/our-fecility/facility-landscape-08.avif"
+    },
+    {
+      "id": 9,
+      "image": "/images/our-fecility/facility-landscape-09.avif",
+      "mobileImage": "/images/our-fecility/facility-landscape-09.avif"
+    },
+    {
+      "id": 10,
+      "image": "/images/our-fecility/facility-landscape-10.avif",
+      "mobileImage": "/images/our-fecility/facility-landscape-10.avif"
+    },
+    {
+      "id": 11,
+      "image": "/images/our-fecility/facility-landscape-11.avif",
+      "mobileImage": "/images/our-fecility/facility-landscape-11.avif"
+    },
+    {
+      "id": 12,
+      "image": "/images/our-fecility/facility-landscape-12.avif",
+      "mobileImage": "/images/our-fecility/facility-landscape-12.avif"
+    },
+    {
+      "id": 13,
+      "image": "/images/our-fecility/facility-landscape-13.avif",
+      "mobileImage": "/images/our-fecility/facility-landscape-13.avif"
+    },
+    {
+      "id": 14,
+      "image": "/images/our-fecility/facility-landscape-14.avif",
+      "mobileImage": "/images/our-fecility/facility-landscape-14.avif"
+    },
+    {
+      "id": 15,
+      "image": "/images/our-fecility/facility-landscape-15.avif",
+      "mobileImage": "/images/our-fecility/facility-landscape-15.avif"
+    },
+    {
+      "id": 16,
+      "image": "/images/our-fecility/facility-landscape-16.avif",
+      "mobileImage": "/images/our-fecility/facility-landscape-16.avif"
+    },
+    {
+      "id": 17,
+      "image": "/images/our-fecility/facility-landscape-17.avif",
+      "mobileImage": "/images/our-fecility/facility-landscape-17.avif"
+    },
+    {
+      "id": 18,
+      "image": "/images/our-fecility/facility-landscape-18.avif",
+      "mobileImage": "/images/our-fecility/facility-landscape-18.avif"
+    },
+    {
+      "id": 19,
+      "image": "/images/our-fecility/facility-landscape-19.avif",
+      "mobileImage": "/images/our-fecility/facility-landscape-19.avif"
+    },
+    {
+      "id": 20,
+      "image": "/images/our-fecility/facility-landscape-20.avif",
+      "mobileImage": "/images/our-fecility/facility-landscape-20.avif"
+    },
+    {
+      "id": 21,
+      "image": "/images/our-fecility/facility-landscape-21.avif",
+      "mobileImage": "/images/our-fecility/facility-landscape-21.avif"
+    },
+    {
+      "id": 22,
+      "image": "/images/our-fecility/facility-landscape-22.avif",
+      "mobileImage": "/images/our-fecility/facility-landscape-22.avif"
+    },
+    {
+      "id": 23,
+      "image": "/images/our-fecility/facility-landscape-23.avif",
+      "mobileImage": "/images/our-fecility/facility-landscape-23.avif"
+    },
+    {
+      "id": 24,
+      "image": "/images/our-fecility/facility-landscape-24.avif",
+      "mobileImage": "/images/our-fecility/facility-landscape-24.avif"
+    },
+    {
+      "id": 25,
+      "image": "/images/our-fecility/facility-landscape-25.avif",
+      "mobileImage": "/images/our-fecility/facility-landscape-25.avif"
+    },
+    {
+      "id": 26,
+      "image": "/images/our-fecility/facility-landscape-26.avif",
+      "mobileImage": "/images/our-fecility/facility-landscape-26.avif"
+    }
+  ],
+  "portrait": [
+    {
+      "id": 1,
+      "image": "/images/our-fecility/facility-portrait-01.avif",
+      "mobileImage": "/images/our-fecility/facility-portrait-01.avif"
+    },
+    {
+      "id": 2,
+      "image": "/images/our-fecility/facility-portrait-02.avif",
+      "mobileImage": "/images/our-fecility/facility-portrait-02.avif"
+    },
+    {
+      "id": 3,
+      "image": "/images/our-fecility/facility-portrait-03.avif",
+      "mobileImage": "/images/our-fecility/facility-portrait-03.avif"
+    },
+    {
+      "id": 4,
+      "image": "/images/our-fecility/facility-portrait-04.avif",
+      "mobileImage": "/images/our-fecility/facility-portrait-04.avif"
+    },
+    {
+      "id": 5,
+      "image": "/images/our-fecility/facility-portrait-05.avif",
+      "mobileImage": "/images/our-fecility/facility-portrait-05.avif"
+    },
+    {
+      "id": 6,
+      "image": "/images/our-fecility/facility-portrait-06.avif",
+      "mobileImage": "/images/our-fecility/facility-portrait-06.avif"
+    },
+    {
+      "id": 7,
+      "image": "/images/our-fecility/facility-portrait-07.avif",
+      "mobileImage": "/images/our-fecility/facility-portrait-07.avif"
+    },
+    {
+      "id": 8,
+      "image": "/images/our-fecility/facility-portrait-08.avif",
+      "mobileImage": "/images/our-fecility/facility-portrait-08.avif"
+    },
+    {
+      "id": 9,
+      "image": "/images/our-fecility/facility-portrait-09.avif",
+      "mobileImage": "/images/our-fecility/facility-portrait-09.avif"
+    },
+    {
+      "id": 10,
+      "image": "/images/our-fecility/facility-portrait-10.avif",
+      "mobileImage": "/images/our-fecility/facility-portrait-10.avif"
+    },
+    {
+      "id": 11,
+      "image": "/images/our-fecility/facility-portrait-11.avif",
+      "mobileImage": "/images/our-fecility/facility-portrait-11.avif"
+    },
+    {
+      "id": 12,
+      "image": "/images/our-fecility/facility-portrait-12.avif",
+      "mobileImage": "/images/our-fecility/facility-portrait-12.avif"
+    },
+    {
+      "id": 13,
+      "image": "/images/our-fecility/facility-portrait-13.avif",
+      "mobileImage": "/images/our-fecility/facility-portrait-13.avif"
+    },
+    {
+      "id": 14,
+      "image": "/images/our-fecility/facility-portrait-14.avif",
+      "mobileImage": "/images/our-fecility/facility-portrait-14.avif"
+    },
+    {
+      "id": 15,
+      "image": "/images/our-fecility/facility-portrait-15.avif",
+      "mobileImage": "/images/our-fecility/facility-portrait-15.avif"
+    },
+    {
+      "id": 16,
+      "image": "/images/our-fecility/facility-portrait-16.avif",
+      "mobileImage": "/images/our-fecility/facility-portrait-16.avif"
+    }
+  ]
+}

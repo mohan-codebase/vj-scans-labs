@@ -52,7 +52,7 @@ const Section2 = () => {
 
     // Data for Top Tabs 2-5
     const topTabContent = [
-        { name: 'About the scan' }, // Special Render
+        { name: 'About the scan', image: section2banner }, // Special Render
         {
             name: 'List of Parameters',
             title: 'Comprehensive <span class="text-[#F98D1B]">Parameters</span>',
@@ -151,8 +151,8 @@ const Section2 = () => {
                                         key={index}
                                         onClick={() => setActiveSidebarTab(index)}
                                         className={`w-full text-left px-6 py-4 rounded-xl text-lg font-medium transition-all duration-300 ${activeSidebarTab === index
-                                                ? 'bg-[#0961A1] text-white shadow-lg'
-                                                : 'bg-white text-[#4B5563] hover:bg-gray-50'
+                                            ? 'bg-[#0961A1] text-white shadow-lg'
+                                            : 'bg-white text-[#4B5563] hover:bg-gray-50'
                                             }`}
                                     >
                                         {tab.name}
