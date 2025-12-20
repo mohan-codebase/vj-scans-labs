@@ -2,7 +2,6 @@
 
 import React from 'react';
 import Image from 'next/image';
-import './Home.css';
 
 const categories = [
     { name: 'Men', icon: '/images/section-5/Men.svg' },
@@ -15,7 +14,7 @@ const categories = [
 
 const Section5 = () => {
     return (
-        <div className="w-full max-w-[1300px] mx-auto px-5 mt-20 mb-20">
+        <div className="w-full max-w-[1400px] mx-auto px-5 mt-20 mb-20">
             <div className="flex justify-between items-center mb-8">
                 <h2 className="text-[26px] font-[800] text-[#0961A1] md:text-[48px]">Book a Test by Category</h2>
                 <button className="bg-[#005596] text-white px-5 py-2 rounded-lg font-medium text-sm hover:bg-[#00447a] transition-colors duration-300">

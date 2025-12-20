@@ -1,10 +1,11 @@
-import type { Metadata } from "next";
 import { Urbanist, DM_Sans, Dancing_Script } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { ScrollToTop } from "@/components/layout/ScrollToTop";
 import FooterTop from "@/components/layout/FooterTop";
+import { Metadata } from "next";
+import { seoDatas, SITE_NAME, SITE_URL } from "@/lib/seo";
 
 const urbanist = Urbanist({
     variable: "--font-sans",
@@ -23,23 +24,29 @@ const dancingScript = Dancing_Script({
     subsets: ["latin"],
 });
 
+const seo = seoDatas.home
+
 export const metadata: Metadata = {
-    metadataBase: new URL("https://vj-scans-labs.vercel.app"),
-    title: "VJ Scans & Labs",
-    description: "Affordable & accurate scanning, blood tests, & lab services with fast reports. Book appointments instantly at VJ Scans & Labs, in Chennai.",
+    metadataBase: new URL(SITE_URL),
+    title: seo.title,
+    description: seo.description,
+
     openGraph: {
-        title: "VJ Scans & Labs",
-        description: 'Affordable & accurate scanning, blood tests, & lab services with fast reports. Book appointments instantly at VJ Scans & Labs, in Chennai.',
-        url: 'https://vj-scans-labs.vercel.app/',
-        siteName: 'VJ Scans & Labs',
-        images: [{
-            url: '/ogGraph.png',
-            width: '1024',
-            height: '1024',
-            alt: 'vj-scans-logo image'
-        }]
+        title: seo.title,
+        description: seo.description,
+        url: seo.url,
+        siteName: SITE_NAME,
+        images: [
+            {
+                url: seo.image,
+                width: 1200,
+                height: 630,
+                alt:"VJ Scans & Labs"
+            },
+        ],
+        type:"website"
     }
-};
+}
 
 export default function RootLayout({
     children,

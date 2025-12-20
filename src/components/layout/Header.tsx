@@ -10,7 +10,6 @@ import {
   MobileNavToggle,
   MobileNavMenu,
   TopBar,
-  NavbarSearch,
 } from "@/components/ui/resizable-navbar";
 import { useState } from "react";
 
@@ -40,7 +39,9 @@ export function Header() {
     },
     {
       name: "Packages",
-      link: "/packages",
+      link: "/#",
+      // link: "/packages"
+
     },
     {
       name: "Our Branches",
@@ -62,13 +63,12 @@ export function Header() {
   return (
     <>
       <TopBar />
-      <Navbar className="max-w-7xl mx-auto rounded-2xl mt-3 ">
+      <Navbar className="max-w-[1400px] mx-auto rounded-2xl mt-3 ">
         {/* Desktop Navigation */}
         <NavBody className="">
           <NavbarLogo />
           <NavItems items={navItems} className="bg-[linear-gradient(90deg,#ffebd6,#d1ebff)] p-1" />
           <div className="flex items-center gap-4">
-            <NavbarSearch />
             <NavbarButton href="#" className="">Book Appointment</NavbarButton>
           </div>
         </NavBody>
@@ -150,7 +150,7 @@ export function Header() {
               <NavbarButton
                 href="#"
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="vj-btn-primary">
+                className="vj-btn-primary font-sans">
                 Book Appointment
               </NavbarButton>
             </div>

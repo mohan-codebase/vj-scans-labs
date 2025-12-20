@@ -18,7 +18,7 @@ const Section6 = () => {
     const secondRowSpecialisations = specialisations.slice(5);
 
     return (
-        <section className="bg-[linear-gradient(180deg,_#FFEDDA_0%,_rgba(255,_227,_198,_0)_100%)] border border-[1px solid #CCCCCC] py-16 px-4 md:px-8 rounded-4xl text-center max-w-7xl mx-auto">
+        <section className="bg-[linear-gradient(180deg,_#FFEDDA_0%,_rgba(255,_227,_198,_0)_100%)] border border-[1px solid #CCCCCC] py-16 px-4 md:px-8 rounded-4xl text-center max-w-[1400px] mx-auto">
             <h2 className="text-[#0961A1] text-[36px] md:text-[40px] font-[800] mb-8 md:mb-12">
                 Our Specialisations
             </h2>

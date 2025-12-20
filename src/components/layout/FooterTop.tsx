@@ -7,7 +7,7 @@ import Image from 'next/image';
 const FooterTop = () => {
     return (
         <div className="w-full font-sans bg-linear-to-r from-[#0961A1] to-[#0B76BC]">
-            <div className="px-[15px] py-[20px] flex flex-col gap-[25px] max-w-[1300px] mx-auto md:px-[30px] md:gap-[30px] lg:flex-row lg:justify-between lg:items-center lg:px-[50px] lg:py-[40px] lg:gap-[40px]">
+            <div className="px-[15px] py-[20px] flex flex-col gap-[25px] max-w-[1400px] mx-auto md:px-[30px] md:gap-[30px] lg:flex-row lg:justify-between lg:items-center lg:px-[50px] lg:py-[40px] lg:gap-[40px]">
                 <div className="flex items-center flex-1 w-full justify-center lg:w-auto lg:justify-start">
                     <div className="flex flex-col items-center gap-[20px] w-full md:flex-row md:gap-[40px] lg:gap-[50px]">
                         <div className="flex items-center gap-[15px] w-full justify-center lg:w-auto lg:justify-start">
@@ -16,7 +16,7 @@ const FooterTop = () => {
                             </div>
                             <div className="flex flex-col gap-[2px] items-center lg:items-start">
                                 <p className="text-white font-medium leading-[1.2] text-[12px] md:text-[13px] lg:text-[14px]">Book a Home Visit</p>
-                                <h3 className="text-white font-bold leading-[1.2] text-[15px] md:text-[16px] lg:text-[18px]">044-40000000</h3>
+                                <h3 className="text-white font-bold leading-[1.2] text-[15px] md:text-[16px] lg:text-[18px]">+91 958 5335 552</h3>
                             </div>
                         </div>
 
@@ -26,7 +26,7 @@ const FooterTop = () => {
                             </div>
                             <div className="flex flex-col gap-[2px] items-center lg:items-start">
                                 <p className="text-white font-medium leading-[1.2] text-[12px] md:text-[13px] lg:text-[14px]">Customer Care</p>
-                                <h3 className="text-white font-bold leading-[1.2] text-[15px] md:text-[16px] lg:text-[18px]">044-40000000</h3>
+                                <h3 className="text-white font-bold leading-[1.2] text-[15px] md:text-[16px] lg:text-[18px]">+91 958 5335 552</h3>
                             </div>
                         </div>
                     </div>

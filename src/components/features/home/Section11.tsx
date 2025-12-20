@@ -29,8 +29,8 @@ const Section11 = () => {
     ];
 
     return (
-        <section className="bg-[#F0F8FF] py-16 px-4 md:px-8 lg:px-16">
-            <div className="max-w-4xl mx-auto">
+        <section className="bg-[#F0F8FF] py-16 px-4 md:px-8 md:my-18 lg:px-16 font-sans">
+            <div className="max-w-5xl mx-auto">
                 <h2 className="text-3xl md:text-[40px] font-bold text-[#0961A1] text-center mb-12">
                     Frequently Asked Questions
                 </h2>

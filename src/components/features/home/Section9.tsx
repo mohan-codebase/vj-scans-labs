@@ -69,7 +69,7 @@ const Section9 = () => {
                     </p>
                 </div>
 
-                <div className="relative max-w-7xl mx-auto px-4 md:px-8">
+                <div className="relative max-w-[1400px] mx-auto px-4 md:px-8">
                     <div className="overflow-hidden py-8" ref={emblaRef}>
                         <div className="flex -ml-4">
                             {testimonials.map((testimonial, index) => (

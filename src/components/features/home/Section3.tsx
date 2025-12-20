@@ -4,7 +4,7 @@ import { ArrowUpRight } from 'lucide-react';
 
 const Section3 = () => {
     return (
-        <section className="w-full max-w-7xl mx-auto px-4 md:px-6 py-12 md:py-20">
+        <section className="w-full max-w-[1400px] mx-auto px-4 md:px-6 py-12 md:py-20">
             <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-20">
                 {/* Left Side - Image */}
                 <div className="w-full lg:w-1/2 relative">

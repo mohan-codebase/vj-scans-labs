@@ -44,11 +44,11 @@ export const Navbar = ({ children, className }: { children: React.ReactNode; cla
 
 export const TopBar = () => {
   return (
-    <div className="flex flex-col lg:flex-row max-w-7xl rounded-[8px] mx-auto bg-[#E2F2FF] py-2 px-4 justify-between items-center text-xs text-gray-600 border-b border-gray-100 mt-2 gap-3 lg:gap-0 lg:mt-5">
+    <div className="flex flex-col lg:flex-row max-w-[1400px] rounded-[8px] mx-auto bg-[#E2F2FF] py-2 px-4 justify-between items-center text-xs text-gray-600 border-b border-gray-100 mt-2 gap-3 lg:gap-0 lg:mt-5">
       <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 lg:gap-6 lg:pl-10">
         <span className="flex items-center gap-2"><Image src="/images/topbar/mail.svg" alt="mail" width={16} height={16} /> vjscans@gmail.com</span>
         <span className="hidden sm:inline text-gray-400">|</span>
-        <span className="flex items-center gap-2"><Image src="/images/topbar/phone.svg" alt="phone" width={16} height={18} /> 044-40000000</span>
+        <span className="flex items-center gap-2"><Image src="/images/topbar/phone.svg" alt="phone" width={16} height={18} /> 95853 35552</span>
       </div>
       <div className="flex items-center gap-3 lg:pr-10">
         <span className="font-medium hidden sm:inline">Follow us</span>
@@ -75,19 +75,12 @@ export const TopBar = () => {
   )
 }
 
-export const NavbarSearch = () => {
-  return (
-    <div className="p-2 rounded-full border border-[#0961A1] text-[#0961A1] cursor-pointer hover:bg-blue-50 transition-colors">
-      <IconSearch size={20} />
-    </div>
-  )
-}
 
 export const NavBody = ({ children, className }: { children: React.ReactNode; className?: string }) => {
   return (
     <motion.div
       className={cn(
-        "relative z-[60] mx-auto hidden w-full max-w-7xl bg-[#fff] flex-row items-center justify-between self-start rounded-[14px] px-4 py-4 lg:flex  ",
+        "relative z-[60] mx-auto hidden w-full max-w-[1400px] bg-[#fff] flex-row items-center justify-between self-start rounded-[14px] px-4 py-4 lg:flex  ",
         className,
       )}
     >
@@ -135,7 +128,7 @@ export const NavItems = ({ items, className }: { items: { name: string; link: st
             style={{
               fontFamily: "'DM Sans', sans-serif",
               color: '#0961A1',
-              fontWeight: 600,
+              fontWeight: 800,
               fontSize: '15px'
             }}
           >
@@ -163,14 +156,14 @@ export const NavItems = ({ items, className }: { items: { name: string; link: st
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: 10 }}
                 transition={{ duration: 0.2 }}
-                className="absolute left-0 top-full mt-2 w-48 rounded-xl bg-[linear-gradient(90deg,#ffebd6,#d1ebff)] p-2 shadow-xl border border-gray-100 z-50"
+                className="absolute left-0 top-full mt-2 w-48 rounded-[20px] bg-[linear-gradient(90deg,#ffebd6,#d1ebff)] p-2 shadow-xl border border-gray-100 z-50"
                 onMouseLeave={() => setHoveredSubItem(null)}
               >
                 {item.subItems.map((subItem: { name: string; link: string }, subIdx: number) => (
                   <Link
                     key={`sub-${subIdx}`}
                     href={subItem.link}
-                    className="relative block rounded-lg px-4 py-2 text-sm text-gray-700 transition-colors"
+                    className="relative block rounded-lg px-4 py-2 text-sm font-bold transition-colors text-[#0961A1]"
                     onMouseEnter={() => setHoveredSubItem(subIdx)}
                   >
                     {hoveredSubItem === subIdx && (
@@ -295,7 +288,7 @@ export const NavbarButton = ({
   className?: string;
 }) => {
   const baseStyles =
-    "px-4 py-2 rounded-[8px] bg-white button bg-[linear-gradient(84.92deg,#F98D1B_34.11%,#FFC180_105.58%)] text-white text-sm font-bold relative cursor-pointer hover:-translate-y-0.5 transition duration-200 inline-block text-center shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+    "px-4 py-2 rounded-[8px] bg-white button bg-[linear-gradient(84.92deg,#F98D1B_34.11%,#FFC180_105.58%)] text-white text-sm font-bold font-sans relative cursor-pointer hover:-translate-y-0.5 transition duration-200 inline-block text-center shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
 
   return (
     <Link

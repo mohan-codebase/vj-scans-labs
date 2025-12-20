@@ -7,27 +7,11 @@ import { IconArrowUpRight, IconChevronDown } from '@tabler/icons-react'
 const slides = [
     {
         id: 1,
-        title: <>Your <span className="text-[#F98D1B]">Health Journey,</span> Empowered by Advanced Diagnostics</>,
-        subtitle: <><span className="text-[#1E1E1E] font-secondary font-medium">Reliable results, individualized care, and prompt <br /> insights for better health.</span></>,
-        image: "/images/Section1/banner-img-1-by-vj.avif",
+        title: <span className='font-sans font-[650]'>VJ Scans Health Checkup  <span className="text-[#F98D1B]">Packages</span></span>,
+        subtitle: <span className="text-[#1E1E1E] font-secondary font-medium">Take a proactive step toward a healthier life. In today’s fast-paced world, prioritizing your well-being is essential. Our comprehensive health checkup package offers an in-depth evaluation of your overall health, helping detect potential concerns before they become serious.</span>,
+        image: "/images/ctscan/section1/ctscan-banner.avif",
         mobileImage: "/images/Section1/mobileBanner-img-1-by-vj.avif",
         bgColor: "bg-gradient-to-br from-[#E2F2FF] via-[#EBF7FF] to-[#FFF0D9]"
-    },
-    {
-        id: 2,
-        title: <>Feeling feverish? <br />   Receive your reports <br /> <span className="text-[#F98D1B]">within 6 hours</span></>,
-        subtitle: <><span className="text-[#1E1E1E] font-secondary font-medium">Reliable results, individualized care, and prompt <br /> insights for better health.</span></>,
-        image: "/images/Section1/banner-img-2-by-vj.avif",
-        mobileImage: "/images/Section1/mobileBanner-img-2-by-vj.avif",
-        bgColor: "bg-gradient-to-br from-[#E0F7FA] via-[#E0F2F1] to-[#E8F5E9]"
-    },
-    {
-        id: 3,
-        title: <>Need a sample<span className="text-[#F98D1B]"> test?</span> <br /> Home sample collection <br />  spanin <span className="text-[#F98D1B]">60 minutes</span></>,
-        subtitle: <><span className="text-[#1E1E1E] font-secondary font-medium">Reliable results, individualized care, and prompt <br /> insights for better health.</span></>,
-        image: "/images/Section1/banner-img-3-by-vj.avif",
-        mobileImage: "/images/Section1/mobileBanner-img-3-by-vj.avif",
-        bgColor: "bg-gradient-to-br from-[#F3E5F5] via-[#FCE4EC] to-[#FFF3E0]"
     }
 ]
 
@@ -75,9 +59,9 @@ const Section1 = () => {
     }, [page, paginate]) // Added page dependency to reset timer on manual change
 
     return (
-        <section className="w-full max-w-[1400px] mx-auto px-3 md:px-0 py-8 flex flex-col lg:flex-row gap-6 font-sans">
+        <section className="w-full max-w-[1400px] mx-auto px-3 md:px-0 py-4 lg:py-8 flex flex-col lg:flex-row gap-6">
             {/* Left Side Banner Slider */}
-            <div className="flex-1 relative overflow-hidden rounded-[32px] min-h-[500px] lg:min-h-[500px]">
+            <div className="flex-1 relative overflow-hidden rounded-[24px] lg:rounded-[32px] min-h-[400px] lg:min-h-[500px]">
                 <AnimatePresence initial={false} custom={direction}>
                     <motion.div
                         key={currentSlide}
@@ -133,9 +117,9 @@ const Section1 = () => {
                         </div>
 
                         {/* Content */}
-                        <div className="relative z-10 h-full px-8 lg:p-11 flex flex-col justify-center pointer-events-none">
+                        <div className="relative z-10 h-full px-6 py-8 lg:p-11 flex flex-col justify-center pointer-events-none">
                             <div className="max-w-lg pointer-events-auto">
-                                <motion.h1
+                                <motion.div
                                     initial={{ y: 20, opacity: 0 }}
                                     animate={{ y: 0, opacity: 1 }}
                                     transition={{ delay: 0.2 }}
@@ -143,12 +127,12 @@ const Section1 = () => {
                                 >
                                     {slides[currentSlide].title}
 
-                                </motion.h1>
+                                </motion.div>
                                 <motion.p
                                     initial={{ y: 20, opacity: 0 }}
                                     animate={{ y: 0, opacity: 1 }}
                                     transition={{ delay: 0.4 }}
-                                    className="text-gray-700 text-[12px] md:text-[14px] mb-1 md:mb-5 font-medium"
+                                    className="text-gray-700 text-[13px] md:text-[14px] mb-4 md:mb-5 font-medium leading-relaxed"
                                 >
                                     {slides[currentSlide].subtitle}
                                 </motion.p>
@@ -156,7 +140,7 @@ const Section1 = () => {
                                     initial={{ y: 20, opacity: 0 }}
                                     animate={{ y: 0, opacity: 1 }}
                                     transition={{ delay: 0.6 }}
-                                    className="bg-[linear-gradient(84.92deg,#F98D1B_34.11%,#FFC180_105.58%)] mb-60 md:mb-26 mt-3 text-sm md:text-base text-white px-3 md:px-6 md:py-3 py-2 rounded-full  flex items-center gap-2 hover:bg-[#e07c12] transition-colors shadow-md cursor-pointer"
+                                    className="bg-[linear-gradient(84.92deg,#F98D1B_34.11%,#FFC180_105.58%)] mb-4 lg:mb-26 mt-2 text-sm md:text-base text-white px-5 py-3 md:px-6 md:py-3 rounded-full flex items-center gap-2 hover:bg-[#e07c12] transition-colors shadow-md cursor-pointer w-fit"
                                 >
                                     Know More
                                     <div className="bg-white rounded-full p-1">
@@ -169,7 +153,7 @@ const Section1 = () => {
                 </AnimatePresence>
 
                 {/* Slide Indicators */}
-                <div className="absolute bottom-6 left-8 lg:left-12 flex gap-2 z-20">
+                <div className="absolute bottom-4 left-6 lg:left-12 flex gap-2 z-20">
                     {slides.map((_, index) => (
                         <button
                             key={index}
@@ -185,33 +169,33 @@ const Section1 = () => {
             </div>
 
             {/* Right Side Appointment Form */}
-            <div className="w-full lg:w-[400px] bg-[linear-gradient(139.05deg,#FFF7EF_0%,#FFEAD4_100%)] rounded-[32px] border border-[#E3E3E3] p-8 flex flex-col justify-center">
-                <h2 className="text-[24px] md:text-[27px] font-bold text-[#0961A1] mb-8 text-center">Book Your Appointment</h2>
-                <form className="space-y-4">
+            <div className="w-full lg:w-[400px] bg-[linear-gradient(139.05deg,#FFF7EF_0%,#FFEAD4_100%)] rounded-[24px] lg:rounded-[32px] border border-[#E3E3E3] p-6 lg:p-8 flex flex-col justify-center">
+                <h2 className="text-[22px] md:text-[27px] font-bold text-[#0961A1] mb-6 md:mb-8 text-center">Book Your Appointment</h2>
+                <form className="space-y-3 lg:space-y-4">
                     <div>
                         <input
                             type="text"
                             placeholder="Your Name*"
-                            className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-[#F98D1B] bg-white text-gray-700"
+                            className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-[#F98D1B] bg-white text-gray-700 text-sm md:text-base"
                         />
                     </div>
                     <div>
                         <input
                             type="email"
                             placeholder="Email ID*"
-                            className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-[#F98D1B] bg-white text-gray-700"
+                            className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-[#F98D1B] bg-white text-gray-700 text-sm md:text-base"
                         />
                     </div>
                     <div>
                         <input
                             type="tel"
                             placeholder="Phone Number*"
-                            className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-[#F98D1B] bg-white text-gray-700"
+                            className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-[#F98D1B] bg-white text-gray-700 text-sm md:text-base"
                         />
                     </div>
                     <div className="relative">
                         <select
-                            className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-[#F98D1B] bg-white text-gray-700 appearance-none cursor-pointer"
+                            className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-[#F98D1B] bg-white text-gray-700 appearance-none cursor-pointer text-sm md:text-base"
                             defaultValue=""
                         >
                             <option value="" disabled>Select Package</option>
@@ -224,7 +208,7 @@ const Section1 = () => {
 
                     <button
                         type="submit"
-                        className="w-full bg-[linear-gradient(84.92deg,#F98D1B_34.11%,#FFC180_105.58%)] text-white font-bold py-4 rounded-xl mt-4 hover:bg-[#e07c12] transition-colors shadow-lg shadow-orange-200"
+                        className="w-full bg-[linear-gradient(84.92deg,#F98D1B_34.11%,#FFC180_105.58%)] text-white font-bold py-3 md:py-4 rounded-xl mt-2 lg:mt-4 hover:bg-[#e07c12] transition-colors shadow-lg shadow-orange-200 text-sm md:text-base"
                     >
                         Book Appointment
                     </button>

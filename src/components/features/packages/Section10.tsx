@@ -2,7 +2,7 @@ import React from 'react';
 
 const Section10 = () => {
     return (
-        <div className="w-full max-w-[1400px] mx-auto px-0 sm:px-0 lg:px-0 py-12 lg:py-0">
+        <div className="w-full max-w-[1400px] mx-auto md:mb-18 px-0 sm:px-0 lg:px-0 py-12 lg:py-0">
             <div
                 className="relative w-full md:rounded-[50px] overflow-hidden min-h-[600px] flex items-center"
                 style={{

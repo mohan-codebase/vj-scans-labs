@@ -141,7 +141,7 @@ const Section1 = () => {
                                     initial={{ y: 20, opacity: 0 }}
                                     animate={{ y: 0, opacity: 1 }}
                                     transition={{ delay: 0.6 }}
-                                    className="bg-[linear-gradient(84.92deg,#F98D1B_34.11%,#FFC180_105.58%)] mb-4 lg:mb-26 mt-2 text-sm md:text-base text-white px-5 py-3 md:px-6 md:py-3 rounded-full flex items-center gap-2 hover:bg-[#e07c12] transition-colors shadow-md cursor-pointer w-fit"
+                                    className="bg-[linear-gradient(84.92deg,#F98D1B_34.11%,#FFC180_105.58%)] mb-4 lg:mb-26 mt-2 text-sm md:text-base text-white px-2 py-2 md:px-6 md:py-3 rounded-full flex items-center gap-2 hover:bg-[#e07c12] transition-colors shadow-md cursor-pointer w-fit"
                                 >
                                     Know More
                                     <div className="bg-white rounded-full p-1">

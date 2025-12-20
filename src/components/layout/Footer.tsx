@@ -9,7 +9,7 @@ const Footer = () => {
 
 
       {/* Bottom Section - White */}
-      <div className="bg-white text-gray-600 py-12 px-4 md:px-12 border-t border-gray-100">
+      <div className="bg-white text-gray-600 py-12 px-4 md:px-12 border-t border-gray-100 font-bold">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 
           {/* Column 1: Menu */}
@@ -67,8 +67,8 @@ const Footer = () => {
 
             <h3 className="text-[#1e73be] font-bold text-lg mb-2">Address</h3>
             <p className="text-sm leading-relaxed mb-1 text-center">
-              Velachery (Head Office)<br />
-              No. 41, Arcot Road, Velachery, Chennai-600087.
+            
+             NO.1, Bharani Gardens, Bhanumathi Ramakrishna Rd, Bharani Colony, Vijayaraghavapuram, Saligramam, Chennai, Tamil Nadu 600093
             </p>
             <p className="text-sm mb-6">
               044-40000000 | +91 809 808 8090
@@ -105,7 +105,7 @@ const Footer = () => {
             <a href="#" className="hover:text-[#1e73be]">Sales and Refunds</a>
           </div>
           <div>
-            <p>© 2021 All Rights Reserved</p>
+            <p>© 2025 All Rights Reserved</p>
           </div>
         </div>
       </div>
