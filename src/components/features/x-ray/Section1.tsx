@@ -62,7 +62,7 @@ const Section1 = () => {
   return (
     <section className="w-full max-w-7xl mx-auto px-3 md:px-0 py-4 lg:py-8 flex flex-col lg:flex-row gap-6">
       {/* Left Side Banner Slider */}
-      <div className="flex-1 relative overflow-hidden rounded-[24px] lg:rounded-[32px] min-h-[400px] lg:min-h-[500px]">
+      <div className="flex-1 relative overflow-hidden rounded-[24px] lg:rounded-[32px] min-h-[600px] lg:min-h-[500px]">
         <AnimatePresence initial={false} custom={direction}>
           <motion.div
             key={currentSlide}
@@ -141,7 +141,7 @@ const Section1 = () => {
                   initial={{ y: 20, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ delay: 0.6 }}
-                  className="bg-[linear-gradient(84.92deg,#F98D1B_34.11%,#FFC180_105.58%)] mb-4 lg:mb-26 mt-2 text-sm md:text-base text-white px-5 py-3 md:px-6 md:py-3 rounded-full flex items-center gap-2 hover:bg-[#e07c12] transition-colors shadow-md cursor-pointer w-fit"
+                  className="bg-[linear-gradient(84.92deg,#F98D1B_34.11%,#FFC180_105.58%)] mb-66 lg:mb-26 mt-2 text-sm md:text-base text-white px-5 py-3 md:px-6 md:py-3 rounded-full flex items-center gap-2 hover:bg-[#e07c12] transition-colors shadow-md cursor-pointer w-fit"
                 >
                   Know More
                   <div className="bg-white rounded-full p-1">

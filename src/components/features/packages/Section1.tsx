@@ -61,7 +61,7 @@ const Section1 = () => {
     return (
         <section className="w-full max-w-[1400px] mx-auto px-3 md:px-0 py-4 lg:py-8 flex flex-col lg:flex-row gap-6">
             {/* Left Side Banner Slider */}
-            <div className="flex-1 relative overflow-hidden rounded-[24px] lg:rounded-[32px] min-h-[400px] lg:min-h-[500px]">
+            <div className="flex-1 relative overflow-hidden rounded-[24px] lg:rounded-[32px] min-h-[600px] lg:min-h-[500px]">
                 <AnimatePresence initial={false} custom={direction}>
                     <motion.div
                         key={currentSlide}
@@ -132,7 +132,7 @@ const Section1 = () => {
                                     initial={{ y: 20, opacity: 0 }}
                                     animate={{ y: 0, opacity: 1 }}
                                     transition={{ delay: 0.4 }}
-                                    className="text-gray-700 text-[13px] md:text-[14px] mb-4 md:mb-5 font-medium leading-relaxed"
+                                    className="text-gray-700 text-[13px] md:text-[14px] mb-50 md:mb-5 font-medium leading-relaxed"
                                 >
                                     {slides[currentSlide].subtitle}
                                 </motion.p>

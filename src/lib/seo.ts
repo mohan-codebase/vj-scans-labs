@@ -8,7 +8,11 @@ export const seoDatas = {
         description: 'Affordable & accurate scanning, blood tests, & lab services with fast reports. Book appointments instantly at VJ Scans & Labs, in Chennai.',
         url: 'https://vj-scans-labs.vercel.app/',
         image: '/og/ogGraph-home.png'
-
+    },
+    packages: {
+        title: 'Health Checkup Packages | VJ Scans & Labs',
+        description: 'Comprehensive health checkup packages at VJ Scans & Labs. Detect potential health concerns early with our advanced diagnostic evaluations in Chennai.',
+        url: 'https://vj-scans-labs.vercel.app/packages',
+        image: '/og/ogGraph-packages.png'
     }
-
 }

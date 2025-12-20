@@ -39,8 +39,7 @@ export function Header() {
     },
     {
       name: "Packages",
-      link: "/#",
-      // link: "/packages"
+      link: "/packages"
 
     },
     {
