@@ -7,7 +7,7 @@ export const seoDatas = {
         title: 'VJ Scans & Labs',
         description: 'Affordable & accurate scanning, blood tests, & lab services with fast reports. Book appointments instantly at VJ Scans & Labs, in Chennai.',
         url: 'https://vj-scans-labs.vercel.app/',
-        image: 'src/app/ogGraph-Home.png'
+        image: '/og/ogGraph-home.png'
 
     }
 
