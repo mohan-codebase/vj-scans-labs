@@ -14,5 +14,11 @@ export const seoDatas = {
         description: 'Comprehensive health checkup packages at VJ Scans & Labs. Detect potential health concerns early with our advanced diagnostic evaluations in Chennai.',
         url: 'https://vj-scans-labs.vercel.app/packages',
         image: '/og/ogGraph-packages.png'
+    },
+    specialitiesOncoDiagnostics: {
+        title: 'Specialities Onco Diagnostics | VJ Scans & Labs',
+        description: 'Comprehensive oncology diagnostics packages at VJ Scans & Labs. Detect potential health concerns early with our advanced diagnostic evaluations in Chennai.',
+        url: 'https://vj-scans-labs.vercel.app/specialities/onco-diagnostics',
+        image: '/og/ogGraph-specialitiesOncoDiagnostics.png'
     }
 }

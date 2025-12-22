@@ -1,0 +1,96 @@
+'use client'
+
+import React from 'react'
+import Link from 'next/link'
+import { motion } from 'framer-motion'
+import {
+    Stethoscope,
+    Activity,
+    Microscope,
+    HeartPlus
+} from 'lucide-react'
+
+const specialities = [
+    {
+        name: "Onco Diagnostics",
+        description: "Specialized diagnostic services for oncology and cancer screening.",
+        link: "/specialities/onco-diagnostics",
+        icon: <Microscope className="w-8 h-8 text-[#0961A1]" />
+    },
+    {
+        name: "Radiology",
+        description: "Expert radiological imaging and interpretation services.",
+        link: "/scans",
+        icon: <Activity className="w-8 h-8 text-[#0961A1]" />
+    },
+    {
+        name: "Cardiology",
+        description: "Advanced heart health diagnostics including ECHO and ECG.",
+        link: "/scans",
+        icon: <HeartPlus className="w-8 h-8 text-[#0961A1]" />
+    },
+    {
+        name: "Pathology",
+        description: "Precise laboratory analysis and diagnostic testing.",
+        link: "/scans",
+        icon: <Stethoscope className="w-8 h-8 text-[#0961A1]" />
+    }
+]
+
+const SpecialitiesPage = () => {
+    return (
+        <main className="min-h-screen bg-linear-to-b from-white to-[#FFFAF0] py-20 px-4 md:px-10">
+            <div className="max-w-7xl mx-auto">
+                <div className="text-center mb-16">
+                    <motion.h1
+                        initial={{ opacity: 0, y: -20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        className="text-4xl md:text-6xl font-extrabold text-[#0961A1] mb-6"
+                    >
+                        Our Medical <span className="text-[#F98D1B]">Specialities</span>
+                    </motion.h1>
+                    <motion.p
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.2 }}
+                        className="text-gray-600 text-lg max-w-2xl mx-auto font-medium"
+                    >
+                        Dedicated expertise across various medical fields to provide accurate and timely diagnostics.
+                    </motion.p>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    {specialities.map((specialty, index) => (
+                        <motion.div
+                            key={specialty.name}
+                            initial={{ opacity: 0, scale: 0.9 }}
+                            animate={{ opacity: 1, scale: 1 }}
+                            transition={{ delay: index * 0.1 }}
+                            whileHover={{ y: -10 }}
+                            className="bg-white rounded-3xl p-8 shadow-xl shadow-orange-100/30 border border-orange-50 group hover:border-[#F98D1B]/30 transition-all duration-300"
+                        >
+                            <div className="w-16 h-16 bg-orange-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-[#F98D1B]/10 transition-colors">
+                                {specialty.icon}
+                            </div>
+                            <h3 className="text-2xl font-bold text-[#0961A1] mb-4">{specialty.name}</h3>
+                            <p className="text-gray-600 mb-8 font-medium leading-relaxed">
+                                {specialty.description}
+                            </p>
+                            <Link
+                                href={specialty.link}
+                                className="inline-flex items-center text-[#F98D1B] font-bold hover:gap-2 transition-all"
+                            >
+                                View Details
+                                <svg className="w-5 h-5 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                </svg>
+                            </Link>
+                        </motion.div>
+                    ))}
+                </div>
+            </div>
+        </main>
+    )
+}
+
+export default SpecialitiesPage

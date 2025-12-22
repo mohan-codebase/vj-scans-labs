@@ -22,6 +22,9 @@ export function Header() {
     {
       name: "Specialities",
       link: "/specialities",
+      subItems: [
+        { name: "Onco Diagnostics", link: "/specialities/onco-diagnostics" },
+      ],
     },
     {
       name: "Scans",
