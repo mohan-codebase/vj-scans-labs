@@ -20,5 +20,12 @@ export const seoDatas = {
         description: 'Comprehensive oncology diagnostics packages at VJ Scans & Labs. Detect potential health concerns early with our advanced diagnostic evaluations in Chennai.',
         url: 'https://vj-scans-labs.vercel.app/specialities/onco-diagnostics',
         image: '/og/ogGraph-specialitiesOncoDiagnostics.png'
+    },
+    specialitieClinicalGenitics :{
+        title:'Specialities Clinical Genitics | VJ Scans & Labs',
+        description:'Comprehensive Clinical Genitics diagnostics packages at VJ Scans & Labs. Detect potential health concerns early with our advanced diagnostic evaluations in Chennai.',
+        url:'https://vj-scans-labs.vercel.app/specialities/clinical-genitics-home',
+        image:'/og/ogGraph-specialitiesClinicalGenitics.png',
+
     }
 }

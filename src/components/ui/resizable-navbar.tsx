@@ -30,7 +30,7 @@ export const Navbar = ({ children, className }: { children: React.ReactNode; cla
   return (
     <motion.div
       ref={ref}
-      className={cn("sticky top-5 z-50 w-full bg-transparent", className)} // Added bg-white
+      className={cn("sticky top-0 md:top-5 z-50 w-full bg-transparent", className)} // Sticky at top on mobile, top-5 on desktop
     >
       {React.Children.map(children, (child) =>
         React.isValidElement(child)
@@ -197,11 +197,11 @@ export const MobileNav = ({ children, className, visible }: { children: React.Re
         boxShadow: visible
           ? "0 0 24px rgba(34, 42, 53, 0.06), 0 1px 1px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(34, 42, 53, 0.04), 0 0 4px rgba(34, 42, 53, 0.08), 0 16px 68px rgba(47, 48, 55, 0.05), 0 1px 0 rgba(255, 255, 255, 0.1) inset"
           : "none",
-        width: visible ? "90%" : "100%",
-        paddingRight: visible ? "12px" : "0px",
-        paddingLeft: visible ? "12px" : "0px",
-        borderRadius: visible ? "12px" : "0.5rem",
-        y: visible ? 20 : 0,
+        width: "100%",
+        paddingRight: "16px",
+        paddingLeft: "16px",
+        borderRadius: "0px",
+        y: 0,
       }}
       transition={{
         type: "spring",
@@ -209,8 +209,7 @@ export const MobileNav = ({ children, className, visible }: { children: React.Re
         damping: 50,
       }}
       className={cn(
-        "relative z-50 mx-auto flex w-full max-w-[calc(100vw-1rem)] flex-col items-center justify-between  px-2 py-2 lg:hidden",
-        visible && "bg-white/80 dark:bg-neutral-950/80",
+        "relative z-50 mx-auto flex w-full max-w-full flex-col items-center justify-between px-4 py-2 lg:hidden bg-white",
         className,
       )}
     >

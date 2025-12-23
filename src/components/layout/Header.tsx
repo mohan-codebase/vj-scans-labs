@@ -24,20 +24,21 @@ export function Header() {
       link: "/specialities",
       subItems: [
         { name: "Onco Diagnostics", link: "/specialities/onco-diagnostics" },
+        { name: "Clinical Genomics Home", link: "/specialities/clinical-genitics-home" },
       ],
     },
     {
       name: "Scans",
       link: "#",
       subItems: [
-        { name: "MRI Scan", link: "/mriscan" },
-        { name: "CT Scan", link: "/ctscan" },
-        { name: "X-Ray", link: "/x-ray" },
-        { name: "2D & 3D Ultrasound", link: "/2d-3d-ultrasound" },
-        { name: "ECHO", link: "/echo" },
-        { name: "ECG", link: "/ecg" },
-        { name:"TMT" , link:"/tmt"},
-        { name:"Mammograms" , link:"/mammograms"}
+        { name: "MRI Scan", link: "/scans/mriscan" },
+        { name: "CT Scan", link: "/scans/ctscan" },
+        { name: "X-Ray", link: "/scans/x-ray" },
+        { name: "2D & 3D Ultrasound", link: "/scans/2d-3d-ultrasound" },
+        { name: "ECHO", link: "/scans/echo" },
+        { name: "ECG", link: "/scans/ecg" },
+        { name: "TMT", link: "/scans/tmt" },
+        { name: "Mammograms", link: "/scans/mammograms" }
       ]
     },
     {
@@ -50,8 +51,8 @@ export function Header() {
       link: "/ourbranches",
     },
     {
-        name:"Our Facility",
-        link:"/our-facility"
+      name: "Our Facility",
+      link: "/our-facility"
     },
     {
       name: "About us",
