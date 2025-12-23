@@ -24,7 +24,7 @@ export function Header() {
       link: "/specialities",
       subItems: [
         { name: "Onco Diagnostics", link: "/specialities/onco-diagnostics" },
-        { name: "Clinical Genomics Home", link: "/specialities/clinical-genitics-home" },
+        { name: "Clinical Genomics", link: "/specialities/clinical-genitics-home" },
       ],
     },
     {
