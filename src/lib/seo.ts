@@ -21,11 +21,16 @@ export const seoDatas = {
         url: 'https://vj-scans-labs.vercel.app/specialities/onco-diagnostics',
         image: '/og/ogGraph-specialitiesOncoDiagnostics.png'
     },
-    specialitieClinicalGenitics :{
-        title:'Specialities Clinical Genitics | VJ Scans & Labs',
-        description:'Comprehensive Clinical Genitics diagnostics packages at VJ Scans & Labs. Detect potential health concerns early with our advanced diagnostic evaluations in Chennai.',
-        url:'https://vj-scans-labs.vercel.app/specialities/clinical-genitics-home',
-        image:'/og/ogGraph-specialitiesClinicalGenitics.png',
-
+    specialitieClinicalGenitics: {
+        title: 'Specialities Clinical Genitics | VJ Scans & Labs',
+        description: 'Comprehensive Clinical Genitics diagnostics packages at VJ Scans & Labs. Detect potential health concerns early with our advanced diagnostic evaluations in Chennai.',
+        url: 'https://vj-scans-labs.vercel.app/specialities/clinical-genitics-home',
+        image: '/og/ogGraph-specialitiesClinicalGenitics.png',
+    },
+    maleInfertility: {
+        title: 'Male Infertility | VJ Scans & Labs',
+        description: 'Comprehensive Male Infertility diagnostics and testing at VJ Scans & Labs. Understand your reproductive genetic health with our advanced services.',
+        url: 'https://vj-scans-labs.vercel.app/specialities/male-infertility',
+        image: '/og/ogGraph-maleInfertility.png'
     }
 }

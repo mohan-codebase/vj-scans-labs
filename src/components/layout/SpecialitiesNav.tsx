@@ -12,7 +12,9 @@ interface NavItem {
 
 const navItems: NavItem[] = [
     { name: 'Home', link: '/specialities/clinical-genitics-home', active: true },
-    { name: 'Male Infertility', link: '#' },
+    { name: "Male Infertility", link: "#" },
+    // { name: "Male Infertility", link: "/specialities/male-infertility" },
+
     { name: 'PGT', link: '#' },
     { name: 'Recurrent Pregnancy Loss', link: '#' },
     { name: 'Genetic Counseling', link: '#' },
@@ -32,8 +34,8 @@ export function SpecialitiesNav() {
                             key={idx}
                             href={item.link}
                             className={`px-4 py-2 text-sm font-semibold transition-colors rounded-lg ${item.active
-                                    ? 'text-[#F98D1B]'
-                                    : 'text-white hover:text-[#F98D1B]'
+                                ? 'text-[#ffffff]'
+                                : 'text-white hover:text-[#F98D1B]'
                                 }`}
                         >
                             {item.name}
@@ -64,8 +66,8 @@ export function SpecialitiesNav() {
                                     href={item.link}
                                     onClick={() => setIsMobileMenuOpen(false)}
                                     className={`block px-4 py-3 text-sm font-semibold border-b border-white/10 transition-colors ${item.active
-                                            ? 'text-[#F98D1B] bg-white/5'
-                                            : 'text-white hover:bg-white/5'
+                                        ? 'text-[#F98D1B] bg-white/5'
+                                        : 'text-white hover:bg-white/5'
                                         }`}
                                 >
                                     {item.name}
