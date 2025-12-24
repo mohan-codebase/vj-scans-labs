@@ -45,14 +45,14 @@ export const Navbar = ({ children, className }: { children: React.ReactNode; cla
 export const TopBar = () => {
   return (
     <div className="flex flex-col lg:flex-row max-w-[1400px] rounded-[8px] mx-auto bg-[#E2F2FF] py-2 px-4 justify-between items-center text-xs text-gray-600 border-b border-gray-100 mt-2 gap-3 lg:gap-0 lg:mt-5">
-      <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 lg:gap-6 lg:pl-10">
+      <div className="flex flex-row items-center justify-between sm:justify-start w-full sm:w-auto gap-2 sm:gap-4 lg:gap-6 lg:pl-10">
         <span className="flex items-center gap-2"><Image src="/images/topbar/mail.svg" alt="mail" width={16} height={16} /> vjscans@gmail.com</span>
         <span className="hidden sm:inline text-gray-400">|</span>
         <span className="flex items-center gap-2"><Image src="/images/topbar/phone.svg" alt="phone" width={16} height={18} /> 95853 35552</span>
       </div>
       <div className="flex items-center gap-3 lg:pr-10">
         <span className="font-medium hidden sm:inline">Follow us</span>
-        <div className="flex items-center gap-2">
+        <div className="hidden lg:flex items-center gap-2">
           <div className=" rounded-full p-1 cursor-pointer flex items-center justify-center w-8 h-8 hover:bg-white/50 transition-colors">
             <a href="https://www.facebook.com/vjscans" target="_blank"
               rel="noopener noreferrer"><Image src="/images/topbar/facebook.svg" alt="facebook" width={20} height={20} /></a>

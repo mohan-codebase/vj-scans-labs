@@ -12,8 +12,7 @@ interface NavItem {
 
 const navItems: NavItem[] = [
     { name: 'Home', link: '/specialities/clinical-genitics-home', active: true },
-    { name: "Male Infertility", link: "#" },
-    // { name: "Male Infertility", link: "/specialities/male-infertility" },
+    { name: "Male Infertility", link: "/specialities/male-infertility" },
 
     { name: 'PGT', link: '#' },
     { name: 'Recurrent Pregnancy Loss', link: '#' },
