@@ -1,77 +1,41 @@
-'use client';
+import React from 'react'
+import FAQAccordion from '@/components/common/FAQAccordion'
 
-import React, { useState } from 'react';
-
-const Section9 = () => {
-    const [openIndex, setOpenIndex] = useState<number | null>(0);
-
-    const toggleAccordion = (index: number) => {
-        setOpenIndex(openIndex === index ? null : index);
-    };
-
-    const faqs = [
+const Section6 = () => {
+    const faqData = [
         {
-            question: "How reliable is it to collect blood samples for diagnostic tests?",
-            answer: "Our home diagnostic services are completely reliable since we follow all strict protocols and regulations. You can be confident that our lab professionals will preserve the integrity of your sample so that the test results will be accurate. Furthermore, all our lab professionals are skilled in using safe and error-free methods to draw blood samples. With Anderson, you are in safe hands."
+            question: "How do I book an appointment?",
+            answer: "You can book an appointment by calling our reception, visiting our center, or using the 'Book Appointment' button on our website."
         },
         {
-            question: "How long will it take to receive my test results?",
-            answer: "Most test results are available within 24-48 hours after sample collection. You will receive a notification via email or SMS once your report is ready to be downloaded from our secure portal."
+            question: "What should I bring for my scan?",
+            answer: "Please bring your doctor's prescription, any previous medical reports, and a valid ID proof."
         },
         {
-            question: "Will my medical information be kept confidential?",
-            answer: "Yes, we adhere to strict data privacy policies and HIPAA guidelines to ensure your medical information remains confidential and secure at all times."
+            question: "When will I get my reports?",
+            answer: "Most reports are available on the same day. However, some specialized tests may take longer. Our staff will inform you about the expected time."
         },
         {
-            question: "Do I need to schedule an appointment, or can I get tested on the go?",
-            answer: "We recommend scheduling an appointment to ensure minimal waiting time and to guarantee that a phlebotomist is available to attend to you promptly."
+            question: "Is fasting required for the scan?",
+            answer: "Fasting requirements vary depending on the scan. Please check with our staff or your doctor for specific instructions related to your test."
         }
     ];
 
     return (
-        <section className="bg-[#F0F8FF] font-sans py-16 px-4 md:px-8 lg:px-16">
-            <div className="max-w-4xl mx-auto">
-                <h2 className="text-3xl md:text-[40px] font-bold text-[#0961A1] text-center mb-12">
-                    Frequently Asked Questions
-                </h2>
-
-                <div className="space-y-4">
-                    {faqs.map((faq, index) => (
-                        <div key={index} className="border-b border-gray-300 pb-4">
-                            <button
-                                className="w-full flex justify-between items-center text-left py-2 focus:outline-none group"
-                                onClick={() => toggleAccordion(index)}
-                            >
-                                <span className="text-lg md:text-xl font-[600] text-gray-800">
-                                    {faq.question}
-                                </span>
-                                <span className="ml-4 shrink-0 text-gray-500">
-                                    {openIndex === index ? (
-                                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
-                                        </svg>
-                                    ) : (
-                                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                                        </svg>
-                                    )}
-                                </span>
-                            </button>
-
-                            <div
-                                className={`overflow-hidden transition-all duration-300 ease-in-out ${openIndex === index ? 'max-h-96 opacity-100 mt-2' : 'max-h-0 opacity-0'
-                                    }`}
-                            >
-                                <p className="text-gray-600 leading-relaxed">
-                                    {faq.answer}
-                                </p>
-                            </div>
-                        </div>
-                    ))}
+        <section className="py-16 md:py-20 bg-[#F9FBFC]">
+            <div className="container mx-auto px-4 max-w-4xl">
+                <div className="text-center mb-12">
+                    <h2 className="text-3xl md:text-4xl font-extrabold text-[#0961A1] mb-4">
+                        Frequently Asked Questions
+                    </h2>
+                    <p className="text-gray-600 font-medium">
+                        Common questions about our services and procedures.
+                    </p>
                 </div>
+                <FAQAccordion items={faqData} />
             </div>
         </section>
-    );
+    )
 }
 
-export default Section9;
+export default Section6

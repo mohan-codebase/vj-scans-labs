@@ -6,6 +6,8 @@ import { ScrollToTop } from "@/components/layout/ScrollToTop";
 import FooterTop from "@/components/layout/FooterTop";
 import { Metadata } from "next";
 import { seoDatas, SITE_NAME, SITE_URL } from "@/lib/seo";
+import { BookingProvider } from "@/context/BookingContext";
+import BookingModal from "@/components/ui/BookingModal";
 
 const urbanist = Urbanist({
     variable: "--font-sans",
@@ -41,10 +43,10 @@ export const metadata: Metadata = {
                 url: seo.image,
                 width: 1200,
                 height: 630,
-                alt:"VJ Scans & Labs"
+                alt: "VJ Scans & Labs"
             },
         ],
-        type:"website"
+        type: "website"
     }
 }
 
@@ -58,11 +60,14 @@ export default function RootLayout({
             <body
                 className={`${urbanist.variable} ${dmSans.variable} ${dancingScript.variable} antialiased`}
             >
-                <Header />
-                {children}
-                <ScrollToTop />
-                <FooterTop />
-                <Footer />
+                <BookingProvider>
+                    <Header />
+                    {children}
+                    <ScrollToTop />
+                    <FooterTop />
+                    <Footer />
+                    <BookingModal />
+                </BookingProvider>
             </body>
         </html>
     );

@@ -2,7 +2,6 @@
 
 import React, { useState } from 'react';
 import { IconChevronDown, IconChevronUp } from '@tabler/icons-react';
-import { motion, AnimatePresence } from 'framer-motion';
 
 export interface FAQItem {
     question: string;
@@ -41,21 +40,13 @@ const FAQAccordion: React.FC<FAQAccordionProps> = ({ items, className = '' }) =>
                         </span>
                     </button>
 
-                    <AnimatePresence>
-                        {openIndex === index && (
-                            <motion.div
-                                initial={{ height: 0, opacity: 0 }}
-                                animate={{ height: "auto", opacity: 1 }}
-                                exit={{ height: 0, opacity: 0 }}
-                                transition={{ duration: 0.3, ease: "easeInOut" }}
-                                className="overflow-hidden"
-                            >
-                                <p className="text-gray-600 leading-relaxed mt-2">
-                                    {item.answer}
-                                </p>
-                            </motion.div>
-                        )}
-                    </AnimatePresence>
+                    {openIndex === index && (
+                        <div className="overflow-hidden transition-all duration-300 ease-in-out">
+                            <p className="text-gray-600 leading-relaxed mt-2">
+                                {item.answer}
+                            </p>
+                        </div>
+                    )}
                 </div>
             ))}
         </div>

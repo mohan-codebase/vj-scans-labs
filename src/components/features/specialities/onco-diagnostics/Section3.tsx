@@ -2,7 +2,6 @@
 
 import React from 'react';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
 
 const cards = [
     {
@@ -47,12 +46,8 @@ const Section3 = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 justify-items-center max-w-[1000px] mx-auto">
                 {cards.map((card, index) => (
-                    <motion.div
+                    <div
                         key={index}
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.5, delay: index * 0.1 }}
                         className="bg-[linear-gradient(135deg,#F5F5F5_12.57%,#E5E5E5_86.98%)] w-[280px] h-[390px] rounded-[24px] p-3 flex flex-col items-center justify-center transition-shadow duration-300"
                     >
                         <div className="mb-6   w-[100px] h-[100px] flex items-center justify-center relative">
@@ -79,7 +74,7 @@ const Section3 = () => {
                                 </li>
                             ))}
                         </ul>
-                    </motion.div>
+                    </div>
                 ))}
             </div>
         </section>

@@ -12,7 +12,7 @@ const Section11 = () => {
     const faqs = [
         {
             question: "How reliable is it to collect blood samples for diagnostic tests?",
-            answer: "Our home diagnostic services are completely reliable since we follow all strict protocols and regulations. You can be confident that our lab professionals will preserve the integrity of your sample so that the test results will be accurate. Furthermore, all our lab professionals are skilled in using safe and error-free methods to draw blood samples. With Anderson, you are in safe hands."
+            answer: "Our home diagnostic services are completely reliable since we follow all strict protocols and regulations. You can be confident that our lab professionals will preserve the integrity of your sample so that the test results will be accurate. Furthermore, all our lab professionals are skilled in using safe and error-free methods to draw blood samples. With VJ, you are in safe hands."
         },
         {
             question: "How long will it take to receive my test results?",

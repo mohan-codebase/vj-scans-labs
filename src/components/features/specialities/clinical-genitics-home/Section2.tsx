@@ -2,7 +2,6 @@
 
 import React from 'react';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
 
 const Section2 = () => {
 
@@ -12,13 +11,7 @@ const Section2 = () => {
 
 
                 {/* Right Side: Content */}
-                <motion.div
-                    initial={{ opacity: 0, x: 50 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-                    className="w-full lg:w-1/2 flex flex-col justify-center order-2 lg:order-1"
-                >
+                <div className="w-full lg:w-1/2 flex flex-col justify-center order-2 lg:order-1">
                     <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#0961A1] leading-tight mb-4 md:mb-6">
                         About:
                         <span className="text-[#F98D1B]">VJ Scans & Labs</span>
@@ -32,16 +25,10 @@ const Section2 = () => {
                         Our multidisciplinary team of clinicians, researchers, geneticists, and laboratory professionals ensures scientific rigor, diagnostic accuracy, and superior patient outcomes.
                     </p>
 
-                </motion.div>
+                </div>
 
                 {/* Left Side: Image */}
-                <motion.div
-                    initial={{ opacity: 0, x: -50 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.8, ease: "easeOut" }}
-                    className="w-full lg:w-1/2 order-1 lg:order-2"
-                >
+                <div className="w-full lg:w-1/2 order-1 lg:order-2">
                     <div className="relative rounded-[32px] md:rounded-[48px] overflow-hidden aspect-4/3 lg:aspect-square">
                         <Image
                             src="/images/specialities/clinical-genitics-home/about.png"
@@ -51,7 +38,7 @@ const Section2 = () => {
                             priority
                         />
                     </div>
-                </motion.div>
+                </div>
             </div>
         </section>
     );

@@ -3,6 +3,7 @@
 import React, { useCallback } from 'react';
 import { Star, ChevronLeft, ChevronRight } from 'lucide-react';
 import useEmblaCarousel from 'embla-carousel-react';
+import { FcGoogle } from "react-icons/fc";
 
 const testimonialsData = [
     {
@@ -75,14 +76,14 @@ const Section9 = () => {
                             {testimonials.map((testimonial, index) => (
                                 <div
                                     key={`${testimonial.id}-${index}`}
-                                    className="flex-[0_0_100%] md:flex-[0_0_50%] pl-4 min-w-0"
+                                    className="flex-[0_0_100%] md:flex-[0_0_50%] lg:flex-[0_0_33.33%] pl-4 min-w-0"
                                 >
                                     <div className="relative bg-[#eaf4f8] rounded-3xl p-8 pt-12 mt-8 h-full mx-2">
-                                        {/* Initial Circle */}
+                                        {/* Google Logo Circle */}
                                         <div
-                                            className={`absolute -top-8 left-1/2 transform -translate-x-1/2 w-16 h-16 rounded-full ${testimonial.initialColor} flex items-center justify-center text-white text-2xl font-medium border-4 border-white`}
+                                            className="absolute -top-8 left-1/2 transform -translate-x-1/2 md:w-22 md:h-22 w-16 h-16 rounded-full bg-white flex items-center justify-center shadow-md border-4 border-white"
                                         >
-                                            {testimonial.initial}
+                                            <FcGoogle size={48} />
                                         </div>
 
                                         <div className="text-center mt-4">

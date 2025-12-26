@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Footer = () => {
   return (
@@ -16,11 +17,11 @@ const Footer = () => {
           <div>
             <h3 className="text-[#1e73be] font-bold text-lg mb-6">Menu</h3>
             <ul className="space-y-3">
-              <li><a href="#" className="hover:text-[#1e73be] transition-colors">About Us</a></li>
-              <li><a href="#" className="hover:text-[#1e73be] transition-colors">Specialities</a></li>
-              <li><a href="#" className="hover:text-[#1e73be] transition-colors">Scans</a></li>
-              <li><a href="#" className="hover:text-[#1e73be] transition-colors">Packages</a></li>
-              <li><a href="#" className="hover:text-[#1e73be] transition-colors">Our Branches</a></li>
+              <li><Link href="/aboutus" className="hover:text-[#1e73be] transition-colors">About Us</Link></li>
+              <li><Link href="/specialities" className="hover:text-[#1e73be] transition-colors">Specialities</Link></li>
+              <li><Link href="/scans" className="hover:text-[#1e73be] transition-colors">Scans</Link></li>
+              <li><Link href="/packages" className="hover:text-[#1e73be] transition-colors">Packages</Link></li>
+              <li><Link href="/ourbranches" className="hover:text-[#1e73be] transition-colors">Our Branches</Link></li>
             </ul>
           </div>
 
@@ -67,8 +68,8 @@ const Footer = () => {
 
             <h3 className="text-[#1e73be] font-bold text-lg mb-2">Address</h3>
             <p className="text-sm leading-relaxed mb-1 text-center">
-            
-             NO.1, Bharani Gardens, Bhanumathi Ramakrishna Rd, Bharani Colony, Vijayaraghavapuram, Saligramam, Chennai, Tamil Nadu 600093
+
+              NO.1, Bharani Gardens, Bhanumathi Ramakrishna Rd, Bharani Colony, Vijayaraghavapuram, Saligramam, Chennai, Tamil Nadu 600093
             </p>
             <p className="text-sm mb-6">
               044-40000000 | +91 809 808 8090

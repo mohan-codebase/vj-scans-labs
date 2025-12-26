@@ -1,7 +1,6 @@
 "use client"
-import React, { useState, useEffect, useCallback } from 'react'
+import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
-import { motion, AnimatePresence } from 'framer-motion'
 import { IconChevronDown } from '@tabler/icons-react'
 import KnowMoreButton from '@/components/ui/KnowMoreButton'
 import { BiBorderRadius } from 'react-icons/bi'
@@ -20,34 +19,8 @@ interface HeroSectionProps {
     formSource: string;
 }
 
-const variants = {
-    enter: (direction: number) => {
-        return {
-            x: direction > 0 ? 1000 : -1000,
-            opacity: 0
-        };
-    },
-    center: {
-        zIndex: 1,
-        x: 0,
-        opacity: 1
-    },
-    exit: (direction: number) => {
-        return {
-            zIndex: 0,
-            x: direction < 0 ? 1000 : -1000,
-            opacity: 0
-        };
-    }
-};
-
-const swipeConfidenceThreshold = 10000;
-const swipePower = (offset: number, velocity: number) => {
-    return Math.abs(offset) * velocity;
-};
-
 const HeroSection: React.FC<HeroSectionProps> = ({ slides, formSource }) => {
-    const [[page, direction], setPage] = useState([0, 0]);
+    const [currentSlide, setCurrentSlide] = useState(0);
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -57,19 +30,12 @@ const HeroSection: React.FC<HeroSectionProps> = ({ slides, formSource }) => {
     const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
     const [errorMessage, setErrorMessage] = useState('');
 
-    // We only have 3 slides (or however many passed), so we wrap the page index
-    const currentSlide = Math.abs(page % slides.length);
-
-    const paginate = useCallback((newDirection: number) => {
-        setPage([page + newDirection, newDirection]);
-    }, [page]);
-
     useEffect(() => {
         const timer = setInterval(() => {
-            paginate(1);
+            setCurrentSlide((prev) => (prev + 1) % slides.length);
         }, 5000)
         return () => clearInterval(timer)
-    }, [page, paginate])
+    }, [slides.length])
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -110,104 +76,60 @@ const HeroSection: React.FC<HeroSectionProps> = ({ slides, formSource }) => {
         <section className="w-full max-w-[1400px] mx-auto px-3 md:px-0 py-4 lg:py-8 flex flex-col lg:flex-row gap-6">
             {/* Left Side Banner Slider */}
             <div className="flex-1 relative overflow-hidden rounded-[24px] lg:rounded-[32px] min-h-[600px] lg:min-h-[500px]">
-                <AnimatePresence initial={false} custom={direction}>
-                    <motion.div
-                        key={currentSlide}
-                        custom={direction}
-                        variants={variants}
-                        initial="enter"
-                        animate="center"
-                        exit="exit"
-                        transition={{
-                            x: { type: "spring", stiffness: 300, damping: 30 },
-                            opacity: { duration: 0.2 }
-                        }}
-                        drag="x"
-                        dragConstraints={{ left: 0, right: 0 }}
-                        dragElastic={1}
-                        onDragEnd={(e, { offset, velocity }) => {
-                            const swipe = swipePower(offset.x, velocity.x);
+                <div className="absolute inset-0 w-full h-full transition-opacity duration-500">
+                    {/* Background Image */}
+                    <div className="absolute inset-0 z-0">
+                        {/* Desktop Image */}
+                        <div className="hidden lg:block absolute inset-0">
+                            <Image
+                                src={slides[currentSlide].image}
+                                alt="Hero Background Desktop"
+                                fill
+                                className="object-cover"
+                                priority
+                                draggable={false}
+                            />
+                        </div>
+                        {/* Mobile Image */}
+                        <div className="block lg:hidden absolute inset-0">
+                            <Image
+                                src={slides[currentSlide].mobileImage}
+                                alt="Hero Background Mobile"
+                                fill
+                                className="object-cover"
+                                priority
+                                draggable={false}
+                            />
+                        </div>
+                        {/* Optional Overlay */}
+                        <div className={`absolute inset-0 ${slides[currentSlide].bgColor} opacity-90 mix-blend-multiply`} />
+                    </div>
 
-                            if (swipe < -swipeConfidenceThreshold) {
-                                paginate(1);
-                            } else if (swipe > swipeConfidenceThreshold) {
-                                paginate(-1);
-                            }
-                        }}
-                        className="absolute inset-0 w-full h-full cursor-grab active:cursor-grabbing"
-                    >
-                        {/* Background Image */}
-                        <div className="absolute inset-0 z-0">
-                            {/* Desktop Image */}
-                            <div className="hidden lg:block absolute inset-0">
-                                <Image
-                                    src={slides[currentSlide].image}
-                                    alt="Hero Background Desktop"
-                                    fill
-                                    className="object-cover"
-                                    priority
-                                    draggable={false}
+                    {/* Content */}
+                    <div className="relative z-10 h-full px-6 py-8 lg:p-11 flex flex-col justify-center pointer-events-none">
+                        <div className="max-w-lg pointer-events-auto">
+                            <div className="text-[24px] lg:text-[38px] font-[650] text-[#0961A1] leading-tight mb-2 md:mb-6">
+                                {slides[currentSlide].title}
+                            </div>
+                            <p className="text-gray-700 text-[13px] md:text-[14px] mb-4 md:mb-5 font-medium leading-relaxed">
+                                {slides[currentSlide].subtitle}
+                            </p>
+                            <div>
+                                <KnowMoreButton
+                                    iconVariant="up-right"
+                                    className="mb-70 lg:mb-26 mt-2"
                                 />
                             </div>
-                            {/* Mobile Image */}
-                            <div className="block lg:hidden absolute inset-0">
-                                <Image
-                                    src={slides[currentSlide].mobileImage}
-                                    alt="Hero Background Mobile"
-                                    fill
-                                    className="object-cover"
-                                    priority
-                                    draggable={false}
-                                />
-                            </div>
-                            {/* Optional Overlay */}
-                            <div className={`absolute inset-0 ${slides[currentSlide].bgColor} opacity-90 mix-blend-multiply`} />
                         </div>
-
-                        {/* Content */}
-                        <div className="relative z-10 h-full px-6 py-8 lg:p-11 flex flex-col justify-center pointer-events-none">
-                            <div className="max-w-lg pointer-events-auto">
-                                <motion.div
-                                    initial={{ y: 20, opacity: 0 }}
-                                    animate={{ y: 0, opacity: 1 }}
-                                    transition={{ delay: 0.2 }}
-                                    className="text-[24px] lg:text-[38px] font-[650] text-[#0961A1] leading-tight mb-2 md:mb-6"
-                                >
-                                    {slides[currentSlide].title}
-
-                                </motion.div>
-                                <motion.p
-                                    initial={{ y: 20, opacity: 0 }}
-                                    animate={{ y: 0, opacity: 1 }}
-                                    transition={{ delay: 0.4 }}
-                                    className="text-gray-700 text-[13px] md:text-[14px] mb-4 md:mb-5 font-medium leading-relaxed"
-                                >
-                                    {slides[currentSlide].subtitle}
-                                </motion.p>
-                                <motion.div
-                                    initial={{ y: 20, opacity: 0 }}
-                                    animate={{ y: 0, opacity: 1 }}
-                                    transition={{ delay: 0.6 }}
-                                >
-                                    <KnowMoreButton
-                                        iconVariant="up-right"
-                                        className="mb-70 lg:mb-26 mt-2"
-                                    />
-                                </motion.div>
-                            </div>
-                        </div>
-                    </motion.div>
-                </AnimatePresence>
+                    </div>
+                </div>
 
                 {/* Slide Indicators */}
                 <div className="absolute bottom-4 left-6 lg:left-12 flex gap-2 z-20">
                     {slides.map((_, index) => (
                         <button
                             key={index}
-                            onClick={() => {
-                                const direction = index > currentSlide ? 1 : -1;
-                                setPage([page + (index - currentSlide), direction]);
-                            }}
+                            onClick={() => setCurrentSlide(index)}
                             className={`h-2 rounded-full transition-all duration-300 ${currentSlide === index ? "w-8 bg-[#F98D1B]" : "w-2 bg-gray-400"
                                 }`}
                         />

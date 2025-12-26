@@ -43,7 +43,7 @@ const Section8 = () => {
     ];
 
     return (
-        <section className="relative bg-[linear-gradient(135deg,#E0F2FE_0%,#F1F9FF_50%,#E0F2FE_100%)] py-16 px-4 md:px-8 lg:px-16 overflow-hidden md:my-14 rounded-[50px] max-w-[1400px] mx-auto">
+        <section className="font-sans relative bg-[linear-gradient(135deg,#E0F2FE_0%,#F1F9FF_50%,#E0F2FE_100%)] md:py-16 py-12 my-8 md:px-8 px-4 lg:px-16 overflow-hidden md:my-14 rounded-[30px] max-w-[1400px] mx-auto">
             {/* Background decorative elements */}
             <div className="absolute top-0 right-0 w-96 h-96 bg-blue-400/10 blur-[100px] rounded-full -mr-48 -mt-48" />
             <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-400/10 blur-[100px] rounded-full -ml-48 -mb-48" />
@@ -65,7 +65,7 @@ const Section8 = () => {
                 <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
                     {/* Left side visual */}
                     <div className="w-full lg:w-1/2 flex justify-center">
-                        <div className="relative w-full max-w-[550px] aspect-4/5 hover:scale-105 transition-transform duration-500">
+                        <div className="relative w-full max-w-[550px] aspect-4/5">
                             <Image
                                 src="/images/section-8/center.avif"
                                 alt="VJ Scans Laboratory Excellence"
@@ -81,10 +81,10 @@ const Section8 = () => {
                         {features.map((feature) => (
                             <div
                                 key={feature.id}
-                                className="backdrop-blur-md bg-white/40 p-6 rounded-3xl shadow-[0_8px_32px_0_rgba(31,38,135,0.07)] hover:shadow-[0_8px_32px_0_rgba(31,38,135,0.15)] hover:-translate-y-2 transition-all duration-300 group border border-white/40"
+                                className="backdrop-blur-md bg-white/40 p-6 rounded-3xl shadow-[0_8px_32px_0_rgba(31,38,135,0.07) transition-all duration-300 group border border-white/40"
                             >
-                                <div className="mb-4 bg-white/30 backdrop-blur-sm w-14 h-14 rounded-2xl flex items-center justify-center group-hover:bg-[#0961A1] transition-colors duration-300 border border-white/20">
-                                    <div className="group-hover:text-white transition-colors duration-300">
+                                <div className="mb-4 bg-white/30 backdrop-blur-sm w-14 h-14 rounded-2xl flex items-center justify-center transition-colors duration-300 border border-white/20">
+                                    <div className="transition-colors duration-300">
                                         {feature.icon}
                                     </div>
                                 </div>

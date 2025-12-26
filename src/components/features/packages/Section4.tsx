@@ -24,7 +24,7 @@ const steps = [
 const Section4 = () => {
     return (
         <section className="py-16 bg-[#F4FAFF] font-sans">
-            <div className="max-w-[1200px] mx-auto px-4 text-center">
+            <div className="max-w-[900px] mx-auto px-4 text-center">
                 <h2 className="text-[28px] md:text-[40px] font-bold text-[#0961A1] mb-16">
                     How it works?
                 </h2>

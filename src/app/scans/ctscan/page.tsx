@@ -1,10 +1,10 @@
 import React from 'react'
-import Section1 from "@/components/features/ctscan/Section1"
-import Section2 from "@/components/features/ctscan/Section2"
-import Section3 from "@/components/features/ctscan/Section3"
-import Section5 from "@/components/features/ctscan/Section5"
-import Section6 from "@/components/features/ctscan/Section6"
-import Section4 from "@/components/features/ctscan/Section4"
+import Section1 from "@/components/features/scans/ctscan/Section1"
+import Section2 from "@/components/features/scans/ctscan/Section2"
+import Section3 from "@/components/features/scans/ctscan/Section3"
+import Section5 from "@/components/features/scans/ctscan/Section5"
+import Section6 from "@/components/features/scans/ctscan/Section6"
+import Section4 from "@/components/features/scans/ctscan/Section4"
 
 const page = () => {
     return (

@@ -3,6 +3,8 @@ import nodemailer from 'nodemailer';
 import { z } from 'zod';
 
 import { generateEmailTemplate } from '@/lib/email-template';
+import connectDB from '@/lib/db';
+import Contact from '@/models/Contact';
 
 // Schema for validation
 const contactSchema = z.object({
@@ -29,7 +31,25 @@ export async function POST(request: Request) {
 
         const { name, email, phone, package: selectedPackage, message, source } = result.data;
 
-        // Create transporter
+        // 1. Connect to Database and Save Contact
+        try {
+            await connectDB();
+            await Contact.create({
+                name,
+                email: email || undefined, // Save as undefined if empty string for cleaner DB
+                phone,
+                package: selectedPackage,
+                message,
+                source,
+            });
+            console.log('Contact saved to MongoDB');
+        } catch (dbError) {
+            console.error('Database save error:', dbError);
+            // We continue to send email even if DB fails, but we log it.
+            // Alternatively, you could throw to stop everything.
+        }
+
+        // 2. Create transporter for Email
         const transporter = nodemailer.createTransport({
             host: process.env.SMTP_HOST || 'smtp.gmail.com',
             port: parseInt(process.env.SMTP_PORT || '587'),
@@ -45,7 +65,7 @@ export async function POST(request: Request) {
         // Email content
         const mailOptions = {
             from: process.env.SMTP_FROM || '"VJ Scans Website" <no-reply@vjscans.com>',
-            to: process.env.CONTACT_EMAIL || 'info@vjscans.com', // Replace with their actual admin email env var
+            to: process.env.CONTACT_EMAIL || 'info@vjscans.com',
             subject: `New Appointment Request from ${name} (${source || 'Website'})`,
             text: `
         Name: ${name}
@@ -68,7 +88,7 @@ export async function POST(request: Request) {
             }),
         };
 
-        // Send email
+        // 3. Send email
         await transporter.sendMail(mailOptions);
 
         return NextResponse.json(

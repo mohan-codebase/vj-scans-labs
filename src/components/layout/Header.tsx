@@ -13,7 +13,10 @@ import {
 } from "@/components/ui/resizable-navbar";
 import { useState } from "react";
 
+import { useBooking } from "@/context/BookingContext";
+
 export function Header() {
+  const { openModal } = useBooking();
   const navItems = [
     {
       name: "Home",
@@ -21,7 +24,7 @@ export function Header() {
     },
     {
       name: "Specialities",
-      link: "/specialities",
+      link: "#",
       subItems: [
         { name: "Onco Diagnostics", link: "/specialities/onco-diagnostics" },
         { name: "Clinical Genomics", link: "/specialities/clinical-genitics-home" },
@@ -72,7 +75,7 @@ export function Header() {
           <NavbarLogo />
           <NavItems items={navItems} className="bg-[linear-gradient(90deg,#ffebd6,#d1ebff)] p-1" />
           <div className="flex items-center gap-4">
-            <NavbarButton href="#" className="">Book Appointment</NavbarButton>
+            <NavbarButton href="#" onClick={(e) => { e.preventDefault(); openModal(); }} className="">Book Appointment</NavbarButton>
           </div>
         </NavBody>
 
@@ -152,7 +155,11 @@ export function Header() {
             <div className="flex w-full flex-col gap-4">
               <NavbarButton
                 href="#"
-                onClick={() => setIsMobileMenuOpen(false)}
+                onClick={(e) => {
+                  e.preventDefault();
+                  setIsMobileMenuOpen(false);
+                  openModal();
+                }}
                 className="vj-btn-primary font-sans">
                 Book Appointment
               </NavbarButton>

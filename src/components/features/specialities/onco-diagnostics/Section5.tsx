@@ -2,7 +2,6 @@
 
 import React from 'react';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
 
 const column1 = [
     "Molecular screening techniques for detecting specific tumor mutations, gene expression and chromosomal alterations",
@@ -38,12 +37,8 @@ const Section5 = () => {
                     />
                     <div className="relative z-10 flex flex-col gap-6">
                         {column1.map((item, index) => (
-                            <motion.div
+                            <div
                                 key={index}
-                                initial={{ opacity: 0, x: -20 }}
-                                whileInView={{ opacity: 1, x: 0 }}
-                                viewport={{ once: true }}
-                                transition={{ duration: 0.4, delay: index * 0.05 }}
                                 className="flex items-start gap-4"
                             >
                                 <div className="mt-1 min-w-[24px] h-[24px] flex items-center justify-center shrink-0 relative">
@@ -58,7 +53,7 @@ const Section5 = () => {
                                 <p className="text-gray-700 font-medium text-[15px] md:text-base leading-relaxed">
                                     {item}
                                 </p>
-                            </motion.div>
+                            </div>
                         ))}
                     </div>
                 </div>
@@ -73,12 +68,8 @@ const Section5 = () => {
                     />
                     <div className="relative z-10 flex flex-col gap-6">
                         {column2.map((item, index) => (
-                            <motion.div
+                            <div
                                 key={index}
-                                initial={{ opacity: 0, x: -20 }}
-                                whileInView={{ opacity: 1, x: 0 }}
-                                viewport={{ once: true }}
-                                transition={{ duration: 0.4, delay: index * 0.05 }}
                                 className="flex items-start gap-4"
                             >
                                 <div className="mt-1 min-w-[24px] h-[24px] flex items-center justify-center shrink-0 relative">
@@ -93,7 +84,7 @@ const Section5 = () => {
                                 <p className="text-gray-700 font-medium text-[15px] md:text-base leading-relaxed">
                                     {item}
                                 </p>
-                            </motion.div>
+                            </div>
                         ))}
                     </div>
                 </div>

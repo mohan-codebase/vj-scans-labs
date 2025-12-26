@@ -1,10 +1,10 @@
-import Section1 from '@/components/features/Mammograms/Section1'
-import Section2 from '@/components/features/Mammograms/Section2'
-import Section3 from '@/components/features/Mammograms/Section3'
-import Section4 from '@/components/features/Mammograms/Section4'
-import Section5 from '@/components/features/Mammograms/Section5'
-import Section6 from '@/components/features/Mammograms/Section6'
-import DosAndDonts from '@/components/features/Mammograms/DosAndDonts'
+import Section1 from '@/components/features/scans/mammograms/Section1'
+import Section2 from '@/components/features/scans/mammograms/Section2'
+import Section3 from '@/components/features/scans/mammograms/Section3'
+import Section4 from '@/components/features/scans/mammograms/Section4'
+import Section5 from '@/components/features/scans/mammograms/Section5'
+import Section6 from '@/components/features/scans/mammograms/Section6'
+import DosAndDonts from '@/components/features/scans/mammograms/DosAndDonts'
 import React from 'react'
 
 const page = () => {

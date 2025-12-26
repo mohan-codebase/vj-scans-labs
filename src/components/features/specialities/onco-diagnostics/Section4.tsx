@@ -2,7 +2,6 @@
 
 import React from 'react';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
 
 const technologies = [
     {
@@ -37,12 +36,8 @@ const Section4 = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 max-w-[1000px] mx-auto">
                 {technologies.map((tech, index) => (
-                    <motion.div
+                    <div
                         key={index}
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.5, delay: index * 0.1 }}
                         className=" rounded-[24px] p-8 flex flex-col items-center text-center "
                     >
                         <div className=" rounded-2xl mb-6 w-[200px] h-[200px] flex items-center justify-center relative">
@@ -57,7 +52,7 @@ const Section4 = () => {
                         <h3 className="text-xl font-bold text-[#4A4A4A] mb-3 leading-tight">
                             {tech.title}
                         </h3>
-                    </motion.div>
+                    </div>
                 ))}
             </div>
         </section>

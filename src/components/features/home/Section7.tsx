@@ -20,7 +20,7 @@ const Section7 = () => {
                                 Through continuous training, rigorous quality checks, and a patient-first approach, we ensure every individual receives a smooth, reliable, and reassuring diagnostic experience.
                             </p>
                         </div>
-                        <Link href="/about" className="inline-flex items-center gap-2 bg-[linear-gradient(84.92deg,#F98D1B_34.11%,#FFC180_105.58%)] text-white py-3 px-6 rounded-full font-semibold no-underline hover:shadow-lg hover:scale-105 transition-all duration-300">
+                        <Link href="/aboutus" className="inline-flex items-center gap-2 bg-[linear-gradient(84.92deg,#F98D1B_34.11%,#FFC180_105.58%)] text-white py-3 px-6 rounded-full font-semibold no-underline hover:shadow-lg hover:scale-105 transition-all duration-300">
                             Read More
                             <span className="bg-white text-orange-500 rounded-full p-1">
                                 <ArrowUpRight size={16} />

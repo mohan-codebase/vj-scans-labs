@@ -8,30 +8,46 @@ const Section6 = () => {
     const toggleAccordion = (index: number) => {
         setOpenIndex(openIndex === index ? null : index);
     };
-const faqs = [
-  {
-    question: "How long does the TMT Test take?",
-    answer: "The TMT test typically lasts between 10 to 15 minutes of exercise on the treadmill, although the entire tmt test procedure, including preparation and recovery, may take around 30 to 45 minutes."
-  },
-  {
-    question: "Can we eat before the TMT Test?",
-    answer: "Yes, you can eat before the TMT Test."
-  },
-  {
-    question: "What happens if I fail a Stress Test?",
-    answer: "If you fail a stress test, it doesn't mean you have heart disease. It just means your heart muscle isn't getting enough blood when you exercise."
-  },
-  {
-    question: "Who should not go for a TMT test?",
-    answer: "People with heart disease, heart failure, or certain heart conditions should not go for a TMT test."
-  }
-];
 
+    const faqs = [
+        {
+            question: "What is a TMT (Treadmill Test)?",
+            answer: "TMT (Treadmill Test) or Exercise Stress Test evaluates how your heart performs during physical activity. You'll walk on a treadmill while your heart rate, blood pressure, and ECG are monitored. It helps diagnose coronary artery disease and assess heart function under stress."
+        },
+        {
+            question: "How should I prepare for a TMT?",
+            answer: "Wear comfortable clothing and athletic shoes suitable for walking/running. Avoid eating a heavy meal 2-3 hours before the test. Continue your regular medications unless your doctor advises otherwise. Bring a list of your current medications and any previous heart test results."
+        },
+        {
+            question: "How long does a TMT take?",
+            answer: "The entire TMT appointment takes about 30-45 minutes. This includes preparation time (attaching electrodes), the actual exercise portion (8-12 minutes of walking on the treadmill), and a recovery period where you'll be monitored for a few minutes after exercising."
+        },
+        {
+            question: "Is the TMT safe?",
+            answer: "Yes, TMT is generally very safe when performed under medical supervision. Our trained staff monitors you continuously throughout the test. Rare complications can include abnormal heart rhythms or chest pain, but emergency equipment and personnel are always available."
+        },
+        {
+            question: "Who should not take a TMT?",
+            answer: "TMT may not be suitable if you have recent heart attack, unstable angina, severe heart valve disease, uncontrolled high blood pressure, or certain arrhythmias. Your doctor will evaluate your condition and may recommend alternative stress tests if needed."
+        },
+        {
+            question: "What happens during the TMT?",
+            answer: "Electrodes will be placed on your chest to monitor your heart. You'll start walking slowly on the treadmill, and the speed and incline will gradually increase. The test continues until you reach your target heart rate, experience symptoms, or show ECG changes. You can stop anytime if needed."
+        },
+        {
+            question: "When will I get my TMT results?",
+            answer: "A cardiologist will analyze your TMT data including ECG changes, heart rate response, blood pressure, and symptoms. Results are typically available within 24-48 hours. Your referring doctor will discuss the findings and recommend any necessary follow-up care or treatment."
+        },
+        {
+            question: "Should I stop my heart medications before TMT?",
+            answer: "Generally, continue your regular medications unless specifically instructed by your doctor. Some medications like beta-blockers may affect test results, so your doctor will advise whether to adjust them. Never stop medications without consulting your physician first."
+        }
+    ];
 
     return (
-        <section className="bg-[#F0F8FF] py-16 px-4 md:px-8 lg:px-16">
-            <div className="max-w-4xl mx-auto">
-                <h2 className="text-3xl md:text-[40px] font-bold text-[#0961A1] text-center mb-12 font-sans">
+        <section className="bg-[#F0F8FF] py-16 px-4 md:px-8 md:my-18 lg:px-16 font-sans">
+            <div className="max-w-5xl mx-auto">
+                <h2 className="text-3xl md:text-[40px] font-bold text-[#0961A1] text-center mb-12">
                     Frequently Asked Questions
                 </h2>
 
@@ -42,7 +58,7 @@ const faqs = [
                                 className="w-full flex justify-between items-center text-left py-2 focus:outline-none group"
                                 onClick={() => toggleAccordion(index)}
                             >
-                                <span className="text-lg md:text-xl font-[700] text-gray-800 font-sans">
+                                <span className="text-lg md:text-xl font-semibold text-gray-800">
                                     {faq.question}
                                 </span>
                                 <span className="ml-4 shrink-0 text-gray-500">

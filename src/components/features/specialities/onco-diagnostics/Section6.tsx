@@ -2,7 +2,6 @@
 
 import React from 'react';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
 
 const benefits = [
     {
@@ -45,12 +44,8 @@ const Section6 = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-[1000px] mx-auto">
                 {benefits.map((benefit, index) => (
-                    <motion.div
+                    <div
                         key={index}
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.5, delay: index * 0.1 }}
                         className="flex flex-col items-center text-center group"
                     >
                         <div className="w-[180px] h-[180px] mb-6 rounded-2xl flex items-center justify-center ">
@@ -65,7 +60,7 @@ const Section6 = () => {
                         <p className="text-gray-700 font-bold text-lg leading-relaxed max-w-xs">
                             {benefit.text}
                         </p>
-                    </motion.div>
+                    </div>
                 ))}
             </div>
         </section>

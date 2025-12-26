@@ -12,23 +12,23 @@ import { Metadata } from 'next'
 
 const seo = seoDatas.specialitiesOncoDiagnostics
 
-export const metadata:Metadata = {
-    title:seo.title,
-    description:seo.description,
-    openGraph:{
-        title:seo.title,
-        description:seo.description,
-        url:seo.url,
-        siteName:SITE_NAME,
-        images:[
+export const metadata: Metadata = {
+    title: seo.title,
+    description: seo.description,
+    openGraph: {
+        title: seo.title,
+        description: seo.description,
+        url: seo.url,
+        siteName: SITE_NAME,
+        images: [
             {
-                url:seo.image,
-                width:500,
-                height:300,
-                alt:'VJ Scans Health Checkup Packages'
+                url: seo.image,
+                width: 500,
+                height: 300,
+                alt: 'VJ Scans Health Checkup Packages'
             },
         ],
-        type:'website'
+        type: 'website'
     }
 }
 

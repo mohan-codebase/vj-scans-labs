@@ -1,6 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
 import { ArrowUpRight } from 'lucide-react';
+import Button from '@/components/ui/Button';
+import KnowMoreButton from '@/components/ui/KnowMoreButton';
 
 const Section3 = () => {
     return (
@@ -35,15 +37,11 @@ const Section3 = () => {
                     </h3>
 
                     <p className="text-gray-600 text-base md:text-lg font-secondary font-medium leading-relaxed mb-8 max-w-xl">
-                        We know it&apos;s not always easy to visit a diagnostic centre — especially if you&apos;re unwell, elderly, or have mobility issues. That&apos;s why Anderson Diagnostics & Labs brings our testing services to you! Our friendly, trained professionals will collect your samples right from your doorstep, so you can stay comfortable at home and still get accurate, on-time results you can trust.
+                        We know it&apos;s not always easy to visit a diagnostic centre — especially if you&apos;re unwell, elderly, or have mobility issues. That&apos;s why VJ Scans & Labs brings our testing services to you! Our friendly, trained professionals will collect your samples right from your doorstep, so you can stay comfortable at home and still get accurate, on-time results you can trust.
                     </p>
 
-                    <button className="bg-[linear-gradient(84.92deg,#F98D1B_34.11%,#FFC180_105.58%)]  text-white px-8 py-3 rounded-full font-semibold flex items-center gap-2 transition-all shadow-lg hover:shadow-xl group">
-                        Read More
-                        <span className="bg-white rounded-full p-1 ">
-                            <ArrowUpRight size={16} className="text-[#F98D1B]" />
-                        </span>
-                    </button>
+                    <KnowMoreButton text='Read More' />
+
                 </div>
             </div>
         </section>

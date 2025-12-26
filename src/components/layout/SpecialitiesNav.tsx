@@ -14,10 +14,10 @@ const navItems: NavItem[] = [
     { name: 'Home', link: '/specialities/clinical-genitics-home', active: true },
     { name: "Male Infertility", link: "/specialities/male-infertility" },
 
-    { name: 'PGT', link: '#' },
-    { name: 'Recurrent Pregnancy Loss', link: '#' },
-    { name: 'Genetic Counseling', link: '#' },
-    { name: 'Contact', link: '#' },
+    { name: 'PGT', link: '/specialities/pgt' },
+    { name: 'Recurrent Pregnancy Loss', link: '/specialities/recurrent-pregnancy-loss' },
+    { name: 'Genetic Counseling', link: '/specialities/genetic-counseling' },
+    { name: 'Contact', link: '/contact' },
 ];
 
 export function SpecialitiesNav() {

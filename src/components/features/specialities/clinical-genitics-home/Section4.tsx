@@ -24,7 +24,7 @@ const Section4 = () => {
 
                     {/* Description */}
                     <p className="font-sans text-white text-sm md:text-base lg:text-lg leading-relaxed mb-6 md:mb-8 opacity-95">
-                        Our advanced genetic testing services at Anderson Diagnostics help you access personalized treatment solutions tailored to your unique genetic profile.
+                        Our advanced genetic testing services at VJ Scans help you access personalized treatment solutions tailored to your unique genetic profile.
                     </p>
 
                     {/* CTA Button */}
