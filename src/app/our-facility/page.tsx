@@ -1,16 +1,23 @@
-import Section1 from '@/components/features/our-facility/Section1'
-import WhyChooseUsSection from '@/components/common/WhyChooseUsSection'
-import TestimonialSection from '@/components/common/TestimonialSection'
-import AppointmentSection from '@/components/common/AppointmentSection'
+import HeroSection from '@/components/features/our-facility/HeroSection'
+import IntroSection from '@/components/features/our-facility/IntroSection'
+import FacilityFeatures from '@/components/features/our-facility/FacilityFeatures'
+// import GallerySection from '@/components/features/our-facility/GallerySection'
+import FacilityCarousels from '@/components/features/our-facility/FacilityCarousels'
 import React from 'react'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: "Our Facility - VJ Scans & Labs",
+  description: "Explore our world-class medical facility equipped with advanced technology and focused on patient comfort."
+}
 
 const page = () => {
   return (
     <div>
-      <Section1 />
-      <WhyChooseUsSection />
-      <TestimonialSection />
-      <AppointmentSection />
+      <HeroSection />
+      <IntroSection />
+      <FacilityFeatures />
+      <FacilityCarousels />
     </div>
   )
 }

@@ -17,24 +17,31 @@ const FAQAccordion = ({ items }: FAQAccordionProps) => {
     return (
         <div className="space-y-4">
             {items.map((item, index) => (
-                <div key={index} className="border border-gray-200 rounded-xl overflow-hidden bg-white">
+                <div key={index} className="border-b border-gray-300 pb-4">
                     <button
+                        className="w-full flex justify-between items-center text-left py-2 focus:outline-none group"
                         onClick={() => setActiveIndex(activeIndex === index ? null : index)}
-                        className="w-full flex items-center justify-between p-4 md:p-6 text-left hover:bg-gray-50 transition-colors"
                     >
-                        <span className="font-bold text-[#0961A1] text-lg">{item.question}</span>
-                        <ChevronDown
-                            className={`w-5 h-5 text-[#0961A1] transition-transform duration-300 ${activeIndex === index ? 'rotate-180' : ''
-                                }`}
-                        />
+                        <span className="text-lg md:text-xl font-[600] text-gray-800">
+                            {item.question}
+                        </span>
+                        <span className="ml-4 shrink-0 text-gray-500">
+                            {activeIndex === index ? (
+                                <ChevronDown className="w-6 h-6 rotate-180 transition-transform duration-300" />
+                            ) : (
+                                <ChevronDown className="w-6 h-6 transition-transform duration-300" />
+                            )}
+                        </span>
                     </button>
-                    {activeIndex === index && (
-                        <div className="overflow-hidden transition-all duration-300 ease-in-out">
-                            <div className="p-4 md:p-6 pt-0 text-gray-600 leading-relaxed border-t border-gray-100">
-                                {item.answer}
-                            </div>
-                        </div>
-                    )}
+
+                    <div
+                        className={`overflow-hidden transition-all duration-300 ease-in-out ${activeIndex === index ? 'max-h-96 opacity-100 mt-2' : 'max-h-0 opacity-0'
+                            }`}
+                    >
+                        <p className="text-gray-600 leading-relaxed">
+                            {item.answer}
+                        </p>
+                    </div>
                 </div>
             ))}
         </div>

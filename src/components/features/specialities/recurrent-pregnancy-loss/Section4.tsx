@@ -19,7 +19,19 @@ const Section4 = () => {
                         <ul className="space-y-3 font-secondary font-medium">
                             <li className="flex items-start gap-2">
                                 <Image src="/images/specialities/male-infertility/section3/hand-icon.svg" className='mt-1' alt="Hand Icon" width={20} height={20} />
-                                <p className="text-gray-600">Comprehensive Karyotyping</p>
+                                <p className="text-gray-600">Comprehensive Karyotyping (Both Partners)</p>
+                            </li>
+                            <li className="flex items-start gap-2">
+                                <Image src="/images/specialities/male-infertility/section3/hand-icon.svg" className='mt-1' alt="Hand Icon" width={20} height={20} />
+                                <p className="text-gray-600">Thrombophilia Screening (APS Panel)</p>
+                            </li>
+                            <li className="flex items-start gap-2">
+                                <Image src="/images/specialities/male-infertility/section3/hand-icon.svg" className='mt-1' alt="Hand Icon" width={20} height={20} />
+                                <p className="text-gray-600">Hormonal Assays (Thyroid, Prolactin, etc)</p>
+                            </li>
+                            <li className="flex items-start gap-2">
+                                <Image src="/images/specialities/male-infertility/section3/hand-icon.svg" className='mt-1' alt="Hand Icon" width={20} height={20} />
+                                <p className="text-gray-600">Uterine Imaging (3D Ultrasound / Hysteroscopy)</p>
                             </li>
                             <li className="flex items-start gap-2">
                                 <Image src="/images/specialities/male-infertility/section3/hand-icon.svg" className='mt-1' alt="Hand Icon" width={20} height={20} />

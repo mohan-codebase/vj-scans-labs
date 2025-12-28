@@ -3,22 +3,26 @@
 import { ArrowUp } from "lucide-react";
 import { motion } from 'framer-motion';
 
-export default function LiquidGlassButton() {
+export default function LiquidGlassButton({ onClick, ...props }) {
   return (
     <motion.button
+      onClick={onClick}
+      {...props}
       whileHover={{ scale: 0.9 }}
       whileTap={{ scale: 0.8 }}
       transition={{ type: 'keyframes', stiffness: 300, damping: 18 }}
       className="
-        px-3 py-3
+        p-3
         rounded-full
-      bg-[black]/5
-        border border-white/50
-        text-orange-500 font-medium
-        shadow-2xl backdrop-blur-sm animate-bounce
+        bg-[linear-gradient(84.92deg,#F98D1B_34.11%,#FFC180_105.58%)]
+        text-white
+        shadow-lg
+        hover:shadow-xl
+        transition-shadow
+        z-50
       "
     >
-      <ArrowUp size={24} />
+      <ArrowUp size={24} strokeWidth={3} />
     </motion.button>
   );
 }

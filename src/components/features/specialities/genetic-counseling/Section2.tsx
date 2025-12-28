@@ -30,8 +30,8 @@ const Section2 = () => {
                     </h2>
 
                     <p className="text-gray-600 text-base md:text-lg leading-relaxed mb-8 font-medium">
-                        Genetic counseling is a vital service for individuals and families who may be at risk for inherited conditions. <br /><br />
-                        Our certified counselors help you understand complex genetic information, assess your risks, and guide you through testing options. We aim to empower you to make informed healthcare and reproductive decisions in a supportive environment.
+                        Genetic counseling is a vital service for individuals and families who may be at risk for inherited conditions, birth defects, or hereditary cancers. <br /><br />
+                        Our certified counselors bridge the gap between complex genetic science and your personal health. We help you understand inheritance patterns, assess your specific risks, and guide you through testing options. Our goal is to empower you to make informed healthcare and reproductive decisions in a supportive, non-judgmental environment.
                     </p>
 
                 </div>

@@ -94,10 +94,13 @@ interface SubItem {
   link: string;
 }
 
+import { usePathname } from "next/navigation"
+
 export const NavItems = ({ items, className }: { items: { name: string; link: string; subItems?: SubItem[] }[]; className?: string }) => {
   const [hovered, setHovered] = useState<number | null>(null)
   const [activeDropdown, setActiveDropdown] = useState<number | null>(null)
   const [hoveredSubItem, setHoveredSubItem] = useState<number | null>(null)
+  const pathname = usePathname()
 
   return (
     <motion.div
@@ -110,81 +113,94 @@ export const NavItems = ({ items, className }: { items: { name: string; link: st
         className,
       )}
     >
-      {items.map((item, idx) => (
-        <div
-          key={`link-container-${idx}`}
-          className="relative"
-          onMouseEnter={() => {
-            setHovered(idx)
-            if (item.subItems) setActiveDropdown(idx)
-          }}
-          onMouseLeave={() => {
-            if (item.subItems) setActiveDropdown(null)
-          }}
-        >
-          <Link
-            className="relative px-4 py-2 flex items-center gap-1"
-            href={item.link}
-            style={{
-              fontFamily: "'DM Sans', sans-serif",
-              color: '#0961A1',
-              fontWeight: 800,
-              fontSize: '15px'
+      {items.map((item, idx) => {
+        // Check if item is active (itself or any subitem)
+        const isMainActive = pathname === item.link
+        const isChildActive = item.subItems?.some(sub => sub.link === pathname)
+        const isActive = isMainActive || isChildActive
+
+        return (
+          <div
+            key={`link-container-${idx}`}
+            className="relative"
+            onMouseEnter={() => {
+              setHovered(idx)
+              if (item.subItems) setActiveDropdown(idx)
+            }}
+            onMouseLeave={() => {
+              if (item.subItems) setActiveDropdown(null)
             }}
           >
-            {/* Hover effect */}
-            {hovered === idx && (
-              <motion.div
-                layoutId="hovered"
-                className="absolute inset-0 h-full w-full rounded-full bg-white/40 backdrop-blur-md border border-white/20 shadow-sm"
-                transition={{
-                  type: "spring",
-                  bounce: 0.2,
-                  duration: 0.6,
-                }}
-              />
-            )}
-            <span className="relative z-20">{item.name}</span>
-            {item.subItems && <IconChevronDown size={14} className="relative z-20" />}
-          </Link>
+            <Link
+              className="relative px-4 py-2 flex items-center gap-1"
+              href={item.link}
+              style={{
+                fontFamily: "'DM Sans', sans-serif",
+                color: isActive ? '#F98D1B' : '#0961A1', // Active orange, otherwise blue
+                fontWeight: 800,
+                fontSize: '15px'
+              }}
+            >
+              {/* Hover/Active Effect (Liquid Glass Pill) */}
+              {((hovered === idx) || (isActive && hovered === null)) && (
+                <motion.div
+                  layoutId="nav-pill"
+                  className="absolute inset-0 h-full w-full rounded-full bg-white/40 backdrop-blur-md border border-white/20 shadow-sm"
+                  transition={{
+                    type: "spring",
+                    bounce: 0.2,
+                    duration: 0.6,
+                  }}
+                />
+              )}
+              <span className="relative z-20">{item.name}</span>
+              {item.subItems && <IconChevronDown size={14} className="relative z-20" />}
+            </Link>
 
-          {/* Dropdown */}
-          <AnimatePresence>
-            {activeDropdown === idx && item.subItems && (
-              <motion.div
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: 10 }}
-                transition={{ duration: 0.2 }}
-                className="absolute left-0 top-full mt-2 w-48 rounded-[20px] bg-[linear-gradient(90deg,#ffebd6,#d1ebff)] p-2 shadow-xl border border-gray-100 z-50"
-                onMouseLeave={() => setHoveredSubItem(null)}
-              >
-                {item.subItems.map((subItem: { name: string; link: string }, subIdx: number) => (
-                  <Link
-                    key={`sub-${subIdx}`}
-                    href={subItem.link}
-                    className="relative block rounded-lg px-4 py-2 text-sm font-bold transition-colors text-[#0961A1]"
-                    onMouseEnter={() => setHoveredSubItem(subIdx)}
-                  >
-                    {hoveredSubItem === subIdx && (
-                      <motion.div
-                        layoutId="dropdown-hovered"
-                        className="absolute inset-0 h-full w-full rounded-[20px] bg-white/40 backdrop-blur-md border border-white/20 shadow-sm"
-                        transition={{
-                          type: "spring",
-                          bounce: 0.2,
-                          duration: 0.6,
-                        }}
-                      />
-                    )}
-                    <span className="relative z-10">{subItem.name}</span>
-                  </Link>
-                ))}
-              </motion.div>
-            )}
-          </AnimatePresence>
-        </div>
-      ))}
+            {/* Dropdown */}
+            <AnimatePresence>
+              {activeDropdown === idx && item.subItems && (
+                <motion.div
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: 10 }}
+                  transition={{ duration: 0.2 }}
+                  className="absolute left-0 top-full mt-2 w-48 rounded-[20px] bg-[linear-gradient(90deg,#ffebd6,#d1ebff)] p-2 shadow-xl border border-gray-100 z-50"
+                  onMouseLeave={() => setHoveredSubItem(null)}
+                >
+                  {item.subItems.map((subItem: { name: string; link: string }, subIdx: number) => {
+                    const isSubActive = pathname === subItem.link
+                    return (
+                      <Link
+                        key={`sub-${subIdx}`}
+                        href={subItem.link}
+                        className={cn(
+                          "relative block rounded-lg px-4 py-2 text-sm font-bold transition-colors",
+                          isSubActive ? "text-[#F98D1B]" : "text-[#0961A1]"
+                        )}
+                        onMouseEnter={() => setHoveredSubItem(subIdx)}
+                      >
+                        {hoveredSubItem === subIdx && (
+                          <motion.div
+                            layoutId="dropdown-hovered"
+                            className="absolute inset-0 h-full w-full rounded-[20px] bg-white/40 backdrop-blur-md border border-white/20 shadow-sm"
+                            transition={{
+                              type: "spring",
+                              bounce: 0.2,
+                              duration: 0.6,
+                            }}
+                          />
+                        )}
+                        <span className="relative z-10">{subItem.name}</span>
+                      </Link>
+                    )
+                  })}
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </div>
+        )
+      })}
     </motion.div>
   )
 }

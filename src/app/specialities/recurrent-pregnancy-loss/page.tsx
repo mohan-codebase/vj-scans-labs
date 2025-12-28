@@ -5,6 +5,8 @@ import Section3 from '@/components/features/specialities/recurrent-pregnancy-los
 import Section4 from '@/components/features/specialities/recurrent-pregnancy-loss/Section4'
 import Section5 from '@/components/features/specialities/recurrent-pregnancy-loss/Section5'
 import Section6 from '@/components/features/specialities/recurrent-pregnancy-loss/Section6'
+import Section7 from '@/components/features/specialities/recurrent-pregnancy-loss/Section7'
+import Section8 from '@/components/features/specialities/recurrent-pregnancy-loss/Section8'
 import { Metadata } from 'next'
 import { SITE_NAME } from '@/lib/seo'
 
@@ -28,6 +30,8 @@ const page = () => {
             <Section3 />
             <Section4 />
             <Section5 />
+            <Section7 />
+            <Section8 />
             <Section6 />
         </main>
     )

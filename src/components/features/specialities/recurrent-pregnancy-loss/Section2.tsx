@@ -30,8 +30,8 @@ const Section2 = () => {
                     </h2>
 
                     <p className="text-gray-600 text-base md:text-lg leading-relaxed mb-8 font-medium">
-                        Recurrent Pregnancy Loss (RPL) is a challenging condition defined as the loss of two or more clinical pregnancies. <br /><br />
-                        While common, the emotional toll is significant. Our comprehensive genetic evaluation aims to identify underlying causes—such as chromosomal translocations in parents or aneuploidy in embryos—to provide a clear path forward.
+                        Recurrent Pregnancy Loss (RPL), affecting approximately 1% to 2% of women, is defined as the loss of two or more clinical pregnancies. <br /><br />
+                        While medically complex, the emotional toll is profound. It leaves couples seeking answers. Our comprehensive evaluation aims to identify underlying causes—whether genetic, anatomical, hormonal, or immunological—to provide a clear path forward and restore hope.
                     </p>
 
                 </div>

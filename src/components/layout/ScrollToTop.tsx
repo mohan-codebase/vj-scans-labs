@@ -36,16 +36,14 @@ export const ScrollToTop = () => {
 
             <AnimatePresence>
                 {isVisible && (
-                    <motion.button
+                    <motion.div
                         initial={{ opacity: 0, scale: 0.5 }}
                         animate={{ opacity: 1, scale: 1 }}
                         exit={{ opacity: 0, scale: 0.5 }}
-                        onClick={scrollToTop}
                         className="fixed bottom-5 right-5 z-50 "
-                        aria-label="Scroll to top"
                     >
-                        <LiquidGlassButton />
-                    </motion.button>
+                        <LiquidGlassButton onClick={scrollToTop} aria-label="Scroll to top" />
+                    </motion.div>
 
                 )}
             </AnimatePresence>

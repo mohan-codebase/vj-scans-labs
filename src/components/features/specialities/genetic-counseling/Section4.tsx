@@ -19,15 +19,23 @@ const Section4 = () => {
                         <ul className="space-y-3 font-secondary font-medium">
                             <li className="flex items-start gap-2">
                                 <Image src="/images/specialities/male-infertility/section3/hand-icon.svg" className='mt-1' alt="Hand Icon" width={20} height={20} />
-                                <p className="text-gray-600">Advanced Maternal Age</p>
+                                <p className="text-gray-600"><strong className="text-gray-800">Advanced Maternal Age:</strong> Pregnancy at age 35 or older.</p>
                             </li>
                             <li className="flex items-start gap-2">
                                 <Image src="/images/specialities/male-infertility/section3/hand-icon.svg" className='mt-1' alt="Hand Icon" width={20} height={20} />
-                                <p className="text-gray-600">Previous child with genetic condition</p>
+                                <p className="text-gray-600"><strong className="text-gray-800">Abnormal Screening:</strong> Concerning results from prenatal ultrasound or blood tests.</p>
                             </li>
                             <li className="flex items-start gap-2">
                                 <Image src="/images/specialities/male-infertility/section3/hand-icon.svg" className='mt-1' alt="Hand Icon" width={20} height={20} />
-                                <p className="text-gray-600">Consanguineous marriage</p>
+                                <p className="text-gray-600"><strong className="text-gray-800">Family History:</strong> Known genetic conditions (Cystic Fibrosis, Thalassemia, etc.) or hereditary cancers (BRCA).</p>
+                            </li>
+                            <li className="flex items-start gap-2">
+                                <Image src="/images/specialities/male-infertility/section3/hand-icon.svg" className='mt-1' alt="Hand Icon" width={20} height={20} />
+                                <p className="text-gray-600"><strong className="text-gray-800">Recurrent Pregnancy Loss:</strong> History of multiple miscarriages or stillbirths.</p>
+                            </li>
+                            <li className="flex items-start gap-2">
+                                <Image src="/images/specialities/male-infertility/section3/hand-icon.svg" className='mt-1' alt="Hand Icon" width={20} height={20} />
+                                <p className="text-gray-600"><strong className="text-gray-800">Consanguinity:</strong> Marriage between blood relatives.</p>
                             </li>
                         </ul>
                     </div>
