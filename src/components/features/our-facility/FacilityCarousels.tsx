@@ -18,10 +18,22 @@ const portraitImages = Array.from({ length: 16 }, (_, i) => ({
     alt: `Facility Portrait ${i + 1}`
 }));
 
-const Carousel = ({ images, title, portrait = false }) => {
-    const scrollRef = useRef(null);
+interface ImageProps {
+    id: number;
+    src: string;
+    alt: string;
+}
 
-    const scroll = (direction) => {
+interface CarouselProps {
+    images: ImageProps[];
+    title: string;
+    portrait?: boolean;
+}
+
+const Carousel = ({ images, title, portrait = false }: CarouselProps) => {
+    const scrollRef = useRef<HTMLDivElement>(null);
+
+    const scroll = (direction: 'left' | 'right') => {
         if (scrollRef.current) {
             const { current } = scrollRef;
             const scrollAmount = direction === 'left' ? -400 : 400;
