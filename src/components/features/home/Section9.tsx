@@ -87,11 +87,11 @@ const Section9 = () => {
                                         </div>
 
                                         <div className="text-center mt-4">
-                                            <p className="text-gray-600 mb-6 leading-relaxed text-sm md:text-base">
+                                            <p className="text-gray-600 mb-6 leading-relaxed text-sm md:text-base font-sans">
                                                 {testimonial.review}
                                             </p>
 
-                                            <h3 className="text-xl font-bold text-[#005a9c] mb-2">
+                                            <h3 className="text-xl font-bold text-[#005a9c] mb-2 font-sans">
                                                 {testimonial.name}
                                             </h3>
 

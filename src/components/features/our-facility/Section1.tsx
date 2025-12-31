@@ -305,7 +305,7 @@ const Section1 = () => {
                         </div>
                         {/* Optional Overlay to ensure text readability if needed, using the gradient as a subtle wash */}
                         {landscapeSlides[landscapeIndex].bgColor && (
-                            <div className={`absolute inset-0 ${landscapeSlides[landscapeIndex].bgColor} opacity-90 mix-blend-multiply`} />
+                            <div className={`absolute inset-0 ${landscapeSlides[landscapeIndex].bgColor} opacity-90 mix-blend-multiply `} />
                         )}
                     </div>
                 </div>

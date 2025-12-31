@@ -36,7 +36,7 @@ const Section5 = () => {
                                 className="w-full h-full object-contain"
                             />
                         </div>
-                        <span className="text-base font-semibold text-[#555] text-center">{category.name}</span>
+                        <span className="text-base font-semibold text-[#555] text-center font-sans">{category.name}</span>
                     </div>
                 ))}
             </div>

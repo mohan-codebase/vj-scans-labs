@@ -35,7 +35,7 @@ const Section6 = () => {
                                 className="w-24 h-24 md:w-30 md:h-30 object-contain"
                             />
                         </div>
-                        <span className="text-[#555] mt-3 text-[14px] md:text-[16px] font-[600]">
+                        <span className="text-[#555] mt-3 text-[14px] md:text-[16px] font-[600] font-sans">
                             {item.label}
                         </span>
                     </div>

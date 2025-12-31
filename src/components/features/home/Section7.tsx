@@ -12,7 +12,7 @@ const Section7 = () => {
                     <div className="max-w-[600px]">
                         <h2 className="text-4xl md:text-[46px] font-extrabold mb-4 font-sans">About Us</h2>
                         <p className="text-lg md:text-xl font-semibold italic mb-6 opacity-90">VJ Scans & Labs: Precision. Compassion. Dedication.</p>
-                        <div className="text-sm md:text-base leading-relaxed mb-6 opacity-90">
+                        <div className="text-sm md:text-base leading-relaxed mb-6 opacity-90 font-sans">
                             <p>
                                 At VJ Scans & Labs in Chennai, we understand the critical role diagnostic sciences play in shaping medical decisions and patient outcomes. Our state-of-the-art facility brings together advanced imaging systems, genetic testing capabilities, and an experienced team committed to accuracy and compassionate care.
                             </p>

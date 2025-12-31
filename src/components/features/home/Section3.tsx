@@ -24,7 +24,7 @@ const Section3 = () => {
                 </div>
 
                 {/* Right Side - Content */}
-                <div className="w-full lg:w-1/2 flex flex-col items-start text-left">
+                <div className="w-full lg:w-1/2 flex flex-col items-start text-left font-sans">
                     <h2 className="text-3xl md:text-4xl lg:text-[42px] font-bold text-[#0961A1] leading-tight">
                         Stay Stress-Free
                     </h2>
@@ -32,7 +32,7 @@ const Section3 = () => {
                         Get Yourself Tested at Home
                     </h2>
 
-                    <h3 className="text-3xl md:text-4xl text-[#F98D1B] mb-6 font-dancing-script">
+                    <h3 className="text-3xl md:text-4xl text-[#F98D1B] mb-6 font-dancing-script font-sans">
                         At-Home Tests
                     </h3>
 
