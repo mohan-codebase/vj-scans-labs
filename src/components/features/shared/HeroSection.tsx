@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
 import { IconChevronDown } from '@tabler/icons-react'
 import KnowMoreButton from '@/components/ui/KnowMoreButton'
-import { BiBorderRadius } from 'react-icons/bi'
+// import { BiBorderRadius } from 'react-icons/bi'
 
 interface Slide {
     id: number;
@@ -66,7 +66,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ slides, formSource }) => {
                 setStatus('error');
                 setErrorMessage(data.error || 'Something went wrong');
             }
-        } catch (_error) {
+        } catch {
             setStatus('error');
             setErrorMessage('Failed to send request');
         }

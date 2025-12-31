@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
-import { Activity, Brain, Heart, Zap, FileText, Stethoscope } from 'lucide-react'
-import AboutSection from '@/components/common/AboutSection'
+import { Activity, Brain, Heart, Zap, FileText } from 'lucide-react'
+
 import WhyChooseUsSection from '@/components/common/WhyChooseUsSection'
 import TestimonialSection from '@/components/common/TestimonialSection'
 import AppointmentSection from '@/components/common/AppointmentSection'

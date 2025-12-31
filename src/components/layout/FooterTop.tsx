@@ -38,7 +38,7 @@ const FooterTop = () => {
             } else {
                 setStatus('error');
             }
-        } catch (err) {
+        } catch {
             setStatus('error');
         }
     };

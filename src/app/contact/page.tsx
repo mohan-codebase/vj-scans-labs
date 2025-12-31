@@ -56,7 +56,7 @@ const ContactPage = () => {
                             <h3 className="text-xl font-bold text-[#0961A1]">Email</h3>
 
                             <p className="text-gray-600 font-medium">
-                                <a href="tel:+918098088090" className=" transition-colors">info@vjscans@gmail.com</a>
+                                <a href="mailto:info@vjscans.com" className=" transition-colors">info@vjscans.com</a>
                             </p>
                         </div>
 

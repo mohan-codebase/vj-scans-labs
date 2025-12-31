@@ -40,7 +40,7 @@ const AppointmentSection: React.FC<AppointmentSectionProps> = ({ className = '' 
             } else {
                 setStatus('error');
             }
-        } catch (err) {
+        } catch {
             setStatus('error');
         }
     };

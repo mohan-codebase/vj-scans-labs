@@ -3,8 +3,7 @@ import nodemailer from 'nodemailer';
 import { z } from 'zod';
 
 import { generateEmailTemplate } from '@/lib/email-template';
-import connectDB from '@/lib/db';
-import Contact from '@/models/Contact';
+
 
 // Schema for validation
 const contactSchema = z.object({
@@ -31,25 +30,14 @@ export async function POST(request: Request) {
 
         const { name, email, phone, package: selectedPackage, message, source } = result.data;
 
-        // 1. Connect to Database and Save Contact
-        try {
-            await connectDB();
-            await Contact.create({
-                name,
-                email: email || undefined, // Save as undefined if empty string for cleaner DB
-                phone,
-                package: selectedPackage,
-                message,
-                source,
-            });
-            console.log('Contact saved to MongoDB');
-        } catch (dbError) {
-            console.error('Database save error:', dbError);
-            // We continue to send email even if DB fails, but we log it.
-            // Alternatively, you could throw to stop everything.
-        }
+
 
         // 2. Create transporter for Email
+        // Check for missing credentials to aid debugging in production
+        if (!process.env.SMTP_USER || !process.env.SMTP_PASS) {
+            console.warn('⚠️ SMTP_USER or SMTP_PASS is missing in environment variables. Email sending is likely to fail.');
+        }
+
         const transporter = nodemailer.createTransport({
             host: process.env.SMTP_HOST || 'smtp.gmail.com',
             port: parseInt(process.env.SMTP_PORT || '587'),

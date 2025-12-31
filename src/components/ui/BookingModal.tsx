@@ -41,7 +41,7 @@ const BookingModal = () => {
             } else {
                 setStatus('error');
             }
-        } catch (err) {
+        } catch {
             setStatus('error');
         }
     };

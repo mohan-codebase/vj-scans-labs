@@ -8,6 +8,7 @@ import { Metadata } from "next";
 import { seoDatas, SITE_NAME, SITE_URL } from "@/lib/seo";
 import { BookingProvider } from "@/context/BookingContext";
 import BookingModal from "@/components/ui/BookingModal";
+import WhatsAppButton from "@/components/layout/WhatsAppButton";
 
 const urbanist = Urbanist({
     variable: "--font-sans",
@@ -59,10 +60,12 @@ export default function RootLayout({
         <html lang="en">
             <body
                 className={`${urbanist.variable} ${dmSans.variable} ${dancingScript.variable} antialiased`}
+                suppressHydrationWarning
             >
                 <BookingProvider>
                     <Header />
                     {children}
+                    <WhatsAppButton />
                     <ScrollToTop />
                     <FooterTop />
                     <Footer />

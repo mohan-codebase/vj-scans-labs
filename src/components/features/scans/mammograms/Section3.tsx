@@ -5,10 +5,7 @@ const BrainIcon = '/images/mriscan/section3/Brain.png';
 const ChestIcon = '/images/mriscan/section3/Chest.png';
 const CardiacIcon = '/images/mriscan/section3/Cardiac.png';
 const SpinalIcon = '/images/mriscan/section3/Spinal.png';
-const AbdomenIcon = '/images/mriscan/section3/Abdomen.png';
-const KneeIcon = '/images/mriscan/section3/Knee.png';
-const SpineIcon = '/images/mriscan/section3/Spine.png';
-const SpectroscopyIcon = '/images/mriscan/section3/Spectroscopy.png';
+
 
 
 const Section3 = () => {

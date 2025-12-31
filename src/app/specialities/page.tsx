@@ -50,7 +50,7 @@ const SpecialitiesPage = () => {
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                    {specialities.map((specialty, index) => (
+                    {specialities.map((specialty) => (
                         <div
                             key={specialty.name}
                             className="bg-white rounded-3xl p-8 shadow-xl shadow-orange-100/30 border border-orange-50 group hover:border-[#F98D1B]/30 transition-all duration-300 hover:-translate-y-2"

@@ -29,17 +29,17 @@ const Footer = () => {
           <div>
             <h3 className="text-[#1e73be] font-bold text-lg mb-6">Scans</h3>
             <ul className="space-y-3">
-              <li><a href="#" className="hover:text-[#1e73be] transition-colors">Magnetic Resonance Imaging (MRI) – 1.5 Tesla</a></li>
-              <li><a href="#" className="hover:text-[#1e73be] transition-colors">Multislice Computed Tomography (CT)</a></li>
-              <li><a href="#" className="hover:text-[#1e73be] transition-colors">Ultrasonography (USG) – 2D/3D</a></li>
-              <li><a href="#" className="hover:text-[#1e73be] transition-colors">X-Ray</a></li>
-              <li><a href="#" className="hover:text-[#1e73be] transition-colors">Digital Mammography</a></li>
-              <li><a href="#" className="hover:text-[#1e73be] transition-colors">Echocardiography (ECHO)</a></li>
-              <li><a href="#" className="hover:text-[#1e73be] transition-colors">Electrocardiogram (ECG)</a></li>
-              <li><a href="#" className="hover:text-[#1e73be] transition-colors">Treadmill Test (TMT)</a></li>
-              <li><a href="#" className="hover:text-[#1e73be] transition-colors">Laboratory Services (LAB)</a></li>
-              <li><a href="#" className="hover:text-[#1e73be] transition-colors">Master Health Check-up</a></li>
-              <li><a href="#" className="hover:text-[#1e73be] transition-colors">DEXA Scan (Bone Mineral Density – BMD)</a></li>
+              <li><Link href="/scans/mriscan" className="hover:text-[#1e73be] transition-colors">Magnetic Resonance Imaging (MRI) – 1.5 Tesla</Link></li>
+              <li><Link href="/scans/ctscan" className="hover:text-[#1e73be] transition-colors">Multislice Computed Tomography (CT)</Link></li>
+              <li><Link href="/scans/2d-3d-ultrasound" className="hover:text-[#1e73be] transition-colors">Ultrasonography (USG) – 2D/3D</Link></li>
+              <li><Link href="/scans/x-ray" className="hover:text-[#1e73be] transition-colors">X-Ray</Link></li>
+              <li><Link href="/scans/mammograms" className="hover:text-[#1e73be] transition-colors">Digital Mammography</Link></li>
+              <li><Link href="/scans/echo" className="hover:text-[#1e73be] transition-colors">Echocardiography (ECHO)</Link></li>
+              <li><Link href="/scans/ecg" className="hover:text-[#1e73be] transition-colors">Electrocardiogram (ECG)</Link></li>
+              <li><Link href="/scans/tmt" className="hover:text-[#1e73be] transition-colors">Treadmill Test (TMT)</Link></li>
+              <li><Link href="/scans" className="hover:text-[#1e73be] transition-colors">Laboratory Services (LAB)</Link></li>
+              <li><Link href="/packages" className="hover:text-[#1e73be] transition-colors">Master Health Check-up</Link></li>
+              <li><Link href="/scans" className="hover:text-[#1e73be] transition-colors">DEXA Scan (Bone Mineral Density – BMD)</Link></li>
             </ul>
           </div>
 

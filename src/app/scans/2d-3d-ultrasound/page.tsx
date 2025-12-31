@@ -5,6 +5,7 @@ import Section4 from '@/components/features/scans/2d-3d-ultrasound/Section4'
 import Section6 from '@/components/features/scans/2d-3d-ultrasound/Section6'
 import Section5 from '@/components/features/scans/2d-3d-ultrasound/Section5'
 import React from 'react'
+import RelatedScans from '@/components/common/RelatedScans'
 
 const page = () => {
     return (
@@ -15,7 +16,7 @@ const page = () => {
             <Section4 />
             <Section5 />
             <Section6 />
-
+            <RelatedScans currentScan="ultrasound" />
         </>
     )
 }

@@ -46,15 +46,7 @@ const Section4 = () => {
         }
     ];
 
-    const restrictedItems = [
-        { name: "Glasses", icon: "/images/mriscan/section4/bottom-section/Glasses.svg" },
-        { name: "Watches", icon: "/images/mriscan/section4/bottom-section/Watches.svg" },
-        { name: "Hairpins", icon: "/images/mriscan/section4/bottom-section/Hairpins.svg" },
-        { name: "Credit Cards", icon: "/images/mriscan/section4/bottom-section/CreditCards.svg" },
-        { name: "Hearing Aids", icon: "/images/mriscan/section4/bottom-section/HearingAids.svg" },
-        { name: "Jewellery", icon: "/images/mriscan/section4/bottom-section/Jewellery.svg" },
-        { name: "Dental removables", icon: "/images/mriscan/section4/bottom-section/Dental-removables.svg" },
-    ];
+
 
     return (
         <section className="w-full max-w-7xl mx-auto px-4 py-12 md:py-20 font-sans">

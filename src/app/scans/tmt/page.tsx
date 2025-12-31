@@ -5,6 +5,7 @@ import Section4 from '@/components/features/tmt/Section4'
 import Section5 from '@/components/features/tmt/Section5'
 import Section6 from '@/components/features/tmt/Section6'
 import React from 'react'
+import RelatedScans from '@/components/common/RelatedScans'
 
 const page = () => {
     return (
@@ -15,6 +16,7 @@ const page = () => {
             <Section4 />
             <Section5 />
             <Section6 />
+            <RelatedScans currentScan="tmt" />
         </>
     )
 }

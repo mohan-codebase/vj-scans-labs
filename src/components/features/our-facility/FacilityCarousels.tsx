@@ -1,7 +1,7 @@
 "use client";
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef } from "react";
 import Image from "next/image";
-import { motion, useMotionValue } from "framer-motion";
+import { motion } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 // Full list of landscape images from original Section1
@@ -66,7 +66,7 @@ const Carousel = ({ images, title, portrait = false }: CarouselProps) => {
                 className="flex gap-4 overflow-x-auto pb-8 px-4 md:px-8 snap-x scrollbar-hide"
                 style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
             >
-                {images.map((img, idx) => (
+                {images.map((img) => (
                     <motion.div
                         key={img.id}
                         initial={{ opacity: 0, scale: 0.9 }}

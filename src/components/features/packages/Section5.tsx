@@ -1,6 +1,5 @@
 "use client"
 import React from 'react'
-import { IconShieldHeart, IconCpu, IconUsers, IconHeartHandshake } from '@tabler/icons-react'
 import Image from 'next/image'
 
 const reasons = [
@@ -15,7 +14,7 @@ const reasons = [
         title: "High-Tech Facilities",
         description: "At VJ Scans, we are committed to using advanced technology and state-of-the-art equipment to deliver accurate and dependable results.",
         icon: '/images/packages/section5/high-tech facilities.svg'
-        },
+    },
     {
         id: 3,
         title: "Professional Medical Staff",
@@ -54,7 +53,7 @@ const Section5 = () => {
                     ))}
                 </div>
             </div>
-            
+
         </section>
     )
 }

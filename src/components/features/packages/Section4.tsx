@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
 import Image from 'next/image'
-import { IconDeviceMobile, IconMicroscope, IconFileCheck } from '@tabler/icons-react'
+
 
 const steps = [
     {

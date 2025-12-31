@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils"
 
-import { IconMenu2, IconX, IconSearch, IconChevronDown } from "@tabler/icons-react"
+import { IconMenu2, IconX, IconChevronDown } from "@tabler/icons-react"
 import { motion, AnimatePresence, useScroll, useMotionValueEvent } from "motion/react"
 import React, { useRef, useState } from "react"
 const logo = '/images/vj-scans-logo.avif'

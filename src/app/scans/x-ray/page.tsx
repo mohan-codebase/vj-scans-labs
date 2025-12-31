@@ -1,4 +1,5 @@
 import React from 'react'
+import RelatedScans from '@/components/common/RelatedScans'
 import Section1 from "@/components/features/x-ray/Section1"
 import Section2 from "@/components/features/x-ray/Section2"
 import Section3 from "@/components/features/x-ray/Section3"
@@ -15,6 +16,7 @@ const page = () => {
       <Section4 />
       <Section5 />
       <Section6 />
+      <RelatedScans currentScan="x-ray" />
     </>
   )
 }

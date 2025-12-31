@@ -40,7 +40,7 @@ const Section6 = () => {
         setStatus('error');
         setErrorMessage(data.error || 'Something went wrong');
       }
-    } catch (_error) {
+    } catch {
       setStatus('error');
       setErrorMessage('Failed to send request');
     }

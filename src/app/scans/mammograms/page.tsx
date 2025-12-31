@@ -6,6 +6,7 @@ import Section5 from '@/components/features/scans/mammograms/Section5'
 import Section6 from '@/components/features/scans/mammograms/Section6'
 import DosAndDonts from '@/components/features/scans/mammograms/DosAndDonts'
 import React from 'react'
+import RelatedScans from '@/components/common/RelatedScans'
 
 const page = () => {
   return (
@@ -17,6 +18,7 @@ const page = () => {
       <DosAndDonts />
       <Section5 />
       <Section6 />
+      <RelatedScans currentScan="mammograms" />
     </div>
   )
 }

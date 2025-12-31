@@ -5,6 +5,7 @@ import Section3 from "@/components/features/scans/ctscan/Section3"
 import Section5 from "@/components/features/scans/ctscan/Section5"
 import Section6 from "@/components/features/scans/ctscan/Section6"
 import Section4 from "@/components/features/scans/ctscan/Section4"
+import RelatedScans from "@/components/common/RelatedScans"
 
 const page = () => {
     return (
@@ -15,6 +16,7 @@ const page = () => {
             <Section4 />
             <Section5 />
             <Section6 />
+            <RelatedScans currentScan="ctscan" />
         </>
     )
 }

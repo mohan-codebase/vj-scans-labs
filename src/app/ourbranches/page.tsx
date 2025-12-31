@@ -3,7 +3,7 @@ import AppointmentSection from '@/components/common/AppointmentSection'
 import { MapPin, Phone, Clock } from 'lucide-react'
 import { Metadata } from 'next'
 import { SITE_NAME } from '@/lib/seo'
-import FAQAccordion from '@/components/common/FAQAccordion'
+
 
 export const metadata: Metadata = {
     title: "Our Branches - VJ Scans & Labs",

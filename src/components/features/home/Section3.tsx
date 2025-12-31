@@ -1,7 +1,5 @@
 import React from 'react';
 import Image from 'next/image';
-import { ArrowUpRight } from 'lucide-react';
-import Button from '@/components/ui/Button';
 import KnowMoreButton from '@/components/ui/KnowMoreButton';
 
 const Section3 = () => {

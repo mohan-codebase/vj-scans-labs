@@ -3,7 +3,7 @@ import AboutSection from '@/components/common/AboutSection'
 import WhyChooseUsSection from '@/components/common/WhyChooseUsSection'
 import TestimonialSection from '@/components/common/TestimonialSection'
 import AppointmentSection from '@/components/common/AppointmentSection'
-import { seoDatas, SITE_NAME } from '@/lib/seo'
+import { SITE_NAME } from '@/lib/seo'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
