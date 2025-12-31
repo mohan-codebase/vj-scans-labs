@@ -2,6 +2,8 @@
 import React, { useRef } from 'react'
 import { IconChevronLeft, IconChevronRight, IconPlus } from '@tabler/icons-react'
 
+import { useBooking } from '@/context/BookingContext'
+
 const packages = [
     {
         id: 1,
@@ -160,6 +162,7 @@ const packages = [
 ]
 
 const Section3 = () => {
+    const { openModal } = useBooking();
     const scrollRef = useRef<HTMLDivElement>(null);
 
     const scroll = (direction: 'left' | 'right') => {
@@ -222,7 +225,10 @@ const Section3 = () => {
                                                 <span className="text-xl font-bold text-[#1E1E1E]">₹{pkg.discountedPrice.toLocaleString()}</span>
                                             </div>
                                         </div>
-                                        <button className="bg-[linear-gradient(84.92deg,#F98D1B_34.11%,#FFC180_105.58%)] text-white px-6 py-2.5 rounded-lg font-bold text-sm hover:opacity-90 transition-opacity active:scale-95 shadow-md shadow-orange-100">
+                                        <button
+                                            onClick={openModal}
+                                            className="bg-[linear-gradient(84.92deg,#F98D1B_34.11%,#FFC180_105.58%)] text-white px-6 py-2.5 rounded-lg font-bold text-sm hover:opacity-90 transition-opacity active:scale-95 shadow-md shadow-orange-100"
+                                        >
                                             Book Now
                                         </button>
                                     </div>
