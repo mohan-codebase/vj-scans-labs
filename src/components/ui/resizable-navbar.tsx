@@ -44,7 +44,7 @@ export const Navbar = ({ children, className }: { children: React.ReactNode; cla
 
 export const TopBar = () => {
   return (
-    <div className="flex flex-col lg:flex-row max-w-[1400px] rounded-[8px] mx-auto bg-[#E2F2FF] py-2 px-4 justify-between items-center text-xs text-gray-600 border-b border-gray-100 mt-2 gap-3 lg:gap-0 lg:mt-5">
+    <div className="flex flex-col lg:flex-row max-w-[1400px] rounded-[8px] mx-auto bg-[#E2F2FF] pt-2 pb-0 px-4 justify-between items-center text-xs text-gray-600 border-b border-gray-100  gap-3 lg:gap-0 ">
       <div className="flex flex-row items-center justify-between sm:justify-start w-full sm:w-auto gap-2 sm:gap-4 lg:gap-6 lg:pl-10">
         <span className="flex items-center gap-2"><Image src="/images/topbar/mail.svg" alt="mail" width={16} height={16} /> vjscansandlabs@gmail.com</span>
         <span className="hidden sm:inline text-gray-400">|</span>
