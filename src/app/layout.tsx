@@ -10,6 +10,7 @@ import { BookingProvider } from "@/context/BookingContext";
 import BookingModal from "@/components/ui/BookingModal";
 import KnowMoreModal from "@/components/ui/KnowMoreModal";
 import WhatsAppButton from "@/components/layout/WhatsAppButton";
+import InstagramButton from "@/components/layout/InstagramButton";
 
 const urbanist = Urbanist({
     variable: "--font-sans",
@@ -55,6 +56,7 @@ export default function RootLayout({
                 <BookingProvider>
                     <Header />
                     {children}
+                    <InstagramButton />
                     <WhatsAppButton />
                     <ScrollToTop />
                     <FooterTop />

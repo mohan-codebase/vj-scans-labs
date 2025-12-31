@@ -2,8 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
-
-import LiquidGlassButton from "../ui/LiquidGlassButton";
+import { ArrowUp } from "lucide-react";
 
 export const ScrollToTop = () => {
     const [isVisible, setIsVisible] = useState(false);
@@ -32,22 +31,46 @@ export const ScrollToTop = () => {
     };
 
     return (
-        <>
-
-            <AnimatePresence>
-                {isVisible && (
-                    <motion.div
-                        initial={{ opacity: 0, scale: 0.5 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        exit={{ opacity: 0, scale: 0.5 }}
-                        className="fixed bottom-5 right-5 z-50 "
+        <AnimatePresence>
+            {isVisible && (
+                <motion.div
+                    initial={{ opacity: 0, scale: 0.5 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    exit={{ opacity: 0, scale: 0.5 }}
+                    className="fixed bottom-5 right-5 z-50 flex items-center justify-center"
+                >
+                    <button
+                        onClick={scrollToTop}
+                        className="
+              relative
+              flex items-center justify-center 
+              w-11 h-11 
+              rounded-full 
+              bg-gradient-to-br from-[#F98D1B] to-[#e07c12]
+              border-[1.5px] border-white/40
+              shadow-[0_4px_15px_rgba(249,141,27,0.4),inset_0_2px_10px_rgba(255,255,255,0.3)]
+              hover:shadow-[0_6px_20px_rgba(249,141,27,0.6),inset_0_2px_15px_rgba(255,255,255,0.4)]
+              hover:scale-110 
+              transition-all duration-300 
+              group 
+              overflow-hidden
+            "
+                        aria-label="Scroll to top"
+                        style={{
+                            backdropFilter: 'blur(8px)',
+                            WebkitBackdropFilter: 'blur(8px)',
+                        }}
                     >
-                        <LiquidGlassButton onClick={scrollToTop} aria-label="Scroll to top" />
-                    </motion.div>
+                        {/* Upper Glare */}
+                        <div className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-white/30 to-transparent pointer-events-none rounded-t-full"></div>
 
-                )}
-            </AnimatePresence>
-        </>
+                        {/* Bottom Reflection */}
+                        <div className="absolute bottom-1 left-2 right-2 h-1/3 bg-gradient-to-t from-white/10 to-transparent rounded-b-full pointer-events-none filter blur-[2px]"></div>
 
+                        <ArrowUp size={22} className="text-white drop-shadow-md z-10" />
+                    </button>
+                </motion.div>
+            )}
+        </AnimatePresence>
     );
 };
