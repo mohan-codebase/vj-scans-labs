@@ -46,7 +46,7 @@ export const TopBar = () => {
   return (
     <div className="flex flex-col lg:flex-row max-w-[1400px] rounded-[8px] mx-auto bg-[#E2F2FF] py-2 px-4 justify-between items-center text-xs text-gray-600 border-b border-gray-100 mt-2 gap-3 lg:gap-0 lg:mt-5">
       <div className="flex flex-row items-center justify-between sm:justify-start w-full sm:w-auto gap-2 sm:gap-4 lg:gap-6 lg:pl-10">
-        <span className="flex items-center gap-2"><Image src="/images/topbar/mail.svg" alt="mail" width={16} height={16} /> vjscans@gmail.com</span>
+        <span className="flex items-center gap-2"><Image src="/images/topbar/mail.svg" alt="mail" width={16} height={16} /> vjscansandlabs@gmail.com</span>
         <span className="hidden sm:inline text-gray-400">|</span>
         <span className="flex items-center gap-2"><Image src="/images/topbar/phone.svg" alt="phone" width={16} height={18} /> 95853 35552</span>
       </div>
@@ -62,7 +62,7 @@ export const TopBar = () => {
               rel="noopener noreferrer"><Image src="/images/topbar/x.svg" alt="x" width={14} height={14} /></a>
           </div>
           <div className=" rounded-full p-1 cursor-pointer flex items-center justify-center w-8 h-8 hover:bg-white/50 transition-colors">
-            <a href="https://www.instagram.com/vjscans/" target="_blank"
+            <a href="https://www.instagram.com/vj_scans_and_labs/" target="_blank"
               rel="noopener noreferrer"><Image src="/images/topbar/instagram.svg" alt="instagram" width={22} height={22} /></a>
           </div>
           <div className="bg-[#0077B5] rounded-full p-1 cursor-pointer flex items-center justify-center w-6 h-6 hover:scale-105 transition-transform">
@@ -135,7 +135,7 @@ export const NavItems = ({ items, className }: { items: { name: string; link: st
               className="relative px-4 py-2 flex items-center gap-1"
               href={item.link}
               style={{
-                fontFamily: "'DM Sans', sans-serif",
+                fontFamily: "var(--font-sans)",
                 color: isActive ? '#F98D1B' : '#0961A1', // Active orange, otherwise blue
                 fontWeight: 800,
                 fontSize: '15px'

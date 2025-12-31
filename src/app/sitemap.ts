@@ -23,6 +23,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
         '/scans/mriscan',
         '/scans/tmt',
         '/scans/x-ray',
+        '/scans/dexa',
+        '/scans/laboratory',
         // Specialities
         '/specialities/clinical-genitics-home',
         '/specialities/genetic-counseling',

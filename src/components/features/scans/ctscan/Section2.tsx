@@ -21,28 +21,28 @@ const Section2 = () => {
         },
         {
             name: 'List of Parameters',
-            title: 'Comprehensive <span class="text-[#F98D1B]">Parameters</span>',
+            title: 'CT Scan <span class="text-[#F98D1B]">Capabilities</span>',
             description: [
-                'Our CT scans cover a wide range of parameters to ensure a thorough diagnosis. We examine various body parts including the head, chest, abdomen, and pelvis.',
-                'Each scan is tailored to the specific needs of the patient, providing detailed insights that assist in accurate treatment planning.'
+                'Our multislice CT scanner at VJ Scans & Labs performs comprehensive imaging of the head, neck, chest, abdomen, pelvis, and extremities. We offer both contrast-enhanced and non-contrast studies based on clinical requirements.',
+                'CT scans excel at detecting fractures, tumors, infections, internal bleeding, and vascular conditions. Our advanced imaging protocols provide detailed cross-sectional views that help doctors plan surgical procedures and monitor treatment response.'
             ],
             image: section2banner
         },
         {
             name: 'Scan Preparation',
-            title: 'How to <span class="text-[#F98D1B]">Prepare</span>',
+            title: 'Preparing for Your <span class="text-[#F98D1B]">CT Scan</span>',
             description: [
-                'Preparation for a CT scan depends on the part of your body being scanned. You may be asked to avoid eating or drinking for a few hours before the scan.',
-                'Wear comfortable, loose-fitting clothing. You may need to remove metal objects like jewelry, eyeglasses, and dentures.'
+                'CT scan preparation varies by the area being examined. For abdominal or pelvic CT scans, you may need to fast for 4-6 hours and drink a contrast solution. For head or chest CTs, minimal preparation is needed.',
+                'Wear comfortable clothing without metal zippers or buttons. Remove all jewelry, eyeglasses, hearing aids, and dentures before the scan. If contrast dye is required, inform our staff about any allergies or kidney conditions.'
             ],
             image: section2banner
         },
         {
             name: 'Book an Appointment',
-            title: 'Easy <span class="text-[#F98D1B]">Booking</span>',
+            title: 'Book Your <span class="text-[#F98D1B]">CT Scan</span>',
             description: [
-                'Booking an appointment is simple and convenient. You can book online through our website or call our customer care number.',
-                'We offer flexible scheduling options to suit your convenience. Walk-ins are also welcome, but appointments are recommended to minimize waiting time.'
+                'Schedule your CT scan at VJ Scans & Labs by calling our Chennai center or booking online. Our multislice CT scanner is available throughout the day for both scheduled and emergency cases.',
+                'We recommend advance booking to ensure your preferred time slot and to allow our team to provide specific preparation instructions based on the type of CT scan you need.'
             ],
             image: section2banner
         },
@@ -72,7 +72,7 @@ const Section2 = () => {
                             onMouseEnter={() => setHoveredTab(index)}
                             className="relative px-4 py-2 rounded-full text-sm md:text-base font-semibold w-full md:w-auto transition-colors duration-200"
                             style={{
-                                fontFamily: "'DM Sans', sans-serif",
+                                fontFamily: "var(--font-sans)",
                                 color: activeTab === index ? '#ffffff' : '#0961A1',
                             }}
                         >

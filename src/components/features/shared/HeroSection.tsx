@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
 import { IconChevronDown } from '@tabler/icons-react'
 import KnowMoreButton from '@/components/ui/KnowMoreButton'
+import { useBooking } from '@/context/BookingContext'
 // import { BiBorderRadius } from 'react-icons/bi'
 
 interface Slide {
@@ -20,6 +21,7 @@ interface HeroSectionProps {
 }
 
 const HeroSection: React.FC<HeroSectionProps> = ({ slides, formSource }) => {
+    const { openSuccessModal } = useBooking();
     const [currentSlide, setCurrentSlide] = useState(0);
     const [formData, setFormData] = useState({
         name: '',
@@ -61,6 +63,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ slides, formSource }) => {
             if (response.ok) {
                 setStatus('success');
                 setFormData({ name: '', email: '', phone: '', package: '' });
+                openSuccessModal();
                 setTimeout(() => setStatus('idle'), 5000);
             } else {
                 setStatus('error');
@@ -142,7 +145,9 @@ const HeroSection: React.FC<HeroSectionProps> = ({ slides, formSource }) => {
                 <h2 className="text-[22px] md:text-[27px] font-bold text-[#0961A1] mb-6 md:mb-8 text-center">Book Your Appointment</h2>
                 <form className="space-y-3 lg:space-y-4" onSubmit={handleSubmit}>
                     <div>
+                        <label htmlFor="hero-name" className="sr-only">Your Name</label>
                         <input
+                            id="hero-name"
                             type="text"
                             name="name"
                             value={formData.name}
@@ -150,11 +155,14 @@ const HeroSection: React.FC<HeroSectionProps> = ({ slides, formSource }) => {
                             placeholder="Your Name*"
                             className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-[#F98D1B] bg-white text-gray-700 text-sm md:text-base"
                             required
+                            autoComplete="name"
                             disabled={status === 'loading'}
                         />
                     </div>
                     <div>
+                        <label htmlFor="hero-email" className="sr-only">Email ID</label>
                         <input
+                            id="hero-email"
                             type="email"
                             name="email"
                             value={formData.email}
@@ -162,10 +170,13 @@ const HeroSection: React.FC<HeroSectionProps> = ({ slides, formSource }) => {
                             placeholder="Email ID*"
                             className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-[#F98D1B] bg-white text-gray-700 text-sm md:text-base"
                             disabled={status === 'loading'}
+                            autoComplete="email"
                         />
                     </div>
                     <div>
+                        <label htmlFor="hero-phone" className="sr-only">Phone Number</label>
                         <input
+                            id="hero-phone"
                             type="tel"
                             name="phone"
                             value={formData.phone}
@@ -173,11 +184,14 @@ const HeroSection: React.FC<HeroSectionProps> = ({ slides, formSource }) => {
                             placeholder="Phone Number*"
                             className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-[#F98D1B] bg-white text-gray-700 text-sm md:text-base"
                             required
+                            autoComplete="tel"
                             disabled={status === 'loading'}
                         />
                     </div>
                     <div className="relative">
+                        <label htmlFor="hero-package" className="sr-only">Select Package</label>
                         <select
+                            id="hero-package"
                             name="package"
                             value={formData.package}
                             onChange={handleChange}

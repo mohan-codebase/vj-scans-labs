@@ -9,11 +9,11 @@ const Section7 = () => {
             <section className="relative max-w-[1400px] mx-auto w-full md:my-14 bg-[linear-gradient(86.21deg,#0B62A1_33.3%,#42A5ED_100.16%)] lg:bg-[url('/images/section-7/section7.avif')] lg:bg-cover lg:bg-center lg:bg-no-repeat rounded-[50px] overflow-hidden flex items-center p-16 text-white max-lg:p-10 max-lg:rounded-[29px]" >
                 <div className=" w-full grid grid-cols-2 gap-16 items-center max-lg:grid-cols-1 max-lg:gap-12">
                     <div className="max-w-[600px]">
-                        <h2 className="text-3xl md:text-[46px] font-extrabold mb-4">About Us</h2>
-                        <p className="text-lg md:text-xl font-semibold italic mb-6 opacity-90">VJ SCANS: Precision. Compassion. Dedication.</p>
+                        <h2 className="text-4xl md:text-[46px] font-extrabold mb-4 font-sans">About Us</h2>
+                        <p className="text-lg md:text-xl font-semibold italic mb-6 opacity-90">VJ Scans & Labs: Precision. Compassion. Dedication.</p>
                         <div className="text-sm md:text-base leading-relaxed mb-6 opacity-90">
                             <p>
-                                At VJ Scans, we understand the critical role diagnostic sciences play in shaping medical decisions and patient outcomes. Our state-of-the-art centre brings together advanced imaging systems and an experienced team committed to accuracy and care.
+                                At VJ Scans & Labs in Chennai, we understand the critical role diagnostic sciences play in shaping medical decisions and patient outcomes. Our state-of-the-art facility brings together advanced imaging systems, genetic testing capabilities, and an experienced team committed to accuracy and compassionate care.
                             </p>
                             <br />
                             <p>

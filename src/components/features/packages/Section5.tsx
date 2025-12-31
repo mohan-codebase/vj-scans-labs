@@ -12,7 +12,7 @@ const reasons = [
     {
         id: 2,
         title: "High-Tech Facilities",
-        description: "At VJ Scans, we are committed to using advanced technology and state-of-the-art equipment to deliver accurate and dependable results.",
+        description: "At VJ Scans & Labs, we are committed to using advanced technology and state-of-the-art equipment to deliver accurate and dependable results.",
         icon: '/images/packages/section5/high-tech facilities.svg'
     },
     {

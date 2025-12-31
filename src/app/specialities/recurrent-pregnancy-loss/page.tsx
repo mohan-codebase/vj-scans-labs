@@ -1,4 +1,5 @@
 import React from 'react'
+import { ScrollReveal } from '@/components/animations/ScrollReveal'
 import Section1 from '@/components/features/specialities/recurrent-pregnancy-loss/Section1'
 import Section2 from '@/components/features/specialities/recurrent-pregnancy-loss/Section2'
 import Section3 from '@/components/features/specialities/recurrent-pregnancy-loss/Section3'
@@ -8,31 +9,41 @@ import Section6 from '@/components/features/specialities/recurrent-pregnancy-los
 import Section7 from '@/components/features/specialities/recurrent-pregnancy-loss/Section7'
 import Section8 from '@/components/features/specialities/recurrent-pregnancy-loss/Section8'
 import { Metadata } from 'next'
-import { SITE_NAME } from '@/lib/seo'
+import { seoDatas, SITE_NAME } from '@/lib/seo'
+
+const seo = seoDatas.specialitiesRpl;
 
 export const metadata: Metadata = {
-    title: "Recurrent Pregnancy Loss - VJ Scans & Labs",
-    description: "Comprehensive evaluation and support for recurrent pregnancy loss to help you achieve a successful pregnancy.",
+    title: seo.title,
+    description: seo.description,
     openGraph: {
-        title: "Recurrent Pregnancy Loss - VJ Scans & Labs",
-        description: "Comprehensive evaluation and support for recurrent pregnancy loss to help you achieve a successful pregnancy.",
-        url: `${SITE_NAME}/specialities/recurrent-pregnancy-loss`,
+        title: seo.title,
+        description: seo.description,
+        url: seo.url,
         siteName: SITE_NAME,
+        images: [
+            {
+                url: seo.image,
+                width: 1200,
+                height: 630,
+                alt: seo.title
+            },
+        ],
         type: "website"
     }
 }
 
 const page = () => {
     return (
-        <main>
-            <Section1 />
-            <Section2 />
-            <Section3 />
-            <Section4 />
-            <Section5 />
-            <Section7 />
-            <Section8 />
-            <Section6 />
+        <main className="overflow-hidden">
+            <ScrollReveal direction="down"><Section1 /></ScrollReveal>
+            <ScrollReveal direction="right"><Section2 /></ScrollReveal>
+            <ScrollReveal direction="left"><Section3 /></ScrollReveal>
+            <ScrollReveal><Section4 /></ScrollReveal>
+            <ScrollReveal direction="right"><Section5 /></ScrollReveal>
+            <ScrollReveal direction="up"><Section7 /></ScrollReveal>
+            <ScrollReveal direction="up"><Section8 /></ScrollReveal>
+            <ScrollReveal direction="up"><Section6 /></ScrollReveal>
         </main>
     )
 }

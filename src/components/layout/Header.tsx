@@ -98,7 +98,7 @@ export function Header() {
                       onClick={() => setOpenMobileDropdown(openMobileDropdown === idx ? null : idx)}
                       className="w-full text-left relative flex items-center justify-between "
                       style={{
-                        fontFamily: "'DM Sans', sans-serif",
+                        fontFamily: "var(--font-sans)",
                         color: '#0961A1',
                         fontWeight: 500
                       }}
@@ -123,7 +123,7 @@ export function Header() {
                             onClick={() => setIsMobileMenuOpen(false)}
                             className="block py-1"
                             style={{
-                              fontFamily: "'DM Sans', sans-serif",
+                              fontFamily: "var(--font-sans)",
                               color: '#0961A1',
                               fontWeight: 400,
                               fontSize: '0.95rem'
@@ -142,7 +142,7 @@ export function Header() {
                     onClick={() => setIsMobileMenuOpen(false)}
                     className="relative"
                     style={{
-                      fontFamily: "'DM Sans', sans-serif",
+                      fontFamily: "var(--font-sans)",
                       color: '#0961A1',
                       fontWeight: 500
                     }}

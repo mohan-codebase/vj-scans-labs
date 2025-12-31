@@ -22,28 +22,28 @@ const Section2 = () => {
         },
         {
             name: 'List of Parameters',
-            title: 'Comprehensive <span class="text-[#F98D1B]">Parameters</span>',
+            title: 'Digital X-Ray <span class="text-[#F98D1B]">Services</span>',
             description: [
-                'Our X-ray scans cover a wide range of diagnostic needs. We examine various body parts including bones, chest, joints, and internal organs.',
-                'Each scan is performed with precision, providing clear images that assist in accurate diagnosis and treatment planning.'
+                'Our digital X-ray facility at VJ Scans & Labs performs imaging of the chest, bones, joints, spine, and abdomen. Digital technology provides instant, high-quality images with lower radiation exposure compared to traditional film X-rays.',
+                'X-rays are essential for diagnosing fractures, pneumonia, lung conditions, joint dislocations, and bone infections. Our digital system allows immediate image review, easy sharing with doctors, and precise measurements for treatment planning.'
             ],
             image: section2banner
         },
         {
             name: 'Scan Preparation',
-            title: 'How to <span class="text-[#F98D1B]">Prepare</span>',
+            title: 'Preparing for Your <span class="text-[#F98D1B]">X-Ray</span>',
             description: [
-                'Preparation for an X-ray scan is usually minimal. You may be asked to remove jewelry, eyeglasses, or any metal objects that could interfere with the images.',
-                'Inform our staff if you are pregnant or suspect you might be, as special precautions may be needed.'
+                'X-ray preparation is minimal. Wear comfortable clothing without metal zippers, buttons, or decorations. You\'ll be asked to remove jewelry, eyeglasses, watches, and any metal objects from the area being imaged.',
+                'If you are pregnant or think you might be pregnant, inform our staff immediately. While X-rays use minimal radiation, we take extra precautions for expectant mothers, including using lead shielding or considering alternative imaging methods when appropriate.'
             ],
             image: section2banner
         },
         {
             name: 'Book an Appointment',
-            title: 'Easy <span class="text-[#F98D1B]">Booking</span>',
+            title: 'Book Your <span class="text-[#F98D1B]">X-Ray</span>',
             description: [
-                'Booking an appointment is simple and convenient. You can book online through our website or call our customer care number.',
-                'We offer flexible scheduling options to suit your convenience. Walk-ins are also welcome, but appointments are recommended to minimize waiting time.'
+                'Schedule your digital X-ray at VJ Scans & Labs in Chennai by calling our center or booking online. X-rays are quick procedures, usually completed in just a few minutes.',
+                'Our digital X-ray facility is open 24/7, making it convenient for walk-in patients needing urgent imaging for injuries or chest conditions. Appointments help reduce wait times during busy periods.'
             ],
             image: section2banner
         },
@@ -73,7 +73,7 @@ const Section2 = () => {
                             onMouseEnter={() => setHoveredTab(index)}
                             className="relative px-4 py-2 rounded-full text-sm md:text-base font-semibold w-full md:w-auto transition-colors duration-200"
                             style={{
-                                fontFamily: "'DM Sans', sans-serif",
+                                fontFamily: "var(--font-sans)",
                                 color: activeTab === index ? '#ffffff' : '#0961A1',
                             }}
                         >

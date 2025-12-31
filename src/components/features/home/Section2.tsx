@@ -22,24 +22,49 @@ const Section2 = () => {
   ];
 
   return (
-    <section className="bg-[#0065AE] text-white py-6 md:py-8">
+    <section className="bg-[#0065AE] text-white py-3 md:py-8">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row justify-between items-center gap-6 md:gap-0">
+        {/* Desktop View */}
+        <div className="hidden md:flex flex-row justify-between items-center">
           {features.map((feature, index) => (
-            <div key={index} className="flex items-center justify-center w-full md:w-1/4 relative">
+            <div key={index} className="flex items-center justify-center w-1/4 relative">
               <div className="flex items-center gap-4">
-                <Image src={feature.icon} alt="icon" width={50} height={50} className="w-auto h-auto" />
-                <span className="text-lg md:text-[17px] font-medium whitespace-nowrap font-secondary">
+                <Image src={feature.icon} alt="" width={50} height={50} className="w-auto h-auto" />
+                <span className="text-[17px] font-medium whitespace-nowrap font-secondary">
                   {feature.text}
                 </span>
               </div>
-
-              {/* Vertical Divider (only visible on desktop and not after the last item) */}
               {index < features.length - 1 && (
-                <div className="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 h-8 w-px bg-white/30"></div>
+                <div className="absolute right-0 top-1/2 -translate-y-1/2 h-8 w-px bg-white/30"></div>
               )}
             </div>
           ))}
+        </div>
+
+        {/* Mobile View - Infinite Marquee */}
+        <div className="md:hidden overflow-hidden relative w-full">
+          <div className="flex w-max animate-marquee gap-8">
+            {/* First set of items */}
+            {features.map((feature, index) => (
+              <div key={`set1-${index}`} className="flex items-center gap-2">
+                <Image src={feature.icon} alt="" width={30} height={30} className="w-[30px] h-[30px]" />
+                <span className="text-sm font-medium whitespace-nowrap font-secondary">
+                  {feature.text}
+                </span>
+              </div>
+            ))}
+            {/* Duplicate set for seamless loop - aria-hidden for accessibility */}
+            <div className="flex items-center gap-2" aria-hidden="true">
+              {features.map((feature, index) => (
+                <div key={`set2-${index}`} className="flex items-center gap-2 mr-8">
+                  <Image src={feature.icon} alt="" width={30} height={30} className="w-[30px] h-[30px]" />
+                  <span className="text-sm font-medium whitespace-nowrap font-secondary">
+                    {feature.text}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>

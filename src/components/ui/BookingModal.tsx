@@ -4,7 +4,7 @@ import React from 'react';
 import { useBooking } from '@/context/BookingContext';
 
 const BookingModal = () => {
-    const { isModalOpen, closeModal } = useBooking();
+    const { isModalOpen, closeModal, openSuccessModal } = useBooking();
     const [formData, setFormData] = React.useState({
         name: '',
         phone: ''
@@ -34,9 +34,10 @@ const BookingModal = () => {
             if (response.ok) {
                 setStatus('success');
                 setFormData({ name: '', phone: '' });
+                closeModal();
+                openSuccessModal();
                 setTimeout(() => {
                     setStatus('idle');
-                    closeModal();
                 }, 2000);
             } else {
                 setStatus('error');

@@ -7,6 +7,7 @@ import Section5 from '@/components/features/packages/Section5'
 import { seoDatas, SITE_NAME } from '@/lib/seo'
 import { Metadata } from 'next'
 import React from 'react'
+import { ScrollReveal } from '@/components/animations/ScrollReveal'
 
 const seo = seoDatas.packages
 
@@ -33,12 +34,12 @@ export const metadata: Metadata = {
 const page = () => {
     return (
         <>
-            <Section1 />
-            <Section2 />
-            <Section3 />
-            <Section4 />
-            <Section5 />
-            <Section10 />
+            <ScrollReveal direction="down"><Section1 /></ScrollReveal>
+            <ScrollReveal direction="right"><Section2 /></ScrollReveal>
+            <ScrollReveal direction="left"><Section3 /></ScrollReveal>
+            <ScrollReveal><Section4 /></ScrollReveal>
+            <ScrollReveal direction="right"><Section5 /></ScrollReveal>
+            <ScrollReveal direction="up"><Section10 /></ScrollReveal>
         </>
     )
 }

@@ -65,20 +65,19 @@ const Section2 = () => {
         },
         {
             name: 'Scan Preparation',
-            title: 'How to <span class="text-[#F98D1B]">Prepare</span>',
+            title: 'Preparing for Your <span class="text-[#F98D1B]">Mammogram</span>',
             description: [
-                'Do not wear deodorant, talcum powder, or lotion under your arms or on your breasts on the day of the exam. These can appear as calcium spots on the mammogram.',
-                'Describe any breast symptoms or problems to the technologist performing the exam.',
-                'If possible, obtain prior mammograms and make them available to the radiologist at the time of the current exam.'
+                'On the day of your mammogram at VJ Scans & Labs, avoid wearing deodorant, antiperspirant, talcum powder, or lotion on your underarms or breasts, as these can appear as white spots on the images and interfere with diagnosis.',
+                'Schedule your screening mammogram 1-2 weeks after your menstrual period when breasts are less tender. Wear a two-piece outfit for easy changing. Bring any previous mammogram images or reports to help our radiologist compare changes over time.'
             ],
             image: section2banner
         },
         {
             name: 'Book an Appointment',
-            title: 'Easy <span class="text-[#F98D1B]">Booking</span>',
+            title: 'Schedule Your <span class="text-[#F98D1B]">Mammogram</span>',
             description: [
-                'Booking your mammogram is simple. You can schedule online or call our dedicated line.',
-                'We offer flexible scheduling options to suit your convenience. Early detection saves lives, so book your screening today.'
+                'Book your mammogram at VJ Scans & Labs in Chennai by calling our center or scheduling online. We recommend scheduling your screening mammogram 1-2 weeks after your menstrual period for optimal comfort.',
+                'Our digital mammography unit uses low-dose radiation for early breast cancer detection. Advance booking ensures you get your preferred appointment time and allows our team to provide specific preparation instructions.'
             ],
             image: section2banner
         },
@@ -108,7 +107,7 @@ const Section2 = () => {
                             onMouseEnter={() => setHoveredTopTab(index)}
                             className="relative px-4 py-2 rounded-full text-sm md:text-base font-semibold w-full md:w-auto transition-colors duration-200"
                             style={{
-                                fontFamily: "'DM Sans', sans-serif",
+                                fontFamily: "var(--font-sans)",
                                 color: activeTopTab === index ? '#ffffff' : '#0961A1',
                             }}
                         >

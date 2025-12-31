@@ -24,26 +24,26 @@ const Section2 = () => {
             name: 'Types of Scans',
             title: 'Our <span class="text-[#F98D1B]">Ultrasound Services</span>',
             description: [
-                'We offer a comprehensive range of ultrasound services including 2D, 3D, 4D, and Doppler scans. Each type provides unique insights into your health.',
-                '2D ultrasounds are standard for general imaging, 3D/4D offer detailed views of fetal development, and Doppler scans assess blood flow.'
+                'At VJ Scans & Labs, we provide comprehensive ultrasound imaging including 2D, 3D, 4D, and Color Doppler studies. Our advanced systems capture detailed images of pregnancy, abdominal organs, pelvic structures, and vascular systems.',
+                '2D ultrasound provides standard cross-sectional views, 3D/4D imaging offers three-dimensional visualization ideal for fetal bonding and detailed anatomy, while Doppler ultrasound evaluates blood flow patterns in vessels and organs.'
             ],
             image: section2banner
         },
         {
             name: 'Scan Preparation',
-            title: 'How to <span class="text-[#F98D1B]">Prepare</span>',
+            title: 'Preparing for Your <span class="text-[#F98D1B]">Ultrasound</span>',
             description: [
-                'Preparation for an ultrasound scan varies depending on the area being examined. You might be asked to fast or drink water to fill your bladder.',
-                'Specific instructions will be provided at the time of booking to ensure the best possible image quality for your scan.'
+                'Ultrasound preparation depends on the type of scan. For abdominal ultrasounds, you may need to fast for 6-8 hours. For pelvic or pregnancy scans, you\'ll be asked to drink water and avoid urinating to fill your bladder, which helps visualize pelvic organs.',
+                'For pregnancy ultrasounds, no special preparation is usually needed. Our team will provide specific instructions when you book your appointment based on the area being examined.'
             ],
             image: section2banner
         },
         {
             name: 'Book an Appointment',
-            title: 'Easy <span class="text-[#F98D1B]">Booking</span>',
+            title: 'Schedule Your <span class="text-[#F98D1B]">Ultrasound</span>',
             description: [
-                'Booking your ultrasound appointment is simple and convenient. You can schedule online through our website or by calling our dedicated customer service.',
-                'We offer flexible scheduling to accommodate your needs, and while walk-ins are welcome, appointments are recommended for minimal wait times.'
+                'To book your ultrasound scan at VJ Scans & Labs in Chennai, visit our website or call our center. We offer same-day appointments for urgent cases and flexible scheduling for routine scans.',
+                'Our ultrasound department is open 24/7, making it convenient for expectant mothers and patients needing immediate imaging. Appointments help reduce wait times, especially during peak hours.'
             ],
             image: section2banner
         },
@@ -73,7 +73,7 @@ const Section2 = () => {
                             onMouseEnter={() => setHoveredTab(index)}
                             className="relative px-4 py-2 rounded-full text-sm md:text-base font-semibold w-full md:w-auto transition-colors duration-200"
                             style={{
-                                fontFamily: "'DM Sans', sans-serif",
+                                fontFamily: "var(--font-sans)",
                                 color: activeTab === index ? '#ffffff' : '#0961A1',
                             }}
                         >

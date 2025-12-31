@@ -136,10 +136,10 @@ const Section4 = () => {
                                             <div className="section4-price-section">
                                                 <div className="section4-price-wrapper">
                                                     <span className="section4-old-price">
-                                                        ₹{packagePair[0].oldPrice}
+                                                        ₹{packagePair[0].oldPrice.toLocaleString('en-IN')}
                                                     </span>
                                                     <span className="section4-price">
-                                                        ₹{packagePair[0].price}
+                                                        ₹{packagePair[0].price.toLocaleString('en-IN')}
                                                     </span>
                                                 </div>
                                                 <span className="section4-off-badge">
@@ -180,10 +180,10 @@ const Section4 = () => {
                                                 <div className="section4-price-section">
                                                     <div className="section4-price-wrapper">
                                                         <span className="section4-old-price">
-                                                            ₹{packagePair[1].oldPrice}
+                                                            ₹{packagePair[1].oldPrice.toLocaleString('en-IN')}
                                                         </span>
                                                         <span className="section4-price">
-                                                            ₹{packagePair[1].price}
+                                                            ₹{packagePair[1].price.toLocaleString('en-IN')}
                                                         </span>
                                                     </div>
                                                     <span className="section4-off-badge">
@@ -202,7 +202,7 @@ const Section4 = () => {
                                                     <Link href="/packages" className="section4-btn-view flex items-center justify-center text-center no-underline">
                                                         View Details
                                                     </Link>
-                                                    <button  onClick={openModal} className="section4-btn-book flex items-center justify-center text-center no-underline">
+                                                    <button onClick={openModal} className="section4-btn-book flex items-center justify-center text-center no-underline">
                                                         Book Now
                                                     </button>
                                                 </div>

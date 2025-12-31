@@ -1,4 +1,4 @@
-import { Urbanist, DM_Sans, Dancing_Script } from "next/font/google";
+import { Urbanist } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -13,17 +13,6 @@ import WhatsAppButton from "@/components/layout/WhatsAppButton";
 const urbanist = Urbanist({
     variable: "--font-sans",
     weight: ["400", "500", "600", "700", "800"],
-    subsets: ["latin"],
-});
-
-const dmSans = DM_Sans({
-    variable: "--font-secondary",
-    weight: ["400", "500", "600", "700"],
-    subsets: ["latin"],
-});
-
-const dancingScript = Dancing_Script({
-    variable: "--font-dancing-script",
     subsets: ["latin"],
 });
 
@@ -59,7 +48,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body
-                className={`${urbanist.variable} ${dmSans.variable} ${dancingScript.variable} antialiased`}
+                className={`${urbanist.variable} antialiased`}
                 suppressHydrationWarning
             >
                 <BookingProvider>

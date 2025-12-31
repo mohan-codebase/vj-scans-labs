@@ -16,10 +16,10 @@ const Section5 = () => {
     return (
         <div className="w-full max-w-[1400px] mx-auto px-5 mt-20 mb-20">
             <div className="flex justify-between items-center mb-8">
-                <h2 className="text-[26px] font-[800] text-[#0961A1] md:text-[48px]">Book a Test by Category</h2>
-                <button className="bg-[#005596] text-white px-5 py-2 rounded-lg font-medium text-sm hover:bg-[#00447a] transition-colors duration-300">
+                <h2 className="text-3xl font-[800] text-[#0961A1] md:text-[48px] font-sans mb-5">Book a Test by Category</h2>
+                {/* <button className="bg-[#005596] text-white px-5 py-2 rounded-lg font-medium text-sm hover:bg-[#00447a] transition-colors duration-300">
                     View All
-                </button>
+                </button> */}
             </div>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-1">
                 {categories.map((category, index) => (

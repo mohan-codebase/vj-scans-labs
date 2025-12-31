@@ -18,11 +18,11 @@ const Section2 = () => {
                     </h2>
 
                     <p className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed mb-6 md:mb-8 font-medium">
-                        VJ Scans and Lab is a premier diagnostic institution delivering high-throughput and integrated genetic testing solutions. Strategically headquartered in Chennai, our advanced processing and referral laboratories support diagnostic excellence across India. <br /><br />
+                        VJ Scans & Labs is a premier diagnostic institution delivering high-throughput and integrated genetic testing solutions. Strategically headquartered in Chennai, Tamil Nadu, our advanced processing and referral laboratories support diagnostic excellence across India. <br /><br />
 
                         We specialize in Oncology Diagnostics, Reproductive and Fertility Genetics, and Neurogenetics, complemented by advanced laboratory services such as Automated Immunohistochemistry, Prenatal Diagnostics, Neonatal Screening, Specialized Chemistry, and comprehensive pathology services. <br /><br />
 
-                        Our multidisciplinary team of clinicians, researchers, geneticists, and laboratory professionals ensures scientific rigor, diagnostic accuracy, and superior patient outcomes.
+                        Our multidisciplinary team of clinicians, researchers, geneticists, and laboratory professionals ensures scientific rigor, diagnostic accuracy, and superior patient outcomes for patients throughout Tamil Nadu and beyond.
                     </p>
 
                 </div>

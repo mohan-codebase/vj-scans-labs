@@ -19,7 +19,7 @@ const slides = [
     },
     {
         id: 3,
-        title: <>Need a sample<span className="text-[#F98D1B]"> test?</span> <br /> Home sample collection <br />  spanin <span className="text-[#F98D1B]">60 minutes</span></>,
+        title: <>Need a sample<span className="text-[#F98D1B]"> test?</span> <br /> Home sample collection <br />  within <span className="text-[#F98D1B]">60 minutes</span></>,
         subtitle: <><span className="text-[#1E1E1E] font-secondary font-medium">Reliable results, individualized care, and prompt <br /> insights for better health.</span></>,
         image: "/images/Section1/banner-img-3-by-vj.avif",
         mobileImage: "/images/Section1/mobileBanner-img-3-by-vj.avif",

@@ -1,4 +1,5 @@
 import React from 'react'
+import { ScrollReveal } from '@/components/animations/ScrollReveal'
 import Section1 from '@/components/features/specialities/male-infertility/Section1'
 import Section2 from '@/components/features/specialities/male-infertility/Section2'
 import Section3 from '@/components/features/specialities/male-infertility/Section3'
@@ -32,14 +33,14 @@ export const metadata: Metadata = {
 
 const page = () => {
     return (
-        <>
-            <Section1 />
-            <Section2 />
-            <Section3 />
-            <Section4 />
-            <Section5 />
-            <Section6 />
-        </>
+        <div className="overflow-hidden">
+            <ScrollReveal direction="down"><Section1 /></ScrollReveal>
+            <ScrollReveal direction="right"><Section2 /></ScrollReveal>
+            <ScrollReveal direction="left"><Section3 /></ScrollReveal>
+            <ScrollReveal><Section4 /></ScrollReveal>
+            <ScrollReveal direction="right"><Section5 /></ScrollReveal>
+            <ScrollReveal direction="up"><Section6 /></ScrollReveal>
+        </div>
     )
 }
 

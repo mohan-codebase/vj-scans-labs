@@ -21,38 +21,38 @@ const Section2 = () => {
             image: section2banner
         },
         {
-            name: 'Types of Echo Scans',
-            title: 'Types of <br/><span class="text-[#F98D1B]">Echocardiography</span>',
+            name: 'When is TMT Needed',
+            title: 'When is TMT <br/><span class="text-[#F98D1B]">Recommended?</span>',
             description: [
-                'We offer various types of echocardiography, including Transthoracic Echo (TTE), Transesophageal Echo (TEE), and Stress Echo. Each provides unique insights into heart health.',
-                'TTE is standard for general assessment, TEE offers detailed views from within the esophagus, and Stress Echo evaluates heart function under exertion.'
+                'TMT is typically recommended for patients experiencing chest pain, shortness of breath, or irregular heartbeats. It helps diagnose coronary artery disease, evaluate exercise capacity, and assess heart function under stress.',
+                'Your doctor may also recommend TMT if you have risk factors for heart disease, such as diabetes, high blood pressure, or a family history of cardiac conditions.'
             ],
             image: section2banner
         },
         {
-            name: 'Echo Preparation',
-            title: 'Preparing for Your <br/><span class="text-[#F98D1B]">Echo Scan</span>',
+            name: 'TMT Preparation',
+            title: 'Preparing for Your <br/><span class="text-[#F98D1B]">TMT Test</span>',
             description: [
-                'Preparation for an echocardiogram is generally minimal. For a standard Transthoracic Echo, no special preparation is usually required.',
-                'If you are having a Transesophageal Echo or Stress Echo, specific instructions regarding fasting or medication will be provided to ensure accurate results.'
+                'Before your TMT, avoid heavy meals, caffeine, and smoking for at least 2-3 hours. Wear comfortable clothing and athletic shoes suitable for walking or light jogging.',
+                'Inform your doctor about any medications you are taking, as some may need to be adjusted before the test. You may be asked to stop certain heart medications temporarily.'
             ],
             image: section2banner
         },
         {
-            name: 'Book an Echo',
-            title: 'Easy <span class="text-[#F98D1B]">Echo Booking</span>',
+            name: 'Book a TMT',
+            title: 'Schedule Your <span class="text-[#F98D1B]">TMT Test</span>',
             description: [
-                'Booking your echocardiogram appointment is simple and convenient. You can schedule online through our website or by calling our dedicated customer service.',
-                'We offer flexible scheduling to accommodate your needs, and while walk-ins are welcome, appointments are recommended for minimal wait times for your echo scan.'
+                'To book your TMT test at VJ Scans & Labs, you can call our Chennai center directly or schedule online. Our cardiac testing facility is equipped with modern treadmill equipment and continuous monitoring systems.',
+                'We recommend booking in advance to secure your preferred time slot. Our team will provide specific preparation instructions based on your medical history.'
             ],
             image: section2banner
         },
         {
             name: "FAQ's",
-            title: 'Common <span class="text-[#F98D1B]">Echo Questions</span>',
+            title: 'Common <span class="text-[#F98D1B]">TMT Questions</span>',
             description: [
-                'Q: Is echocardiography safe? A: Yes, echo uses sound waves, not radiation, making it very safe for all patients, including pregnant women.',
-                'Q: How long does an echo take? A: Most echocardiograms are completed within 30-60 minutes, though some specialized scans like TEE may take longer.'
+                'Q: Is the TMT test safe? A: Yes, TMT is generally safe when performed under medical supervision. Our team monitors you throughout the test and stops immediately if any concerns arise.',
+                'Q: How long does a TMT take? A: The actual walking portion typically lasts 6-12 minutes, but plan for about 30-45 minutes total including preparation, monitoring, and recovery time.'
             ],
             image: section2banner
         },
@@ -73,7 +73,7 @@ const Section2 = () => {
                             onMouseEnter={() => setHoveredTab(index)}
                             className="relative px-4 py-2 rounded-full text-sm md:text-base font-semibold w-full md:w-auto transition-colors duration-200"
                             style={{
-                                fontFamily: "'DM Sans', sans-serif",
+                                fontFamily: "var(--font-sans)",
                                 color: activeTab === index ? '#ffffff' : '#0961A1',
                             }}
                         >

@@ -21,10 +21,10 @@ const Section2 = () => {
         },
         {
             name: 'Types of Echo Scans',
-            title: 'Types of <br/><span class="text-[#F98D1B]">Echocardiography</span>',
+            title: 'Echocardiography <br/><span class="text-[#F98D1B]">Services</span>',
             description: [
-                'We offer various types of echocardiography, including Transthoracic Echo (TTE), Transesophageal Echo (TEE), and Stress Echo. Each provides unique insights into heart health.',
-                'TTE is standard for general assessment, TEE offers detailed views from within the esophagus, and Stress Echo evaluates heart function under exertion.'
+                'VJ Scans & Labs provides comprehensive echocardiography including Transthoracic Echo (TTE) for standard heart imaging, Transesophageal Echo (TEE) for detailed views of heart valves and chambers, and Stress Echo to assess cardiac function during exercise.',
+                'TTE uses a probe on the chest wall and is the most common type. TEE provides superior images by placing the probe in the esophagus, ideal for detecting blood clots, valve problems, and congenital defects. Stress echo helps identify coronary artery disease by monitoring heart function during physical activity.'
             ],
             image: section2banner
         },
@@ -32,17 +32,17 @@ const Section2 = () => {
             name: 'Echo Preparation',
             title: 'Preparing for Your <br/><span class="text-[#F98D1B]">Echo Scan</span>',
             description: [
-                'Preparation for an echocardiogram is generally minimal. For a standard Transthoracic Echo, no special preparation is usually required.',
-                'If you are having a Transesophageal Echo or Stress Echo, specific instructions regarding fasting or medication will be provided to ensure accurate results.'
+                'For a standard Transthoracic Echo (TTE), no special preparation is needed. You can eat, drink, and take medications normally. Wear comfortable clothing that allows access to your chest.',
+                'If you\'re having a Transesophageal Echo (TEE), you\'ll need to fast for 6-8 hours before the procedure. For Stress Echo, wear comfortable exercise clothes and avoid heavy meals or caffeine beforehand. Our team will provide detailed instructions when you book your appointment.'
             ],
             image: section2banner
         },
         {
             name: 'Book an Echo',
-            title: 'Easy <span class="text-[#F98D1B]">Echo Booking</span>',
+            title: 'Book Your <span class="text-[#F98D1B]">Echocardiogram</span>',
             description: [
-                'Booking your echocardiogram appointment is simple and convenient. You can schedule online through our website or by calling our dedicated customer service.',
-                'We offer flexible scheduling to accommodate your needs, and while walk-ins are welcome, appointments are recommended for minimal wait times for your echo scan.'
+                'Schedule your echo scan at VJ Scans & Labs in Chennai by calling our center or booking through our website. Echocardiograms require 30-60 minutes, so appointments help ensure timely service.',
+                'Our cardiac imaging department uses advanced color doppler technology. We recommend booking in advance, especially for specialized echo studies like TEE or stress echo, which may require specific preparation.'
             ],
             image: section2banner
         },
@@ -72,7 +72,7 @@ const Section2 = () => {
                             onMouseEnter={() => setHoveredTab(index)}
                             className="relative px-4 py-2 rounded-full text-sm md:text-base font-semibold w-full md:w-auto transition-colors duration-200"
                             style={{
-                                fontFamily: "'DM Sans', sans-serif",
+                                fontFamily: "var(--font-sans)",
                                 color: activeTab === index ? '#ffffff' : '#0961A1',
                             }}
                         >

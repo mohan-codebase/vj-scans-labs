@@ -1,12 +1,14 @@
 'use client';
 
 import React from 'react';
+import { useBooking } from '@/context/BookingContext';
 const homeIcon = '/images/ctscan/Section7/home-icon.png';
 const customerIcon = '/images/ctscan/Section7/customer-care-icon.png';
 
 import Image from 'next/image';
 
 const FooterTop = () => {
+    const { openSuccessModal } = useBooking();
     const [formData, setFormData] = React.useState({
         name: '',
         phone: ''
@@ -34,6 +36,7 @@ const FooterTop = () => {
             if (response.ok) {
                 setStatus('success');
                 setFormData({ name: '', phone: '' });
+                openSuccessModal();
                 setTimeout(() => setStatus('idle'), 3000);
             } else {
                 setStatus('error');
@@ -50,21 +53,21 @@ const FooterTop = () => {
                     <div className="flex flex-col items-center gap-[20px] w-full md:flex-row md:gap-[40px] lg:gap-[50px]">
                         <div className="flex items-center gap-[15px] w-full justify-center lg:w-auto lg:justify-start">
                             <div className="flex items-center justify-center w-[40px] h-[40px] md:w-[48px] md:h-[48px]">
-                                <Image src={homeIcon} alt="Home Icon" width={50} height={50} />
+                                <Image src={homeIcon} alt="" aria-hidden="true" width={50} height={50} />
                             </div>
                             <div className="flex flex-col gap-[2px] items-center lg:items-start">
                                 <p className="text-white font-medium leading-[1.2] text-[12px] md:text-[13px] lg:text-[14px]">Book a Home Visit</p>
-                                <h3 className="text-white font-bold leading-[1.2] text-[15px] md:text-[16px] lg:text-[18px]">+91 958 5335 552</h3>
+                                <h3 className="text-white font-bold leading-[1.2] text-[15px] md:text-[16px] lg:text-[18px]">+91 95853 35552</h3>
                             </div>
                         </div>
 
                         <div className="flex items-center gap-[15px] w-full justify-center lg:w-auto lg:justify-start">
                             <div className="flex items-center justify-center w-[40px] h-[40px] md:w-[48px] md:h-[48px]">
-                                <Image src={customerIcon} alt="Customer Icon" width={50} height={50} />
+                                <Image src={customerIcon} alt="" aria-hidden="true" width={50} height={50} />
                             </div>
                             <div className="flex flex-col gap-[2px] items-center lg:items-start">
                                 <p className="text-white font-medium leading-[1.2] text-[12px] md:text-[13px] lg:text-[14px]">Customer Care</p>
-                                <h3 className="text-white font-bold leading-[1.2] text-[15px] md:text-[16px] lg:text-[18px]">+91 958 5335 552</h3>
+                                <h3 className="text-white font-bold leading-[1.2] text-[15px] md:text-[16px] lg:text-[18px]">+91 95853 35552</h3>
                             </div>
                         </div>
                     </div>
@@ -74,7 +77,9 @@ const FooterTop = () => {
                     <div className="flex flex-col gap-[10px] w-full max-w-[500px] lg:max-w-none md:gap-[15px]">
                         <h3 className="text-white font-semibold whitespace-nowrap text-[15px] md:text-[16px] lg:text-[18px] text-center lg:text-left">Get a Quick Call Back</h3>
                         <form onSubmit={handleSubmit} className="flex flex-col gap-[12px] w-full items-center lg:flex-row lg:w-auto">
+                            <label htmlFor="footer-name" className="sr-only">Your Name</label>
                             <input
+                                id="footer-name"
                                 type="text"
                                 name="name"
                                 value={formData.name}
@@ -82,9 +87,12 @@ const FooterTop = () => {
                                 placeholder={status === 'success' ? "Sent!" : "Your Name"}
                                 className={`w-full lg:w-auto min-w-0 lg:min-w-[180px] px-[16px] py-[10px] md:py-[16px] md:px-[20px] border-none rounded-[8px] bg-white text-[#1E1E1E] text-[13px] md:text-[14px] placeholder-[#3E4D5C] focus:outline-none focus:ring-4 focus:ring-white/30 transition-all duration-300 ${status === 'error' ? 'ring-2 ring-red-500' : ''}`}
                                 required
+                                autoComplete="name"
                                 disabled={status === 'loading' || status === 'success'}
                             />
+                            <label htmlFor="footer-phone" className="sr-only">Phone Number</label>
                             <input
+                                id="footer-phone"
                                 type="tel"
                                 name="phone"
                                 value={formData.phone}
@@ -92,6 +100,7 @@ const FooterTop = () => {
                                 placeholder={status === 'success' ? "We'll call you!" : "Phone Number"}
                                 className={`w-full lg:w-auto min-w-0 lg:min-w-[180px] px-[16px] py-[10px] md:py-[16px] md:px-[20px] border-none rounded-[8px] bg-white text-[#1E1E1E] text-[13px] md:text-[14px] placeholder-[#3E4D5C] focus:outline-none focus:ring-4 focus:ring-white/30 transition-all duration-300 ${status === 'error' ? 'ring-2 ring-red-500' : ''}`}
                                 required
+                                autoComplete="tel"
                                 disabled={status === 'loading' || status === 'success'}
                             />
                             <button

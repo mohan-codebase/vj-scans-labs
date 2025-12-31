@@ -1,4 +1,5 @@
 import React from 'react'
+import { ScrollReveal } from '@/components/animations/ScrollReveal'
 import Link from 'next/link'
 import { Activity, Brain, Heart, Zap, FileText } from 'lucide-react'
 
@@ -65,29 +66,31 @@ const scans = [
 
 const page = () => {
     return (
-        <main>
-            <div className="py-20 px-4 text-center bg-linear-to-b from-blue-50 to-white">
-                <h1 className="text-4xl md:text-5xl font-extrabold text-[#0961A1] mb-6">Our Scans</h1>
-                <p className="text-gray-600 max-w-2xl mx-auto text-lg mb-12">
-                    We offer a wide range of advanced diagnostic imaging services to ensure you get accurate and timely results.
-                </p>
+        <main className="overflow-hidden">
+            <ScrollReveal direction="down">
+                <div className="py-20 px-4 text-center bg-linear-to-b from-blue-50 to-white">
+                    <h1 className="text-4xl md:text-5xl font-extrabold text-[#0961A1] mb-6">Our Scans</h1>
+                    <p className="text-gray-600 max-w-2xl mx-auto text-lg mb-12">
+                        We offer a wide range of advanced diagnostic imaging services to ensure you get accurate and timely results.
+                    </p>
 
-                <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-4">
-                    {scans.map((scan) => (
-                        <Link key={scan.name} href={scan.link} className="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl hover:border-blue-100 transition-all flex flex-col items-center gap-4 group text-center h-full">
-                            <div className="w-20 h-20 bg-blue-50 rounded-full flex items-center justify-center text-[#0961A1] group-hover:bg-[#0961A1] group-hover:text-white transition-colors duration-300">
-                                {scan.icon}
-                            </div>
-                            <h3 className="font-bold text-xl text-gray-800">{scan.name}</h3>
-                            <p className="text-gray-500 text-sm leading-relaxed">{scan.description}</p>
-                            <div className="mt-auto pt-4 text-[#F98D1B] font-bold text-sm uppercase tracking-wide opacity-0 group-hover:opacity-100 transition-opacity">View Details</div>
-                        </Link>
-                    ))}
+                    <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-4">
+                        {scans.map((scan) => (
+                            <Link key={scan.name} href={scan.link} className="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl hover:border-blue-100 transition-all flex flex-col items-center gap-4 group text-center h-full">
+                                <div className="w-20 h-20 bg-blue-50 rounded-full flex items-center justify-center text-[#0961A1] group-hover:bg-[#0961A1] group-hover:text-white transition-colors duration-300">
+                                    {scan.icon}
+                                </div>
+                                <h3 className="font-bold text-xl text-gray-800">{scan.name}</h3>
+                                <p className="text-gray-500 text-sm leading-relaxed">{scan.description}</p>
+                                <div className="mt-auto pt-4 text-[#F98D1B] font-bold text-sm uppercase tracking-wide opacity-0 group-hover:opacity-100 transition-opacity">View Details</div>
+                            </Link>
+                        ))}
+                    </div>
                 </div>
-            </div>
-            <WhyChooseUsSection />
-            <TestimonialSection />
-            <AppointmentSection />
+            </ScrollReveal>
+            <ScrollReveal direction="left"><WhyChooseUsSection /></ScrollReveal>
+            <ScrollReveal direction="right"><TestimonialSection /></ScrollReveal>
+            <ScrollReveal><AppointmentSection /></ScrollReveal>
         </main>
     )
 }

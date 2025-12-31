@@ -10,14 +10,14 @@ const AboutSection = () => {
                 <div className=" w-full grid grid-cols-2 gap-16 items-center max-lg:grid-cols-1 max-lg:gap-12">
                     <div className="max-w-[600px]">
                         <h2 className="text-3xl md:text-[46px] font-extrabold mb-4">About Us</h2>
-                        <p className="text-lg md:text-xl font-semibold italic mb-6 opacity-90">VJ SCANS: Precision. Compassion. Dedication.</p>
+                        <p className="text-lg md:text-xl font-semibold italic mb-6 opacity-90">VJ Scans & Labs: Precision. Compassion. Dedication.</p>
                         <div className="text-sm md:text-base leading-relaxed mb-6 opacity-90">
                             <p>
-                                At VJ Scans, we understand the critical role diagnostic sciences play in shaping medical decisions and patient outcomes. Our state-of-the-art centre brings together advanced imaging systems and an experienced team committed to accuracy and care.
+                                At VJ Scans & Labs in Chennai, we understand the critical role diagnostic sciences play in shaping medical decisions and patient outcomes. Our state-of-the-art facility brings together advanced imaging systems, genetic testing capabilities, and an experienced team committed to accuracy and compassionate care.
                             </p>
                             <br />
                             <p>
-                                Through continuous training, rigorous quality checks, and a patient-first approach, we ensure every individual receives a smooth, reliable, and reassuring diagnostic experience.
+                                Through continuous training, rigorous quality checks, and a patient-first approach, we ensure every individual receives a smooth, reliable, and reassuring diagnostic experience. Our multidisciplinary team of radiologists, pathologists, and genetic counselors work together to provide comprehensive diagnostic solutions for patients across Tamil Nadu.
                             </p>
                         </div>
                         <Link href="/aboutus" className="inline-flex items-center gap-2 bg-[linear-gradient(84.92deg,#F98D1B_34.11%,#FFC180_105.58%)] text-white py-3 px-6 rounded-full font-semibold no-underline hover:shadow-lg hover:scale-105 transition-all duration-300">

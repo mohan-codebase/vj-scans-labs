@@ -14,7 +14,7 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 
           {/* Column 1: Menu */}
-          <div>
+          <div className="text-center md:text-left">
             <h3 className="text-[#1e73be] font-bold text-lg mb-6">Menu</h3>
             <ul className="space-y-3">
               <li><Link href="/aboutus" className="hover:text-[#1e73be] transition-colors">About Us</Link></li>
@@ -26,7 +26,7 @@ const Footer = () => {
           </div>
 
           {/* Column 2: Scans */}
-          <div>
+          <div className="text-center md:text-left">
             <h3 className="text-[#1e73be] font-bold text-lg mb-6">Scans</h3>
             <ul className="space-y-3">
               <li><Link href="/scans/mriscan" className="hover:text-[#1e73be] transition-colors">Magnetic Resonance Imaging (MRI) – 1.5 Tesla</Link></li>
@@ -44,12 +44,12 @@ const Footer = () => {
           </div>
 
           {/* Column 3: Contact Us */}
-          <div>
+          <div className="text-center md:text-left">
             <h3 className="text-[#1e73be] font-bold text-lg mb-6">Contact us</h3>
             <ul className="space-y-3">
               <li><span className="font-extrabold">GSTIN</span></li>
               <li><a href="#" className="hover:text-[#1e73be] transition-colors">Linkedin</a></li>
-              <li><a href="#" className="hover:text-[#1e73be] transition-colors">Instagram</a></li>
+              <li><a href="https://www.instagram.com/vj_scans_and_labs/" target="_blank" rel="noopener noreferrer" className="hover:text-[#1e73be] transition-colors">Instagram</a></li>
               <li><a href="#" className="hover:text-[#1e73be] transition-colors">Telegram</a></li>
             </ul>
           </div>
@@ -67,31 +67,32 @@ const Footer = () => {
             </div>
 
             <h3 className="text-[#1e73be] font-bold text-lg mb-2">Address</h3>
-            <p className="text-sm leading-relaxed mb-1 text-center">
-
-              NO.1, Bharani Gardens, Bhanumathi Ramakrishna Rd, Bharani Colony, Vijayaraghavapuram, Saligramam, Chennai, Tamil Nadu 600093
-            </p>
-            <p className="text-sm mb-6">
-              044-40000000 | +91 809 808 8090
-            </p>
+            <address className="not-italic">
+              <p className="text-sm leading-relaxed mb-1 text-center">
+                NO.1, Bharani Gardens, Bhanumathi Ramakrishna Rd, Bharani Colony, Vijayaraghavapuram, Saligramam, Chennai, Tamil Nadu 600093
+              </p>
+              <p className="text-sm mb-6">
+                <a href="tel:+919585335552" className="hover:text-[#1e73be]">+91 95853 35552</a>
+              </p>
+            </address>
 
             <h3 className="text-[#1e73be] font-bold text-lg mb-4">Follow Us:</h3>
             <div className="flex items-center gap-2">
               <div className=" rounded-full p-1 cursor-pointer flex items-center justify-center w-9 h-9">
                 <a href="https://www.facebook.com/vjscans" target="_blank"
-                  rel="noopener noreferrer"><Image src="/images/topbar/facebook.svg" alt="facebook" width={22} height={22} /></a>
+                  rel="noopener noreferrer" aria-label="Facebook"><Image src="/images/topbar/facebook.svg" alt="" width={22} height={22} /></a>
               </div>
               <div className="bg-black rounded-full p-1 cursor-pointer flex items-center justify-center w-6 h-6">
                 <a href="https://x.com/vjscans" target="_blank"
-                  rel="noopener noreferrer"><Image src="/images/topbar/x.svg" alt="x" width={22} height={22} /></a>
+                  rel="noopener noreferrer" aria-label="X (Twitter)"><Image src="/images/topbar/x.svg" alt="" width={22} height={22} /></a>
               </div>
               <div className=" rounded-full p-1 cursor-pointer flex items-center justify-center w-8 h-5">
-                <a href="https://www.instagram.com/vjscans/" target="_blank"
-                  rel="noopener noreferrer"><Image src="/images/topbar/instagram.svg" alt="instagram" width={50} height={50} /></a>
+                <a href="https://www.instagram.com/vj_scans_and_labs/" target="_blank"
+                  rel="noopener noreferrer" aria-label="Instagram"><Image src="/images/topbar/instagram.svg" alt="" width={50} height={50} /></a>
               </div>
               <div className="bg-[#0077B5] rounded-full p-1 cursor-pointer flex items-center justify-center w-6 h-6">
                 <a href="https://www.linkedin.com/company/vjscans/" target="_blank"
-                  rel="noopener noreferrer"><Image src="/images/topbar/linkedin.svg" alt="linkedin" width={20} height={20} /></a>
+                  rel="noopener noreferrer" aria-label="LinkedIn"><Image src="/images/topbar/linkedin.svg" alt="" width={20} height={20} /></a>
               </div>
             </div>
           </div>

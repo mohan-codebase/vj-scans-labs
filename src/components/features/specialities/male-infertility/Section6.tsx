@@ -2,7 +2,10 @@
 
 import React, { useState } from 'react';
 
+import { useBooking } from '@/context/BookingContext';
+
 const Section6 = () => {
+  const { openSuccessModal } = useBooking();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -35,6 +38,7 @@ const Section6 = () => {
       if (response.ok) {
         setStatus('success');
         setFormData({ name: '', email: '', phone: '' });
+        openSuccessModal();
         setTimeout(() => setStatus('idle'), 5000);
       } else {
         setStatus('error');

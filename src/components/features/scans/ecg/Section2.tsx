@@ -21,10 +21,10 @@ const Section2 = () => {
         },
         {
             name: 'Types of ECG',
-            title: 'Types of <br/><span class="text-[#F98D1B]">Electrocardiogram</span>',
+            title: 'ECG Services at <br/><span class="text-[#F98D1B]">VJ Scans & Labs</span>',
             description: [
-                'We offer various types of electrocardiograms, including Resting ECG, Exercise ECG (Stress Test), and Holter Monitoring. Each provides unique insights into heart electrical activity.',
-                'Resting ECG is standard for general assessment, Exercise ECG evaluates heart function under exertion, and Holter Monitoring records heart activity over 24-48 hours for intermittent issues.'
+                'Our Chennai facility offers multiple ECG testing options: Resting ECG for routine cardiac assessment, Exercise ECG (TMT) to evaluate heart function during physical stress, and Holter Monitoring for 24-48 hour continuous heart rhythm recording.',
+                'Resting ECG captures your heart\'s electrical patterns at rest, helping detect arrhythmias, heart attacks, and conduction abnormalities. Holter monitoring is ideal for capturing intermittent symptoms that may not appear during a brief office visit.'
             ],
             image: section2banner
         },
@@ -32,17 +32,17 @@ const Section2 = () => {
             name: 'ECG Preparation',
             title: 'Preparing for Your <br/><span class="text-[#F98D1B]">ECG Test</span>',
             description: [
-                'Preparation for an electrocardiogram is generally minimal. For a standard Resting ECG, no special preparation is usually required.',
-                'For an Exercise ECG, you may be advised to wear comfortable clothing and shoes. For Holter Monitoring, you will be given specific instructions on device care and activity logging.'
+                'For a standard Resting ECG at VJ Scans & Labs, no special preparation is needed. You can eat and take medications normally. Wear comfortable clothing that allows easy access to your chest, arms, and ankles.',
+                'If you\'re having an Exercise ECG (TMT), wear athletic shoes and comfortable exercise clothes. Avoid heavy meals, caffeine, and smoking 2-3 hours before. For Holter monitoring, you\'ll receive instructions on wearing the device and keeping a diary of activities and symptoms.'
             ],
             image: section2banner
         },
         {
             name: 'Book an ECG',
-            title: 'Easy <span class="text-[#F98D1B]">ECG Booking</span>',
+            title: 'Schedule Your <span class="text-[#F98D1B]">ECG Test</span>',
             description: [
-                'Booking your electrocardiogram appointment is simple and convenient. You can schedule online through our website or by calling our dedicated customer service.',
-                'We offer flexible scheduling to accommodate your needs, and while walk-ins are welcome, appointments are recommended for minimal wait times for your ECG test.'
+                'Book your ECG at VJ Scans & Labs by calling our Chennai facility or scheduling online. ECG tests are quick procedures, typically taking just 5-10 minutes, making them ideal for walk-in patients.',
+                'For routine cardiac monitoring or pre-surgical clearance, advance booking ensures minimal wait. Our cardiac diagnostics team is available 24/7 for emergency ECG needs.'
             ],
             image: section2banner
         },
@@ -72,7 +72,7 @@ const Section2 = () => {
                             onMouseEnter={() => setHoveredTab(index)}
                             className="relative px-4 py-2 rounded-full text-sm md:text-base font-semibold w-full md:w-auto transition-colors duration-200"
                             style={{
-                                fontFamily: "'DM Sans', sans-serif",
+                                fontFamily: "var(--font-sans)",
                                 color: activeTab === index ? '#ffffff' : '#0961A1',
                             }}
                         >

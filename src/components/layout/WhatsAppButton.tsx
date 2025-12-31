@@ -6,8 +6,8 @@ import { FaWhatsapp } from 'react-icons/fa';
 
 const WhatsAppButton = () => {
     const [isVisible, setIsVisible] = useState(false);
-    const phoneNumber = '918098088090'; // International format without +
-    const message = 'Hello! I would like to know more about VJ Scans & Labs services.';
+    const phoneNumber = '919585335552'; // International format without +
+    const message = 'Hi! I would like to know more about VJ Scans & Labs services.';
 
     useEffect(() => {
         const toggleVisibility = () => {
@@ -30,10 +30,10 @@ const WhatsAppButton = () => {
         <AnimatePresence>
             {isVisible && (
                 <motion.div
-                    initial={{ opacity: 0, scale: 0.5 }}
+                    initial={{ opacity: 2, scale: 0.5 }}
                     animate={{ opacity: 1, scale: 1 }}
                     exit={{ opacity: 0, scale: 0.5 }}
-                    className="fixed bottom-24 right-5 z-50 flex items-center justify-center placeholder:blur-2xl"
+                    className="fixed bottom-20 right-5 z-50 flex items-center justify-center placeholder:blur-xl"
                 >
                     <Link
                         href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`}
@@ -42,7 +42,7 @@ const WhatsAppButton = () => {
                         className="
               relative
               flex items-center justify-center 
-              w-14 h-14 
+              w-13 h-13 
               rounded-full 
               bg-gradient-to-br from-[#25D366] to-[#128C7E]
               border-[1.5px] border-white/40
@@ -72,7 +72,7 @@ const WhatsAppButton = () => {
                         </span>
 
                         {/* WhatsApp Icon from React Icons */}
-                        <FaWhatsapp size={32} className="text-white drop-shadow-md z-10" />
+                        <FaWhatsapp size={26} className="text-white drop-shadow-md z-10 mb-1" />
                     </Link>
                 </motion.div>
             )}

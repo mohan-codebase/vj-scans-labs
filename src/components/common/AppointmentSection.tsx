@@ -1,12 +1,14 @@
 'use client';
 
 import React, { useState } from 'react';
+import { useBooking } from '@/context/BookingContext';
 
 interface AppointmentSectionProps {
     className?: string;
 }
 
 const AppointmentSection: React.FC<AppointmentSectionProps> = ({ className = '' }) => {
+    const { openSuccessModal } = useBooking();
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -36,6 +38,7 @@ const AppointmentSection: React.FC<AppointmentSectionProps> = ({ className = '' 
             if (response.ok) {
                 setStatus('success');
                 setFormData({ name: '', email: '', phone: '', package: '' });
+                openSuccessModal();
                 setTimeout(() => setStatus('idle'), 3000);
             } else {
                 setStatus('error');
@@ -68,40 +71,57 @@ const AppointmentSection: React.FC<AppointmentSectionProps> = ({ className = '' 
 
                     <form onSubmit={handleSubmit} className="space-y-4 max-w-md">
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <input
-                                type="text"
-                                name="name"
-                                value={formData.name}
-                                onChange={handleChange}
-                                placeholder={status === 'success' ? "Sent!" : "Your Name*"}
-                                className={`w-full px-4 py-3 rounded-lg bg-white text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-300 ${status === 'error' ? 'ring-2 ring-red-500' : ''}`}
-                                required
-                                disabled={status === 'loading' || status === 'success'}
-                            />
-                            <input
-                                type="email"
-                                name="email"
-                                value={formData.email}
-                                onChange={handleChange}
-                                placeholder="Email ID"
-                                className={`w-full px-4 py-3 rounded-lg bg-white text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-300 ${status === 'error' ? 'ring-2 ring-red-500' : ''}`}
-                                disabled={status === 'loading' || status === 'success'}
-                            />
+                            <div>
+                                <label htmlFor="appt-name" className="sr-only">Your Name</label>
+                                <input
+                                    id="appt-name"
+                                    type="text"
+                                    name="name"
+                                    value={formData.name}
+                                    onChange={handleChange}
+                                    placeholder={status === 'success' ? "Sent!" : "Your Name*"}
+                                    className={`w-full px-4 py-3 rounded-lg bg-white text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-300 ${status === 'error' ? 'ring-2 ring-red-500' : ''}`}
+                                    required
+                                    autoComplete="name"
+                                    disabled={status === 'loading' || status === 'success'}
+                                />
+                            </div>
+                            <div>
+                                <label htmlFor="appt-email" className="sr-only">Email ID</label>
+                                <input
+                                    id="appt-email"
+                                    type="email"
+                                    name="email"
+                                    value={formData.email}
+                                    onChange={handleChange}
+                                    placeholder="Email ID"
+                                    className={`w-full px-4 py-3 rounded-lg bg-white text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-300 ${status === 'error' ? 'ring-2 ring-red-500' : ''}`}
+                                    disabled={status === 'loading' || status === 'success'}
+                                    autoComplete="email"
+                                />
+                            </div>
                         </div>
 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <input
-                                type="tel"
-                                name="phone"
-                                value={formData.phone}
-                                onChange={handleChange}
-                                placeholder={status === 'success' ? "We'll call you!" : "Phone Number*"}
-                                className={`w-full px-4 py-3 rounded-lg bg-white text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-300 ${status === 'error' ? 'ring-2 ring-red-500' : ''}`}
-                                required
-                                disabled={status === 'loading' || status === 'success'}
-                            />
+                            <div>
+                                <label htmlFor="appt-phone" className="sr-only">Phone Number</label>
+                                <input
+                                    id="appt-phone"
+                                    type="tel"
+                                    name="phone"
+                                    value={formData.phone}
+                                    onChange={handleChange}
+                                    placeholder={status === 'success' ? "We'll call you!" : "Phone Number*"}
+                                    className={`w-full px-4 py-3 rounded-lg bg-white text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-300 ${status === 'error' ? 'ring-2 ring-red-500' : ''}`}
+                                    required
+                                    autoComplete="tel"
+                                    disabled={status === 'loading' || status === 'success'}
+                                />
+                            </div>
                             <div className="relative">
+                                <label htmlFor="appt-package" className="sr-only">Select Package</label>
                                 <select
+                                    id="appt-package"
                                     name="package"
                                     value={formData.package}
                                     onChange={handleChange}

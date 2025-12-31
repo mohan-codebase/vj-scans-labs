@@ -62,10 +62,10 @@ const Section9 = () => {
         <section className="py-16 bg-white overflow-hidden">
             <div className="container mx-auto px-4">
                 <div className="text-center mb-0">
-                    <h2 className="text-[40px] font-[800] text-[#005a9c] mb-4">
+                    <h2 className="md:text-[40px] text-3xl font-sans font-[800] text-[#005a9c] mb-4">
                         Our Patients Feedback
                     </h2>
-                    <p className="text-gray-600 font-[500] max-w-2xl mx-auto">
+                    <p className="text-gray-600 font-[500] font-[20px] max-w-2xl mx-auto font-sans">
                         These are some customer testimonials who are <br /> satisifed with the place & service we have provied
                     </p>
                 </div>

@@ -31,9 +31,12 @@ export function generateEmailTemplate({
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-family: 'Urbanist', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
       line-height: 1.6;
       margin: 0;
       padding: 0;
@@ -137,7 +140,7 @@ export function generateEmailTemplate({
       <!-- Header -->
       <div class="header" style="background-color: #ffffff; padding: 30px 20px; text-align: center; border-bottom: 4px solid ${primaryColor};">
         <!-- Logo -->
-        <img src="${siteUrl}/images/vj-scans-logo.png" alt="VJ Scans & Labs" width="150" style="display: block; margin: 0 auto 15px auto; max-width: 200px; height: auto;" />
+        <img src="https://vj-scans-labs.vercel.app/images/vj-scans-logo.png" alt="VJ Scans & Labs" width="200" style="display: block; margin: 0 auto 15px auto; max-width: 200px; height: auto;" />
         
         <h1 style="color: ${primaryColor}; margin: 0; font-size: 24px;">New Request</h1>
         <p style="color: #6b7280; margin: 10px 0 0 0; font-size: 14px;">

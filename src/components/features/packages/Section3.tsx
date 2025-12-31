@@ -119,16 +119,16 @@ const Section3 = () => {
                 </h2>
 
                 <div className="relative group">
-                 
+
 
                     {/* Scrollable Container */}
-                    <div 
+                    <div
                         ref={scrollRef}
                         className="flex gap-6 overflow-x-auto snap-x snap-mandatory no-scrollbar pb-8 px-4"
                         style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
                     >
                         {packages.map((pkg) => (
-                            <div 
+                            <div
                                 key={pkg.id}
                                 className="min-w-full md:min-w-[calc(31.333%-16px)] snap-center bg-dark rounded-[22px] overflow-hidden shadow-[0px_2px_12px_0px_#0000001A]  border-2 border[ #D6D6D6] flex flex-col group/card"
                             >
@@ -171,15 +171,15 @@ const Section3 = () => {
                             </div>
                         ))}
                     </div>
-                       {/* Navigation Buttons */}
-                       <div className="flex justify-center gap-4 mb-8">
-                        <button 
+                    {/* Navigation Buttons */}
+                    <div className="flex justify-center gap-4 mb-8">
+                        <button
                             onClick={() => scroll('left')}
                             className="p-3 rounded-full bg-gray-200 hover:bg-[#F98D1B] hover:text-white transition-all shadow-md"
                         >
                             <IconChevronLeft size={24} />
                         </button>
-                        <button 
+                        <button
                             onClick={() => scroll('right')}
                             className="p-3 rounded-full bg-gray-200 hover:bg-[#F98D1B] hover:text-white transition-all shadow-md"
                         >

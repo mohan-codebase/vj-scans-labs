@@ -14,37 +14,37 @@ const Section2 = () => {
             name: 'About the scan',
             title: 'What  is an <span class="text-[#F98D1B]">MRI Scan?</span>',
             description: [
-                'MRI (Magnetic Resonance Imaging) is a painless imaging test that uses advanced X-ray technology to create detailed pictures of internal organs, bones, and tissues. It helps doctors detect injuries, infections, and other health conditions with greater accuracy than traditional X-rays.',
-                'MRI scans are especially useful for diagnosing conditions related to the brain, spine, joints, heart, and abdomen with exceptional clarity.',
-                'At VJ Scans & Labs, our 1.5 Tesla MRI system ensures crystal-clear images with shorter scan times, advanced safety features, and a comfortable experience for every patient.'
+                'MRI (Magnetic Resonance Imaging) is a painless, non-invasive imaging technique that uses powerful magnetic fields and radio waves to create detailed pictures of internal organs, soft tissues, and structures. Unlike X-rays or CT scans, MRI does not use ionizing radiation, making it a safer option for repeated imaging.',
+                'MRI scans are especially useful for diagnosing conditions related to the brain, spine, joints, muscles, heart, and abdomen with exceptional clarity and detail.',
+                'At VJ Scans & Labs in Chennai, our 1.5 Tesla MRI system ensures crystal-clear images with shorter scan times, advanced safety features, and a comfortable experience for every patient.'
 
             ],
             image: section2banner
         },
         {
             name: 'List of Parameters',
-            title: 'Comprehensive <span class="text-[#F98D1B]">Parameters</span>',
+            title: 'MRI Imaging <span class="text-[#F98D1B]">Capabilities</span>',
             description: [
-                'Our MRI scans cover a wide range of parameters to ensure a thorough diagnosis. We examine various body parts including the brain, spine, joints, and abdomen.',
-                'Each scan is tailored to the specific needs of the patient, providing detailed insights that assist in accurate treatment planning.'
+                'Our 1.5 Tesla MRI system at VJ Scans & Labs performs detailed imaging of the brain, spine, joints, muscles, abdomen, pelvis, and blood vessels. We offer both contrast and non-contrast studies with various imaging sequences.',
+                'MRI excels at visualizing soft tissues, detecting tumors, evaluating joint injuries, assessing brain and spinal cord conditions, and identifying vascular abnormalities. Our advanced protocols provide high-resolution images that help doctors make precise diagnoses and plan treatments.'
             ],
             image: section2banner
         },
         {
             name: 'Scan Preparation',
-            title: 'How to <span class="text-[#F98D1B]">Prepare</span>',
+            title: 'Preparing for Your <span class="text-[#F98D1B]">MRI Scan</span>',
             description: [
-                'Preparation for an MRI scan often involves removing all metal objects, such as jewelry, watches, and hearing aids. You may also need to change into a hospital gown.',
-                'Inform our staff if you have any metal implants, pacemakers, or claustrophobia, as special precautions may be needed.'
+                'Before your MRI at VJ Scans & Labs, remove all metal objects including jewelry, watches, hearing aids, eyeglasses, hairpins, and clothing with metal zippers or buttons. You\'ll be asked to change into a hospital gown to ensure no metal interferes with the magnetic field.',
+                'Crucially, inform our staff about any metal implants, pacemakers, cochlear implants, or metal fragments in your body. Also mention if you have claustrophobia, as we can discuss options like open MRI or sedation to help you feel more comfortable during the scan.'
             ],
             image: section2banner
         },
         {
             name: 'Book an Appointment',
-            title: 'Easy <span class="text-[#F98D1B]">Booking</span>',
+            title: 'Schedule Your <span class="text-[#F98D1B]">MRI Scan</span>',
             description: [
-                'Booking an appointment is simple and convenient. You can book online through our website or call our customer care number.',
-                'We offer flexible scheduling options to suit your convenience. Walk-ins are also welcome, but appointments are recommended to minimize waiting time.'
+                'Book your MRI scan at VJ Scans & Labs by calling our Chennai center or scheduling online. MRI scans typically take 30-60 minutes, so advance booking ensures your preferred time slot.',
+                'Our 1.5 Tesla MRI system is available throughout the day. We strongly recommend appointments to avoid long waits, especially for specialized MRI studies of the brain, spine, or joints.'
             ],
             image: section2banner
         },
@@ -74,7 +74,7 @@ const Section2 = () => {
                             onMouseEnter={() => setHoveredTab(index)}
                             className="relative px-4 py-2 rounded-full text-sm md:text-base font-semibold w-full md:w-auto transition-colors duration-200"
                             style={{
-                                fontFamily: "'DM Sans', sans-serif",
+                                fontFamily: "var(--font-sans)",
                                 color: activeTab === index ? '#ffffff' : '#0961A1',
                             }}
                         >
