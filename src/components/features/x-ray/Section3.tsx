@@ -23,24 +23,24 @@ const Section3 = () => {
         <div className="flex flex-wrap justify-center  items-center gap-12 mt-12">
           <div className="flex flex-col justify-center items-center">
             <Image className="w-[80px] md:w-[150px]" src={ChestIcon} alt="Chest Scan" width={908} height={816} />
-            <h4 className="font-secondary font-semibold text-xl leading-[25px] text-center mt-4">Chest</h4>
+            <h4 className="font-sans font-semibold text-xl leading-[25px] text-center mt-4">Chest</h4>
           </div>
           <div className="flex flex-col justify-center items-center">
             <Image className="w-[80px] md:w-[150px]" src={SpinalIcon} alt="Spinal Scan" width={908} height={816} />
-            <h4 className="font-secondary font-semibold text-xl leading-[25px] text-center mt-4">Spine</h4>
+            <h4 className="font-sans font-semibold text-xl leading-[25px] text-center mt-4">Spine</h4>
           </div>
 
           <div className="flex flex-col justify-center items-center">
             <Image className="w-[80px] md:w-[150px]" src={skullIcon} alt="Cardiac Scan" width={908} height={816} />
-            <h4 className="font-secondary font-semibold text-xl leading-[25px] text-center mt-4">Skull</h4>
+            <h4 className="font-sans font-semibold text-xl leading-[25px] text-center mt-4">Skull</h4>
           </div>
           <div className="flex flex-col justify-center items-center">
             <Image className="w-[80px] md:w-[150px]" src={limbIcon} alt="Spinal Scan" width={908} height={816} />
-            <h4 className="font-secondary font-semibold text-xl leading-[25px] text-center mt-4">Limb</h4>
+            <h4 className="font-sans font-semibold text-xl leading-[25px] text-center mt-4">Limb</h4>
           </div>
           <div className="flex flex-col justify-center items-center">
             <Image className="w-[80px] md:w-[150px]" src={dentalIcon} alt="Spinal Scan" width={908} height={816} />
-            <h4 className="font-secondary font-semibold text-xl leading-[25px] text-center mt-4">Dental</h4>
+            <h4 className="font-sans font-semibold text-xl leading-[25px] text-center mt-4">Dental</h4>
           </div>
         </div>
       </section>

@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
 import { IconChevronDown } from '@tabler/icons-react'
 import KnowMoreButton from '@/components/ui/KnowMoreButton'
-import { useBooking } from '@/context/BookingContext'
+import { useBooking, KnowMoreContent } from '@/context/BookingContext'
 // import { BiBorderRadius } from 'react-icons/bi'
 
 interface Slide {
@@ -121,6 +121,15 @@ const HeroSection: React.FC<HeroSectionProps> = ({ slides, formSource }) => {
                                 <KnowMoreButton
                                     iconVariant="up-right"
                                     className="mb-70 lg:mb-26 mt-2"
+                                    content={{
+                                        title: typeof slides[currentSlide].title === 'string' 
+                                            ? slides[currentSlide].title 
+                                            : 'Learn More',
+                                        description: typeof slides[currentSlide].subtitle === 'string'
+                                            ? slides[currentSlide].subtitle
+                                            : slides[currentSlide].subtitle,
+                                        additionalInfo: 'At VJ Scans & Labs, we are committed to providing you with reliable results, individualized care, and prompt insights for better health. Our state-of-the-art diagnostic facilities and experienced team ensure accurate and timely reports to help you make informed healthcare decisions.'
+                                    }}
                                 />
                             </div>
                         </div>

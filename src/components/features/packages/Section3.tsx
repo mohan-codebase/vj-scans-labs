@@ -97,6 +97,65 @@ const packages = [
         discountedPrice: 6999,
         discount: "66% Off",
         headerColor: "bg-[#0961A1]"
+    },
+    {
+        id: 5,
+        name: "Diabetes Checkup Package",
+        testsCount: 7,
+        tests: [
+            "Complete Haemogram",
+            "Fasting Blood Sugar (FBS)",
+            "Post Prandial Blood Sugar (PPBS)",
+            "HbA1c",
+            "Lipid Profile",
+            "Urea & Creatinine",
+            "Urine Routine"
+        ],
+        originalPrice: 3500,
+        discountedPrice: 1499,
+        discount: "57% Off",
+        headerColor: "bg-[#0961A1]"
+    },
+    {
+        id: 6,
+        name: "Senior Citizen Package",
+        testsCount: 14,
+        tests: [
+            "Complete Haemogram",
+            "Fasting Blood Sugar",
+            "Urea & Creatinine",
+            "Lipid Profile",
+            "Liver Function Test",
+            "Thyroid Function Test",
+            "Serum Electrolytes",
+            "Calcium & Phosphorus",
+            "Uric Acid",
+            "Urine Routine",
+            "ECG",
+            "X-Ray Chest",
+            "USG Abdomen (Screening)"
+        ],
+        originalPrice: 6500,
+        discountedPrice: 3499,
+        discount: "46% Off",
+        headerColor: "bg-[#0961A1]"
+    },
+    {
+        id: 7,
+        name: "Fever Profile",
+        testsCount: 6,
+        tests: [
+            "Complete Haemogram (CBC)",
+            "ESR",
+            "Peripheral Smear",
+            "Widal Test (Typhoid)",
+            "Urine Routine Analysis",
+            "Dengue NS1 Antigen"
+        ],
+        originalPrice: 2200,
+        discountedPrice: 1199,
+        discount: "45% Off",
+        headerColor: "bg-[#0961A1]"
     }
 ]
 

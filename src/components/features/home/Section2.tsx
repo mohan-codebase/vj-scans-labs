@@ -30,7 +30,7 @@ const Section2 = () => {
             <div key={index} className="flex items-center justify-center w-1/4 relative">
               <div className="flex items-center gap-4">
                 <Image src={feature.icon} alt="" width={50} height={50} className="w-auto h-auto" />
-                <span className="text-[17px] font-medium whitespace-nowrap font-secondary">
+                <span className="text-[17px] font-medium whitespace-nowrap font-sans">
                   {feature.text}
                 </span>
               </div>
@@ -48,7 +48,7 @@ const Section2 = () => {
             {features.map((feature, index) => (
               <div key={`set1-${index}`} className="flex items-center gap-2">
                 <Image src={feature.icon} alt="" width={30} height={30} className="w-[30px] h-[30px]" />
-                <span className="text-sm font-medium whitespace-nowrap font-secondary">
+                <span className="text-sm font-medium whitespace-nowrap font-sans">
                   {feature.text}
                 </span>
               </div>
@@ -58,7 +58,7 @@ const Section2 = () => {
               {features.map((feature, index) => (
                 <div key={`set2-${index}`} className="flex items-center gap-2 mr-8">
                   <Image src={feature.icon} alt="" width={30} height={30} className="w-[30px] h-[30px]" />
-                  <span className="text-sm font-medium whitespace-nowrap font-secondary">
+                  <span className="text-sm font-medium whitespace-nowrap font-sans">
                     {feature.text}
                   </span>
                 </div>

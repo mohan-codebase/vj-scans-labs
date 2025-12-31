@@ -1,7 +1,8 @@
+'use client';
+
 import React from 'react';
-import Link from 'next/link';
-import { ArrowUpRight } from 'lucide-react';
 import Image from 'next/image';
+import KnowMoreButton from '@/components/ui/KnowMoreButton';
 
 const Section7 = () => {
     return (
@@ -20,12 +21,24 @@ const Section7 = () => {
                                 Through continuous training, rigorous quality checks, and a patient-first approach, we ensure every individual receives a smooth, reliable, and reassuring diagnostic experience.
                             </p>
                         </div>
-                        <Link href="/aboutus" className="inline-flex items-center gap-2 bg-[linear-gradient(84.92deg,#F98D1B_34.11%,#FFC180_105.58%)] text-white py-3 px-6 rounded-full font-semibold no-underline hover:shadow-lg hover:scale-105 transition-all duration-300">
-                            Read More
-                            <span className="bg-white text-orange-500 rounded-full p-1">
-                                <ArrowUpRight size={16} />
-                            </span>
-                        </Link>
+                        <KnowMoreButton
+                            text="Read More"
+                            iconVariant="up-right"
+                            content={{
+                                title: 'About VJ Scans & Labs',
+                                description: (
+                                    <>
+                                        <p className="mb-4">
+                                            At VJ Scans & Labs in Chennai, we understand the critical role diagnostic sciences play in shaping medical decisions and patient outcomes. Our state-of-the-art facility brings together advanced imaging systems, genetic testing capabilities, and an experienced team committed to accuracy and compassionate care.
+                                        </p>
+                                        <p>
+                                            Through continuous training, rigorous quality checks, and a patient-first approach, we ensure every individual receives a smooth, reliable, and reassuring diagnostic experience. Our multidisciplinary team of radiologists, pathologists, and genetic counselors work together to provide comprehensive diagnostic solutions for patients across Tamil Nadu.
+                                        </p>
+                                    </>
+                                ),
+                                additionalInfo: 'VJ Scans & Labs: Precision. Compassion. Dedication. We are committed to providing world-class diagnostic services that help you make informed healthcare decisions.'
+                            }}
+                        />
                     </div>
 
                     <div className="relative w-full lg:hidden flex justify-center">

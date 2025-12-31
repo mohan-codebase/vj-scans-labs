@@ -25,7 +25,7 @@ const Section5 = () => {
                             <h2 className="text-2xl md:text-4xl font-extrabold text-[#0961A1] mb-2">
                                 From Analysis <span className="text-[#FF9D00] "> <br />to Action</span>
                             </h2>
-                            <p className="text-gray-700 font-secondary font-medium leading-relaxed text-sm md:text-base">
+                            <p className="text-gray-700 font-sans font-medium leading-relaxed text-sm md:text-base">
                                 We help you translate complex genetic data into actionable healthcare plans. Whether it means preventive screening, early intervention, or reproductive choices, our counselors walk you through every step.
                             </p>
                         </div>

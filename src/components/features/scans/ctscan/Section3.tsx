@@ -19,19 +19,19 @@ const Section3 = () => {
                 <div className="flex flex-wrap justify-center  items-center gap-12 mt-12">
                     <div className="flex flex-col justify-center items-center">
                         <Image className="w-[120px] md:w-[200px]" src={BrainIcon} alt="Brain Scan" width={908} height={816} />
-                        <h4 className="font-secondary font-semibold text-xl leading-[25px] text-center mt-4">Brain</h4>
+                        <h4 className="font-sans font-semibold text-xl leading-[25px] text-center mt-4">Brain</h4>
                     </div>
                     <div className="flex flex-col justify-center items-center">
                         <Image className="w-[120px] md:w-[200px]" src={Cardiology} alt="Cardiology Scan" width={908} height={816} />
-                        <h4 className="font-secondary font-semibold text-xl leading-[25px] text-center mt-4">Cardiology</h4>
+                        <h4 className="font-sans font-semibold text-xl leading-[25px] text-center mt-4">Cardiology</h4>
                     </div>
                     <div className="flex flex-col justify-center items-center">
                         <Image className="w-[120px] md:w-[200px]" src={LowDoseCTScan} alt="Low Dose CT Scan" width={908} height={816} />
-                        <h4 className="font-secondary font-semibold text-xl leading-[25px] text-center mt-4">Newborn Screening</h4>
+                        <h4 className="font-sans font-semibold text-xl leading-[25px] text-center mt-4">Newborn Screening</h4>
                     </div>
                     <div className="flex flex-col justify-center items-center">
                         <Image className="w-[120px] md:w-[200px]" src={NewbornScreening} alt="Newborn Screening" width={908} height={816} />
-                        <h4 className="font-secondary font-semibold text-xl leading-[25px] text-center mt-4">Low Dose CT Scan</h4>
+                        <h4 className="font-sans font-semibold text-xl leading-[25px] text-center mt-4">Low Dose CT Scan</h4>
                     </div>
                 </div>
             </section>

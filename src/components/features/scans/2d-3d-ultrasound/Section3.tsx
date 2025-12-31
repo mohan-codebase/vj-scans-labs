@@ -20,29 +20,29 @@ const Section3 = () => {
                 <div className="flex flex-wrap justify-center  items-center gap-12 mt-12">
                     <div className="flex flex-col justify-center items-center">
                         <Image className="w-[120px] md:w-[150px]" src={TwoDUltrasoundIcon} alt="Brain Scan" width={908} height={816} />
-                        <h4 className="font-secondary font-semibold text-xl leading-[25px] text-center mt-4">2D Ultrasound</h4>
+                        <h4 className="font-sans font-semibold text-xl leading-[25px] text-center mt-4">2D Ultrasound</h4>
                     </div>
                     <div className="flex flex-col justify-center items-center">
                         <Image className="w-[120px] md:w-[150px]" src={ThreeDUltrasoundIcon} alt="Cardiology Scan" width={908} height={816} />
-                        <h4 className="font-secondary font-semibold text-xl leading-[25px] text-center mt-4">3D Ultrasound</h4>
+                        <h4 className="font-sans font-semibold text-xl leading-[25px] text-center mt-4">3D Ultrasound</h4>
                     </div>
                     <div className="flex flex-col justify-center items-center">
                         <Image className="w-[120px] md:w-[150px]" src={PregnancyUltrasoundIcon} alt="Low Dose CT Scan" width={908} height={816} />
-                        <h4 className="font-secondary font-semibold text-xl leading-[25px] text-center mt-4">Pregnancy Ultrasound</h4>
+                        <h4 className="font-sans font-semibold text-xl leading-[25px] text-center mt-4">Pregnancy Ultrasound</h4>
                     </div>
                     <div className="flex flex-col justify-center items-center">
                         <Image className="w-[120px] md:w-[150px]" src={PelvicUltrasoundIcon} alt="Pelvic Ultrasound" width={908} height={816} />
-                        <h4 className="font-secondary font-semibold text-xl leading-[25px] text-center mt-4">Pelvic Ultrasound</h4>
+                        <h4 className="font-sans font-semibold text-xl leading-[25px] text-center mt-4">Pelvic Ultrasound</h4>
                     </div>
                 </div>
                 <div className="flex flex-wrap justify-center  items-center gap-12 mt-12">
                     <div className="flex flex-col justify-center items-center">
                         <Image className="w-[120px] md:w-[150px]" src={ThyroidUltrasoundIcon} alt="Thyroid Ultrasound" width={908} height={816} />
-                        <h4 className="font-secondary font-semibold text-xl leading-[25px] text-center mt-4">Thyroid Ultrasound</h4>
+                        <h4 className="font-sans font-semibold text-xl leading-[25px] text-center mt-4">Thyroid Ultrasound</h4>
                     </div>
                     <div className="flex flex-col justify-center items-center">
                         <Image className="w-[120px] md:w-[150px]" src={SepectroscopyUltrasoundIcon} alt="Sepectroscopy Ultrasound" width={908} height={816} />
-                        <h4 className="font-secondary font-semibold text-xl leading-[25px] text-center mt-4">Sepectroscopy </h4>
+                        <h4 className="font-sans font-semibold text-xl leading-[25px] text-center mt-4">Sepectroscopy </h4>
                     </div>
                 </div>
             </section>

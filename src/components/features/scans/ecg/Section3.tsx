@@ -25,38 +25,38 @@ const Section3 = () => {
                 <div className="flex flex-wrap justify-center  items-center gap-12 mt-12">
                     <div className="flex flex-col justify-center items-center">
                         <Image className="w-[120px] md:w-[150px]" src={ChestpainIcon} alt="Chest Pain" width={120} height={120} />
-                        <h4 className="font-secondary font-semibold text-xl leading-[25px] text-center mt-4">Chest Pain</h4>
+                        <h4 className="font-sans font-semibold text-xl leading-[25px] text-center mt-4">Chest Pain</h4>
                     </div>
                     <div className="flex flex-col justify-center items-center">
                         <Image className="w-[120px] md:w-[150px]" src={DizzinessIcon} alt="Dizziness" width={120} height={120} />
-                        <h4 className="font-secondary font-semibold text-xl leading-[25px] text-center mt-4">Dizziness</h4>
+                        <h4 className="font-sans font-semibold text-xl leading-[25px] text-center mt-4">Dizziness</h4>
                     </div>
                     <div className="flex flex-col justify-center items-center">
                         <Image className="w-[120px] md:w-[150px]" src={FaintingIcon} alt="Fainting" width={120} height={120} />
-                        <h4 className="font-secondary font-semibold text-xl leading-[25px] text-center mt-4">Fainting</h4>
+                        <h4 className="font-sans font-semibold text-xl leading-[25px] text-center mt-4">Fainting</h4>
                     </div>
                     <div className="flex flex-col justify-center items-center">
                         <Image className="w-[120px] md:w-[150px]" src={FatigueIcon} alt="Fatigue" width={120} height={120} />
-                        <h4 className="font-secondary font-semibold text-xl leading-[25px] text-center mt-4">Fatigue</h4>
+                        <h4 className="font-sans font-semibold text-xl leading-[25px] text-center mt-4">Fatigue</h4>
                     </div>
                    
                 </div>
              <div className="flex flex-wrap justify-center  items-center gap-12 mt-12">
                     <div className="flex flex-col justify-center items-center">
                         <Image className="w-[120px] md:w-[150px]" src={HeartRacingIcon} alt="Heart Racing" width={120} height={120} />
-                        <h4 className="font-secondary font-semibold text-xl leading-[25px] text-center mt-4">Heart Racing</h4>
+                        <h4 className="font-sans font-semibold text-xl leading-[25px] text-center mt-4">Heart Racing</h4>
                     </div>
                     <div className="flex flex-col justify-center items-center">
                         <Image className="w-[120px] md:w-[150px]" src={NauseaIcon} alt="Nausea" width={120} height={120} />
-                        <h4 className="font-secondary font-semibold text-xl leading-[25px] text-center mt-4">Nausea</h4>
+                        <h4 className="font-sans font-semibold text-xl leading-[25px] text-center mt-4">Nausea</h4>
                     </div>
                     <div className="flex flex-col justify-center items-center">
                         <Image className="w-[120px] md:w-[150px]" src={SweatingIcon} alt="Sweating" width={120} height={120} />
-                        <h4 className="font-secondary font-semibold text-xl leading-[25px] text-center mt-4">Sweating</h4>
+                        <h4 className="font-sans font-semibold text-xl leading-[25px] text-center mt-4">Sweating</h4>
                     </div>
                     <div className="flex flex-col justify-center items-center">
                         <Image className="w-[120px] md:w-[150px]" src={TroublebreathingIcon} alt="Trouble Breathing" width={120} height={120} />
-                        <h4 className="font-secondary font-semibold text-xl leading-[25px] text-center mt-4">Trouble Breathing</h4>
+                        <h4 className="font-sans font-semibold text-xl leading-[25px] text-center mt-4">Trouble Breathing</h4>
                     </div>
                 </div>
             </section>

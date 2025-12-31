@@ -11,12 +11,12 @@ const Section4 = () => {
                         <h2 className="text-3xl md:text-4xl font-extrabold text-[#0961A1]">
                             Diagnostic <br /> <span className="text-[#FF9D00]">Evaluation</span>
                         </h2>
-                        <p className="text-gray-700 leading-relaxed font-medium font-secondary">
+                        <p className="text-gray-700 leading-relaxed font-medium font-sans">
                             We offer a complete panel of tests to evaluate RPL, starting with karyotyping (chromosomal analysis) of both parents to rule out translocations. Further testing may include thrombophilia screening, hormonal profiles, and uterine imaging.
                         </p>
 
                         <h3 className="text-lg font-bold text-[#393939]">Our Approach</h3>
-                        <ul className="space-y-3 font-secondary font-medium">
+                        <ul className="space-y-3 font-sans font-medium">
                             <li className="flex items-start gap-2">
                                 <Image src="/images/specialities/male-infertility/section3/hand-icon.svg" className='mt-1' alt="Hand Icon" width={20} height={20} />
                                 <p className="text-gray-600">Comprehensive Karyotyping (Both Partners)</p>

@@ -8,6 +8,7 @@ import { Metadata } from "next";
 import { seoDatas, SITE_NAME, SITE_URL } from "@/lib/seo";
 import { BookingProvider } from "@/context/BookingContext";
 import BookingModal from "@/components/ui/BookingModal";
+import KnowMoreModal from "@/components/ui/KnowMoreModal";
 import WhatsAppButton from "@/components/layout/WhatsAppButton";
 
 const urbanist = Urbanist({
@@ -59,6 +60,7 @@ export default function RootLayout({
                     <FooterTop />
                     <Footer />
                     <BookingModal />
+                    <KnowMoreModal />
                 </BookingProvider>
             </body>
         </html>

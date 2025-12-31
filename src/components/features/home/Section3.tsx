@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import Image from 'next/image';
 import KnowMoreButton from '@/components/ui/KnowMoreButton';
@@ -34,11 +36,18 @@ const Section3 = () => {
                         At-Home Tests
                     </h3>
 
-                    <p className="text-gray-600 text-base md:text-lg font-secondary font-medium leading-relaxed mb-8 max-w-xl">
+                    <p className="text-gray-600 text-base md:text-lg font-sans font-medium leading-relaxed mb-8 max-w-xl">
                         We know it&apos;s not always easy to visit a diagnostic centre — especially if you&apos;re unwell, elderly, or have mobility issues. That&apos;s why VJ Scans & Labs brings our testing services to you! Our friendly, trained professionals will collect your samples right from your doorstep, so you can stay comfortable at home and still get accurate, on-time results you can trust.
                     </p>
 
-                    <KnowMoreButton text='Read More' />
+                    <KnowMoreButton 
+                        text='Read More' 
+                        content={{
+                            title: 'At-Home Sample Collection Services',
+                            description: 'We know it\'s not always easy to visit a diagnostic centre — especially if you\'re unwell, elderly, or have mobility issues. That\'s why VJ Scans & Labs brings our testing services to you! Our friendly, trained professionals will collect your samples right from your doorstep, so you can stay comfortable at home and still get accurate, on-time results you can trust.',
+                            additionalInfo: 'Our home sample collection service is available across Chennai and surrounding areas. Simply book an appointment, and our certified phlebotomists will arrive at your preferred time with all necessary equipment. We maintain the same high standards of sample collection and handling as our facility, ensuring reliable results every time.'
+                        }}
+                    />
 
                 </div>
             </div>

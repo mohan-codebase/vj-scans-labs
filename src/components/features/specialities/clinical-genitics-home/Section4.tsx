@@ -31,6 +31,11 @@ const Section4 = () => {
                     <KnowMoreButton
                         iconVariant="up-right"
                         className="mb-4 md:mb-6"
+                        content={{
+                            title: 'Advanced Genetic Testing Services',
+                            description: 'Our advanced genetic testing services at VJ Scans help you access personalized treatment solutions tailored to your unique genetic profile. Step into the future of healthcare with confidence.',
+                            additionalInfo: 'Genetic testing can provide crucial insights into your health, helping identify inherited conditions, assess disease risk, and guide personalized treatment plans. Our state-of-the-art genetic testing laboratory uses cutting-edge technology and follows international quality standards to deliver accurate and reliable results. Our team of genetic counselors is available to help you understand your results and make informed decisions about your health.'
+                        }}
                     />
                 </div>
             </div>

@@ -22,29 +22,29 @@ const Section3 = () => {
         <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-8 lg:gap-10 justify-items-center max-w-[1000px] mx-auto mt-8 md:mt-12">
           <Link href="/specialities/pgt" className="flex flex-col justify-center items-center hover:scale-105 transition-transform cursor-pointer">
             <Image className="w-[80px] md:w-[200px]" src={icon1} alt="Reproductive Genetics" width={908} height={816} />
-            <h4 className="font-secondary font-semibold text-base sm:text-lg md:text-xl leading-snug text-center mt-3 md:mt-4 px-2">Reproductive Genetics (PGT)</h4>
+            <h4 className="font-sans font-semibold text-base sm:text-lg md:text-xl leading-snug text-center mt-3 md:mt-4 px-2">Reproductive Genetics (PGT)</h4>
           </Link>
           <div className="flex flex-col justify-center items-center hover:scale-105 transition-transform cursor-pointer">
             <Image className="w-[80px] md:w-[200px]" src={icon2} alt="Oncogenetics" width={908} height={816} />
-            <h4 className="font-secondary font-semibold text-base sm:text-lg md:text-xl leading-snug text-center mt-3 md:mt-4 px-2">Oncogenetics</h4>
+            <h4 className="font-sans font-semibold text-base sm:text-lg md:text-xl leading-snug text-center mt-3 md:mt-4 px-2">Oncogenetics</h4>
           </div>
           <Link href="/specialities/recurrent-pregnancy-loss" className="flex flex-col justify-center items-center hover:scale-105 transition-transform cursor-pointer">
             <Image className="w-[80px] md:w-[200px]" src={icon3} alt="Infectious Genetics" width={908} height={816} />
-            <h4 className="font-secondary font-semibold text-base sm:text-lg md:text-xl leading-snug text-center mt-3 md:mt-4 px-2">Recurrent Pregnancy Loss</h4>
+            <h4 className="font-sans font-semibold text-base sm:text-lg md:text-xl leading-snug text-center mt-3 md:mt-4 px-2">Recurrent Pregnancy Loss</h4>
           </Link>
           <div className="flex flex-col justify-center items-center hover:scale-105 transition-transform cursor-pointer">
             <Image className="w-[80px] md:w-[200px]" src={icon4} alt="Neurogenetics" width={908} height={816} />
-            <h4 className="font-secondary font-semibold text-base sm:text-lg md:text-xl leading-snug text-center mt-3 md:mt-4 px-2">Neurogenetics</h4>
+            <h4 className="font-sans font-semibold text-base sm:text-lg md:text-xl leading-snug text-center mt-3 md:mt-4 px-2">Neurogenetics</h4>
           </div>
 
           <div className="flex flex-col justify-center items-center hover:scale-105 transition-transform cursor-pointer">
             <Image className="w-[80px] md:w-[200px]" src={icon5} alt="Transplant Genetics" width={908} height={816} />
-            <h4 className="font-secondary font-semibold text-base sm:text-lg md:text-xl leading-snug text-center mt-3 md:mt-4 px-2">Transplant Genetics</h4>
+            <h4 className="font-sans font-semibold text-base sm:text-lg md:text-xl leading-snug text-center mt-3 md:mt-4 px-2">Transplant Genetics</h4>
           </div>
 
           <Link href="/specialities/genetic-counseling" className="flex flex-col justify-center items-center hover:scale-105 transition-transform cursor-pointer">
             <Image className="w-[80px] md:w-[200px]" src={icon6} alt="Genetic Counseling" width={908} height={816} />
-            <h4 className="font-secondary font-semibold text-base sm:text-lg md:text-xl leading-snug text-center mt-3 md:mt-4 px-2">Genetic Counseling</h4>
+            <h4 className="font-sans font-semibold text-base sm:text-lg md:text-xl leading-snug text-center mt-3 md:mt-4 px-2">Genetic Counseling</h4>
           </Link>
         </div>
       </section>

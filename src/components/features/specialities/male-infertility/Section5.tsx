@@ -23,7 +23,7 @@ const Section5 = () => {
                             <h2 className="text-2xl md:text-4xl font-extrabold text-[#0961A1] mb-2">
                                 What Is Sperm <span className="text-[#FF9D00] "> <br />Aneuploidy Testing?</span>
                             </h2>
-                            <p className="text-gray-700 font-secondary font-medium leading-relaxed text-sm md:text-base">
+                            <p className="text-gray-700 font-sans font-medium leading-relaxed text-sm md:text-base">
                                 Sperm aneuploidy testing analyzes the chromosomal makeup of sperm. Normal sperm should have 23 chromosomes. Aneuploidy occurs when there are too many or too few chromosomes, which can lead to infertility or genetic conditions in offspring.
                             </p>
                         </div>
@@ -32,7 +32,7 @@ const Section5 = () => {
                             <h2 className="text-2xl md:text-4xl font-extrabold text-[#0961A1] mb-2">
                                 Why Is This <span className="text-[#FF9D00]">Test Important?</span>
                             </h2>
-                            <p className="text-gray-700 font-secondary font-medium leading-relaxed text-sm md:text-base">
+                            <p className="text-gray-700 font-sans font-medium leading-relaxed text-sm md:text-base">
                                 This test helps doctors understand male fertility problems and genetic risks. Chromosomal abnormalities in sperm may be linked to age, environmental exposure, or inherited conditions. The results can help couples choose the best fertility treatment and decide if genetic counseling is needed.                            </p>
                         </div>
                     </div>

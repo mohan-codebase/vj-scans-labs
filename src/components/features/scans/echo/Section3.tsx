@@ -19,15 +19,15 @@ const Section3 = () => {
 
                     <div className="flex flex-col justify-center items-center">
                         <Image className="w-[120px] md:w-[150px]" src={StressEchoIcon} alt="Cardiology Scan" width={908} height={816} />
-                        <h4 className="font-secondary font-semibold text-xl leading-[25px] text-center mt-4">Stress Echo</h4>
+                        <h4 className="font-sans font-semibold text-xl leading-[25px] text-center mt-4">Stress Echo</h4>
                     </div>
                     <div className="flex flex-col justify-center items-center">
                         <Image className="w-[120px] md:w-[150px]" src={DobtamineStressECHOIcon} alt="Low Dose CT Scan" width={908} height={816} />
-                        <h4 className="font-secondary font-semibold text-xl leading-[25px] text-center mt-4">Dobtamine Stress ECHO</h4>
+                        <h4 className="font-sans font-semibold text-xl leading-[25px] text-center mt-4">Dobtamine Stress ECHO</h4>
                     </div>
                     <div className="flex flex-col justify-center items-center">
                         <Image className="w-[120px] md:w-[150px]" src={TransoesophagealECHOIcon} alt="Brain Scan" width={908} height={816} />
-                        <h4 className="font-secondary font-semibold text-xl leading-[25px] text-center mt-4">Transoesophageal ECHO</h4>
+                        <h4 className="font-sans font-semibold text-xl leading-[25px] text-center mt-4">Transoesophageal ECHO</h4>
                     </div>
 
                 </div>

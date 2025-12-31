@@ -28,7 +28,7 @@ const Section3 = () => {
                     <h2 className="text-3xl md:text-5xl font-bold text-[#0961A1]">
                         What We <span className="text-[#FF9D00]">Provide</span>
                     </h2>
-                    <p className="mt-4 text-[#393939] font-medium max-w-3xl mx-auto font-secondary">
+                    <p className="mt-4 text-[#393939] font-medium max-w-3xl mx-auto font-sans">
                         Comprehensive support throughout your genetic testing journey.
                     </p>
                 </div>
@@ -37,7 +37,7 @@ const Section3 = () => {
                     {services.map((item, idx) => (
                         <div key={idx} className="bg-[url('/images/specialities/male-infertility/section3/bg-overlay.png')] bg-cover bg-center md:p-16 p-10 rounded-2xl shadow-sm transition-shadow border border-gray-100 flex flex-col items-center text-start gap-3">
                             <h3 className="text-[20px] font-bold text-[#FF9D00]">{item.title}</h3>
-                            <p className="text-gray-600 text-sm leading-relaxed text-[15px] font-secondary font-medium flex items-start gap-2">
+                            <p className="text-gray-600 text-sm leading-relaxed text-[15px] font-sans font-medium flex items-start gap-2">
                                 <span className="text-[#FF9D00] shrink-0 mt-[2px]">
                                     <Image src="/images/specialities/male-infertility/section3/hand-icon.svg" alt="Hand Icon" width={20} height={20} />
                                 </span>

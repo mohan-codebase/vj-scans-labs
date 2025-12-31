@@ -11,12 +11,12 @@ const Section4 = () => {
                         <h2 className="text-3xl md:text-5xl font-extrabold text-[#0961A1]">
                             PGT-A <br /> <span className="text-[#FF9D00]">(Aneuploidy)</span>
                         </h2>
-                        <p className="text-gray-700 leading-relaxed font-medium font-secondary">
+                        <p className="text-gray-700 leading-relaxed font-medium font-sans">
                             PGT-A screens for embryos with the correct number of chromosomes (euploid). Embryos with missing or extra chromosomes (aneuploidy) often fail to implant or result in miscarriage. PGT-A is particularly beneficial for women over 35 or those with a history of pregnancy loss.
                         </p>
 
                         <h3 className="text-lg font-bold text-[#393939]">Who should consider PGT-A?</h3>
-                        <ul className="space-y-3 font-secondary font-medium">
+                        <ul className="space-y-3 font-sans font-medium">
                             <li className="flex items-start gap-2">
                                 <Image src="/images/specialities/male-infertility/section3/hand-icon.svg" className='mt-1' alt="Hand Icon" width={20} height={20} />
                                 <p className="text-gray-600">

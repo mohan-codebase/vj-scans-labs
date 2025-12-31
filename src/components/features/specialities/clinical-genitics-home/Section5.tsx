@@ -21,29 +21,29 @@ const Section5 = () => {
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-10 justify-items-center max-w-[1000px] mx-auto mt-8 md:mt-12">
                     <div className="flex flex-col justify-center items-center">
                         <Image className="w-[80px] md:w-[200px]" src={icon1} alt="Brain Scan" width={908} height={816} />
-                        <h4 className="font-secondary font-semibold text-sm sm:text-base md:text-lg lg:text-xl leading-snug text-center mt-3 md:mt-4 px-2">BGCI certified professional Genetic counsellors</h4>
+                        <h4 className="font-sans font-semibold text-sm sm:text-base md:text-lg lg:text-xl leading-snug text-center mt-3 md:mt-4 px-2">BGCI certified professional Genetic counsellors</h4>
                     </div>
                     <div className="flex flex-col justify-center items-center">
                         <Image className="w-[80px] md:w-[200px]" src={icon2} alt="Chest Scan" width={908} height={816} />
-                        <h4 className="font-secondary font-semibold text-sm sm:text-base md:text-lg lg:text-xl leading-snug text-center mt-3 md:mt-4 px-2">Portable laser - Lykos Hatching & Embryo Biopsy</h4>
+                        <h4 className="font-sans font-semibold text-sm sm:text-base md:text-lg lg:text-xl leading-snug text-center mt-3 md:mt-4 px-2">Portable laser - Lykos Hatching & Embryo Biopsy</h4>
                     </div>
                     <div className="flex flex-col justify-center items-center">
                         <Image className="w-[80px] md:w-[200px]" src={icon3} alt="Cardiac Scan" width={908} height={816} />
-                        <h4 className="font-secondary font-semibold text-sm sm:text-base md:text-lg lg:text-xl leading-snug text-center mt-3 md:mt-4 px-2">Dedicated scientific team for clinical enquiries</h4>
+                        <h4 className="font-sans font-semibold text-sm sm:text-base md:text-lg lg:text-xl leading-snug text-center mt-3 md:mt-4 px-2">Dedicated scientific team for clinical enquiries</h4>
                     </div>
                     <div className="flex flex-col justify-center items-center">
                         <Image className="w-[80px] md:w-[200px]" src={icon4} alt="Spinal Scan" width={908} height={816} />
-                        <h4 className="font-secondary font-semibold text-sm sm:text-base md:text-lg lg:text-xl leading-snug text-center mt-3 md:mt-4 px-2">Dedicated and flexible logistic support for time-sensitive samples</h4>
+                        <h4 className="font-sans font-semibold text-sm sm:text-base md:text-lg lg:text-xl leading-snug text-center mt-3 md:mt-4 px-2">Dedicated and flexible logistic support for time-sensitive samples</h4>
                     </div>
 
                     <div className="flex flex-col justify-center items-center">
                         <Image className="w-[80px] md:w-[200px]" src={icon5} alt="Abdomen Scan" width={908} height={816} />
-                        <h4 className="font-secondary font-semibold text-sm sm:text-base md:text-lg lg:text-xl leading-snug text-center mt-3 md:mt-4 px-2">State-of-the-Art Diagnostic Equipment (with Cutting-Edge Genetic Analyzers)</h4>
+                        <h4 className="font-sans font-semibold text-sm sm:text-base md:text-lg lg:text-xl leading-snug text-center mt-3 md:mt-4 px-2">State-of-the-Art Diagnostic Equipment (with Cutting-Edge Genetic Analyzers)</h4>
                     </div>
 
                     <div className="flex flex-col justify-center items-center">
                         <Image className="w-[80px] md:w-[200px]" src={icon6} alt="Spine Scan" width={908} height={816} />
-                        <h4 className="font-secondary font-semibold text-sm sm:text-base md:text-lg lg:text-xl leading-snug text-center mt-3 md:mt-4 px-2">Embryo Biopsy Training /Validation</h4>
+                        <h4 className="font-sans font-semibold text-sm sm:text-base md:text-lg lg:text-xl leading-snug text-center mt-3 md:mt-4 px-2">Embryo Biopsy Training /Validation</h4>
                     </div>
                 </div>
             </section>

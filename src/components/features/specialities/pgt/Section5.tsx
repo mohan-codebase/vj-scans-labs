@@ -27,7 +27,7 @@ const Section5 = () => {
                             <h2 className="text-2xl md:text-5xl font-extrabold text-[#0961A1] mb-2">
                                 PGT-M & <span className="text-[#FF9D00] "> PGT-SR</span>
                             </h2>
-                            <p className="text-gray-700 font-secondary font-medium leading-relaxed text-sm md:text-base">
+                            <p className="text-gray-700 font-sans font-medium leading-relaxed text-sm md:text-base">
                                 <strong>PGT-M (Monogenic):</strong> Tests for specific single-gene disorders (like Cystic Fibrosis or Thalassemia) when there is a known family history. <br />
                                 <strong>PGT-SR (Structural Rearrangements):</strong> Screens for chromosomal structural abnormalities (translocations) in parents that can cause unbalanced embryos.
                             </p>
@@ -37,7 +37,7 @@ const Section5 = () => {
                             <h2 className="text-2xl md:text-5xl font-extrabold text-[#0961A1] mb-2">
                                 Why Choose <span className="text-[#FF9D00]">Us?</span>
                             </h2>
-                            <p className="text-gray-700 font-secondary font-medium leading-relaxed text-sm md:text-base">
+                            <p className="text-gray-700 font-sans font-medium leading-relaxed text-sm md:text-base">
                                 VJ Scans & Labs utilizes state-of-the-art sequencing technology and expert genetic analysis to provide the most accurate PGT results. Our integrated approach ensures you receive comprehensive support from counseling to results.
                             </p>
                         </div>

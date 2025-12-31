@@ -11,12 +11,12 @@ const Section4 = () => {
                         <h2 className="text-3xl md:text-4xl font-extrabold text-[#0961A1]">
                             Sperm DNA <br /> <span className="text-[#FF9D00]">Fragmentation Index </span>(DFI)
                         </h2>
-                        <p className="text-gray-700 leading-relaxed font-medium font-secondary">
+                        <p className="text-gray-700 leading-relaxed font-medium font-sans">
                             DFI is the percentage of sperm that have broken or damaged DNA. A high DFI suggests poor sperm quality and may lead to infertility or unsuccessful pregnancy outcomes.
                         </p>
 
                         <h3 className="text-lg font-bold text-[#393939]">Tests Used to Measure DFI</h3>
-                        <ul className="space-y-3 font-secondary font-medium">
+                        <ul className="space-y-3 font-sans font-medium">
                             <li className="flex items-start gap-2">
                                 <Image src="/images/specialities/male-infertility/section3/hand-icon.svg" className='mt-1' alt="Hand Icon" width={20} height={20} />
                                 <p className="text-gray-600">
