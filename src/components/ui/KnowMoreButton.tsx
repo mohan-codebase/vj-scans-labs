@@ -5,7 +5,7 @@ import { IconArrowRight, IconArrowUpRight } from '@tabler/icons-react';
 import Button from '@/components/ui/Button';
 import { useBooking, KnowMoreContent } from '@/context/BookingContext';
 
-interface KnowMoreButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+interface KnowMoreButtonProps extends Omit<React.ButtonHTMLAttributes<HTMLButtonElement>, 'content'> {
     text?: string;
     iconVariant?: 'right' | 'up-right';
     iconSize?: number;
