@@ -42,13 +42,13 @@ const KnowMoreButton: React.FC<KnowMoreButtonProps> = ({
 
     return (
         <Button
-            className={`flex items-center justify-between font-bold text-[18px] font-sans gap-3 cursor-pointer px-0.1 py-1 md:pe-1 md:ps-4 md:py-1 ${className}`}
+            className={`flex items-center justify-between font-bold text-[18px] font-sans gap-3 cursor-pointer pe-1 ps-4 py-1 ${className}`}
             style={{ borderRadius: 50 }}
             onClick={handleClick}
             {...props}
         >
             {text}
-            <div className="bg-white rounded-full p-2 md:p-2">
+            <div className="bg-white rounded-full p-2">
                 <Icon size={iconSize} className="text-[#F98D1B]" />
             </div>
         </Button>
