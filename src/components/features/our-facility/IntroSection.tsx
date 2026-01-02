@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const IntroSection = () => {
     return (
-        <section className="py-16 md:py-24 bg-white overflow-hidden">
+        <section className="py-16 md:py-24 bg-white overflow-hidden font-sans">
             <div className="max-w-[1400px] mx-auto px-4 md:px-8">
                 <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
 

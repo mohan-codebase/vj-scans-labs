@@ -48,7 +48,7 @@ export const TopBar = () => {
       <div className="flex flex-row items-center justify-between sm:justify-start w-full sm:w-auto gap-2 sm:gap-4 lg:gap-6 lg:pl-10">
         <span className="flex items-center gap-2"><Image src="/images/topbar/mail.svg" alt="mail" width={16} height={16} /> vjscansandlabs@gmail.com</span>
         <span className="hidden sm:inline text-gray-400">|</span>
-        <span className="flex items-center gap-2"><Image src="/images/topbar/phone.svg" alt="phone" width={16} height={18} /> 95853 35552</span>
+        <span className="flex items-center gap-2"><Image src="/images/topbar/phone.svg" alt="phone" width={16} height={18} /> +91 958 5335 552</span>
       </div>
       <div className="flex items-center gap-3 lg:pr-10">
         <span className="font-medium hidden sm:inline">Follow us</span>

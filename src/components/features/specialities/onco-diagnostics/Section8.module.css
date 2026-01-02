@@ -7,7 +7,7 @@
 .bookingSection {
     display: flex;
     align-items: stretch;
-    background: linear-gradient(270deg, rgba(9, 97, 161, 0) 32.23%, #0961A1 49.44%);
+    background: linear-gradient(270deg, rgba(9, 97, 161, 0) 32.23%, #0961A1 45.44%);
     overflow: hidden;
     min-height: 600px;
 }

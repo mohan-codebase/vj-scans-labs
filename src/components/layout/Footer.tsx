@@ -78,19 +78,19 @@ const Footer = () => {
 
             <h3 className="text-[#1e73be] font-bold text-lg mb-4">Follow Us:</h3>
             <div className="flex items-center gap-2">
-              <div className=" rounded-full p-1 cursor-pointer flex items-center justify-center w-9 h-9">
+              <div className=" rounded-full p-1 cursor-pointer flex items-center justify-center w-9 h-9 hover:bg-white/50 transition-colors">
                 <a href="https://www.facebook.com/vjscans" target="_blank"
                   rel="noopener noreferrer" aria-label="Facebook"><Image src="/images/topbar/facebook.svg" alt="" width={22} height={22} /></a>
               </div>
-              <div className="bg-black rounded-full p-1 cursor-pointer flex items-center justify-center w-6 h-6">
+              <div className="bg-black rounded-full p-1 cursor-pointer flex items-center justify-center w-9 h-9 hover:scale-105 transition-transform">
                 <a href="https://x.com/vjscans" target="_blank"
-                  rel="noopener noreferrer" aria-label="X (Twitter)"><Image src="/images/topbar/x.svg" alt="" width={22} height={22} /></a>
+                  rel="noopener noreferrer" aria-label="X (Twitter)"><Image src="/images/topbar/x.svg" alt="" width={20} height={20} /></a>
               </div>
-              <div className=" rounded-full p-1 cursor-pointer flex items-center justify-center w-8 h-5">
+              <div className=" rounded-full p-1 cursor-pointer flex items-center justify-center w-9 h-9 hover:bg-white/50 transition-colors">
                 <a href="https://www.instagram.com/vj_scans_and_labs/" target="_blank"
-                  rel="noopener noreferrer" aria-label="Instagram"><Image src="/images/topbar/instagram.svg" alt="" width={50} height={50} /></a>
+                  rel="noopener noreferrer" aria-label="Instagram"><Image src="/images/topbar/instagram.svg" alt="" width={22} height={22} /></a>
               </div>
-              <div className="bg-[#0077B5] rounded-full p-1 cursor-pointer flex items-center justify-center w-6 h-6">
+              <div className="bg-[#0077B5] rounded-full p-1 cursor-pointer flex items-center justify-center w-9 h-9 hover:scale-105 transition-transform">
                 <a href="https://www.linkedin.com/company/vjscans/" target="_blank"
                   rel="noopener noreferrer" aria-label="LinkedIn"><Image src="/images/topbar/linkedin.svg" alt="" width={20} height={20} /></a>
               </div>

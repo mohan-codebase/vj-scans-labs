@@ -31,7 +31,7 @@ export const metadata: Metadata = {
 
 const page = () => {
     return (
-        <main className="overflow-hidden">
+        <main className="overflow-hidden font-sans">
             <ScrollReveal direction="down">
                 <div className="py-20 px-4 text-center bg-linear-to-b from-blue-50 to-white">
                     <h1 className="text-4xl md:text-6xl font-extrabold text-[#0961A1] mb-6 font-sans">About <span className='text-[#f98d1b]'>Us</span> </h1>
@@ -76,7 +76,7 @@ const page = () => {
 
             <ScrollReveal direction="left"><WhyChooseUsSection /></ScrollReveal>
             <ScrollReveal direction="right"><TestimonialSection /></ScrollReveal>
-            <ScrollReveal><AppointmentSection className='mb-14' /></ScrollReveal>
+            {/* <ScrollReveal><AppointmentSection className='mb-14' /></ScrollReveal> */}
         </main>
     )
 }

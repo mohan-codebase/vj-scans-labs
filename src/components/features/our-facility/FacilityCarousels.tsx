@@ -92,7 +92,7 @@ const Carousel = ({ images, title, portrait = false }: CarouselProps) => {
 
 const FacilityCarousels = () => {
     return (
-        <section className="py-16 md:py-24 bg-white border-t border-gray-100">
+        <section className="py-16 md:py-24 bg-white border-t border-gray-100 font-sans">
             <div className="max-w-[1400px] mx-auto">
                 <div className="text-center mb-16 px-4">
                     <h4 className="text-[#F98D1B] font-bold uppercase tracking-wider mb-2">Our Gallery</h4>

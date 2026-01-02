@@ -142,5 +142,17 @@ export const seoDatas = {
         description: 'Comprehensive diagnostic evaluation for Recurrent Pregnancy Loss. Identify underlying causes with our specialized testing panels.',
         url: 'https://vj-scans-labs.vercel.app/specialities/recurrent-pregnancy-loss',
         image: '/og/ogGraph-home.png'
+    },
+    specialitiesNewbornScreening: {
+        title: 'Newborn Screening | VJ Scans & Labs',
+        description: 'Comprehensive newborn screening tests for early detection of genetic and metabolic disorders. Ensuring a healthy start for your baby.',
+        url: 'https://vj-scans-labs.vercel.app/specialities/newborn-screening',
+        image: '/og/ogGraph-home.png'
+    },
+    specialitiesInfectiousDisease: {
+        title: 'Infectious Disease Testing | VJ Scans & Labs',
+        description: 'Advanced diagnostic testing for infectious diseases. Rapid and accurate detection to guide effective treatment and care.',
+        url: 'https://vj-scans-labs.vercel.app/specialities/infectious-disease',
+        image: '/og/ogGraph-home.png'
     }
 }

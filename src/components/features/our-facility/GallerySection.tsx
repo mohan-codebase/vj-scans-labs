@@ -14,7 +14,7 @@ const images = [
 
 const GallerySection = () => {
     return (
-        <section className="py-16 md:py-24 bg-white">
+        <section className="py-16 md:py-24 bg-white font-sans">
             <div className="max-w-[1400px] mx-auto px-4 md:px-8">
                 <div className="text-center mb-12">
                     <h4 className="text-[#F98D1B] font-bold uppercase tracking-wider mb-2">Gallery</h4>

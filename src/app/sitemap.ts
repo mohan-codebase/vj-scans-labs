@@ -32,6 +32,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
         '/specialities/onco-diagnostics',
         '/specialities/pgt',
         '/specialities/recurrent-pregnancy-loss',
+        '/specialities/infectious-disease',
+        '/specialities/newborn-screening',
     ];
 
     return routes.map((route) => ({

@@ -28,6 +28,8 @@ export function Header() {
       subItems: [
         { name: "Onco Diagnostics", link: "/specialities/onco-diagnostics" },
         { name: "Clinical Genomics", link: "/specialities/clinical-genitics-home" },
+        { name: "Newborn Screening", link: "/specialities/newborn-screening" },
+        { name: "Infectious Disease", link: "/specialities/infectious-disease" },
       ],
     },
     {

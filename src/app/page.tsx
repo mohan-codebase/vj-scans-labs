@@ -11,10 +11,12 @@ import Section9 from "@/components/features/home/Section9";
 import Section10 from "@/components/features/home/Section10";
 import Section11 from "@/components/features/home/Section11";
 import { ScrollReveal } from "@/components/animations/ScrollReveal";
+import Banner from "@/components/features/home/Banner";
 
 export default function Home() {
   return (
     <div className="overflow-hidden">
+      {/* <Banner /> */}
       <ScrollReveal direction="down"><Section1 /></ScrollReveal>
       <ScrollReveal direction="left" delay={0.3}><Section2 /></ScrollReveal>
       <ScrollReveal direction="right"><Section3 /></ScrollReveal>
