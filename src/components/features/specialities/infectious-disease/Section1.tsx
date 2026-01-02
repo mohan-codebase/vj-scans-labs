@@ -4,9 +4,9 @@ import HeroSection from '@/components/features/shared/HeroSection'
 const slides = [
     {
         id: 1,
-        title: <span className='font-sans text-[#ffff]'>Infectious <span className='text-[#ffffff]'>Disease</span></span>,
+        title: <span className='font-sans text-[#0961A1] md:text-white'>Infectious <span className='text-[#F98D1B] md:text-white'>Disease</span></span>,
         subtitle: (
-            <span className="font-sans text-[#ffffff]">
+            <span className="font-sans text-[#1E1E1E] md:text-white">
                 Our Infectious Disease division provides comprehensive diagnostic solutions for the detection and monitoring of communicable diseases using advanced laboratory platforms. We combine cutting-edge molecular and serological testing with stringent quality control to support clinicians in making accurate, timely treatment decisions for improved patient care.
             </span>
         ),

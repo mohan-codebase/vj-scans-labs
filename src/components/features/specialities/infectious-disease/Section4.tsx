@@ -25,7 +25,7 @@ const technologies = [
 const Section4 = () => {
     return (
         <section className="w-full max-w-[1400px] mx-auto py-5 md:py-5 px-4 md:px-6 font-sans">
-            <div className="text-center mb-12 md:mb-10">
+            {/* <div className="text-center mb-12 md:mb-10">
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#0961A1] mb-4">
                     Common Symptoms & <span className="text-[#F98D1B]">Risk Factors</span>
                 </h2>
@@ -54,7 +54,7 @@ const Section4 = () => {
                         </h3>
                     </div>
                 ))}
-            </div>
+            </div> */}
         </section>
     );
 };
