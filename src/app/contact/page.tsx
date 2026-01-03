@@ -70,7 +70,7 @@ const ContactPage = () => {
                                 <h3 className="text-xl font-bold text-[#0961A1]">Email</h3>
 
                                 <p className="text-gray-600 font-medium">
-                                    <a href="mailto:vjscansandlabs@gmail.com" className=" transition-colors">vjscansandlabs@gmail.com</a>
+                                    <a href="mailto:info@vjscans.in" className=" transition-colors">info@vjscans.in</a>
                                 </p>
                             </div>
 

@@ -3,6 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { IconBrandFacebook, IconBrandInstagram, IconBrandLinkedin, IconBrandX } from '@tabler/icons-react';
 
 const Footer = () => {
   return (
@@ -55,7 +56,7 @@ const Footer = () => {
           </div>
 
           {/* Column 4: Logo & Address */}
-          <div className="flex flex-col items-center md:items-center text-center md:text-right">
+          <div className="flex flex-col items-center text-center">
             <div className="mb-6">
               <Image
                 src="/images/vj-scans-logo.png"
@@ -78,22 +79,26 @@ const Footer = () => {
 
             <h3 className="text-[#1e73be] font-bold text-lg mb-4">Follow Us:</h3>
             <div className="flex items-center gap-2">
-              <div className=" rounded-full p-1 cursor-pointer flex items-center justify-center w-9 h-9 hover:bg-white/50 transition-colors">
-                <a href="https://www.facebook.com/vjscans" target="_blank"
-                  rel="noopener noreferrer" aria-label="Facebook"><Image src="/images/topbar/facebook.svg" alt="" width={22} height={22} /></a>
-              </div>
-              <div className="bg-black rounded-full p-1 cursor-pointer flex items-center justify-center w-9 h-9 hover:scale-105 transition-transform">
-                <a href="https://x.com/vjscans" target="_blank"
-                  rel="noopener noreferrer" aria-label="X (Twitter)"><Image src="/images/topbar/x.svg" alt="" width={20} height={20} /></a>
-              </div>
-              <div className=" rounded-full p-1 cursor-pointer flex items-center justify-center w-9 h-9 hover:bg-white/50 transition-colors">
-                <a href="https://www.instagram.com/vj_scans_and_labs/" target="_blank"
-                  rel="noopener noreferrer" aria-label="Instagram"><Image src="/images/topbar/instagram.svg" alt="" width={22} height={22} /></a>
-              </div>
-              <div className="bg-[#0077B5] rounded-full p-1 cursor-pointer flex items-center justify-center w-9 h-9 hover:scale-105 transition-transform">
-                <a href="https://www.linkedin.com/company/vjscans/" target="_blank"
-                  rel="noopener noreferrer" aria-label="LinkedIn"><Image src="/images/topbar/linkedin.svg" alt="" width={20} height={20} /></a>
-              </div>
+              <a href="https://www.facebook.com/vjscans" target="_blank"
+                rel="noopener noreferrer" aria-label="Facebook"
+                className="bg-[#1877F2] rounded-full flex items-center justify-center w-10 h-10 hover:scale-110 transition-transform shadow-sm">
+                <IconBrandFacebook className="text-white w-5 h-5" stroke={1.5} />
+              </a>
+              <a href="https://x.com/vjscans" target="_blank"
+                rel="noopener noreferrer" aria-label="X (Twitter)"
+                className="bg-black rounded-full flex items-center justify-center w-10 h-10 hover:scale-110 transition-transform shadow-sm">
+                <IconBrandX className="text-white w-5 h-5" stroke={1.5} />
+              </a>
+              <a href="https://www.instagram.com/vj_scans_and_labs/" target="_blank"
+                rel="noopener noreferrer" aria-label="Instagram"
+                className="bg-gradient-to-tr from-[#f09433] via-[#bc1888] to-[#2f55a4] rounded-full flex items-center justify-center w-10 h-10 hover:scale-110 transition-transform shadow-sm">
+                <IconBrandInstagram className="text-white w-5 h-5" stroke={1.5} />
+              </a>
+              <a href="https://www.linkedin.com/company/vjscans/" target="_blank"
+                rel="noopener noreferrer" aria-label="LinkedIn"
+                className="bg-[#0077B5] rounded-full flex items-center justify-center w-10 h-10 hover:scale-110 transition-transform shadow-sm">
+                <IconBrandLinkedin className="text-white w-5 h-5" stroke={1.5} />
+              </a>
             </div>
           </div>
 

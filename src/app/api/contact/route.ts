@@ -52,8 +52,8 @@ export async function POST(request: Request) {
 
         // Email content
         const mailOptions = {
-            from: process.env.SMTP_FROM || '"VJ Scans Website" <no-reply@vjscans.com>',
-            to: process.env.CONTACT_EMAIL || 'vjscansandlabs@gmail.com',
+            from: process.env.SMTP_FROM || '"VJ Scans Website" <no-reply@vjscans.in>',
+            to: process.env.CONTACT_EMAIL || 'info@vjscans.in',
             subject: `New Appointment Request from ${name} (${source || 'Website'})`,
             text: `
         Name: ${name}
