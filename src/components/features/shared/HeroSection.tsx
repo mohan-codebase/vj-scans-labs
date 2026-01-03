@@ -18,9 +18,10 @@ interface Slide {
 interface HeroSectionProps {
     slides: Slide[];
     formSource: string;
+    videoSrc?: string;
 }
 
-const HeroSection: React.FC<HeroSectionProps> = ({ slides, formSource }) => {
+const HeroSection: React.FC<HeroSectionProps> = ({ slides, formSource, videoSrc }) => {
     const { openSuccessModal } = useBooking();
     const [currentSlide, setCurrentSlide] = useState(0);
     const [formData, setFormData] = useState({
@@ -80,54 +81,67 @@ const HeroSection: React.FC<HeroSectionProps> = ({ slides, formSource }) => {
             {/* Left Side Banner Slider */}
             <div className="flex-1 relative overflow-hidden rounded-[24px] lg:rounded-[32px] min-h-[600px] lg:min-h-[500px]">
                 <div className="absolute inset-0 w-full h-full transition-opacity duration-500">
-                    {/* Background Image */}
+                    {/* Background Content */}
                     <div className="absolute inset-0 z-0">
-                        {/* Desktop Image */}
-                        <div className="hidden lg:block absolute inset-0">
-                            <Image
-                                src={slides[currentSlide].image}
-                                alt="Hero Background Desktop"
-                                fill
-                                className="object-cover"
-                                priority
-                                draggable={false}
-                            />
-                        </div>
-                        {/* Mobile Image */}
-                        <div className="block lg:hidden absolute inset-0">
-                            <Image
-                                src={slides[currentSlide].mobileImage}
-                                alt="Hero Background Mobile"
-                                fill
-                                className="object-cover"
-                                priority
-                                draggable={false}
-                            />
-                        </div>
-                        {/* Optional Overlay */}
-                        <div className={`absolute inset-0 ${slides[currentSlide].bgColor} opacity-90 mix-blend-multiply`} />
+                        {videoSrc ? (
+                            <>
+                                <video
+                                    src={videoSrc}
+                                    autoPlay
+                                    loop
+                                    muted
+                                    playsInline
+                                    className="absolute inset-0 w-full h-full object-cover"
+                                />
+                                {/* Overlay for video */}
+                                <div className="absolute inset-0 bg-black/30" />
+                            </>
+                        ) : (
+                            <>
+                                {/* Desktop Image */}
+                                <div className="hidden lg:block absolute inset-0">
+                                    <Image
+                                        src={slides[currentSlide].image}
+                                        alt="Hero Background Desktop"
+                                        fill
+                                        className="object-cover"
+                                        priority
+                                        draggable={false}
+                                    />
+                                </div>
+                                {/* Mobile Image */}
+                                <div className="block lg:hidden absolute inset-0">
+                                    <Image
+                                        src={slides[currentSlide].mobileImage}
+                                        alt="Hero Background Mobile"
+                                        fill
+                                        className="object-cover"
+                                        priority
+                                        draggable={false}
+                                    />
+                                </div>
+                                {/* Optional Overlay */}
+                                <div className={`absolute inset-0 ${slides[currentSlide].bgColor} opacity-90 mix-blend-multiply`} />
+                            </>
+                        )}
                     </div>
 
                     {/* Content */}
                     <div className="relative z-10 h-full px-6 py-8 lg:p-11 flex flex-col justify-center pointer-events-none">
                         <div className="max-w-lg pointer-events-auto">
                             <div className="text-[24px] lg:text-[38px] font-[650] text-[#0961A1] leading-tight mb-2 md:mb-6 font-sans">
-                                {slides[currentSlide].title}
+                                {videoSrc ? slides[0].title : slides[currentSlide].title}
                             </div>
                             <p className="text-gray-700 text-[13px] md:text-[14px] mb-4 md:mb-5 font-medium leading-relaxed">
-                                {slides[currentSlide].subtitle}
+                                {videoSrc ? slides[0].subtitle : slides[currentSlide].subtitle}
                             </p>
                             <div>
                                 <KnowMoreButton
                                     iconVariant="up-right"
                                     className="mb-70 lg:mb-26 mt-2"
                                     content={{
-                                        title: typeof slides[currentSlide].title === 'string' 
-                                            ? slides[currentSlide].title 
-                                            : 'Learn More',
-                                        description: typeof slides[currentSlide].subtitle === 'string'
-                                            ? slides[currentSlide].subtitle
-                                            : slides[currentSlide].subtitle,
+                                        title: videoSrc ? slides[0].title : slides[currentSlide].title,
+                                        description: videoSrc ? slides[0].subtitle : slides[currentSlide].subtitle,
                                         additionalInfo: 'At VJ Scans & Labs, we are committed to providing you with reliable results, individualized care, and prompt insights for better health. Our state-of-the-art diagnostic facilities and experienced team ensure accurate and timely reports to help you make informed healthcare decisions.'
                                     }}
                                 />
@@ -136,17 +150,19 @@ const HeroSection: React.FC<HeroSectionProps> = ({ slides, formSource }) => {
                     </div>
                 </div>
 
-                {/* Slide Indicators */}
-                <div className="absolute bottom-4 left-6 lg:left-12 flex gap-2 z-20">
-                    {slides.map((_, index) => (
-                        <button
-                            key={index}
-                            onClick={() => setCurrentSlide(index)}
-                            className={`h-2 rounded-full transition-all duration-300 ${currentSlide === index ? "w-8 bg-[#F98D1B]" : "w-2 bg-gray-400"
-                                }`}
-                        />
-                    ))}
-                </div>
+                {/* Slide Indicators - Only show if no video */}
+                {!videoSrc && (
+                    <div className="absolute bottom-4 left-6 lg:left-12 flex gap-2 z-20">
+                        {slides.map((_, index) => (
+                            <button
+                                key={index}
+                                onClick={() => setCurrentSlide(index)}
+                                className={`h-2 rounded-full transition-all duration-300 ${currentSlide === index ? "w-8 bg-[#F98D1B]" : "w-2 bg-gray-400"
+                                    }`}
+                            />
+                        ))}
+                    </div>
+                )}
             </div>
 
             {/* Right Side Appointment Form */}

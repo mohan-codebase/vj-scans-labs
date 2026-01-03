@@ -4,7 +4,7 @@ import React, { createContext, useContext, useState, ReactNode } from 'react';
 import SuccessModal from '@/components/ui/SuccessModal';
 
 export interface KnowMoreContent {
-    title: string;
+    title: string | React.ReactNode;
     description: string | React.ReactNode;
     additionalInfo?: string | React.ReactNode;
 }
