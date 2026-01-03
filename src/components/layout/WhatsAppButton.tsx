@@ -45,7 +45,7 @@ const WhatsAppButton = () => {
               w-11 h-11 
               rounded-full 
               bg-gradient-to-br from-[#25D366] to-[#128C7E]
-              border-[1.5px] border-white/40
+              border-[0px] border-white/40
               shadow-[0_4px_15px_rgba(37,211,102,0.4),inset_0_2px_10px_rgba(255,255,255,0.3)]
               hover:shadow-[0_6px_20px_rgba(37,211,102,0.6),inset_0_2px_15px_rgba(255,255,255,0.4)]
               hover:scale-110 

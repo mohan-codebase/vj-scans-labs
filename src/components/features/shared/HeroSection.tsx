@@ -18,9 +18,10 @@ interface Slide {
 interface HeroSectionProps {
     slides: Slide[];
     formSource: string;
+    videoSrc?: string;
 }
 
-const HeroSection: React.FC<HeroSectionProps> = ({ slides, formSource }) => {
+const HeroSection: React.FC<HeroSectionProps> = ({ slides, formSource, videoSrc }) => {
     const { openSuccessModal } = useBooking();
     const [currentSlide, setCurrentSlide] = useState(0);
     const [formData, setFormData] = useState({
@@ -43,13 +44,15 @@ const HeroSection: React.FC<HeroSectionProps> = ({ slides, formSource }) => {
     const minSwipeDistance = 50;
 
     useEffect(() => {
-        if (autoPlayPaused) return;
+        if (autoPlayPaused || videoSrc) return;
+
 
         const timer = setInterval(() => {
             setCurrentSlide((prev) => (prev + 1) % slides.length);
         }, 5000)
         return () => clearInterval(timer)
-    }, [slides.length, autoPlayPaused])
+    }, [slides.length, autoPlayPaused, videoSrc])
+
 
     // Global mouse move and up handlers for desktop drag (when dragging outside container)
     useEffect(() => {
@@ -115,7 +118,9 @@ const HeroSection: React.FC<HeroSectionProps> = ({ slides, formSource }) => {
     }, [isSwiping, touchStart, touchEnd, slides.length, minSwipeDistance])
 
     const onTouchStart = (e: React.TouchEvent) => {
+        if (videoSrc) return; // Disable swipe if video is present
         setTouchEnd(null);
+
         setSwipeOffset(0);
         setTouchStart({
             x: e.targetTouches[0].clientX,
@@ -126,7 +131,9 @@ const HeroSection: React.FC<HeroSectionProps> = ({ slides, formSource }) => {
     }
 
     const onTouchMove = (e: React.TouchEvent) => {
+        if (videoSrc) return;
         if (!touchStart) return;
+
 
         const currentX = e.targetTouches[0].clientX;
         const currentY = e.targetTouches[0].clientY;
@@ -178,7 +185,9 @@ const HeroSection: React.FC<HeroSectionProps> = ({ slides, formSource }) => {
 
     // Mouse drag handlers for desktop
     const onMouseDown = (e: React.MouseEvent) => {
+        if (videoSrc) return;
         if (e.button !== 0) return; // Only handle left mouse button
+
         setTouchEnd(null);
         setSwipeOffset(0);
         setTouchStart({
@@ -311,91 +320,135 @@ const HeroSection: React.FC<HeroSectionProps> = ({ slides, formSource }) => {
                         transform: 'translateZ(0)'
                     }}
                 >
-                    <div
-                        className="flex h-full"
-                        style={{
-                            transform: `translateX(calc(-${currentSlide} * 100% / ${slides.length} + ${swipeOffset}px))`,
-                            transition: isSwiping ? 'none' : 'transform 0.4s cubic-bezier(0.4, 0, 0.2, 1)',
-                            width: `${slides.length * 100}%`
-                        }}
-                    >
-                        {slides.map((slide, index) => (
-                            <div
-                                key={slide.id}
-                                className="h-full flex-shrink-0 relative"
-                                style={{ width: `calc(100% / ${slides.length})` }}
-                            >
-                                {/* Background Image */}
-                                <div className="absolute inset-0 z-0">
-                                    {/* Desktop Image */}
-                                    <div className="hidden lg:block absolute inset-0">
-                                        <Image
-                                            src={slide.image}
-                                            alt={`Hero Background Desktop ${index + 1}`}
-                                            fill
-                                            className="object-cover"
-                                            priority={index === currentSlide}
-                                            draggable={false}
-                                        />
-                                    </div>
-                                    {/* Mobile Image */}
-                                    <div className="block lg:hidden absolute inset-0">
-                                        <Image
-                                            src={slide.mobileImage}
-                                            alt={`Hero Background Mobile ${index + 1}`}
-                                            fill
-                                            className="object-cover"
-                                            priority={index === currentSlide}
-                                            draggable={false}
-                                        />
-                                    </div>
-                                    {/* Optional Overlay */}
-                                    <div className={`absolute inset-0 ${slide.bgColor} opacity-90 mix-blend-multiply`} />
-                                </div>
+                    {videoSrc ? (
+                        <div className="w-full h-full relative">
+                            <video
+                                src={videoSrc}
+                                autoPlay
+                                loop
+                                muted
+                                playsInline
+                                className="absolute inset-0 w-full h-full object-cover"
+                            />
+                            {/* Overlay for better text readability */}
+                            <div className="absolute inset-0 bg-black/40" />
 
-                                {/* Content */}
-                                <div className="relative z-10 h-full px-6 py-8 lg:p-11 flex flex-col justify-center pointer-events-none">
-                                    <div className="max-w-lg pointer-events-auto">
-                                        <div className="text-[24px] lg:text-[38px] font-[650] text-[#0961A1] leading-tight mb-2 md:mb-6 font-sans">
-                                            {slide.title}
-                                        </div>
-                                        <p className="text-gray-700 text-[13px] md:text-[14px] mb-4 md:mb-5 font-medium leading-relaxed">
-                                            {slide.subtitle}
-                                        </p>
-                                        <div>
-                                            <KnowMoreButton
-                                                iconVariant="up-right"
-                                                className="mb-70 lg:mb-26 mt-2"
-                                                content={{
-                                                    title: typeof slide.title === 'string'
-                                                        ? slide.title
-                                                        : 'Learn More',
-                                                    description: typeof slide.subtitle === 'string'
-                                                        ? slide.subtitle
-                                                        : slide.subtitle,
-                                                    additionalInfo: 'At VJ Scans & Labs, we are committed to providing you with reliable results, individualized care, and prompt insights for better health. Our state-of-the-art diagnostic facilities and experienced team ensure accurate and timely reports to help you make informed healthcare decisions.'
-                                                }}
-                                            />
-                                        </div>
+                            {/* Content Overlay */}
+                            <div className="relative z-10 h-full px-6 py-8 lg:p-11 flex flex-col justify-center items-center lg:items-start text-center lg:text-left pointer-events-none">
+                                <div className="max-w-lg pointer-events-auto mx-auto lg:mx-0">
+                                    <div className="text-[24px] lg:text-[38px] font-[650] text-white leading-tight mb-2 md:mb-6 font-sans">
+                                        {slides[0]?.title}
+                                    </div>
+                                    <p className="text-white text-[13px] md:text-[14px] mb-4 md:mb-5 font-medium leading-relaxed">
+                                        {slides[0]?.subtitle}
+                                    </p>
+                                    <div>
+                                        <KnowMoreButton
+                                            iconVariant="up-right"
+                                            className="mt-6 w-fit mx-auto lg:mx-0"
+                                            content={{
+                                                title: typeof slides[0]?.title === 'string'
+                                                    ? slides[0]?.title
+                                                    : 'Learn More',
+                                                description: typeof slides[0]?.subtitle === 'string'
+                                                    ? slides[0]?.subtitle
+                                                    : slides[0]?.subtitle,
+                                                additionalInfo: 'At VJ Scans & Labs, we are committed to providing you with reliable results, individualized care, and prompt insights for better health. Our state-of-the-art diagnostic facilities and experienced team ensure accurate and timely reports to help you make informed healthcare decisions.'
+                                            }}
+                                        />
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    ) : (
+                        <div
+                            className="flex h-full"
+                            style={{
+                                transform: `translateX(calc(-${currentSlide} * 100% / ${slides.length} + ${swipeOffset}px))`,
+                                transition: isSwiping ? 'none' : 'transform 0.4s cubic-bezier(0.4, 0, 0.2, 1)',
+                                width: `${slides.length * 100}%`
+                            }}
+                        >
+                            {slides.map((slide, index) => (
+                                <div
+                                    key={slide.id}
+                                    className="h-full flex-shrink-0 relative"
+                                    style={{ width: `calc(100% / ${slides.length})` }}
+                                >
+                                    {/* Background Image */}
+                                    <div className="absolute inset-0 z-0">
+                                        {/* Desktop Image */}
+                                        <div className="hidden lg:block absolute inset-0">
+                                            <Image
+                                                src={slide.image}
+                                                alt={`Hero Background Desktop ${index + 1}`}
+                                                fill
+                                                className="object-cover"
+                                                priority={index === currentSlide}
+                                                draggable={false}
+                                            />
+                                        </div>
+                                        {/* Mobile Image */}
+                                        <div className="block lg:hidden absolute inset-0">
+                                            <Image
+                                                src={slide.mobileImage}
+                                                alt={`Hero Background Mobile ${index + 1}`}
+                                                fill
+                                                className="object-cover"
+                                                priority={index === currentSlide}
+                                                draggable={false}
+                                            />
+                                        </div>
+                                        {/* Optional Overlay */}
+                                        <div className={`absolute inset-0 ${slide.bgColor} opacity-90 mix-blend-multiply`} />
+                                    </div>
+
+                                    {/* Content */}
+                                    <div className="relative z-10 h-full px-6 py-8 lg:p-11 flex flex-col justify-center pointer-events-none">
+                                        <div className="max-w-lg pointer-events-auto">
+                                            <div className="text-[24px] lg:text-[38px] font-[650] text-[#0961A1] leading-tight mb-2 md:mb-6 font-sans">
+                                                {slide.title}
+                                            </div>
+                                            <p className="text-gray-700 text-[13px] md:text-[14px] mb-4 md:mb-5 font-medium leading-relaxed">
+                                                {slide.subtitle}
+                                            </p>
+                                            <div>
+                                                <KnowMoreButton
+                                                    iconVariant="up-right"
+                                                    className="mb-70 lg:mb-26 mt-2"
+                                                    content={{
+                                                        title: typeof slide.title === 'string'
+                                                            ? slide.title
+                                                            : 'Learn More',
+                                                        description: typeof slide.subtitle === 'string'
+                                                            ? slide.subtitle
+                                                            : slide.subtitle,
+                                                        additionalInfo: 'At VJ Scans & Labs, we are committed to providing you with reliable results, individualized care, and prompt insights for better health. Our state-of-the-art diagnostic facilities and experienced team ensure accurate and timely reports to help you make informed healthcare decisions.'
+                                                    }}
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    )}
+
+                </div>
+
+                {/* Slide Indicators - Hide if video is present */}
+                {!videoSrc && (
+                    <div className="absolute bottom-4 left-6 lg:left-12 flex gap-2 z-20">
+                        {slides.map((_, index) => (
+                            <button
+                                key={index}
+                                onClick={() => setCurrentSlide(index)}
+                                className={`h-2 rounded-full transition-all duration-300 ${currentSlide === index ? "w-8 bg-[#F98D1B]" : "w-2 bg-gray-400"
+                                    }`}
+                            />
                         ))}
                     </div>
-
-                </div>
-
-                {/* Slide Indicators */}
-                <div className="absolute bottom-4 left-6 lg:left-12 flex gap-2 z-20">
-                    {slides.map((_, index) => (
-                        <button
-                            key={index}
-                            onClick={() => setCurrentSlide(index)}
-                            className={`h-2 rounded-full transition-all duration-300 ${currentSlide === index ? "w-8 bg-[#F98D1B]" : "w-2 bg-gray-400"
-                                }`}
-                        />
-                    ))}
-                </div>
+                )}
             </div>
 
             {/* Right Side Appointment Form */}

@@ -44,7 +44,7 @@ const InstagramButton = () => {
               w-11 h-11 
               rounded-full 
               bg-gradient-to-tr from-[#f09433] via-[#e6683c] to-[#bc1888]
-              border-[1.5px] border-white/40
+              border-[0px] border-white/40
               shadow-[0_4px_15px_rgba(188,24,136,0.4),inset_0_2px_10px_rgba(255,255,255,0.3)]
               hover:shadow-[0_6px_20px_rgba(188,24,136,0.6),inset_0_2px_15px_rgba(255,255,255,0.4)]
               hover:scale-110 
@@ -55,7 +55,7 @@ const InstagramButton = () => {
                         aria-label="Follow us on Instagram"
                         style={{
                             background: 'radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%)',
-                            backdropFilter: 'blur(8px)',
+                            backdropFilter: 'blur(10px)',
                             WebkitBackdropFilter: 'blur(8px)',
                         }}
                     >
