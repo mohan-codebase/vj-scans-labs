@@ -60,6 +60,10 @@ export function Header() {
       link: "/our-facility"
     },
     {
+      name: "Blog",
+      link: "/blog"
+    },
+    {
       name: "About us",
       link: "/aboutus",
     }
