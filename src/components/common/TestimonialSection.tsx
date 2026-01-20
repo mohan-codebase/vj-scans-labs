@@ -1,41 +1,37 @@
 'use client';
 
 import React, { useCallback } from 'react';
+import Image from 'next/image';
 import { Star, ChevronLeft, ChevronRight } from 'lucide-react';
 import useEmblaCarousel from 'embla-carousel-react';
-import { FcGoogle } from "react-icons/fc";
 
 const testimonialsData = [
     {
         id: 1,
-        name: 'Ganesh Ramalingam',
-        initial: 'M',
-        initialColor: 'bg-[#10a35d]',
-        review: 'Immediate attention to patient queries. Reception staffs are prompt in their service, mention ist Reshma 1st floor Room no. 13. branch. Especially for Good customer manager relationship.',
-        rating: 5,
+        name: 'Viswanathan TR',
+        image: '/images/testimonials/viswanathan.png',
+        review: "While the CT scan films were got immediately, the doctor's report took little more than expected, that is approximately two hours. In my opinion, this could have been reduced to one hour. Time element in respect of the patient and",
+        rating: 4,
     },
     {
         id: 2,
-        name: 'Bharathi S',
-        initial: 'B',
-        initialColor: 'bg-[#d9822b]',
-        review: 'Thank you Mr Karl Marx, the patient care coordinator for being so kind and caring throughout my dad’s diagnosis. Your gentle nature and attention to every detail made us feel comfortable. I truly appreciate all your help and support.',
-        rating: 5,
+        name: 'Kanishka S',
+        image: '/images/testimonials/kanishka.png',
+        review: '✅ 📌Clean, modern facility with state‑of‑the‑art MRI, CT, Ultrasound & X‑ray machines 🩻 👩‍💻Friendly, knowledgeable staff – especially the radiologists & technicians.',
+        rating: 4,
     },
     {
         id: 3,
-        name: 'Karthik R',
-        initial: 'K',
-        initialColor: 'bg-[#10a35d]',
-        review: 'Good patient care. Fast billing and report delivery. The environment is very hygienic and clean. Highly recommended for all kinds of scans and lab tests.',
+        name: 'Aravinth Uthamanathan',
+        image: '/images/testimonials/aravinth.png',
+        review: 'Good Ambience, Staffs at reception and lab very friendly and polite, front office response is good and quick. Places are neat and clean. Mri and CT reports They will give within one hour. I am satisfied with their service. Highly recommend to VJ Scans and Labs,Thank you...!',
         rating: 5,
     },
     {
         id: 4,
-        name: 'Anitha K',
-        initial: 'A',
-        initialColor: 'bg-[#d9822b]',
-        review: 'Excellent service and very professional staff. The reports were delivered on time and the facility is well maintained. Will definitely recommend to others.',
+        name: 'Aruna Jothinayagam',
+        image: '/images/testimonials/aruna.png',
+        review: "We had a great experience in VJ SCAN well maintainance ,quick response and a person's handling very caring especially Staff Vedha sister Instructed very clearly about our procedures Highly recommended i feel comfortable",
         rating: 5,
     }
 ];
@@ -79,9 +75,15 @@ const TestimonialSection = () => {
                                 >
                                     <div className="relative bg-[#eaf4f8] rounded-3xl p-8 pt-12 mt-8 h-full mx-2">
                                         <div
-                                            className="absolute -top-8 left-1/2 transform -translate-x-1/2 md:w-22 md:h-22 w-16 h-16 rounded-full bg-white flex items-center justify-center shadow-md border-4 border-white"
+                                            className="absolute -top-8 left-1/2 transform -translate-x-1/2 md:w-22 md:h-22 w-16 h-16 rounded-full bg-white flex items-center justify-center shadow-md border-4 border-white overflow-hidden"
                                         >
-                                            <FcGoogle size={48} />
+                                            <Image
+                                                src={testimonial.image}
+                                                alt={testimonial.name}
+                                                width={96}
+                                                height={96}
+                                                className="w-full h-full object-cover"
+                                            />
                                         </div>
 
                                         <div className="text-center mt-4">

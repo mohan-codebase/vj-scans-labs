@@ -19,8 +19,8 @@ interface Package {
 const packages: Package[] = [
     {
         name: "Master Health Check Basic",
-        price: 4590,
-        oldPrice: 2499,
+        price: 2499,
+        oldPrice: 4590,
         off: "66% Off",
         testCount: "13 Tests",
         tests:
@@ -28,8 +28,8 @@ const packages: Package[] = [
     },
     {
         name: "TVital Health Male",
-        price: 10100,
-        oldPrice: 6299,
+        price: 6299,
+        oldPrice: 10100,
         off: "66% Off",
         testCount: "16 Tests",
         tests:
@@ -37,8 +37,8 @@ const packages: Package[] = [
     },
     {
         name: "Vital Health Female",
-        price: 13330,
-        oldPrice: 6999,
+        price: 6999,
+        oldPrice: 13330,
         off: "66% Off",
         testCount: "18 Tests",
         tests:
@@ -46,8 +46,8 @@ const packages: Package[] = [
     },
     {
         name: "Vital Heart Check",
-        price: 13170,
-        oldPrice: 7499,
+        price: 7499,
+        oldPrice: 13170,
         off: "66% Off",
         testCount: "18 Tests",
         tests:
@@ -55,8 +55,8 @@ const packages: Package[] = [
     },
     {
         name: "Executive Check",
-        price: 16500,
-        oldPrice: 8999,
+        price: 8999,
+        oldPrice: 16500,
         off: "66% Off",
         testCount: "20 Tests",
         tests:
@@ -64,8 +64,8 @@ const packages: Package[] = [
     },
     {
         name: "Complete Master Health Check Male ",
-        price: 19500,
-        oldPrice: 9999,
+        price: 9999,
+        oldPrice: 19500,
         off: "66% Off",
         testCount: "27 Tests",
         tests:

@@ -2,8 +2,6 @@ import React from 'react'
 import Image from 'next/image' // Assuming Next.js for image optimization
 
 const specialisations = [
-    { label: 'PET/CT Scan', image: '/images/section-6/PET:CT Scan.svg' },
-    { label: 'Genetics', image: '/images/section-6/Genetics.svg' },
     { label: 'X-ray', image: '/images/section-6/X-ray.svg' },
     { label: 'Mammogram', image: '/images/section-6/Mammogram.svg' },
     { label: 'MRI', image: '/images/section-6/MRI.svg' },
@@ -23,7 +21,7 @@ const Section6 = () => {
             </h2>
 
             {/* Unified Responsive Layout */}
-            <div className="grid grid-cols-2 md:grid-cols-4 justify-items-center gap-6 md:gap-8 mb-12 max-w-4xl mx-auto">
+            <div className="flex flex-wrap justify-center gap-6 md:gap-8 mb-12 max-w-4xl mx-auto">
                 {specialisations.map((item, index) => (
                     <div key={index} className="flex flex-col items-center w-[120px] md:w-[150px]">
                         <div className="rounded-[20px] flex items-center justify-center md:p-2 transition-transform hover:scale-110 duration-300">
