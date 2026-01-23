@@ -2,12 +2,14 @@ import React from 'react'
 import Image from 'next/image' // Assuming Next.js for image optimization
 
 const specialisations = [
+    { label: 'MRI', image: '/images/section-6/MRI.svg' },
+    { label: 'CT Scan', image: '/images/section-6/PET:CT Scan.svg' },
     { label: 'X-ray', image: '/images/section-6/X-ray.svg' },
     { label: 'Mammogram', image: '/images/section-6/Mammogram.svg' },
-    { label: 'MRI', image: '/images/section-6/MRI.svg' },
     { label: 'Pathology', image: '/images/section-6/Pathology.svg' },
     { label: 'Laboratory', image: '/images/section-6/laboratory.svg' },
     { label: 'Health Check', image: '/images/section-6/health_check.svg' },
+    { label: 'USG', image: '/images/section-6/PET:CT Scan.svg' },
 ]
 
 const Section6 = () => {
