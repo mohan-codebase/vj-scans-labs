@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { IconChevronDown } from '@tabler/icons-react'
 import KnowMoreButton from '@/components/ui/KnowMoreButton'
 import { useBooking, KnowMoreContent } from '@/context/BookingContext'
+import { bookingOptions } from '@/lib/formOptions'
 // import { BiBorderRadius } from 'react-icons/bi'
 
 interface Slide {
@@ -224,10 +225,11 @@ const HeroSection: React.FC<HeroSectionProps> = ({ slides, formSource, videoSrc 
                             disabled={status === 'loading'}
                         >
                             <option value="">Select Package</option>
-                            <option value="Master Health Check Basic">Master Health Check Basic</option>
-                            <option value="Vital Health Male">Vital Health Male</option>
-                            <option value="Vital Health Female">Vital Health Female</option>
-                            <option value="Advanced Health Check">Advanced Health Check</option>
+                            {bookingOptions.map((option, index) => (
+                                <option key={index} value={option}>
+                                    {option}
+                                </option>
+                            ))}
                         </select>
                         <IconChevronDown className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none" size={20} />
                     </div>
