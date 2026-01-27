@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import { useBooking } from '@/context/BookingContext';
+import { bookingOptions } from '@/lib/formOptions';
 
 interface AppointmentSectionProps {
     className?: string;
@@ -129,9 +130,11 @@ const AppointmentSection: React.FC<AppointmentSectionProps> = ({ className = '' 
                                     disabled={status === 'loading' || status === 'success'}
                                 >
                                     <option value="" disabled>Select Package</option>
-                                    <option value="basic">Basic Checkup</option>
-                                    <option value="standard">Standard Checkup</option>
-                                    <option value="premium">Premium Checkup</option>
+                                    {bookingOptions.map((option) => (
+                                        <option key={option} value={option}>
+                                            {option}
+                                        </option>
+                                    ))}
                                 </select>
                                 <div className="absolute inset-y-0 right-0 flex items-center px-4 pointer-events-none">
                                     <svg className="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
