@@ -27,74 +27,71 @@ export default async function Image({ params }: { params: { slug: string } }) {
         (
             <div
                 style={{
-                    background: 'linear-gradient(to bottom right, #0F172A, #1E293B)',
+                    background: 'white',
                     width: '100%',
                     height: '100%',
                     display: 'flex',
                     flexDirection: 'column',
-                    alignItems: 'flex-start',
-                    justifyContent: 'space-between',
+                    alignItems: 'center',
+                    justifyContent: 'center',
                     fontFamily: 'sans-serif',
-                    padding: '60px',
+                    padding: '40px',
+                    textAlign: 'center',
                 }}
             >
-                <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
+                {/* @ts-ignore */}
+                <img
+                    src={logoData as any}
+                    alt="VJ Scans Logo"
+                    width={250}
+                    height={80}
+                    style={{
+                        objectFit: 'contain',
+                        marginBottom: '40px'
+                    }}
+                />
+
+                <div
+                    style={{
+                        display: 'flex',
+                        flexDirection: 'column',
+                        alignItems: 'center',
+                        gap: '10px',
+                        marginBottom: '30px',
+                    }}
+                >
                     <div
                         style={{
-                            background: '#2563EB',
-                            color: 'white',
+                            background: '#EFF6FF',
+                            color: '#2563EB',
                             padding: '8px 20px',
                             borderRadius: '50px',
                             fontSize: 20,
                             fontWeight: 600,
+                            textTransform: 'uppercase',
+                            letterSpacing: '1px',
                         }}
                     >
                         {category}
                     </div>
-                    <div style={{ color: '#94A3B8', fontSize: 20 }}>{date}</div>
                 </div>
 
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-                    <h1
-                        style={{
-                            fontSize: 60,
-                            fontWeight: 900,
-                            color: '#fff',
-                            lineHeight: 1.1,
-                            margin: 0,
-                            padding: 0,
-                        }}
-                    >
-                        {title}
-                    </h1>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginTop: '20px' }}>
-                        <img
-                            src={logoData as any}
-                            alt="VJ Scans Logo"
-                            width={50}
-                            height={50}
-                            style={{
-                                borderRadius: '50%'
-                            }}
-                        />
-                        <span style={{ color: '#E2E8F0', fontSize: 24, fontWeight: 500 }}>
-                            VJ Scans & Labs
-                        </span>
-                    </div>
-                </div>
+                <h1
+                    style={{
+                        fontSize: 60,
+                        fontWeight: 900,
+                        color: '#0F172A',
+                        lineHeight: 1.2,
+                        margin: '0 0 20px 0',
+                        padding: 0,
+                        maxWidth: '900px',
+                    }}
+                >
+                    {title}
+                </h1>
 
-                <div style={{
-                    position: 'absolute',
-                    bottom: '60px',
-                    right: '60px',
-                    opacity: 0.1,
-                    fontSize: '150px',
-                    fontWeight: 900,
-                    color: 'white',
-                    transform: 'rotate(-20deg)',
-                    zIndex: -1,
-                }}>
-                    BLOG
+                <div style={{ color: '#64748B', fontSize: 24, fontWeight: 500 }}>
+                    {date}
                 </div>
             </div>
         ),
