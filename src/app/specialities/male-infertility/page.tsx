@@ -19,14 +19,6 @@ export const metadata: Metadata = {
         description: seo.description,
         url: seo.url,
         siteName: SITE_NAME,
-        images: [
-            {
-                url: seo.image,
-                width: 500,
-                height: 300,
-                alt: 'VJ Scans Male Infertility'
-            }
-        ],
         type: 'website'
     }
 }

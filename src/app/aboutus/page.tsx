@@ -17,14 +17,6 @@ export const metadata: Metadata = {
         description: seo.description,
         url: seo.url,
         siteName: SITE_NAME,
-        images: [
-            {
-                url: seo.image,
-                width: 1200,
-                height: 630,
-                alt: seo.title
-            },
-        ],
         type: "website"
     }
 }

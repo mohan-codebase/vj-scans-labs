@@ -14,14 +14,6 @@ export const metadata: Metadata = {
         description: seoDatas.ourBranches.description,
         url: seoDatas.ourBranches.url,
         siteName: SITE_NAME,
-        images: [
-            {
-                url: seoDatas.ourBranches.image,
-                width: 1200,
-                height: 630,
-                alt: seoDatas.ourBranches.title
-            },
-        ],
         type: "website"
     }
 }
