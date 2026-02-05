@@ -26,7 +26,7 @@ export default async function OgImageGenerator({
         (
             <div
                 style={{
-                    background: 'linear-gradient(to bottom right, #0F172A, #1E293B)',
+                    background: 'white',
                     width: '100%',
                     height: '100%',
                     display: 'flex',
@@ -36,63 +36,38 @@ export default async function OgImageGenerator({
                     fontFamily: 'sans-serif',
                 }}
             >
-                <div
+                {/* @ts-ignore */}
+                <img
+                    src={logoData as any}
+                    alt="VJ Scans Logo"
+                    width={300}
+                    height={100}
                     style={{
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        background: '#fff',
-                        padding: '20px 40px',
-                        borderRadius: '20px',
-                        boxShadow: '0 20px 50px rgba(0,0,0,0.3)',
-                        marginBottom: '40px',
+                        objectFit: 'contain',
+                        marginBottom: '40px'
                     }}
-                >
-                    <img
-                        src={logoData as any}
-                        alt="VJ Scans Logo"
-                        width={80}
-                        height={80}
-                        style={{
-                            marginRight: '20px',
-                            objectFit: 'contain'
-                        }}
-                    />
-                    <h1
-                        style={{
-                            fontSize: 40,
-                            fontWeight: 900,
-                            color: '#0F172A',
-                            margin: 0,
-                            padding: 0,
-                        }}
-                    >
-                        VJ Scans & Labs
-                    </h1>
-                </div>
-
-                <h2
+                />
+                <h1
                     style={{
-                        fontSize: 70,
+                        fontSize: 60,
                         fontWeight: 900,
-                        background: 'linear-gradient(to right, #60A5FA, #2DD4BF)',
-                        backgroundClip: 'text',
-                        color: 'transparent',
+                        color: '#0F172A',
                         margin: 0,
-                        padding: '0 40px',
+                        padding: '0 20px',
                         textAlign: 'center',
-                        lineHeight: 1.1,
+                        lineHeight: 1.2,
                     }}
                 >
                     {title}
-                </h2>
-
+                </h1>
                 <p
                     style={{
                         fontSize: 30,
-                        color: '#94A3B8',
-                        marginTop: 30,
+                        color: '#64748B',
+                        margin: '20px 0 0 0',
                         fontWeight: 500,
+                        textAlign: 'center',
+                        padding: '0 40px',
                     }}
                 >
                     {subtitle}
