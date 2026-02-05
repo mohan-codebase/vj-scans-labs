@@ -231,5 +231,322 @@ export const blogPosts: BlogPost[] = [
             <h2>Conclusion</h2>
             <p>A full body checkup is an essential part of maintaining good health. With affordable packages available in Chennai, it’s easier than ever to get a comprehensive assessment of your health. At VJ Scans & Labs, we offer a range of health screening packages designed to suit your needs and budget. Book your full body checkup today to ensure a healthier tomorrow.</p>
         `
+    },
+    {
+        id: '5',
+        slug: 'mri-ct-ultrasound-difference-guide',
+        title: 'MRI, CT or Ultrasound – Which Scan Do You Really Need?',
+        excerpt: 'When a doctor recommends a diagnostic scan, many patients feel confused. MRI, CT, or Ultrasound — which scan is right for your condition? Each imaging test serves a different medical purpose...',
+        date: '2026-02-05',
+        author: 'VJ Scans & Labs',
+        category: 'Diagnostics',
+        image: '/images/blog/mri-ct-ultrasound.png',
+        content: `
+            <h2>Introduction</h2>
+            <p>When a doctor recommends a diagnostic scan, many patients feel confused. MRI, CT, or Ultrasound — which scan is right for your condition? Each imaging test serves a different medical purpose, and choosing the correct one ensures faster diagnosis, accurate treatment, and cost efficiency. This guide explains the difference between MRI, CT scan, and Ultrasound, helping patients make informed decisions.</p>
+
+            <h2>Why Diagnostic Scans Are Important</h2>
+            <p>Medical imaging allows doctors to:</p>
+            <ul>
+                <li>Detect diseases early</li>
+                <li>Identify internal injuries</li>
+                <li>Monitor treatment progress</li>
+                <li>Avoid unnecessary surgeries</li>
+            </ul>
+            <p>Choosing the right scan avoids delays and repeat testing.</p>
+
+            <h2>What Is an MRI Scan?</h2>
+            <p>MRI (Magnetic Resonance Imaging) uses strong magnetic fields and radio waves to create highly detailed images of soft tissues.</p>
+            <h3>Best Uses of MRI:</h3>
+            <ul>
+                <li>Brain and spine disorders</li>
+                <li>Ligament and joint injuries</li>
+                <li>Disc problems</li>
+                <li>Tumors and nerve conditions</li>
+            </ul>
+            <h3>Advantages:</h3>
+            <ul>
+                <li>No radiation</li>
+                <li>Extremely detailed soft tissue imaging</li>
+            </ul>
+            <h3>Limitations:</h3>
+            <ul>
+                <li>Takes longer</li>
+                <li>Not suitable for patients with metal implants (in some cases)</li>
+            </ul>
+            <p><strong>SEO keywords:</strong> MRI scan near me, MRI scan Chennai</p>
+
+            <h2>What Is a CT Scan?</h2>
+            <p>CT (Computed Tomography) uses X-rays to create cross-sectional images of the body.</p>
+            <h3>Best Uses of CT Scan:</h3>
+            <ul>
+                <li>Head injuries and stroke detection</li>
+                <li>Lung and chest conditions</li>
+                <li>Abdominal pain and trauma</li>
+                <li>Cancer detection and staging</li>
+            </ul>
+            <h3>Advantages:</h3>
+            <ul>
+                <li>Fast and efficient</li>
+                <li>Excellent for emergency diagnosis</li>
+            </ul>
+            <h3>Limitations:</h3>
+            <ul>
+                <li>Uses radiation</li>
+                <li>Less detailed for soft tissues compared to MRI</li>
+            </ul>
+            <p><strong>SEO keywords:</strong> CT scan Chennai, CT scan near me</p>
+
+            <h2>What Is an Ultrasound Scan?</h2>
+            <p>Ultrasound uses sound waves to create real-time images.</p>
+            <h3>Best Uses of Ultrasound:</h3>
+            <ul>
+                <li>Pregnancy monitoring</li>
+                <li>Abdominal organs (liver, kidney, gallbladder)</li>
+                <li>Pelvic examinations</li>
+                <li>Thyroid and soft tissue evaluation</li>
+            </ul>
+            <h3>Advantages:</h3>
+            <ul>
+                <li>Completely radiation-free</li>
+                <li>Safe and painless</li>
+                <li>Cost-effective</li>
+            </ul>
+            <h3>Limitations:</h3>
+            <ul>
+                <li>Image quality depends on operator skill</li>
+                <li>Limited depth penetration</li>
+            </ul>
+            <p><strong>SEO keywords:</strong> ultrasound scan Chennai, ultrasound test near me</p>
+
+            <h2>How Doctors Decide Which Scan You Need</h2>
+            <p>Doctors consider:</p>
+            <ul>
+                <li>Your symptoms</li>
+                <li>Medical history</li>
+                <li>Area of concern</li>
+                <li>Urgency of diagnosis</li>
+            </ul>
+            <p>For example:</p>
+            <ul>
+                <li>Severe head injury → CT Scan</li>
+                <li>Chronic back pain → MRI</li>
+                <li>Abdominal pain → Ultrasound</li>
+            </ul>
+
+            <h2>Why Choosing the Right Scan Matters</h2>
+            <ul>
+                <li>Faster diagnosis</li>
+                <li>Reduced cost</li>
+                <li>Lower radiation exposure</li>
+                <li>Accurate treatment planning</li>
+            </ul>
+
+            <h2>Trusted Diagnostic Imaging at VJ Scan & Labs</h2>
+            <p>VJ Scan & Labs offers:</p>
+            <ul>
+                <li>Advanced MRI, CT & Ultrasound facilities</li>
+                <li>Experienced radiologists</li>
+                <li>Accurate reporting with quick turnaround</li>
+            </ul>
+
+            <h2>Final Thought</h2>
+            <p>Understanding the difference between MRI, CT, and Ultrasound empowers patients to make informed healthcare decisions and avoid unnecessary testing.</p>
+        `
+    },
+    {
+        id: '6',
+        slug: 'preventative-health-checkup-chennai-guide',
+        title: 'Complete Guide to Preventive Health Checkups in Chennai',
+        excerpt: 'Preventive healthcare is the key to long-term wellness. A preventive health checkup helps detect medical issues before symptoms appear, allowing timely treatment and lifestyle correction...',
+        date: '2026-02-05',
+        author: 'VJ Scans & Labs',
+        category: 'Health Checkups',
+        image: '/images/blog/preventive-health-checkup.png',
+        content: `
+            <h2>Introduction</h2>
+            <p>Preventive healthcare is the key to long-term wellness. A preventive health checkup helps detect medical issues before symptoms appear, allowing timely treatment and lifestyle correction. This guide explains why preventive health checkups in Chennai are essential, what tests are included, and how often you should get screened.</p>
+
+            <h2>What Is a Preventive Health Checkup?</h2>
+            <p>A preventive health checkup is a comprehensive evaluation of your overall health using blood tests, imaging, and clinical assessments.</p>
+
+            <h2>Why Preventive Health Checkups Are Important</h2>
+            <ul>
+                <li>Early detection of chronic diseases</li>
+                <li>Reduced healthcare costs</li>
+                <li>Better treatment outcomes</li>
+                <li>Improved quality of life</li>
+            </ul>
+            <p><strong>SEO keywords:</strong> preventive health checkup Chennai, full body checkup Chennai</p>
+
+            <h2>Who Should Get a Preventive Health Checkup?</h2>
+            <ul>
+                <li>Adults above 30 years</li>
+                <li>People with family history of illness</li>
+                <li>Working professionals with sedentary lifestyles</li>
+                <li>Individuals with high stress levels</li>
+            </ul>
+
+            <h2>Common Tests Included in Preventive Checkups</h2>
+            <h3>Blood Tests</h3>
+            <ul>
+                <li>Blood sugar (FBS, PPBS, HbA1c)</li>
+                <li>Lipid profile</li>
+                <li>Liver & kidney function</li>
+            </ul>
+            <h3>Imaging Tests</h3>
+            <ul>
+                <li>Ultrasound abdomen</li>
+                <li>Chest X-ray</li>
+                <li>ECG</li>
+            </ul>
+
+            <h2>How Often Should You Get Checked?</h2>
+            <ul>
+                <li><strong>Ages 30–40:</strong> Once every 2 years</li>
+                <li><strong>Ages 40–50:</strong> Once a year</li>
+                <li><strong>Above 50:</strong> Annual comprehensive checkups</li>
+            </ul>
+
+            <h2>Preventive Health Checkups in Chennai – What to Look For</h2>
+            <p>Choose a diagnostic center that offers:</p>
+            <ul>
+                <li>Accurate reporting</li>
+                <li>Advanced imaging technology</li>
+                <li>Experienced radiologists</li>
+                <li>Affordable health packages</li>
+            </ul>
+
+            <h2>Why VJ Scan & Labs Is a Trusted Choice</h2>
+            <p>VJ Scan & Labs provides:</p>
+            <ul>
+                <li>Affordable full body checkup packages</li>
+                <li>Accurate diagnostic reports</li>
+                <li>Convenient appointment scheduling</li>
+            </ul>
+
+            <h2>Final Thought</h2>
+            <p>Preventive health checkups are an investment in your future health—not an expense.</p>
+        `
+    },
+    {
+        id: '7',
+        slug: 'home-blood-sample-collection-chennai',
+        title: 'Home Collection Blood Tests: Convenience & Accuracy Explained',
+        excerpt: 'With busy lifestyles and increased health awareness, home collection blood tests have become extremely popular. But many patients wonder — are home blood tests accurate and reliable?',
+        date: '2026-02-05',
+        author: 'VJ Scans & Labs',
+        category: 'Blood Tests',
+        image: '/images/blog/home-blood-collection.png',
+        content: `
+            <h2>Introduction</h2>
+            <p>With busy lifestyles and increased health awareness, home collection blood tests have become extremely popular. But many patients wonder — are home blood tests accurate and reliable? This article explains how home blood collection works, its benefits, and when it is the right choice.</p>
+
+            <h2>What Is Home Collection Blood Testing?</h2>
+            <p>Home collection allows trained phlebotomists to collect blood samples at your doorstep, which are then processed in certified labs.</p>
+            <p><strong>SEO keywords:</strong> blood test home collection Chennai, home blood test near me</p>
+
+            <h2>Benefits of Home Blood Collection</h2>
+            <h3>1. Convenience</h3>
+            <p>No travel, no waiting, ideal for elderly patients.</p>
+
+            <h3>2. Safety & Hygiene</h3>
+            <p>Reduces exposure to infections.</p>
+
+            <h3>3. Time-Saving</h3>
+            <p>Perfect for working professionals.</p>
+
+            <h2>Is Home Collection Accurate?</h2>
+            <p>Yes—when performed correctly. Accuracy depends on:</p>
+            <ul>
+                <li>Trained technicians</li>
+                <li>Proper sample handling</li>
+                <li>Certified laboratories</li>
+            </ul>
+
+            <h2>Who Should Choose Home Blood Collection?</h2>
+            <ul>
+                <li>Senior citizens</li>
+                <li>Post-surgery patients</li>
+                <li>Pregnant women</li>
+                <li>Busy professionals</li>
+            </ul>
+
+            <h2>Common Tests Available for Home Collection</h2>
+            <ul>
+                <li>Blood sugar tests</li>
+                <li>Thyroid tests</li>
+                <li>Lipid profile</li>
+                <li>Complete blood count</li>
+            </ul>
+
+            <h2>Why Choose VJ Scan & Labs for Home Collection?</h2>
+            <ul>
+                <li>Trained phlebotomy staff</li>
+                <li>Timely sample processing</li>
+                <li>Accurate and reliable reports</li>
+            </ul>
+
+            <h2>Final Thought</h2>
+            <p>Home blood tests offer the perfect balance of convenience and clinical accuracy when done by a trusted diagnostic lab.</p>
+        `
+    },
+    {
+        id: '8',
+        slug: 'diagnostic-scans-after-40-guide',
+        title: 'Common Diagnostic Scans Doctors Recommend After 40',
+        excerpt: 'As we age, routine diagnostic scans become crucial for early disease detection. After 40, doctors often recommend specific scans to monitor vital organs and prevent serious health conditions.',
+        date: '2026-02-05',
+        author: 'VJ Scans & Labs',
+        category: 'Health Tips',
+        image: '/images/blog/scans-after-40.png',
+        content: `
+            <h2>Introduction</h2>
+            <p>As we age, routine diagnostic scans become crucial for early disease detection. After 40, doctors often recommend specific scans to monitor vital organs and prevent serious health conditions.</p>
+
+            <h2>Why Diagnostic Scans Matter After 40</h2>
+            <ul>
+                <li>Increased risk of lifestyle diseases</li>
+                <li>Slower recovery from illness</li>
+                <li>Silent progression of conditions</li>
+            </ul>
+            <p><strong>SEO keywords:</strong> diagnostic scans after 40, health scans for adults</p>
+
+            <h2>Most Common Scans Doctors Recommend</h2>
+            <h3>1. Ultrasound Abdomen</h3>
+            <p>Detects liver, kidney, gallbladder, and pancreatic issues.</p>
+
+            <h3>2. Chest X-Ray</h3>
+            <p>Screens for lung infections and heart enlargement.</p>
+
+            <h3>3. ECG & Cardiac Screening</h3>
+            <p>Monitors heart rhythm and detects early cardiac issues.</p>
+
+            <h3>4. MRI or CT (If Needed)</h3>
+            <p>For neurological, orthopedic, or internal concerns.</p>
+
+            <h2>How Often Should These Scans Be Done?</h2>
+            <ul>
+                <li>Annually for preventive screening</li>
+                <li>As advised based on symptoms or risk factors</li>
+            </ul>
+
+            <h2>Benefits of Early Diagnostic Scanning</h2>
+            <ul>
+                <li>Early disease detection</li>
+                <li>Reduced treatment cost</li>
+                <li>Better health outcomes</li>
+            </ul>
+
+            <h2>Why Choose VJ Scan & Labs?</h2>
+            <ul>
+                <li>Advanced diagnostic equipment</li>
+                <li>Accurate reporting</li>
+                <li>Experienced radiology team</li>
+            </ul>
+
+            <h2>Final Thought</h2>
+            <p>Routine diagnostic scans after 40 can significantly improve longevity and quality of life.</p>
+        `
     }
 ];
