@@ -6,7 +6,7 @@ export const contentType = 'image/png';
 
 export default async function Image() {
     return OgImageGenerator({
-        title: 'Our Facility',
+        title: 'VJ Scans Facilities',
         subtitle: 'State-of-the-Art Diagnostic Equipment',
     });
 }

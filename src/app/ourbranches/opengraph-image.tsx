@@ -6,7 +6,7 @@ export const contentType = 'image/png';
 
 export default async function Image() {
     return OgImageGenerator({
-        title: 'Our Branches',
+        title: 'VJ Scans Branches',
         subtitle: 'Find a VJ Scans Center Near You',
     });
 }

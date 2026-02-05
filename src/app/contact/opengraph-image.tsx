@@ -6,7 +6,7 @@ export const contentType = 'image/png';
 
 export default async function Image() {
     return OgImageGenerator({
-        title: 'Contact Us',
+        title: 'Contact VJ Scans',
         subtitle: 'Get in Touch with Our Team',
     });
 }
