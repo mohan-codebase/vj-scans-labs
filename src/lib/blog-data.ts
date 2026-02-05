@@ -274,7 +274,6 @@ export const blogPosts: BlogPost[] = [
                 <li>Takes longer</li>
                 <li>Not suitable for patients with metal implants (in some cases)</li>
             </ul>
-            <p><strong>SEO keywords:</strong> MRI scan near me, MRI scan Chennai</p>
 
             <h2>What Is a CT Scan?</h2>
             <p>CT (Computed Tomography) uses X-rays to create cross-sectional images of the body.</p>
@@ -295,7 +294,6 @@ export const blogPosts: BlogPost[] = [
                 <li>Uses radiation</li>
                 <li>Less detailed for soft tissues compared to MRI</li>
             </ul>
-            <p><strong>SEO keywords:</strong> CT scan Chennai, CT scan near me</p>
 
             <h2>What Is an Ultrasound Scan?</h2>
             <p>Ultrasound uses sound waves to create real-time images.</p>
@@ -317,7 +315,6 @@ export const blogPosts: BlogPost[] = [
                 <li>Image quality depends on operator skill</li>
                 <li>Limited depth penetration</li>
             </ul>
-            <p><strong>SEO keywords:</strong> ultrasound scan Chennai, ultrasound test near me</p>
 
             <h2>How Doctors Decide Which Scan You Need</h2>
             <p>Doctors consider:</p>
@@ -377,7 +374,6 @@ export const blogPosts: BlogPost[] = [
                 <li>Better treatment outcomes</li>
                 <li>Improved quality of life</li>
             </ul>
-            <p><strong>SEO keywords:</strong> preventive health checkup Chennai, full body checkup Chennai</p>
 
             <h2>Who Should Get a Preventive Health Checkup?</h2>
             <ul>
@@ -444,7 +440,6 @@ export const blogPosts: BlogPost[] = [
 
             <h2>What Is Home Collection Blood Testing?</h2>
             <p>Home collection allows trained phlebotomists to collect blood samples at your doorstep, which are then processed in certified labs.</p>
-            <p><strong>SEO keywords:</strong> blood test home collection Chennai, home blood test near me</p>
 
             <h2>Benefits of Home Blood Collection</h2>
             <h3>1. Convenience</h3>
@@ -510,7 +505,6 @@ export const blogPosts: BlogPost[] = [
                 <li>Slower recovery from illness</li>
                 <li>Silent progression of conditions</li>
             </ul>
-            <p><strong>SEO keywords:</strong> diagnostic scans after 40, health scans for adults</p>
 
             <h2>Most Common Scans Doctors Recommend</h2>
             <h3>1. Ultrasound Abdomen</h3>
