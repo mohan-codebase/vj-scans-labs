@@ -113,7 +113,7 @@ const Footer = () => {
             <a href="#" className="hover:text-[#1e73be]">Sales and Refunds</a>
           </div>
           <div>
-            <p>© 2025 All Rights Reserved</p>
+            <p>© {new Date().getFullYear()} All Rights Reserved</p>
           </div>
         </div>
       </div>
