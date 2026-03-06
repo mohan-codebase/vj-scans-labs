@@ -284,7 +284,7 @@ export const NavbarLogo = () => {
       <Image
         src={logo}
         alt="logo"
-        width={180}
+        width={125}
         height={50} // Added height to maintain aspect ratio, assuming standard logo proportions or auto
         className="h-auto w-auto" // Ensure it scales correctly
       />
