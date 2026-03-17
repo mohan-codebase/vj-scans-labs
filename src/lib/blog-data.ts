@@ -542,5 +542,201 @@ export const blogPosts: BlogPost[] = [
             <h2>Final Thought</h2>
             <p>Routine diagnostic scans after 40 can significantly improve longevity and quality of life.</p>
         `
+    },
+    {
+        id: '9',
+        slug: 'is-mri-safe-myths-vs-facts',
+        title: 'Is MRI Safe? Myths vs Facts You Should Know',
+        excerpt: 'Introduction to Magnetic Resonance Imaging (MRI) as a diagnostic tool. Discuss common fears about MRI safety and the need for public education.',
+        date: '2026-03-17',
+        author: 'VJ Scans & Labs',
+        category: 'Diagnostics',
+        image: '/images/blog/mri-safety.png',
+        content: `
+            <h2>Introduction</h2>
+            <p>Magnetic Resonance Imaging (MRI) is a powerful diagnostic tool that has revolutionized modern medicine. However, many patients feel anxious or fearful when they hear they need an MRI scan. In this article, we’ll dive into what an MRI actually is, debunk common myths, and explain why it is considered one of the safest diagnostic procedures available today.</p>
+
+            <h2>What is an MRI?</h2>
+            <p>An MRI scan uses strong magnetic fields and radio waves to create highly detailed images of the organs and tissues within your body. Unlike X-rays, which use ionizing radiation, MRI machines rely on complex physics involving the alignment of atoms in your body. This allows doctors to see internal structures with incredible clarity, helping them diagnose everything from sports injuries to neurological conditions.</p>
+
+            <h2>Is MRI Safe? Debunking Common Myths</h2>
+            
+            <h3>Myth 1: "MRI can cause cancer."</h3>
+            <p><strong>Fact:</strong> This is one of the most persistent misconceptions. MRIs do <strong>not</strong> use ionizing radiation. Radiation from X-rays and CT scans carries a very small risk of cellular damage, but MRI uses radio waves—the same technology behind your car radio—which has no known link to cancer.</p>
+
+            <h3>Myth 2: "MRI is only for brain or spinal issues."</h3>
+            <p><strong>Fact:</strong> While MRIs are the gold standard for imaging the brain and spine, they are incredibly versatile. They are used to examine joints, muscles, the heart, blood vessels, and abdominal organs. If your doctor needs a clear view of soft tissue, an MRI is often the best choice.</p>
+
+            <h3>Myth 3: "MRI is painful or dangerous."</h3>
+            <p><strong>Fact:</strong> The procedure itself is completely non-invasive and painless. While some patients may find the machine\'s confinement or the loud clicking noises slightly uncomfortable, there is no physical pain involved. Modern labs like VJ Scans & Labs provide earplugs or music to help make the experience more pleasant.</p>
+
+            <h2>MRI Safety Facts</h2>
+            <ul>
+                <li><strong>Non-invasive procedure:</strong> No needles or incisions are required for a standard MRI.</li>
+                <li><strong>No ionizing radiation:</strong> Completely safe for multiple uses over time.</li>
+                <li><strong>Pre-screening for metal implants:</strong> Because of the strong magnets, it is vital to inform your technician about any metal in your body (like shrapnel, clips, or implants) before entering the room.</li>
+            </ul>
+
+            <h2>Who Should Not Undergo an MRI?</h2>
+            <p>While safe for most, some individuals with specific medical devices should avoid or take extra precautions with MRIs. This includes patients with pacemakers, certain cochlear implants, or older metallic stents that aren\'t "MRI conditional." Always disclose your full medical history during the screening process.</p>
+
+            <h2>How to Prepare for an MRI</h2>
+            <p>Preparation is simple. You\'ll usually be asked to wear comfortable clothing without metal zippers or buttons. You may need to fast for a few hours if your scan is for the abdomen. Most importantly, ensure you have removed all jewelry, watches, and cards with magnetic strips.</p>
+
+            <h2>Conclusion</h2>
+            <p>For the vast majority of people, an MRI is a safe, radiation-free, and essential part of maintaining health. If you have concerns, never hesitate to speak with your diagnostic team at VJ Scans & Labs. Knowledge is the best cure for fear.</p>
+            <p><strong>Book your MRI at VJ Scans and Labs today to get accurate and safe diagnostic results.</strong></p>
+        `
+    },
+    {
+        id: '10',
+        slug: 'ct-scan-radiation-safety-guide',
+        title: 'CT Scan Radiation: Should You Be Worried?',
+        excerpt: 'Introduction to CT (Computed Tomography) scans and their importance in diagnosing various medical conditions. Discuss common concerns about radiation exposure from CT scans.',
+        date: '2026-03-17',
+        author: 'VJ Scans & Labs',
+        category: 'Diagnostics',
+        image: '/images/blog/ct-scan-safety.png',
+        content: `
+            <h2>Introduction</h2>
+            <p>Computed Tomography (CT) scans are incredible tools for localized imaging, helping doctors see "slices" of the body in seconds. However, the mention of "radiation" often causes concern. This guide explains how CT radiation works and why you generally shouldn\'t worry about a single scan.</p>
+
+            <h2>What is a CT Scan?</h2>
+            <p>A CT scan uses a series of X-ray images taken from different angles around your body. Computer processing then creates cross-sectional images (slices) of the bones, blood vessels, and soft tissues inside your body. It provides much more detail than a standard X-ray.</p>
+
+            <h2>Radiation in CT Scans – How Much is Too Much?</h2>
+            <p>The amount of radiation exposure during a CT scan is measured in millisieverts (mSv). While it is higher than a regular X-ray, it is carefully controlled. Medical professionals follow the ALARA principle (As Low As Reasonably Achievable) to ensure you get the benefit of the diagnosis with minimal exposure.</p>
+
+            <h2>When Should You Worry About CT Scan Radiation?</h2>
+            <p>In most clinical cases, the benefits of getting a fast, accurate diagnosis far outweigh the risks of radiation. However, special care is taken with:</p>
+            <ul>
+                <li><strong>Children:</strong> Their tissues are more sensitive to radiation, so pediatric settings are adjusted accordingly.</li>
+                <li><strong>Pregnant Women:</strong> While most CT scans (like the head or chest) don\'t expose the pelvic area, doctors usually avoid abdominal CTs during pregnancy unless absolutely life-saving.</li>
+            </ul>
+
+            <h2>CT Scan Radiation vs Other Imaging Techniques</h2>
+            <table class="w-full text-left my-6 border-collapse">
+                <thead>
+                    <tr class="bg-gray-100">
+                        <th class="p-3 border">Technique</th>
+                        <th class="p-3 border">Radiation Level</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="p-3 border">X-Ray</td>
+                        <td class="p-3 border">Low</td>
+                    </tr>
+                    <tr>
+                        <td class="p-3 border">CT Scan</td>
+                        <td class="p-3 border">Moderate</td>
+                    </tr>
+                    <tr>
+                        <td class="p-3 border">MRI</td>
+                        <td class="p-3 border">None</td>
+                    </tr>
+                    <tr>
+                        <td class="p-3 border">Ultrasound</td>
+                        <td class="p-3 border">None</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Who Should Avoid a CT Scan?</h2>
+            <p>Pregnant women and young children should limit their exposure to CT scans. It is also important to maintain a history of your past imaging so your doctor can avoid redundant scans. If an MRI or Ultrasound can provide the same information, your doctor may suggest those as alternatives.</p>
+
+            <h2>Conclusion</h2>
+            <p>CT scans are a vital part of emergency medicine and chronic disease management. When used appropriately, they are safe and life-saving. At VJ Scans & Labs, we use the latest technology to ensure your exposure is kept to the absolute minimum.</p>
+            <p><strong>Schedule your CT scan at VJ Scans and Labs for a safe, accurate diagnosis.</strong></p>
+        `
+    },
+    {
+        id: '11',
+        slug: 'best-time-full-body-health-checkup',
+        title: 'Best Time to Get a Full Body Health Checkup',
+        excerpt: 'The importance of regular health checkups to monitor overall health and prevent serious conditions. Discuss the recommended times for full-body checkups.',
+        date: '2026-03-17',
+        author: 'VJ Scans & Labs',
+        category: 'Health Checkups',
+        image: '/images/blog/health-checkup-timing.png',
+        content: `
+            <h2>Introduction</h2>
+            <p>We often visit the doctor only when we feel sick. However, the best time to manage your health is when you feel perfectly fine. Regular full body checkups are the cornerstone of preventive healthcare, identifying silent issues before they become life-threatening.</p>
+
+            <h2>What is Included in a Full Body Health Checkup?</h2>
+            <p>A comprehensive checkup at VJ Scans & Labs typically involves:</p>
+            <ul>
+                <li><strong>Blood Tests:</strong> CBC, blood sugar, lipid profile, liver and kidney function.</li>
+                <li><strong>Imaging:</strong> Chest X-ray, Ultrasound of the abdomen.</li>
+                <li><strong>Cardiac Screening:</strong> ECG and sometimes a Stress Test (TMT).</li>
+                <li><strong>Physical Assessment:</strong> Blood pressure, BMI, and clinical consultation.</li>
+            </ul>
+
+            <h2>When Should You Get a Full Body Health Checkup?</h2>
+            
+            <h3>Young Adults (20-30 years)</h3>
+            <p>Even if you feel invincible, getting a baseline checkup every 2-3 years is recommended. It helps identify early markers for cholesterol or blood sugar imbalances caused by modern lifestyles.</p>
+
+            <h3>Middle-Aged Adults (40-50 years)</h3>
+            <p>This is the most critical window. Annual checkups become essential to monitor hypertension, metabolic disorders, and early signs of heart disease or diabetes.</p>
+
+            <h3>Older Adults (60+ years)</h3>
+            <p>Screenings should be more frequent (bi-annual or annual), focusing on bone density, cardiac health, and cancer screenings appropriate for your age group.</p>
+
+            <h2>Benefits of a Regular Full Body Checkup</h2>
+            <ul>
+                <li><strong>Early Detection:</strong> Catching conditions like diabetes or heart disease in the "silent" phase.</li>
+                <li><strong>Peace of Mind:</strong> Knowing your vital markers are within a healthy range.</li>
+                <li><strong>Cost Savings:</strong> Preventive care is significantly cheaper than long-term treatments for advanced diseases.</li>
+            </ul>
+
+            <h2>How Often Should You Get a Full Body Checkup?</h2>
+            <p>For a healthy individual under 40, once every 2 years is usually sufficient. Once you cross 40, an annual visit is the gold standard. If you have a family history of specific illnesses, your doctor may recommend more frequent targeted tests.</p>
+
+            <h2>Conclusion</h2>
+            <p>Your health is your most valuable asset. Don\'t wait for symptoms to appear—be proactive and schedule your screening today.</p>
+            <p><strong>Book your full body checkup today at VJ Scans and Labs and take charge of your health.</strong></p>
+        `
+    },
+    {
+        id: '12',
+        slug: 'ultrasound-during-pregnancy-complete-guide',
+        title: 'Ultrasound During Pregnancy – What Every Mother Should Know',
+        excerpt: 'The significance of ultrasound in monitoring pregnancy and ensuring the health of the mother and baby. Discuss common concerns and myths.',
+        date: '2026-03-17',
+        author: 'VJ Scans & Labs',
+        category: 'Ultrasound',
+        image: '/images/blog/pregnancy-ultrasound.png',
+        content: `
+            <h2>Introduction</h2>
+            <p>An ultrasound is often the first time parents get to "meet" their baby. It\'s an emotional and vital medical milestone. But beyond the excitement, ultrasounds serve critical roles in ensuring a healthy pregnancy for both mother and child.</p>
+
+            <h2>What is an Ultrasound for Pregnancy?</h2>
+            <p>Unlike X-rays, pregnancy ultrasounds use high-frequency sound waves. These waves bounce off the baby, placenta, and amniotic fluid to create a real-time image on a monitor. There is no radiation involved, making it safe for the developing baby.</p>
+
+            <h2>Different Types of Ultrasounds During Pregnancy</h2>
+            
+            <h3>1. Early Pregnancy Ultrasound (Dating Scan)</h3>
+            <p>Usually done at 8-12 weeks to confirm the pregnancy, check for twins, and establish an accurate due date.</p>
+
+            <h3>2. Anatomy Scan (Anomaly Scan)</h3>
+            <p>Performed between 18-22 weeks, this is a detailed examination of the baby\'s brain, heart, spine, and other organs to ensure everything is developing correctly.</p>
+
+            <h3>3. 3D/4D Ultrasound</h3>
+            <p>Advanced imaging that provides a "photograph-like" view of the baby\'s face and features, often used for both medical and bonding purposes.</p>
+
+            <h2>Is Ultrasound Safe During Pregnancy?</h2>
+            <p>Yes. Experts and medical organizations worldwide agree that ultrasounds are safe when performed by trained professionals. Since it uses sound waves rather than radiation, there is no risk of developmental harm to the baby.</p>
+
+            <h2>When Should You Get an Ultrasound?</h2>
+            <p>A typical pregnancy involves at least two major scans (dating and anatomy). However, your doctor may recommend more if you have high-risk factors, gestational diabetes, or if they need to monitor the baby\'s growth more closely in the third trimester.</p>
+
+            <h2>What to Expect During Your Ultrasound</h2>
+            <p>Preparation is simple: you may be asked to come with a full bladder for early scans. During the procedure, a clear gel is applied to your abdomen, and a transducer is moved across the skin. It’s a painless, bonding experience that lasts about 20-30 minutes.</p>
+
+            <h2>Conclusion</h2>
+            <p>Ultrasounds are a window into your baby\'s world. They provide the clinical data doctors need and the emotional connection parents crave. At VJ Scans & Labs, we provide a comfortable, professional environment for all your pregnancy imaging needs.</p>
+            <p><strong>Book your pregnancy ultrasound at VJ Scans and Labs for accurate, timely results.</strong></p>
+        `
     }
 ];
