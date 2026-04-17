@@ -81,7 +81,7 @@ export function Header() {
           <NavbarLogo />
           <NavItems items={navItems} className="bg-[linear-gradient(90deg,#ffebd6,#d1ebff)] p-1" />
           <div className="flex items-center gap-4">
-            <NavbarButton href="https://reports.vjscans.in/" className="!bg-none bg-white text-[#0961A1] border border-[#0961A1] shadow-none hover:bg-blue-50">Download Reports</NavbarButton>
+            <NavbarButton href="https://reports.vjscans.in/FreedomResultPortal/#/login?type=patient" className="!bg-none bg-white text-[#0961A1] border border-[#0961A1] shadow-none hover:bg-blue-50">Download Reports</NavbarButton>
             <NavbarButton href="#" onClick={(e) => { e.preventDefault(); openModal(); }} className="">Book Appointment</NavbarButton>
           </div>
         </NavBody>
